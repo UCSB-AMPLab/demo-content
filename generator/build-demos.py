@@ -201,8 +201,8 @@ def check_iiif_dependencies():
 
 
 def read_iiif_objects_csv():
-    """Read iiif/objects.csv and return list of objects"""
-    csv_path = IIIF_DIR / "objects.csv"
+    """Read iiif/all-demo-objects.csv and return list of objects with multilingual metadata"""
+    csv_path = IIIF_DIR / "all-demo-objects.csv"
     objects = []
 
     if not csv_path.exists():
@@ -218,11 +218,16 @@ def read_iiif_objects_csv():
                     objects.append({
                         'object_id': object_id,
                         'source_image': row.get('source_image', '').strip(),
-                        'title': row.get('title', '').strip(),
-                        'description': row.get('description', '').strip(),
-                        'creator': row.get('creator', '').strip(),
-                        'date': row.get('date', '').strip(),
-                        'attribution': row.get('attribution', '').strip(),
+                        'title_en': row.get('title_en', '').strip(),
+                        'title_es': row.get('title_es', '').strip(),
+                        'description_en': row.get('description_en', '').strip(),
+                        'description_es': row.get('description_es', '').strip(),
+                        'creator_en': row.get('creator_en', '').strip(),
+                        'creator_es': row.get('creator_es', '').strip(),
+                        'date_en': row.get('date_en', '').strip(),
+                        'date_es': row.get('date_es', '').strip(),
+                        'attribution_en': row.get('attribution_en', '').strip(),
+                        'attribution_es': row.get('attribution_es', '').strip(),
                         'rights': row.get('rights', '').strip()
                     })
     except Exception as e:
@@ -321,7 +326,7 @@ def copy_base_image(source_image_path, output_dir, object_id):
 
 
 def create_iiif_manifest(output_dir, object_id, metadata, base_url):
-    """Create IIIF Presentation API manifest"""
+    """Create multilingual IIIF Presentation API manifest"""
     info_path = output_dir / 'info.json'
     if not info_path.exists():
         print(f"    Warning: info.json not found, skipping manifest")
@@ -333,16 +338,25 @@ def create_iiif_manifest(output_dir, object_id, metadata, base_url):
     width = info.get('width', 0)
     height = info.get('height', 0)
 
+    # Build multilingual label
+    label = {}
+    if metadata.get('title_en'):
+        label["en"] = [metadata['title_en']]
+    if metadata.get('title_es'):
+        label["es"] = [metadata['title_es']]
+    if not label:
+        label = {"en": [object_id]}
+
     manifest = {
         "@context": "http://iiif.io/api/presentation/3/context.json",
         "id": f"{base_url}/iiif/objects/{object_id}/manifest.json",
         "type": "Manifest",
-        "label": {"en": [metadata.get('title', object_id)]},
+        "label": label,
         "metadata": [],
         "items": [{
             "id": f"{base_url}/iiif/objects/{object_id}/canvas",
             "type": "Canvas",
-            "label": {"en": [metadata.get('title', object_id)]},
+            "label": label,
             "height": height,
             "width": width,
             "items": [{
@@ -370,36 +384,58 @@ def create_iiif_manifest(output_dir, object_id, metadata, base_url):
         }]
     }
 
-    # Add summary if description exists
-    if metadata.get('description'):
-        manifest["summary"] = {"en": [metadata['description']]}
+    # Add multilingual summary if description exists
+    summary = {}
+    if metadata.get('description_en'):
+        summary["en"] = [metadata['description_en']]
+    if metadata.get('description_es'):
+        summary["es"] = [metadata['description_es']]
+    if summary:
+        manifest["summary"] = summary
 
-    # Add metadata fields
-    if metadata.get('creator'):
+    # Add multilingual metadata fields
+    if metadata.get('creator_en') or metadata.get('creator_es'):
+        creator_value = {}
+        if metadata.get('creator_en'):
+            creator_value["en"] = [metadata['creator_en']]
+        if metadata.get('creator_es'):
+            creator_value["es"] = [metadata['creator_es']]
         manifest['metadata'].append({
-            "label": {"en": ["Creator"]},
-            "value": {"en": [metadata['creator']]}
+            "label": {"en": ["Creator"], "es": ["Creador"]},
+            "value": creator_value
         })
-    if metadata.get('date'):
+
+    if metadata.get('date_en') or metadata.get('date_es'):
+        date_value = {}
+        if metadata.get('date_en'):
+            date_value["en"] = [metadata['date_en']]
+        if metadata.get('date_es'):
+            date_value["es"] = [metadata['date_es']]
         manifest['metadata'].append({
-            "label": {"en": ["Date"]},
-            "value": {"en": [metadata['date']]}
+            "label": {"en": ["Date"], "es": ["Fecha"]},
+            "value": date_value
         })
-    if metadata.get('attribution'):
+
+    if metadata.get('attribution_en') or metadata.get('attribution_es'):
+        attr_value = {}
+        if metadata.get('attribution_en'):
+            attr_value["en"] = [metadata['attribution_en']]
+        if metadata.get('attribution_es'):
+            attr_value["es"] = [metadata['attribution_es']]
         manifest['metadata'].append({
-            "label": {"en": ["Attribution"]},
-            "value": {"en": [metadata['attribution']]}
+            "label": {"en": ["Attribution"], "es": ["Atribución"]},
+            "value": attr_value
         })
 
     manifest_path = output_dir / 'manifest.json'
     with open(manifest_path, 'w') as f:
-        json.dump(manifest, f, indent=2)
+        json.dump(manifest, f, indent=2, ensure_ascii=False)
 
-    print(f"    Created manifest.json")
+    print(f"    Created multilingual manifest.json")
 
 
 def generate_iiif_tiles(base_url=None):
-    """Generate IIIF tiles for all objects in iiif/objects.csv"""
+    """Generate IIIF tiles for all objects in iiif/all-demo-objects.csv"""
     if not check_iiif_dependencies():
         return False
 
@@ -491,6 +527,112 @@ def generate_iiif_tiles(base_url=None):
 
 
 # =============================================================================
+# IIIF MANIFEST VALIDATION
+# =============================================================================
+
+def check_validation_dependencies():
+    """Check if jsonschema is available"""
+    try:
+        import jsonschema
+        return True
+    except ImportError:
+        print("Warning: jsonschema not installed. Skipping validation.")
+        print("  Install with: pip install jsonschema")
+        return False
+
+
+def validate_iiif_manifest(manifest_path):
+    """Validate a IIIF manifest against the Presentation API 3.0 schema"""
+    import jsonschema
+
+    schema_path = SCRIPT_DIR / "schemas" / "iiif_3_0.json"
+
+    if not schema_path.exists():
+        print(f"    Warning: Schema not found at {schema_path}")
+        return None
+
+    try:
+        with open(schema_path, 'r') as f:
+            schema = json.load(f)
+
+        with open(manifest_path, 'r') as f:
+            manifest = json.load(f)
+
+        # The IIIF schema uses a custom structure with "classes" for validation
+        # We need to validate against the Manifest class definition
+        manifest_schema = schema.get("classes", {}).get("Manifest", {})
+
+        if not manifest_schema:
+            print("    Warning: Could not find Manifest schema definition")
+            return None
+
+        # Create a resolver for internal $ref references
+        resolver = jsonschema.RefResolver.from_schema(schema)
+
+        # Validate
+        validator = jsonschema.Draft7Validator(manifest_schema, resolver=resolver)
+        errors = list(validator.iter_errors(manifest))
+
+        return errors
+
+    except json.JSONDecodeError as e:
+        return [f"Invalid JSON: {e}"]
+    except Exception as e:
+        return [f"Validation error: {e}"]
+
+
+def validate_all_iiif_manifests():
+    """Validate all generated IIIF manifests"""
+    if not check_validation_dependencies():
+        return True  # Skip validation but don't fail
+
+    objects_dir = IIIF_DIR / "objects"
+    if not objects_dir.exists():
+        print("No IIIF objects to validate")
+        return True
+
+    print("\n[IIIF Manifest Validation]")
+    print("-" * 40)
+
+    all_valid = True
+    validated = 0
+    failed = 0
+
+    for object_dir in sorted(objects_dir.iterdir()):
+        if not object_dir.is_dir():
+            continue
+
+        manifest_path = object_dir / "manifest.json"
+        if not manifest_path.exists():
+            continue
+
+        object_id = object_dir.name
+        errors = validate_iiif_manifest(manifest_path)
+
+        if errors is None:
+            print(f"  {object_id}: Skipped (schema issue)")
+        elif len(errors) == 0:
+            print(f"  {object_id}: Valid")
+            validated += 1
+        else:
+            print(f"  {object_id}: INVALID ({len(errors)} errors)")
+            for err in errors[:3]:  # Show first 3 errors
+                if hasattr(err, 'message'):
+                    print(f"    - {err.message}")
+                else:
+                    print(f"    - {err}")
+            if len(errors) > 3:
+                print(f"    ... and {len(errors) - 3} more errors")
+            failed += 1
+            all_valid = False
+
+    print("-" * 40)
+    print(f"Validated: {validated}, Failed: {failed}")
+
+    return all_valid
+
+
+# =============================================================================
 # MAIN
 # =============================================================================
 
@@ -509,6 +651,7 @@ Examples:
     parser.add_argument("--manifest-only", action="store_true", help="Generate only demo manifest")
     parser.add_argument("--iiif-only", action="store_true", help="Generate only IIIF tiles")
     parser.add_argument("--base-url", help=f"Base URL for IIIF (default: {DEFAULT_BASE_URL})")
+    parser.add_argument("--skip-validation", action="store_true", help="Skip IIIF manifest validation")
 
     args = parser.parse_args()
 
@@ -531,6 +674,11 @@ Examples:
         print("\n[IIIF Generation]")
         if not generate_iiif_tiles(base_url=args.base_url):
             success = False
+
+        # Validate IIIF manifests unless skipped
+        if not args.skip_validation:
+            if not validate_all_iiif_manifests():
+                success = False
 
     # Generate manifest if not iiif-only
     if not args.iiif_only:

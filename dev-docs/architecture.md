@@ -37,13 +37,13 @@ telar-demos/
 │           └── (same structure)
 │
 ├── iiif/                       # Self-hosted IIIF tiles
-│   ├── objects.csv            # Metadata for IIIF generation
+│   ├── all-demo-objects.csv   # Multilingual metadata for IIIF generation
 │   ├── sources/               # Raw source images
 │   │   └── demo-bogota-1614.jpg
 │   └── objects/               # Generated IIIF output
 │       └── demo-bogota-1614/
 │           ├── info.json      # IIIF Image API info
-│           ├── manifest.json  # IIIF Presentation API manifest
+│           ├── manifest.json  # Multilingual IIIF Presentation API manifest
 │           └── *.jpg          # Tile images
 │
 ├── dev-docs/                   # This folder (not deployed)
@@ -103,3 +103,29 @@ telar-demos/
 - Images: `https://demos.telar.org/assets/images/paisajes-demo/demo-*.jpg`
 - IIIF Info: `https://demos.telar.org/iiif/objects/demo-bogota-1614/info.json`
 - IIIF Manifest: `https://demos.telar.org/iiif/objects/demo-bogota-1614/manifest.json`
+
+## Generator Script
+
+The `generator/build-demos.py` script handles both demo manifest and IIIF generation.
+
+### Usage
+
+```bash
+# Generate both demo manifest and IIIF tiles
+python build-demos.py --version 0.6.0
+
+# Demo manifest only
+python build-demos.py --version 0.6.0 --manifest-only
+
+# IIIF tiles only (includes validation)
+python build-demos.py --iiif-only
+
+# Skip IIIF validation
+python build-demos.py --iiif-only --skip-validation
+```
+
+### IIIF Validation
+
+Generated IIIF manifests are validated against the official [IIIF Presentation API 3.0 schema](https://github.com/IIIF/presentation-validator). The schema is cached locally in `generator/schemas/iiif_3_0.json`.
+
+**Requirements:** `pip install jsonschema` (validation gracefully skips if not installed)

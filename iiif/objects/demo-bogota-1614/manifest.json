@@ -4,7 +4,10 @@
   "type": "Manifest",
   "label": {
     "en": [
-      "Painting of the lands, marshes and swamps of the town of Bogot\u00e1"
+      "Painting of the lands, marshes and swamps of the town of Bogotá"
+    ],
+    "es": [
+      "Pintura de las tierras pantanos y anegadizos del pueblo de Bogotá"
     ]
   },
   "metadata": [
@@ -12,11 +15,17 @@
       "label": {
         "en": [
           "Creator"
+        ],
+        "es": [
+          "Creador"
         ]
       },
       "value": {
         "en": [
-          "Juan de Aguilar Rend\u00f3n (painter) and Alonso Ruiz Gad\u00e1lmez (guarantor)"
+          "Juan de Aguilar Rendón (painter) and Alonso Ruiz Gadálmez (guarantor)"
+        ],
+        "es": [
+          "Juan de Aguilar Rendón (pintor) y Alonso Ruiz Gadálmez (receptor)"
         ]
       }
     },
@@ -24,11 +33,17 @@
       "label": {
         "en": [
           "Date"
+        ],
+        "es": [
+          "Fecha"
         ]
       },
       "value": {
         "en": [
           "April 1614"
+        ],
+        "es": [
+          "Abril de 1614"
         ]
       }
     },
@@ -36,11 +51,17 @@
       "label": {
         "en": [
           "Attribution"
+        ],
+        "es": [
+          "Atribución"
         ]
       },
       "value": {
         "en": [
           "Archivo General de Indias, Seville"
+        ],
+        "es": [
+          "Archivo General de Indias, Sevilla"
         ]
       }
     }
@@ -51,7 +72,10 @@
       "type": "Canvas",
       "label": {
         "en": [
-          "Painting of the lands, marshes and swamps of the town of Bogot\u00e1"
+          "Painting of the lands, marshes and swamps of the town of Bogotá"
+        ],
+        "es": [
+          "Pintura de las tierras pantanos y anegadizos del pueblo de Bogotá"
         ]
       },
       "height": 1500,
@@ -88,7 +112,10 @@
   ],
   "summary": {
     "en": [
-      "A legal map/painting used as evidence in a land ownership dispute between the crown prosecutor and Francisco Maldonado y Mendoza over land in the Bogot\u00e1 savannah."
+      "A legal map/painting used as evidence in a land ownership dispute between the crown prosecutor and Francisco Maldonado y Mendoza over land in the Bogotá savannah."
+    ],
+    "es": [
+      "Mapa/pintura legal utilizado como evidencia en un litigio por la propiedad de tierras entre el fiscal de la corona y Francisco Maldonado y Mendoza en la Sabana de Bogotá."
     ]
   }
 }
