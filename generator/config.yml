@@ -1,0 +1,37 @@
+# Telar Demos Generator Configuration
+# Version: v1.0.0
+
+# Demo content sources
+# Each demo specifies where to copy content from
+
+demos:
+  en:
+    telar-tutorial:
+      title: "Introduction to Telar"
+      description: "Learn Telar basics: IIIF images, navigation, glossary linking, and widgets."
+      source: ""  # TODO: Set path to tutorial source content
+
+    paisajes-demo:
+      title: "Colonial Landscapes"
+      description: "Historical maps and colonial documents from the Paisajes Coloniales project."
+      source: "/Users/juancobo/Databases/storytelling/paisajes/english"
+
+  es:
+    tutorial-telar:
+      title: "Introduccion a Telar"
+      description: "Aprende los fundamentos: imagenes IIIF, navegacion, glosario y widgets."
+      source: ""  # TODO: Set path to tutorial source content (Spanish)
+
+    demo-paisajes:
+      title: "Paisajes Coloniales"
+      description: "Mapas historicos y documentos coloniales del proyecto Paisajes Coloniales."
+      source: "/Users/juancobo/Databases/storytelling/paisajes/spanish"
+
+# Google Sheets integration (for future use)
+# sheets:
+#   tutorial:
+#     sheet_id: "your-sheet-id"
+#     tabs:
+#       project: "project"
+#       story: "story"
+#       objects: "objects"

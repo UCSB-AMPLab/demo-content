@@ -1,0 +1,61 @@
+{
+  "version": "0.6.0",
+  "generated": "2025-11-23T19:35:47.724873Z",
+  "generator_version": "0.1.0",
+  "languages": {
+    "en": {
+      "files": {
+        "project": "demo-project.csv",
+        "objects": "demo-objects.csv"
+      },
+      "stories": {
+        "paisajes-demo": {
+          "title": "A Painting of the Savanna",
+          "description": "Explore social and environmental transformations around 17th-century Bogotá",
+          "order": 1,
+          "csv": "demo-story-1.csv",
+          "texts": [
+            "bogota_savanna.md",
+            "encomendero_biography.md",
+            "legal_painting.md",
+            "legal_proceeding.md",
+            "maldonado_lineage.md",
+            "ways_of_mapping.md"
+          ]
+        }
+      },
+      "glossary": [
+        "jorge-tadeo-lozano.md",
+        "kogi-loom.md",
+        "livestock.md"
+      ]
+    },
+    "es": {
+      "files": {
+        "project": "demo-project.csv",
+        "objects": "demo-objects.csv"
+      },
+      "stories": {
+        "demo-paisajes": {
+          "title": "Una pintura de la sabana",
+          "description": "Explora las transformaciones sociales y ambientales de la Sabana de Bogotá en el siglo XVII.",
+          "order": 1,
+          "csv": "demo-story-1.csv",
+          "texts": [
+            "biografia_encomendero.md",
+            "linaje_maldonado.md",
+            "modos_cartografiar.md",
+            "pintura_legal.md",
+            "proceso_legal.md",
+            "sabana_bogota.md"
+          ]
+        }
+      },
+      "glossary": [
+        "ganaderia.md",
+        "jorge-tadeo-lozano.md",
+        "telar-kogui.md"
+      ]
+    }
+  }
+}
