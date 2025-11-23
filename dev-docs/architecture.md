@@ -21,7 +21,7 @@ telar-demos/
 │       └── paisajes-demo/      # Images for paisajes demo
 │
 ├── generator/                  # Build scripts (not deployed)
-│   └── build.py               # Manifest generator
+│   └── build-demos.py         # Manifest and IIIF generator
 │
 ├── demos/                      # Versioned demo content
 │   └── v0.6.0/
@@ -36,7 +36,15 @@ telar-demos/
 │       └── es/
 │           └── (same structure)
 │
-├── iiif/                       # Self-hosted IIIF tiles (future)
+├── iiif/                       # Self-hosted IIIF tiles
+│   ├── objects.csv            # Metadata for IIIF generation
+│   ├── sources/               # Raw source images
+│   │   └── demo-bogota-1614.jpg
+│   └── objects/               # Generated IIIF output
+│       └── demo-bogota-1614/
+│           ├── info.json      # IIIF Image API info
+│           ├── manifest.json  # IIIF Presentation API manifest
+│           └── *.jpg          # Tile images
 │
 ├── dev-docs/                   # This folder (not deployed)
 ├── CHANGELOG.md
@@ -93,4 +101,5 @@ telar-demos/
 - CSVs: `https://demos.telar.org/demos/v0.6.0/en/demo-story-1.csv`
 - Texts: `https://demos.telar.org/demos/v0.6.0/en/texts/stories/paisajes-demo/bogota_savanna.md`
 - Images: `https://demos.telar.org/assets/images/paisajes-demo/demo-*.jpg`
-- IIIF: `https://demos.telar.org/iiif/tutorial/image1/info.json` (future)
+- IIIF Info: `https://demos.telar.org/iiif/objects/demo-bogota-1614/info.json`
+- IIIF Manifest: `https://demos.telar.org/iiif/objects/demo-bogota-1614/manifest.json`

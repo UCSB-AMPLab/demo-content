@@ -1,0 +1,94 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Painting of the lands, marshes and swamps of the town of Bogot\u00e1"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Creator"
+        ]
+      },
+      "value": {
+        "en": [
+          "Juan de Aguilar Rend\u00f3n (painter) and Alonso Ruiz Gad\u00e1lmez (guarantor)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Date"
+        ]
+      },
+      "value": {
+        "en": [
+          "April 1614"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Attribution"
+        ]
+      },
+      "value": {
+        "en": [
+          "Archivo General de Indias, Seville"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614/canvas",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Painting of the lands, marshes and swamps of the town of Bogot\u00e1"
+        ]
+      },
+      "height": 1500,
+      "width": 1846,
+      "items": [
+        {
+          "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614/demo-bogota-1614.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1500,
+                "width": 1846,
+                "service": [
+                  {
+                    "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614",
+                    "type": "ImageService3",
+                    "profile": "level0"
+                  }
+                ]
+              },
+              "target": "https://demos.telar.org/iiif/objects/demo-bogota-1614/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [
+      "A legal map/painting used as evidence in a land ownership dispute between the crown prosecutor and Francisco Maldonado y Mendoza over land in the Bogot\u00e1 savannah."
+    ]
+  }
+}

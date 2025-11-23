@@ -45,7 +45,9 @@ telar-demos/
 ├── assets/             # Self-hosted images for demos
 │   └── images/
 │       └── paisajes-demo/
-├── iiif/               # Self-hosted IIIF tiles (future)
+├── iiif/               # Self-hosted IIIF tiles
+│   ├── sources/        # Source images
+│   └── objects/        # Generated tiles and manifests
 ├── generator/          # Build scripts (internal)
 └── dev-docs/           # Developer documentation (internal)
 ```
