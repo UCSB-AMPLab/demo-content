@@ -15,28 +15,35 @@ telar-demos/
 ├── _config.yml                 # Jekyll config
 ├── index.md                    # Landing page
 ├── _layouts/default.html       # Page layout
-├── assets/css/style.scss       # Minimal styles
+├── assets/
+│   ├── css/style.scss          # Minimal styles
+│   └── images/                 # Self-hosted demo images
+│       └── paisajes-demo/      # Images for paisajes demo
 │
 ├── generator/                  # Build scripts (not deployed)
-│   ├── build.py               # Main generator
-│   ├── config.yml             # Source paths and settings
-│   ├── requirements.txt       # Python dependencies
-│   └── README.md              # Generator docs
+│   └── build.py               # Manifest generator
 │
-├── demos/                      # Generated demo content
+├── demos/                      # Versioned demo content
 │   └── v0.6.0/
-│       ├── manifest.json
-│       ├── en/{telar-tutorial,paisajes-demo}/
-│       └── es/{tutorial-telar,demo-paisajes}/
+│       ├── manifest.json       # Auto-generated
+│       ├── en/
+│       │   ├── demo-project.csv
+│       │   ├── demo-objects.csv
+│       │   ├── demo-story-1.csv
+│       │   └── texts/
+│       │       ├── stories/paisajes-demo/
+│       │       └── glossary/
+│       └── es/
+│           └── (same structure)
 │
-├── iiif/                       # Self-hosted IIIF tiles
-│   ├── tutorial/
-│   └── paisajes/
+├── iiif/                       # Self-hosted IIIF tiles (future)
 │
 ├── dev-docs/                   # This folder (not deployed)
 ├── CHANGELOG.md
 └── README.md
 ```
+
+**Note**: Demo content uses flat structure per language with prefixed CSVs (`demo-project.csv`, `demo-objects.csv`, `demo-story-N.csv`) to avoid conflicts when multiple demos are present.
 
 ## How Demos Are Fetched
 
@@ -54,18 +61,26 @@ telar-demos/
 {
   "version": "0.6.0",
   "generated": "2025-11-23T00:00:00Z",
-  "generator_version": "1.0.0",
-  "demos": {
+  "generator_version": "0.1.0",
+  "languages": {
     "en": {
-      "telar-tutorial": {
-        "title": "Introduction to Telar",
-        "description": "...",
-        "files": ["project.csv", "story.csv", "objects.csv"],
-        "texts": {
-          "stories": ["step1.md", "step2.md"],
-          "glossary": ["iiif.md", "manifest.md"]
+      "files": {
+        "project": "demo-project.csv",
+        "objects": "demo-objects.csv"
+      },
+      "stories": {
+        "paisajes-demo": {
+          "title": "A Painting of the Savanna",
+          "description": "Explore social and environmental transformations around 17th-century Bogotá",
+          "order": 1,
+          "csv": "demo-story-1.csv",
+          "texts": ["bogota_savanna.md", "encomendero_biography.md", "..."]
         }
-      }
+      },
+      "glossary": ["jorge-tadeo-lozano.md", "kogi-loom.md", "livestock.md"]
+    },
+    "es": {
+      "...": "same structure"
     }
   }
 }
@@ -75,5 +90,7 @@ telar-demos/
 
 - Landing: `https://demos.telar.org/`
 - Manifest: `https://demos.telar.org/demos/v0.6.0/manifest.json`
-- Demo files: `https://demos.telar.org/demos/v0.6.0/en/telar-tutorial/story.csv`
-- IIIF: `https://demos.telar.org/iiif/tutorial/image1/info.json`
+- CSVs: `https://demos.telar.org/demos/v0.6.0/en/demo-story-1.csv`
+- Texts: `https://demos.telar.org/demos/v0.6.0/en/texts/stories/paisajes-demo/bogota_savanna.md`
+- Images: `https://demos.telar.org/assets/images/paisajes-demo/demo-*.jpg`
+- IIIF: `https://demos.telar.org/iiif/tutorial/image1/info.json` (future)

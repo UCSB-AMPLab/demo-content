@@ -12,10 +12,11 @@ This repository provides versioned, multilingual demo content that Telar sites c
 
 ### v0.6.0
 
-| Demo | English | Spanish |
-|------|---------|---------|
-| Tutorial | `telar-tutorial` | `tutorial-telar` |
-| Paisajes Coloniales | `paisajes-demo` | `demo-paisajes` |
+| Demo | English | Spanish | Description |
+|------|---------|---------|-------------|
+| Paisajes Coloniales | `paisajes-demo` | `demo-paisajes` | Colonial maps and land ownership in 17th-century Bogotá |
+
+*Tutorial demos coming soon.*
 
 ## Using Demos in Your Telar Site
 
@@ -35,8 +36,16 @@ telar-demos/
 │   └── v0.6.0/
 │       ├── manifest.json
 │       ├── en/
+│       │   ├── demo-project.csv
+│       │   ├── demo-objects.csv
+│       │   ├── demo-story-1.csv
+│       │   └── texts/
 │       └── es/
-├── iiif/               # Self-hosted IIIF tiles
+│           └── (same structure)
+├── assets/             # Self-hosted images for demos
+│   └── images/
+│       └── paisajes-demo/
+├── iiif/               # Self-hosted IIIF tiles (future)
 ├── generator/          # Build scripts (internal)
 └── dev-docs/           # Developer documentation (internal)
 ```
