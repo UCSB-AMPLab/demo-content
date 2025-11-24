@@ -72,4 +72,4 @@ If your demo uses self-hosted IIIF images:
 
 1. Generate tiles using your preferred tool
 2. Place in `iiif/demo-name/`
-3. Update objects.csv to point to `https://demos.telar.org/iiif/demo-name/...`
+3. Update objects.csv to point to `https://telar.org/demo-content/iiif/demo-name/...`

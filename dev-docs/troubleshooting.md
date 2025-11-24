@@ -41,7 +41,7 @@ Ensure `assets/css/style.scss` has front matter (two `---` lines at top).
 
 ### "Manifest not found"
 
-- Check demos.telar.org is accessible
+- Check telar.org/demo-content is accessible
 - Verify version exists in `demos/`
 - Check manifest.json was generated
 
@@ -62,7 +62,7 @@ GitHub Pages should handle CORS. If issues persist:
 
 ## Deployment Issues
 
-### Changes not appearing on demos.telar.org
+### Changes not appearing on telar.org/demo-content
 
 - Check GitHub Actions completed successfully
 - Clear browser cache
