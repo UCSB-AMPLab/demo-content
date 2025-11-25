@@ -7,7 +7,7 @@
     "default"
   ],
   "height": 1500,
-  "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614",
+  "id": "https://content.telar.org/iiif/objects/demo-bogota-1614",
   "profile": "level0",
   "protocol": "http://iiif.io/api/image",
   "sizes": [

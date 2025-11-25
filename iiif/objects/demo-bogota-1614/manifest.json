@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614/manifest.json",
+  "id": "https://content.telar.org/iiif/objects/demo-bogota-1614/manifest.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -68,7 +68,7 @@
   ],
   "items": [
     {
-      "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614/canvas",
+      "id": "https://content.telar.org/iiif/objects/demo-bogota-1614/canvas",
       "type": "Canvas",
       "label": {
         "en": [
@@ -82,28 +82,28 @@
       "width": 1846,
       "items": [
         {
-          "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614/page",
+          "id": "https://content.telar.org/iiif/objects/demo-bogota-1614/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614/annotation",
+              "id": "https://content.telar.org/iiif/objects/demo-bogota-1614/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614/demo-bogota-1614.jpg",
+                "id": "https://content.telar.org/iiif/objects/demo-bogota-1614/demo-bogota-1614.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "height": 1500,
                 "width": 1846,
                 "service": [
                   {
-                    "id": "https://demos.telar.org/iiif/objects/demo-bogota-1614",
+                    "id": "https://content.telar.org/iiif/objects/demo-bogota-1614",
                     "type": "ImageService3",
                     "profile": "level0"
                   }
                 ]
               },
-              "target": "https://demos.telar.org/iiif/objects/demo-bogota-1614/canvas"
+              "target": "https://content.telar.org/iiif/objects/demo-bogota-1614/canvas"
             }
           ]
         }
