@@ -1,5 +1,7 @@
 ---
+term_id: demo-ganaderia
 title: Ganadería
+related_terms:
 ---
 
 La ganadería ha sido parte de un largo proceso de convivencia entre humanos y animales que conocemos como "domesticación". Aunque tradicionalmente se veía la domesticación como un proceso en que los humanos dominaban y subordinaban a otros animales, investigación reciente ha mostrado que este no es un proceso controlado enteramente por humanos y que muchos animales se fueron acercando y conviviendo con sociedades humanas por su propia iniciativa.

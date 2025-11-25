@@ -1,5 +1,7 @@
 ---
+term_id: demo-jorge-tadeo-lozano
 title: Jorge Tadeo Lozano
+related_terms:
 ---
 
 Jorge Tadeo Lozano nació en Bogotá en 1771, estudió en Europa y se interesó por la historia natural. Esto le permitió unirse a la Real Expedición Botánica en la Nueva Granada en 1803 como encargado del proyecto zoológico. Dada su posición social y económica, Lozano contaba con numerosas haciendas en diferentes climas, lo que le facilitó la recolección de animales para iniciar su trabajo. Como resultado escribió La Fauna Cundinamarquesa.

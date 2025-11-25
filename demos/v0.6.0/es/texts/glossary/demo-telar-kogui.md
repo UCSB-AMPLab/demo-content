@@ -1,5 +1,7 @@
 ---
+term_id: demo-telar-kogui
 title: El telar kogui
+related_terms:
 ---
 
 Entre los kogi de la Sierra Nevada de Santa Marta, el telar, además de ser un instrumento para hilar sus prendas, es un mapa que representa el cuerpo humano y la geografía de la Sierra.

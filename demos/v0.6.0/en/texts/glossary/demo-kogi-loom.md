@@ -1,5 +1,5 @@
 ---
-term_id: kogi-loom
+term_id: demo-kogi-loom
 title: "The Kogi loom"
 related_terms:
 ---

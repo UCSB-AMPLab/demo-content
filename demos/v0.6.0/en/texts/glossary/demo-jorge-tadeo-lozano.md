@@ -1,5 +1,5 @@
 ---
-term_id: jorge-tadeo-lozano
+term_id: demo-jorge-tadeo-lozano
 title: "Jorge Tadeo Lozano"
 related_terms:
 ---
