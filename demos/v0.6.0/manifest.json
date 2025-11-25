@@ -1,6 +1,6 @@
 {
   "version": "0.6.0",
-  "generated": "2025-11-25T05:30:15.056527Z",
+  "generated": "2025-11-25T06:43:37.071423Z",
   "generator_version": "0.2.0",
   "languages": {
     "en": {
@@ -55,6 +55,25 @@
         "objects": "demo-objects.csv"
       },
       "stories": {
+        "tutorial-telar": {
+          "title": "Introducción a Telar",
+          "description": "Aprende los fundamentos: imágenes IIIF",
+          "order": 1,
+          "csv": "tutorial-telar.csv",
+          "texts": [
+            "accordion_demo.md",
+            "carousel_demo.md",
+            "glossary_related.md",
+            "glossary_system.md",
+            "iiif_intro.md",
+            "markdown_advanced.md",
+            "markdown_formatting.md",
+            "next_steps.md",
+            "pan_zoom_intro.md",
+            "rich_media.md",
+            "self_hosted.md"
+          ]
+        },
         "demo-paisajes": {
           "title": "Una pintura de la sabana",
           "description": "Explora las transformaciones sociales y ambientales de la Sabana de Bogotá en el siglo XVII.",
