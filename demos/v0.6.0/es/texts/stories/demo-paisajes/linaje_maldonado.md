@@ -19,9 +19,9 @@ El juicio ratificó el derecho de Maldonado y Mendoza sobre su hacienda. En su t
 
 Este es el comienzo de un poderoso linaje que se fortaleció alrededor de la hacienda.
 
-Esta propiedad se ha conocido como la "Dehesa de Bogotá", el mayorazgo de Bogotá, o el Novillero y se caracterizaba por alojar temporalmente el [[ganaderia|ganado]] que venía de tierras bajas para su consumo en la ciudad de Santafé de Bogotá. Los herederos de Maldonado y Mendoza continuaron uniéndose con algunas de las familias más prestantes del Nuevo Reino de Granada, eventualmente recibiendo títulos nobiliarios y erigiéndose en el Marquesado de San Jorge.
+Esta propiedad se ha conocido como la "Dehesa de Bogotá", el mayorazgo de Bogotá, o el Novillero y se caracterizaba por alojar temporalmente el [[demo-ganaderia|ganado]] que venía de tierras bajas para su consumo en la ciudad de Santafé de Bogotá. Los herederos de Maldonado y Mendoza continuaron uniéndose con algunas de las familias más prestantes del Nuevo Reino de Granada, eventualmente recibiendo títulos nobiliarios y erigiéndose en el Marquesado de San Jorge.
 
-Este linaje mantuvo su poder durante dos siglos, incluyendo virreyes y obispos. De hecho, [[jorge-tadeo-lozano|Jorge Tadeo Lozano]], el primer presidente de la república en 1811 fue uno de sus descendientes.
+Este linaje mantuvo su poder durante dos siglos, incluyendo virreyes y obispos. De hecho, [[demo-jorge-tadeo-lozano|Jorge Tadeo Lozano]], el primer presidente de la república en 1811 fue uno de sus descendientes.
 
 ![Árbol genealógico de los Maldonado página 1](https://content.telar.org/assets/images/paisajes-demo/demo-genealogia-maldonado-1.jpg)
 ![Árbol genealógico de los Maldonado página 2](https://content.telar.org/assets/images/paisajes-demo/demo-genealogia-maldonado-2.jpg)

@@ -49,7 +49,7 @@ caption: Map of the Crown Prince Islands, Disko Bay, Greenland [Mapa de las Isla
 
 ## El telar kogui
 
-Entre los kogi, por ejemplo, el [[telar-kogui|telar]] es un mapa que representa la geografía de la Sierra Nevada de Santa Marta.
+Entre los kogi, por ejemplo, el [[demo-telar-kogui|telar]] es un mapa que representa la geografía de la Sierra Nevada de Santa Marta.
 
 Entre los kogi de la Sierra Nevada de Santa Marta, el telar, además de ser un instrumento para hilar sus prendas, es un mapa que representa el cuerpo humano y la geografía de la Sierra.
 

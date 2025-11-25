@@ -15,9 +15,9 @@
 - [Discussion forum](https://github.com/UCSB-AMPLab/telar/discussions) - Ask questions and share ideas
 
 **What you've learned:**
-- Working with [[iiif]] images from institutions
-- Auto-generating [[iiif-tiles]] from your own images
-- Using [[markdown]] for rich text formatting
+- Working with [[demo-iiif]] images from institutions
+- Auto-generating [[demo-iiif-tiles]] from your own images
+- Using [[demo-markdown]] for rich text formatting
 - Controlling pan and zoom to guide readers
 - Creating glossary entries with auto-linking
 - Adding interactive widgets to panels

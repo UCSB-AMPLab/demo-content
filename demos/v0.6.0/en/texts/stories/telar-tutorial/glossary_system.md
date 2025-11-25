@@ -2,11 +2,11 @@ Telar's glossary system provides **wiki-style automatic linking** of technical t
 
 **How it works:**
 1. Create glossary entry files in `components/texts/glossary/`
-2. Link terms in your text using double brackets: `[[iiif]]` or `[[iiif-tiles|IIIF tiles]]`
+2. Link terms in your text using double brackets: `[[demo-iiif]]` or `[[demo-iiif-tiles|IIIF tiles]]`
 3. Telar automatically converts these to clickable links
 4. Clicking a term opens a slide-over panel with the full definition
 
-**Try it now:** Throughout this tutorial, you've seen several linked terms - [[iiif]], [[iiif-tiles]], [[iiif-manifest|IIIF manifests]], and [[markdown]]. Click any of them to see the full glossary definition.
+**Try it now:** Throughout this tutorial, you've seen several linked terms - [[demo-iiif]], [[demo-iiif-tiles]], [[demo-iiif-manifest|IIIF manifests]], and [[demo-markdown]]. Click any of them to see the full glossary definition.
 
 **Multiple perspectives with tabs:**
 

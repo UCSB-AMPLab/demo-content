@@ -52,7 +52,7 @@ caption: Map of the Crown Prince Islands, Disko Bay, Greenland. Place and date o
 
 ## The Kogi Loom
 
-Among the Kogi people of the Sierra Nevada of Santa Marta, for example, the [[kogi-loom|loom]] is made as a map that depicts the geography of their home region.
+Among the Kogi people of the Sierra Nevada of Santa Marta, for example, the [[demo-kogi-loom|loom]] is made as a map that depicts the geography of their home region.
 
 Among the Kogi of the Sierra Nevada of Santa Marta, a loom—in addition to being a tool for weaving—is a map that represents the human body and the geography of the Sierra.
 

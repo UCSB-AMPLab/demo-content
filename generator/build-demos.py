@@ -16,10 +16,19 @@ import argparse
 import csv
 import json
 import os
+import re
 import shutil
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+
+try:
+    import markdown
+    MARKDOWN_AVAILABLE = True
+except ImportError:
+    MARKDOWN_AVAILABLE = False
+    print("Warning: markdown library not installed. Content will not be converted to HTML.")
+    print("  Install with: pip install markdown")
 
 # Version
 GENERATOR_VERSION = "0.3.0"
@@ -38,6 +47,101 @@ DEFAULT_BASE_URL = "https://content.telar.org"
 # =============================================================================
 # DEMO BUNDLE GENERATION
 # =============================================================================
+
+def strip_yaml_frontmatter(content):
+    """
+    Strip YAML frontmatter from markdown content.
+
+    Frontmatter is delimited by --- at the start and end.
+    Returns the content without the frontmatter block.
+    """
+    content = content.strip()
+    if not content.startswith('---'):
+        return content
+
+    # Find the closing ---
+    lines = content.split('\n')
+    end_index = None
+    for i, line in enumerate(lines[1:], 1):  # Start from second line
+        if line.strip() == '---':
+            end_index = i
+            break
+
+    if end_index is None:
+        # No closing ---, return as-is
+        return content
+
+    # Return content after the frontmatter
+    return '\n'.join(lines[end_index + 1:]).strip()
+
+
+def process_glossary_links(text, glossary_terms):
+    """
+    Transform [[term_id|display]] or [[term_id]] syntax into glossary link HTML.
+
+    Args:
+        text: HTML text to process (already converted from markdown)
+        glossary_terms: Dictionary mapping term_id to term title
+
+    Returns:
+        str: Text with glossary links transformed to HTML
+    """
+    if not text or not glossary_terms:
+        return text
+
+    # Pattern: [[display|term]] or [[term]] with flexible spacing
+    pattern = r'\[\[\s*([^|\]]+?)(?:\s*\|\s*([^|\]]+?))?\s*\]\]'
+
+    def replace_glossary_link(match):
+        # If pipe is present: [[term_id|display]], else [[term_id]]
+        if match.group(2):  # Has pipe
+            term_id = match.group(1).strip()
+            display_text = match.group(2).strip()
+        else:  # No pipe
+            term_id = match.group(1).strip()
+            # Use glossary title as display text
+            display_text = glossary_terms.get(term_id, term_id)
+
+        # Check if term exists in glossary
+        if term_id in glossary_terms:
+            # Valid term - create link
+            return f'<a href="#" class="glossary-inline-link" data-term-id="{term_id}">{display_text}</a>'
+        else:
+            # Unknown term - still create link (may be valid in consuming site)
+            return f'<a href="#" class="glossary-inline-link" data-term-id="{term_id}">{display_text}</a>'
+
+    return re.sub(pattern, replace_glossary_link, text)
+
+
+def convert_markdown_to_html(content, glossary_terms=None):
+    """
+    Convert markdown content to HTML with glossary link processing.
+
+    Args:
+        content: Raw markdown content
+        glossary_terms: Optional dictionary of glossary terms for link processing
+
+    Returns:
+        str: HTML content with processed glossary links
+    """
+    if not content:
+        return content
+
+    if not MARKDOWN_AVAILABLE:
+        # Fallback: just process glossary links in raw text
+        if glossary_terms:
+            return process_glossary_links(content, glossary_terms)
+        return content
+
+    # Convert markdown to HTML using same extensions as Telar
+    html = markdown.markdown(content, extensions=['extra', 'nl2br'])
+
+    # Process glossary links
+    if glossary_terms:
+        html = process_glossary_links(html, glossary_terms)
+
+    return html
+
 
 def read_project_csv(csv_path):
     """Read demo-project.csv and return list of project entries"""
@@ -146,16 +250,17 @@ def read_objects_csv(csv_path, base_url):
     return objects
 
 
-def read_story_csv(csv_path, texts_dir):
+def read_story_csv(csv_path, texts_dir, glossary_terms=None):
     """
     Read a story CSV and return list of steps with embedded layer content.
 
     Args:
         csv_path: Path to the story CSV file
         texts_dir: Path to the texts/stories/{project_id}/ directory
+        glossary_terms: Optional dictionary of term_id -> title for glossary link processing
 
     Returns:
-        List of step dicts with layers containing embedded markdown content
+        List of step dicts with layers containing HTML content (converted from markdown)
     """
     steps = []
     try:
@@ -194,7 +299,11 @@ def read_story_csv(csv_path, texts_dir):
                         content = ""
                         if md_path.exists():
                             with open(md_path, 'r', encoding='utf-8') as md_file:
-                                content = md_file.read().strip()
+                                raw_content = md_file.read().strip()
+                                # Strip YAML frontmatter
+                                md_content = strip_yaml_frontmatter(raw_content)
+                                # Convert markdown to HTML with glossary links
+                                content = convert_markdown_to_html(md_content, glossary_terms)
                         else:
                             print(f"    Warning: Layer file not found: {md_path}")
 
@@ -242,7 +351,6 @@ def read_glossary_files(glossary_dir):
             if content.startswith('---'):
                 parts = content.split('---', 2)
                 if len(parts) >= 3:
-                    import re
                     front_matter = parts[1]
                     body = parts[2].strip()
 
@@ -256,9 +364,12 @@ def read_glossary_files(glossary_dir):
                     if title_match:
                         title = title_match.group(1).strip().strip('"\'')
 
+            # Convert markdown body to HTML
+            html_content = convert_markdown_to_html(body)
+
             glossary[term_id] = {
                 'term': title,
-                'content': body
+                'content': html_content
             }
 
         except Exception as e:
@@ -322,7 +433,21 @@ def generate_bundle(version, lang, lang_dir, base_url):
     else:
         warnings.append(f"[{lang}] Missing demo-objects.csv")
 
-    # Read stories
+    # Read glossary FIRST (needed for processing story content)
+    glossary_dir = lang_dir / "texts" / "glossary"
+    glossary = {}
+    glossary_terms = {}  # term_id -> title mapping for link processing
+    if glossary_dir.exists():
+        glossary = read_glossary_files(glossary_dir)
+        if glossary:
+            bundle["glossary"] = glossary
+            # Build term_id -> title mapping
+            glossary_terms = {term_id: data['term'] for term_id, data in glossary.items()}
+            print(f"  Found {len(glossary)} glossary entries")
+    else:
+        warnings.append(f"[{lang}] Missing texts/glossary/ directory")
+
+    # Read stories (with glossary terms for link processing)
     texts_stories_dir = lang_dir / "texts" / "stories"
     if not texts_stories_dir.exists():
         warnings.append(f"[{lang}] Missing texts/stories/ directory")
@@ -343,20 +468,10 @@ def generate_bundle(version, lang, lang_dir, base_url):
                 story_texts_dir = texts_stories_dir  # Fall back to parent
 
             # Read story steps with embedded layer content
-            steps = read_story_csv(story_csv, story_texts_dir)
+            steps = read_story_csv(story_csv, story_texts_dir, glossary_terms)
             if steps:
                 bundle["stories"][project_id] = {"steps": steps}
                 print(f"  Story '{project_id}': {len(steps)} steps")
-
-    # Read glossary
-    glossary_dir = lang_dir / "texts" / "glossary"
-    if glossary_dir.exists():
-        glossary = read_glossary_files(glossary_dir)
-        if glossary:
-            bundle["glossary"] = glossary
-            print(f"  Found {len(glossary)} glossary entries")
-    else:
-        warnings.append(f"[{lang}] Missing texts/glossary/ directory")
 
     return bundle, warnings
 
