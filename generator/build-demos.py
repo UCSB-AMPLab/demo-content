@@ -31,7 +31,7 @@ DEMOS_DIR = REPO_ROOT / "demos"
 IIIF_DIR = REPO_ROOT / "iiif"
 
 # Default base URL for demos site
-DEFAULT_BASE_URL = "https://telar.org/demo-content"
+DEFAULT_BASE_URL = "https://content.telar.org"
 
 
 # =============================================================================

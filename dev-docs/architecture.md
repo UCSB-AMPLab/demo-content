@@ -6,7 +6,7 @@ Internal documentation for the telar-demos repository.
 
 This repository serves two functions:
 1. **Static file hosting**: Demo CSVs, markdown, and IIIF tiles fetched by Telar sites at build time
-2. **Minimal landing page**: Simple Jekyll site at telar.org/demo-content
+2. **Minimal landing page**: Simple Jekyll site at content.telar.org
 
 ## Repository Structure
 
@@ -57,7 +57,7 @@ telar-demos/
 
 1. User enables `include_demo_content: true` in their Telar site
 2. GitHub Actions runs `fetch_demo_content.py` before Jekyll build
-3. Script fetches `telar.org/demo-content/demos/vX.X.X/manifest.json`
+3. Script fetches `content.telar.org/demos/vX.X.X/manifest.json`
 4. Downloads all files listed in manifest to temp directory
 5. Jekyll processes demo content as collections
 6. Site builds with demos included
@@ -96,13 +96,13 @@ telar-demos/
 
 ## URL Structure
 
-- Landing: `https://telar.org/demo-content/`
-- Manifest: `https://telar.org/demo-content/demos/v0.6.0/manifest.json`
-- CSVs: `https://telar.org/demo-content/demos/v0.6.0/en/demo-story-1.csv`
-- Texts: `https://telar.org/demo-content/demos/v0.6.0/en/texts/stories/paisajes-demo/bogota_savanna.md`
-- Images: `https://telar.org/demo-content/assets/images/paisajes-demo/demo-*.jpg`
-- IIIF Info: `https://telar.org/demo-content/iiif/objects/demo-bogota-1614/info.json`
-- IIIF Manifest: `https://telar.org/demo-content/iiif/objects/demo-bogota-1614/manifest.json`
+- Landing: `https://content.telar.org/`
+- Manifest: `https://content.telar.org/demos/v0.6.0/manifest.json`
+- CSVs: `https://content.telar.org/demos/v0.6.0/en/demo-story-1.csv`
+- Texts: `https://content.telar.org/demos/v0.6.0/en/texts/stories/paisajes-demo/bogota_savanna.md`
+- Images: `https://content.telar.org/assets/images/paisajes-demo/demo-*.jpg`
+- IIIF Info: `https://content.telar.org/iiif/objects/demo-bogota-1614/info.json`
+- IIIF Manifest: `https://content.telar.org/iiif/objects/demo-bogota-1614/manifest.json`
 
 ## Generator Script
 

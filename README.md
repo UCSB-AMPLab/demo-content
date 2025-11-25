@@ -6,7 +6,7 @@ Demo content hosting for [Telar](https://github.com/UCSB-AMPLab/telar) scrollyte
 
 This repository provides versioned, multilingual demo content that Telar sites can fetch at build time. Demo stories appear on user sites when enabled but are never committed to their repositories.
 
-**Live site:** [telar.org/demo-content](https://telar.org/demo-content)
+**Live site:** [content.telar.org](https://content.telar.org)
 
 ## Available Demos
 

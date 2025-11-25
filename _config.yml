@@ -1,11 +1,11 @@
 # telar-demos
 # Demo content hosting for Telar sites
-# https://telar.org/demo-content
+# https://content.telar.org
 
 title: Telar Demos
 description: Demo content for Telar scrollytelling sites
-url: https://telar.org
-baseurl: /demo-content
+url: https://content.telar.org
+baseurl: ""
 
 # Build settings
 markdown: kramdown

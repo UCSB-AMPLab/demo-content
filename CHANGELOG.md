@@ -6,7 +6,7 @@ All notable changes to the telar-demos repository.
 
 ### Added
 - Initial repository structure
-- Minimal Jekyll site for telar.org/demo-content
+- Minimal Jekyll site for content.telar.org
 - Generator script (build-demos.py) for creating demo content and IIIF tiles
 - Developer documentation in dev-docs/
 - Demo structure for v0.6.0 (en/es)

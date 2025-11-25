@@ -37,5 +37,5 @@ Demos will be fetched automatically when your site builds. They appear alongside
 
 ## Learn More
 
-- [Telar Documentation](https://ampl.clair.ucsb.edu/telar-docs/)
+- [Telar Documentation](https://telar.org/docs/)
 - [Telar on GitHub](https://github.com/UCSB-AMPLab/telar)
