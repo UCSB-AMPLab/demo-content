@@ -46,12 +46,14 @@ def read_project_csv(csv_path):
             reader = csv.DictReader(f)
             for row in reader:
                 order = row.get('order', '').strip()
+                project_id = row.get('project_id', '').strip()
                 title = row.get('title', '').strip()
                 subtitle = row.get('subtitle', '').strip()
 
-                if order and title:  # Skip empty rows
+                if order and title and project_id:  # Skip empty rows
                     stories.append({
                         'order': int(order),
+                        'project_id': project_id,
                         'title': title,
                         'description': subtitle
                     })
@@ -116,45 +118,43 @@ def generate_manifest(version):
         # Read story metadata from project CSV
         story_metadata = read_project_csv(project_csv) if project_csv.exists() else []
 
-        # Find story CSVs
-        story_csvs = sorted(lang_dir.glob("demo-story-*.csv"))
-        if not story_csvs:
-            warnings.append(f"[{lang}] No demo-story-*.csv files found")
+        # Story CSVs are now named by project_id (checked per-story below)
 
         # Find story text folders
         texts_stories_dir = lang_dir / "texts" / "stories"
         if not texts_stories_dir.exists():
             warnings.append(f"[{lang}] Missing texts/stories/ directory")
         else:
-            story_folders = sorted([d for d in texts_stories_dir.iterdir() if d.is_dir()])
+            story_folders = [d for d in texts_stories_dir.iterdir() if d.is_dir()]
 
-            for idx, story_dir in enumerate(story_folders):
-                demo_id = story_dir.name
+            # Process each story from project CSV (by order)
+            for story_meta in story_metadata:
+                project_id = story_meta['project_id']
+                order = story_meta['order']
+
+                # Find matching story directory
+                story_dir = texts_stories_dir / project_id
+                if not story_dir.exists():
+                    warnings.append(f"[{lang}] Missing story directory for project_id '{project_id}' (order {order})")
+                    continue
+
                 story_texts = [f.name for f in sorted(story_dir.glob("*.md"))]
 
                 if not story_texts:
-                    warnings.append(f"[{lang}] No markdown files in texts/stories/{demo_id}/")
+                    warnings.append(f"[{lang}] No markdown files in texts/stories/{project_id}/")
                     continue
 
-                # Get metadata from project CSV (by order)
-                order = idx + 1
-                metadata = next((s for s in story_metadata if s['order'] == order), None)
+                # Get metadata from project CSV
+                title = story_meta['title']
+                description = story_meta['description']
 
-                if metadata:
-                    title = metadata['title']
-                    description = metadata['description']
-                else:
-                    warnings.append(f"[{lang}] No metadata in demo-project.csv for story order {order} ({demo_id})")
-                    title = demo_id.replace("-", " ").title()
-                    description = ""
-
-                # Find corresponding story CSV
-                story_csv_name = f"demo-story-{order}.csv"
+                # Find corresponding story CSV by project_id
+                story_csv_name = f"{project_id}.csv"
                 if not (lang_dir / story_csv_name).exists():
-                    warnings.append(f"[{lang}] Missing {story_csv_name} for {demo_id}")
+                    warnings.append(f"[{lang}] Missing {story_csv_name} for {project_id}")
                     story_csv_name = None
 
-                lang_data["stories"][demo_id] = {
+                lang_data["stories"][project_id] = {
                     "title": title,
                     "description": description,
                     "order": order,
@@ -162,7 +162,7 @@ def generate_manifest(version):
                     "texts": story_texts
                 }
                 lang_has_content = True
-                print(f"  Found story: {demo_id} ({len(story_texts)} text files)")
+                print(f"  Found story: {project_id} ({len(story_texts)} text files)")
 
         # Find glossary files
         glossary_dir = lang_dir / "texts" / "glossary"
