@@ -3,7 +3,7 @@
     "bundle_format": "0.1",
     "telar_version": "0.6.0",
     "language": "en",
-    "generated": "2025-11-25T17:25:15.688400Z",
+    "generated": "2025-11-25T19:13:20.712431Z",
     "generator": "telar-demo-content/build-demos.py v0.3.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -40,7 +40,8 @@
       "medium": "Oil on canvas, cartographic painting",
       "location": "Archivo General de Indias",
       "credit": "Archivo General de Indias, Seville",
-      "source_url": "https://content.telar.org/iiif/objects/demo-bogota-1614/manifest.json"
+      "source_url": "https://content.telar.org/iiif/objects/demo-bogota-1614/manifest.json",
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-bogota-1614/full/462,/0/default.jpg"
     },
     "demo-muisca-goldwork": {
       "title": "Votive Figure in the Shape of a Residential Compound (Cercado)",
@@ -50,7 +51,8 @@
       "medium": "Gold alloy",
       "location": "Museo del Oro",
       "credit": "Museo del Oro, Bogotá. Registration Number: O08319",
-      "source_url": "https://content.telar.org/iiif/objects/demo-muisca-goldwork/manifest.json"
+      "source_url": "https://content.telar.org/iiif/objects/demo-muisca-goldwork/manifest.json",
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-muisca-goldwork/full/285,/0/default.jpg"
     },
     "demo-ceramic-figure": {
       "title": "Anthropomorphic Ceramic Figure",
@@ -60,7 +62,8 @@
       "medium": "Ceramic",
       "location": "Museo del Oro",
       "credit": "Museo del Oro, Bogotá",
-      "source_url": "https://content.telar.org/iiif/objects/demo-ceramic-figure/manifest.json"
+      "source_url": "https://content.telar.org/iiif/objects/demo-ceramic-figure/manifest.json",
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-ceramic-figure/full/285,/0/default.jpg"
     },
     "demo-piedrahita-title_page": {
       "title": "Historia general de la conqvistas del nvevo reyno de Granada",

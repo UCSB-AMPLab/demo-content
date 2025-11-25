@@ -116,9 +116,25 @@ def read_objects_csv(csv_path, base_url):
                     if value:
                         obj[field] = value
 
-                # Auto-populate source_url for self-hosted objects
-                if not obj.get('source_url') and object_id in self_hosted:
-                    obj['source_url'] = f"{base_url}/iiif/objects/{object_id}/manifest.json"
+                # Auto-populate source_url and thumbnail for self-hosted objects
+                if object_id in self_hosted:
+                    if not obj.get('source_url'):
+                        obj['source_url'] = f"{base_url}/iiif/objects/{object_id}/manifest.json"
+
+                    # Auto-populate thumbnail from info.json sizes
+                    if not obj.get('thumbnail'):
+                        info_path = IIIF_DIR / "objects" / object_id / "info.json"
+                        if info_path.exists():
+                            try:
+                                with open(info_path, 'r') as f:
+                                    info = json.load(f)
+                                sizes = info.get('sizes', [])
+                                if sizes:
+                                    # Use largest available size (first in array)
+                                    largest = sizes[0]
+                                    obj['thumbnail'] = f"{base_url}/iiif/objects/{object_id}/full/{largest['width']},/0/default.jpg"
+                            except Exception as e:
+                                print(f"  Warning: Could not read info.json for {object_id}: {e}")
 
                 objects[object_id] = obj
     except FileNotFoundError:
