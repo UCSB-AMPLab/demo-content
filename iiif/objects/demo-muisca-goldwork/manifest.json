@@ -1,0 +1,121 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://content.telar.org/iiif/objects/demo-muisca-goldwork/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Votive Figure in the Shape of a Residential Compound (Cercado)"
+    ],
+    "es": [
+      "Figura votiva en forma de cercado residencial"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Creator"
+        ],
+        "es": [
+          "Creador"
+        ]
+      },
+      "value": {
+        "en": [
+          "Unknown Muisca Artist"
+        ],
+        "es": [
+          "Artista Muisca desconocido"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Date"
+        ],
+        "es": [
+          "Fecha"
+        ]
+      },
+      "value": {
+        "en": [
+          "600-1600"
+        ],
+        "es": [
+          "600-1600"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Attribution"
+        ],
+        "es": [
+          "Atribución"
+        ]
+      },
+      "value": {
+        "en": [
+          "Museo del Oro, Bogotá. Registration Number: O08319"
+        ],
+        "es": [
+          "Museo del Oro, Bogotá. Número de registro: O08319"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://content.telar.org/iiif/objects/demo-muisca-goldwork/canvas",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Votive Figure in the Shape of a Residential Compound (Cercado)"
+        ],
+        "es": [
+          "Figura votiva en forma de cercado residencial"
+        ]
+      },
+      "height": 821,
+      "width": 1140,
+      "items": [
+        {
+          "id": "https://content.telar.org/iiif/objects/demo-muisca-goldwork/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://content.telar.org/iiif/objects/demo-muisca-goldwork/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://content.telar.org/iiif/objects/demo-muisca-goldwork/demo-muisca-goldwork.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 821,
+                "width": 1140,
+                "service": [
+                  {
+                    "id": "https://content.telar.org/iiif/objects/demo-muisca-goldwork",
+                    "type": "ImageService3",
+                    "profile": "level0"
+                  }
+                ]
+              },
+              "target": "https://content.telar.org/iiif/objects/demo-muisca-goldwork/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [
+      "Gold votive figure from the Muisca culture, demonstrating sophisticated metalworking techniques and ritual practices."
+    ],
+    "es": [
+      "Figura votiva de oro de la cultura Muisca, que demuestra técnicas sofisticadas de orfebrería y prácticas rituales."
+    ]
+  }
+}

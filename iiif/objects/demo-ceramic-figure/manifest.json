@@ -1,0 +1,121 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://content.telar.org/iiif/objects/demo-ceramic-figure/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Anthropomorphic Ceramic Figure"
+    ],
+    "es": [
+      "Figura cerámica antropomorfa"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Creator"
+        ],
+        "es": [
+          "Creador"
+        ]
+      },
+      "value": {
+        "en": [
+          "Unknown Muisca Artist"
+        ],
+        "es": [
+          "Artista Muisca desconocido"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Date"
+        ],
+        "es": [
+          "Fecha"
+        ]
+      },
+      "value": {
+        "en": [
+          "Pre-colonial era"
+        ],
+        "es": [
+          "Época precolonial"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Attribution"
+        ],
+        "es": [
+          "Atribución"
+        ]
+      },
+      "value": {
+        "en": [
+          "Museo del Oro, Bogotá"
+        ],
+        "es": [
+          "Museo del Oro, Bogotá"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://content.telar.org/iiif/objects/demo-ceramic-figure/canvas",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Anthropomorphic Ceramic Figure"
+        ],
+        "es": [
+          "Figura cerámica antropomorfa"
+        ]
+      },
+      "height": 1610,
+      "width": 1140,
+      "items": [
+        {
+          "id": "https://content.telar.org/iiif/objects/demo-ceramic-figure/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://content.telar.org/iiif/objects/demo-ceramic-figure/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://content.telar.org/iiif/objects/demo-ceramic-figure/demo-ceramic-figure.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1610,
+                "width": 1140,
+                "service": [
+                  {
+                    "id": "https://content.telar.org/iiif/objects/demo-ceramic-figure",
+                    "type": "ImageService3",
+                    "profile": "level0"
+                  }
+                ]
+              },
+              "target": "https://content.telar.org/iiif/objects/demo-ceramic-figure/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [
+      "Ceramic figure from the Muisca period representing indigenous material culture and ritual practices before Spanish colonization."
+    ],
+    "es": [
+      "Figura cerámica del período Muisca que representa la cultura material indígena y las prácticas rituales antes de la colonización española."
+    ]
+  }
+}

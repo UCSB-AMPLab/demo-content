@@ -2,14 +2,14 @@
 """
 Telar Demos Generator
 
-Generates demo content manifest and IIIF tiles for telar-demos repository.
+Generates demo content bundles and IIIF tiles for telar-demo-content repository.
 
 Usage:
-    python build-demos.py --version 0.6.0              # Generate both manifest and IIIF
-    python build-demos.py --version 0.6.0 --manifest-only  # Just demo manifest
+    python build-demos.py --version 0.6.0              # Generate both bundle and IIIF
+    python build-demos.py --version 0.6.0 --bundle-only  # Just demo bundle
     python build-demos.py --iiif-only                  # Just IIIF tiles (no version needed)
 
-Version: v0.2.0
+Version: v0.3.0
 """
 
 import argparse
@@ -22,7 +22,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 # Version
-GENERATOR_VERSION = "0.2.0"
+GENERATOR_VERSION = "0.3.0"
+BUNDLE_FORMAT_VERSION = "0.1"
 
 # Paths
 SCRIPT_DIR = Path(__file__).parent
@@ -35,12 +36,12 @@ DEFAULT_BASE_URL = "https://content.telar.org"
 
 
 # =============================================================================
-# DEMO MANIFEST GENERATION
+# DEMO BUNDLE GENERATION
 # =============================================================================
 
 def read_project_csv(csv_path):
-    """Read demo-project.csv and return list of story metadata"""
-    stories = []
+    """Read demo-project.csv and return list of project entries"""
+    projects = []
     try:
         with open(csv_path, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
@@ -49,13 +50,15 @@ def read_project_csv(csv_path):
                 project_id = row.get('project_id', '').strip()
                 title = row.get('title', '').strip()
                 subtitle = row.get('subtitle', '').strip()
+                byline = row.get('byline', '').strip()
 
                 if order and title and project_id:  # Skip empty rows
-                    stories.append({
+                    projects.append({
                         'order': int(order),
                         'project_id': project_id,
                         'title': title,
-                        'description': subtitle
+                        'subtitle': subtitle,
+                        'byline': byline
                     })
     except FileNotFoundError:
         return None
@@ -63,17 +66,381 @@ def read_project_csv(csv_path):
         print(f"  Warning: Error reading {csv_path}: {e}")
         return None
 
-    return stories
+    return projects
 
 
-def generate_manifest(version):
-    """Generate manifest.json for a version by scanning existing files"""
-    manifest = {
-        "version": version,
-        "generated": datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
-        "generator_version": GENERATOR_VERSION,
-        "languages": {}
+def get_self_hosted_object_ids():
+    """Get set of object_ids that have self-hosted IIIF tiles"""
+    csv_path = IIIF_DIR / "all-demo-objects.csv"
+    object_ids = set()
+
+    if not csv_path.exists():
+        return object_ids
+
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                object_id = row.get('object_id', '').strip()
+                if object_id:
+                    object_ids.add(object_id)
+    except Exception:
+        pass
+
+    return object_ids
+
+
+def read_objects_csv(csv_path, base_url):
+    """
+    Read demo-objects.csv and return dict of objects keyed by object_id.
+
+    Auto-populates source_url for self-hosted IIIF objects.
+    """
+    objects = {}
+    self_hosted = get_self_hosted_object_ids()
+
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                object_id = row.get('object_id', '').strip()
+                if not object_id:
+                    continue
+
+                obj = {}
+                # Add non-empty fields
+                for field in ['title', 'description', 'source_url', 'creator',
+                              'period', 'medium', 'dimensions', 'location',
+                              'credit', 'thumbnail']:
+                    value = row.get(field, '').strip()
+                    if value:
+                        obj[field] = value
+
+                # Auto-populate source_url for self-hosted objects
+                if not obj.get('source_url') and object_id in self_hosted:
+                    obj['source_url'] = f"{base_url}/iiif/objects/{object_id}/manifest.json"
+
+                objects[object_id] = obj
+    except FileNotFoundError:
+        return None
+    except Exception as e:
+        print(f"  Warning: Error reading {csv_path}: {e}")
+        return None
+
+    return objects
+
+
+def read_story_csv(csv_path, texts_dir):
+    """
+    Read a story CSV and return list of steps with embedded layer content.
+
+    Args:
+        csv_path: Path to the story CSV file
+        texts_dir: Path to the texts/stories/{project_id}/ directory
+
+    Returns:
+        List of step dicts with layers containing embedded markdown content
+    """
+    steps = []
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                step_num = row.get('step', '').strip()
+                if not step_num:
+                    continue
+
+                step = {
+                    'step': int(step_num),
+                    'object': row.get('object', '').strip(),
+                    'x': float(row.get('x', '0.5').strip() or '0.5'),
+                    'y': float(row.get('y', '0.5').strip() or '0.5'),
+                    'zoom': float(row.get('zoom', '1').strip() or '1'),
+                }
+
+                # Add question/answer if present
+                question = row.get('question', '').strip()
+                answer = row.get('answer', '').strip()
+                if question:
+                    step['question'] = question
+                if answer:
+                    step['answer'] = answer
+
+                # Process layers (layer1, layer2)
+                layers = {}
+                for i in [1, 2]:
+                    button = row.get(f'layer{i}_button', '').strip()
+                    file_name = row.get(f'layer{i}_file', '').strip()
+
+                    if button and file_name:
+                        # Read the markdown file
+                        md_path = texts_dir / file_name
+                        content = ""
+                        if md_path.exists():
+                            with open(md_path, 'r', encoding='utf-8') as md_file:
+                                content = md_file.read().strip()
+                        else:
+                            print(f"    Warning: Layer file not found: {md_path}")
+
+                        layers[f'layer{i}'] = {
+                            'button': button,
+                            'content': content
+                        }
+
+                if layers:
+                    step['layers'] = layers
+
+                steps.append(step)
+
+    except FileNotFoundError:
+        return None
+    except Exception as e:
+        print(f"  Warning: Error reading {csv_path}: {e}")
+        return None
+
+    return steps
+
+
+def read_glossary_files(glossary_dir):
+    """
+    Read all glossary markdown files and return dict keyed by term slug.
+
+    Glossary files have YAML front matter with term_id and title,
+    followed by markdown content.
+    """
+    glossary = {}
+
+    if not glossary_dir.exists():
+        return glossary
+
+    for md_file in sorted(glossary_dir.glob("*.md")):
+        try:
+            with open(md_file, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            # Parse YAML front matter
+            term_id = md_file.stem  # Default to filename without extension
+            title = term_id.replace('-', ' ').title()
+            body = content
+
+            if content.startswith('---'):
+                parts = content.split('---', 2)
+                if len(parts) >= 3:
+                    import re
+                    front_matter = parts[1]
+                    body = parts[2].strip()
+
+                    # Extract term_id
+                    term_match = re.search(r'^term_id:\s*(.+)$', front_matter, re.MULTILINE)
+                    if term_match:
+                        term_id = term_match.group(1).strip().strip('"\'')
+
+                    # Extract title
+                    title_match = re.search(r'^title:\s*(.+)$', front_matter, re.MULTILINE)
+                    if title_match:
+                        title = title_match.group(1).strip().strip('"\'')
+
+            glossary[term_id] = {
+                'term': title,
+                'content': body
+            }
+
+        except Exception as e:
+            print(f"    Warning: Error reading glossary file {md_file}: {e}")
+
+    return glossary
+
+
+def generate_bundle(version, lang, lang_dir, base_url):
+    """
+    Generate a complete telar-demo-bundle.json for a single language.
+
+    Args:
+        version: Telar version string (e.g., "0.6.0")
+        lang: Language code (e.g., "en", "es")
+        lang_dir: Path to the language directory
+        base_url: Base URL for IIIF content
+
+    Returns:
+        Tuple of (bundle_dict, warnings_list)
+    """
+    warnings = []
+
+    bundle = {
+        "_meta": {
+            "bundle_format": BUNDLE_FORMAT_VERSION,
+            "telar_version": version,
+            "language": lang,
+            "generated": datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+            "generator": f"telar-demo-content/build-demos.py v{GENERATOR_VERSION}",
+            "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
+            "description": "Demo content bundle for Telar storytelling framework",
+            "license": "CC BY-NC 4.0"
+        },
+        "iiif_base_url": f"{base_url}/iiif/objects",
+        "project": [],
+        "objects": {},
+        "stories": {},
+        "glossary": {}
     }
+
+    print(f"\nProcessing language: {lang}")
+
+    # Read project CSV
+    project_csv = lang_dir / "demo-project.csv"
+    if project_csv.exists():
+        projects = read_project_csv(project_csv)
+        if projects:
+            bundle["project"] = projects
+            print(f"  Found {len(projects)} project entries")
+    else:
+        warnings.append(f"[{lang}] Missing demo-project.csv")
+
+    # Read objects CSV
+    objects_csv = lang_dir / "demo-objects.csv"
+    if objects_csv.exists():
+        objects = read_objects_csv(objects_csv, base_url)
+        if objects:
+            bundle["objects"] = objects
+            print(f"  Found {len(objects)} objects")
+    else:
+        warnings.append(f"[{lang}] Missing demo-objects.csv")
+
+    # Read stories
+    texts_stories_dir = lang_dir / "texts" / "stories"
+    if not texts_stories_dir.exists():
+        warnings.append(f"[{lang}] Missing texts/stories/ directory")
+    else:
+        for project in bundle["project"]:
+            project_id = project['project_id']
+
+            # Find story CSV
+            story_csv = lang_dir / f"{project_id}.csv"
+            if not story_csv.exists():
+                warnings.append(f"[{lang}] Missing {project_id}.csv")
+                continue
+
+            # Find texts directory for this story
+            story_texts_dir = texts_stories_dir / project_id
+            if not story_texts_dir.exists():
+                warnings.append(f"[{lang}] Missing texts/stories/{project_id}/ directory")
+                story_texts_dir = texts_stories_dir  # Fall back to parent
+
+            # Read story steps with embedded layer content
+            steps = read_story_csv(story_csv, story_texts_dir)
+            if steps:
+                bundle["stories"][project_id] = {"steps": steps}
+                print(f"  Story '{project_id}': {len(steps)} steps")
+
+    # Read glossary
+    glossary_dir = lang_dir / "texts" / "glossary"
+    if glossary_dir.exists():
+        glossary = read_glossary_files(glossary_dir)
+        if glossary:
+            bundle["glossary"] = glossary
+            print(f"  Found {len(glossary)} glossary entries")
+    else:
+        warnings.append(f"[{lang}] Missing texts/glossary/ directory")
+
+    return bundle, warnings
+
+
+def validate_bundle(bundle, lang):
+    """
+    Validate generated bundle for common CSV parsing issues.
+
+    Returns list of validation warnings.
+    """
+    warnings = []
+
+    # Patterns that suggest CSV parsing errors (field got shifted)
+    suspicious_bylines = ['navigation', 'glossary', 'widgets', 'linking']
+    suspicious_buttons = ['md', '.md', 'true', 'false']
+
+    # Validate project entries
+    for proj in bundle.get("project", []):
+        project_id = proj.get("project_id", "unknown")
+
+        # Check for suspiciously short subtitle (might be truncated)
+        subtitle = proj.get("subtitle", "")
+        if subtitle and len(subtitle) < 20 and ',' not in subtitle:
+            # Short subtitle without commas might be truncated
+            byline = proj.get("byline", "")
+            if byline.lower() in suspicious_bylines:
+                warnings.append(
+                    f"[{lang}] CSV PARSE ERROR in project '{project_id}': "
+                    f"byline='{byline}' looks like part of subtitle. "
+                    f"Check if subtitle field needs quotes."
+                )
+
+        # Check byline format
+        byline = proj.get("byline", "")
+        if byline and not byline.startswith("by") and byline.lower() in suspicious_bylines:
+            warnings.append(
+                f"[{lang}] CSV PARSE ERROR in project '{project_id}': "
+                f"byline='{byline}' looks like part of subtitle got shifted. "
+                f"Add quotes around subtitle field in demo-project.csv"
+            )
+
+    # Validate stories
+    for story_id, story in bundle.get("stories", {}).items():
+        for step in story.get("steps", []):
+            step_num = step.get("step", "?")
+
+            # Check for empty layer content when button is defined
+            for layer_key in ["layer1", "layer2"]:
+                layer = step.get("layers", {}).get(layer_key, {})
+                if layer:
+                    button = layer.get("button", "")
+                    content = layer.get("content", "")
+
+                    if button and not content:
+                        warnings.append(
+                            f"[{lang}] Empty layer content in '{story_id}' step {step_num}: "
+                            f"button='{button}' but no content loaded"
+                        )
+
+                    # Check for suspicious button names (might be file extension)
+                    if button.lower() in suspicious_buttons or button.endswith('.md'):
+                        warnings.append(
+                            f"[{lang}] CSV PARSE ERROR in '{story_id}' step {step_num}: "
+                            f"button='{button}' looks like a filename. "
+                            f"Check if answer field needs quotes."
+                        )
+
+            # Check for suspiciously short answers that might be truncated
+            answer = step.get("answer", "")
+            if answer and len(answer) < 30:
+                # Very short answers after a question might indicate truncation
+                question = step.get("question", "")
+                if question and len(question) > len(answer) * 2:
+                    # Question much longer than answer is suspicious
+                    pass  # Could add warning but might have false positives
+
+    # Validate objects
+    for obj_id, obj in bundle.get("objects", {}).items():
+        # Check for missing source_url
+        if not obj.get("source_url"):
+            warnings.append(
+                f"[{lang}] Object '{obj_id}' missing source_url"
+            )
+
+    return warnings
+
+
+def generate_bundles_for_version(version, base_url=None):
+    """
+    Generate telar-demo-bundle.json for all languages in a version.
+
+    Args:
+        version: Telar version string (e.g., "0.6.0")
+        base_url: Base URL for IIIF content
+
+    Returns:
+        Tuple of (success_bool, all_warnings_list)
+    """
+    if not base_url:
+        base_url = DEFAULT_BASE_URL
 
     version_dir = DEMOS_DIR / f"v{version}"
 
@@ -81,106 +448,41 @@ def generate_manifest(version):
         print(f"Error: Version directory does not exist: {version_dir}")
         sys.exit(1)
 
-    warnings = []
+    all_warnings = []
+    bundles_generated = 0
 
     # Scan each language directory
     for lang_dir in sorted(version_dir.iterdir()):
         if not lang_dir.is_dir() or lang_dir.name.startswith('.'):
             continue
-        if lang_dir.name == 'manifest.json':
+        # Skip non-language directories
+        if lang_dir.name in ['manifest.json', 'telar-demo-bundle.json']:
             continue
 
         lang = lang_dir.name
-        print(f"\nProcessing language: {lang}")
 
-        lang_data = {
-            "files": {},
-            "stories": {},
-            "glossary": []
-        }
-        lang_has_content = False
+        # Generate bundle for this language
+        bundle, warnings = generate_bundle(version, lang, lang_dir, base_url)
+        all_warnings.extend(warnings)
 
-        # Check for required CSV files
-        project_csv = lang_dir / "demo-project.csv"
-        objects_csv = lang_dir / "demo-objects.csv"
+        # Validate bundle for common issues
+        validation_warnings = validate_bundle(bundle, lang)
+        all_warnings.extend(validation_warnings)
 
-        if project_csv.exists():
-            lang_data["files"]["project"] = "demo-project.csv"
-            lang_has_content = True
-        else:
-            warnings.append(f"[{lang}] Missing demo-project.csv")
+        # Check if bundle has content
+        if not bundle["project"] and not bundle["objects"]:
+            all_warnings.append(f"[{lang}] No content found, skipping language")
+            continue
 
-        if objects_csv.exists():
-            lang_data["files"]["objects"] = "demo-objects.csv"
-        else:
-            warnings.append(f"[{lang}] Missing demo-objects.csv")
+        # Write bundle file
+        bundle_path = lang_dir / "telar-demo-bundle.json"
+        with open(bundle_path, 'w', encoding='utf-8') as f:
+            json.dump(bundle, f, indent=2, ensure_ascii=False)
 
-        # Read story metadata from project CSV
-        story_metadata = read_project_csv(project_csv) if project_csv.exists() else []
+        print(f"  Written: {bundle_path}")
+        bundles_generated += 1
 
-        # Story CSVs are now named by project_id (checked per-story below)
-
-        # Find story text folders
-        texts_stories_dir = lang_dir / "texts" / "stories"
-        if not texts_stories_dir.exists():
-            warnings.append(f"[{lang}] Missing texts/stories/ directory")
-        else:
-            story_folders = [d for d in texts_stories_dir.iterdir() if d.is_dir()]
-
-            # Process each story from project CSV (by order)
-            for story_meta in story_metadata:
-                project_id = story_meta['project_id']
-                order = story_meta['order']
-
-                # Find matching story directory
-                story_dir = texts_stories_dir / project_id
-                if not story_dir.exists():
-                    warnings.append(f"[{lang}] Missing story directory for project_id '{project_id}' (order {order})")
-                    continue
-
-                story_texts = [f.name for f in sorted(story_dir.glob("*.md"))]
-
-                if not story_texts:
-                    warnings.append(f"[{lang}] No markdown files in texts/stories/{project_id}/")
-                    continue
-
-                # Get metadata from project CSV
-                title = story_meta['title']
-                description = story_meta['description']
-
-                # Find corresponding story CSV by project_id
-                story_csv_name = f"{project_id}.csv"
-                if not (lang_dir / story_csv_name).exists():
-                    warnings.append(f"[{lang}] Missing {story_csv_name} for {project_id}")
-                    story_csv_name = None
-
-                lang_data["stories"][project_id] = {
-                    "title": title,
-                    "description": description,
-                    "order": order,
-                    "csv": story_csv_name,
-                    "texts": story_texts
-                }
-                lang_has_content = True
-                print(f"  Found story: {project_id} ({len(story_texts)} text files)")
-
-        # Find glossary files
-        glossary_dir = lang_dir / "texts" / "glossary"
-        if glossary_dir.exists():
-            glossary_files = [f.name for f in sorted(glossary_dir.glob("*.md"))]
-            lang_data["glossary"] = glossary_files
-            if glossary_files:
-                print(f"  Found {len(glossary_files)} glossary files")
-        else:
-            warnings.append(f"[{lang}] Missing texts/glossary/ directory")
-
-        # Only add language if it has actual content
-        if lang_has_content:
-            manifest["languages"][lang] = lang_data
-        else:
-            warnings.append(f"[{lang}] No content found, skipping language")
-
-    return manifest, warnings
+    return bundles_generated > 0, all_warnings
 
 
 # =============================================================================
@@ -434,8 +736,13 @@ def create_iiif_manifest(output_dir, object_id, metadata, base_url):
     print(f"    Created multilingual manifest.json")
 
 
-def generate_iiif_tiles(base_url=None):
-    """Generate IIIF tiles for all objects in iiif/all-demo-objects.csv"""
+def generate_iiif_tiles(base_url=None, force=False):
+    """
+    Generate IIIF tiles for all objects in iiif/all-demo-objects.csv
+
+    By default, skips objects that already have tiles (info.json exists).
+    Use force=True to regenerate all tiles.
+    """
     if not check_iiif_dependencies():
         return False
 
@@ -492,8 +799,15 @@ def generate_iiif_tiles(base_url=None):
         # Output directory for this object
         object_output = output_dir / object_id
 
+        # Check if already generated (skip unless --force)
+        info_json = object_output / "info.json"
+        if info_json.exists() and not force:
+            print(f"    Skipping (already exists, use --force to regenerate)")
+            skipped += 1
+            continue
+
         try:
-            # Remove existing output
+            # Remove existing output if regenerating
             if object_output.exists():
                 shutil.rmtree(object_output)
             object_output.mkdir(parents=True, exist_ok=True)
@@ -633,25 +947,88 @@ def validate_all_iiif_manifests():
 
 
 # =============================================================================
+# VERSIONS INDEX GENERATION
+# =============================================================================
+
+def generate_versions_index():
+    """
+    Generate demos/versions.json by scanning existing version directories.
+
+    Scans the demos/ directory for version folders (v0.6.0, v0.7.0, etc.)
+    and writes a versions.json index file.
+
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    if not DEMOS_DIR.exists():
+        print("Warning: demos/ directory does not exist")
+        return False
+
+    # Find all version directories (v0.6.0, v0.7.0, etc.)
+    version_dirs = []
+    for item in DEMOS_DIR.iterdir():
+        if item.is_dir() and item.name.startswith('v'):
+            # Extract version number (remove 'v' prefix)
+            version_str = item.name[1:]
+            # Validate it's a proper version (has at least one bundle file)
+            has_bundle = any(
+                (item / lang / 'telar-demo-bundle.json').exists()
+                for lang in ['en', 'es']
+                if (item / lang).exists()
+            )
+            if has_bundle:
+                version_dirs.append(version_str)
+
+    if not version_dirs:
+        print("Warning: No version directories found in demos/")
+        return False
+
+    # Sort versions semantically
+    def parse_version(v):
+        try:
+            parts = v.split('.')
+            return tuple(int(p) for p in parts)
+        except ValueError:
+            return (0, 0, 0)
+
+    version_dirs.sort(key=parse_version)
+
+    # Write versions.json
+    versions_data = {"versions": version_dirs}
+    versions_path = DEMOS_DIR / "versions.json"
+
+    with open(versions_path, 'w', encoding='utf-8') as f:
+        json.dump(versions_data, f, indent=2, ensure_ascii=False)
+
+    print(f"\n[Versions Index]")
+    print(f"  Versions found: {', '.join(version_dirs)}")
+    print(f"  Written to: {versions_path}")
+
+    return True
+
+
+# =============================================================================
 # MAIN
 # =============================================================================
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Generate manifest and IIIF tiles for Telar demo content",
+        description="Generate demo bundles and IIIF tiles for Telar demo content",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-    python build-demos.py --version 0.6.0              # Generate both
-    python build-demos.py --version 0.6.0 --manifest-only  # Just manifest
-    python build-demos.py --iiif-only                  # Just IIIF tiles
+    python build-demos.py --version 0.6.0              # Generate both bundle and IIIF
+    python build-demos.py --version 0.6.0 --bundle-only  # Just demo bundle
+    python build-demos.py --iiif-only                  # Just IIIF tiles (skips existing)
+    python build-demos.py --iiif-only --force          # Regenerate all IIIF tiles
         """
     )
     parser.add_argument("--version", "-v", help="Telar version (e.g., 0.6.0)")
-    parser.add_argument("--manifest-only", action="store_true", help="Generate only demo manifest")
+    parser.add_argument("--bundle-only", action="store_true", help="Generate only demo bundle")
     parser.add_argument("--iiif-only", action="store_true", help="Generate only IIIF tiles")
     parser.add_argument("--base-url", help=f"Base URL for IIIF (default: {DEFAULT_BASE_URL})")
     parser.add_argument("--skip-validation", action="store_true", help="Skip IIIF manifest validation")
+    parser.add_argument("--force", action="store_true", help="Force regenerate IIIF tiles even if they exist")
 
     args = parser.parse_args()
 
@@ -659,8 +1036,8 @@ Examples:
     print("-" * 40)
 
     # Validate arguments
-    if args.iiif_only and args.manifest_only:
-        print("Error: Cannot use both --iiif-only and --manifest-only")
+    if args.iiif_only and args.bundle_only:
+        print("Error: Cannot use both --iiif-only and --bundle-only")
         sys.exit(1)
 
     if not args.iiif_only and not args.version:
@@ -669,10 +1046,10 @@ Examples:
 
     success = True
 
-    # Generate IIIF if not manifest-only
-    if not args.manifest_only:
+    # Generate IIIF if not bundle-only
+    if not args.bundle_only:
         print("\n[IIIF Generation]")
-        if not generate_iiif_tiles(base_url=args.base_url):
+        if not generate_iiif_tiles(base_url=args.base_url, force=args.force):
             success = False
 
         # Validate IIIF manifests unless skipped
@@ -680,11 +1057,14 @@ Examples:
             if not validate_all_iiif_manifests():
                 success = False
 
-    # Generate manifest if not iiif-only
+    # Generate bundle if not iiif-only
     if not args.iiif_only:
-        print(f"\n[Manifest Generation for v{args.version}]")
+        print(f"\n[Bundle Generation for v{args.version}]")
 
-        manifest, warnings = generate_manifest(args.version)
+        bundle_success, warnings = generate_bundles_for_version(
+            args.version,
+            base_url=args.base_url
+        )
 
         if warnings:
             print("\n" + "=" * 40)
@@ -693,17 +1073,12 @@ Examples:
                 print(f"  - {warning}")
             print("=" * 40)
 
-        if not manifest["languages"]:
+        if not bundle_success:
             print("\nError: No valid language content found.")
             success = False
         else:
-            version_dir = DEMOS_DIR / f"v{args.version}"
-            manifest_path = version_dir / "manifest.json"
-            with open(manifest_path, 'w', encoding='utf-8') as f:
-                json.dump(manifest, f, indent=2, ensure_ascii=False)
-
-            print(f"\nManifest written to {manifest_path}")
-            print(f"Languages: {', '.join(manifest['languages'].keys())}")
+            # Update versions index after successful bundle generation
+            generate_versions_index()
 
     print("\nDone!")
     sys.exit(0 if success else 1)
