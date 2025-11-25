@@ -1,4 +1,4 @@
-**Related terms feature:**
+**Related terms feature:** see [glossary auto-linking](https://telar.org/docs/content-structure/#glossary-auto-linking) in the Telar docs
 
 Each glossary entry can specify related terms that appear as clickable links at the bottom of the glossary panel. This helps readers explore connected concepts.
 

@@ -16,6 +16,6 @@
 
 **Imágenes y videos** que puedes incrustar directamente en los paneles (verás más sobre esto en el paso 10)
 
-Para ver todos los formatos disponibles, consulta la [Guía de sintaxis Markdown](https://telar.org/docs/reference/markdown-syntax/).
+Para ver todos los formatos disponibles, consulta la [guía de sintaxis de Markdown](https://telar.org/guia/referencia/sintaxis-markdown/) en la guía de Telar.
 
 [^1]: El Museo del Oro en Bogotá conserva una amplia colección de estas piezas.

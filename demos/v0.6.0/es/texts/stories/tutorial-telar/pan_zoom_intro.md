@@ -1,4 +1,4 @@
-Telar te da control preciso sobre lo que ve la persona lectora en cada paso. Cada paso define:
+Telar te da control preciso sobre lo que ve la persona lectora en cada paso (ver el [sistema de coordenadas](https://telar.org/guia/integracion-iiif/#sistema-de-coordenadas) en la guía de Telar). Cada paso define:
 - **Coordenada x** (0 a 1, de izquierda a derecha)
 - **Coordenada y** (0 a 1, de arriba hacia abajo)
 - **Nivel de zoom** (1.0 = imagen completa; los números mayores se acercan)

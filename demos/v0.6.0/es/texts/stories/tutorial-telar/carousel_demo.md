@@ -1,8 +1,8 @@
-Telar incluye tres **widgets interactivos** para presentar información de forma estructurada:
+Telar incluye tres **widgets interactivos** para presentar información de forma estructurada (ver la [sección de widgets](https://telar.org/guia/estructura-de-contenido/#widgets-en-los-paneles-de-la-historia) en la guía de Telar):
 
 ## Widget de carrusel
 
-El widget de carrusel muestra una secuencia de 2 a 6 imágenes con leyendas. Úsalo para:
+El [widget de carrusel](https://telar.org/guia/estructura-de-contenido/#widget-de-carrusel) en la guía de Telar muestra una secuencia de 2 a 6 imágenes con leyendas. Úsalo para:
 - Mostrar materiales relacionados
 - Comparar diferentes perspectivas
 - Presentar una secuencia visual
@@ -46,5 +46,5 @@ caption: UC Santa Barbara Library
 :::
 
 **Otros widgets:**
-- **Tabs**: cambia entre 2 y 4 perspectivas o puntos de vista (los viste en los pasos 3 y 8)
-- **Accordion**: presenta información cronológica o jerárquica en paneles desplegables (consulta la capa 2 de este paso)
+- **Tabs**: cambia entre 2 y 4 perspectivas o puntos de vista ([ver widget de pestañas](https://telar.org/guia/estructura-de-contenido/#widget-de-pestanas) en la guía de Telar)
+- **Accordion**: presenta información cronológica o jerárquica en paneles desplegables ([ver widget de acordeón](https://telar.org/guia/estructura-de-contenido/#widget-de-acordeon) en la guía de Telar)

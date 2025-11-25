@@ -1,4 +1,4 @@
-Telar panels can include **rich media** alongside text:
+Telar panels can include **rich media** alongside text (see the [Markdown syntax guide](https://telar.org/docs/reference/markdown-syntax/) in the Telar docs for embedding details):
 
 **Images** can be embedded directly using [[markdown]] syntax. Control image sizing with `{sm}`, `{md}`, `{lg}`, or `{full}` tags:
 
@@ -7,8 +7,8 @@ Telar panels can include **rich media** alongside text:
 **Videos** can also be embedded, allowing you to combine [[iiif]] images with multimedia explanations, oral histories, or documentary footage.
 
 **Combine everything** to create compelling scholarly narratives:
-- [[iiif|IIIF images]] from global repositories
-- Locally-hosted materials with auto-generated [[iiif-tiles]]
+- [[iiif|IIIF images]] from global repositories (see the [IIIF integration guide](https://telar.org/docs/iiif-integration/) in the Telar docs)
+- Locally-hosted materials with auto-generated [[iiif-tiles]] (see [Local IIIF images](https://telar.org/docs/iiif-integration/#option-1-local-images) in the Telar docs)
 - Pan and zoom navigation to guide attention
 - Two-layer panel system for progressive disclosure
 - Full [[markdown]] formatting with footnotes

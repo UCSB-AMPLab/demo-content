@@ -1,4 +1,4 @@
-**Función de términos relacionados:**
+**Función de términos relacionados:** ver [autoenlaces del glosario](https://telar.org/guia/estructura-de-contenido/#autoenlaces-del-glosario) en la guía de Telar
 
 Cada entrada de glosario puede incluir términos relacionados que aparecen como enlaces al final del panel del glosario. Así la persona lectora puede explorar conceptos conectados.
 

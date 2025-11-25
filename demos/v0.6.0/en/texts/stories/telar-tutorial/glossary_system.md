@@ -1,4 +1,4 @@
-Telar's glossary system provides **wiki-style automatic linking** of technical terms throughout your story content.
+Telar's glossary system provides **wiki-style automatic linking** of technical terms throughout your story content (see [glossary auto-linking](https://telar.org/docs/content-structure/#glossary-auto-linking) in the Telar docs).
 
 **How it works:**
 1. Create glossary entry files in `components/texts/glossary/`

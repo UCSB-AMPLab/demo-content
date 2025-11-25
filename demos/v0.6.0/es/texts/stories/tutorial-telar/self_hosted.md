@@ -1,6 +1,6 @@
 No tienes que depender solo de colecciones institucionales: **Telar también funciona con tus propias imágenes**.
 
-**Cómo funciona:**
+**Cómo funciona:** consulta [Imágenes IIIF locales](https://telar.org/guia/integracion-iiif/#opcion-1-imagenes-locales) en la guía de Telar
 1. Coloca imágenes en alta resolución en `components/images/`
 2. Telar genera [[iiif-tiles]] de manera automática durante el *build*
 3. Tus imágenes quedan con las mismas opciones de zoom y paneo que los materiales de grandes instituciones

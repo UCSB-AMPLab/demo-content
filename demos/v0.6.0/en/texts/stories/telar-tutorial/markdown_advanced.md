@@ -16,6 +16,6 @@
 
 **Images and videos** can be embedded directly in panels (more on this in Step 10)
 
-For complete details on all available formatting options, see the [Markdown Syntax Guide](https://telar.org/docs/reference/markdown-syntax/).
+For complete details on all available formatting options, see the [Markdown Syntax Guide](https://telar.org/docs/reference/markdown-syntax/) in the Telar docs.
 
 [^1]: The Museo del Oro in Bogotá holds extensive collections of these artifacts.

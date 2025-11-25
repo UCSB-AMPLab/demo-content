@@ -1,6 +1,6 @@
 ## Accordion Widget
 
-The accordion widget presents 2-6 collapsible panels, perfect for chronological timelines or hierarchical information.
+The [accordion widget](https://telar.org/docs/content-structure/#accordion-widget) in the Telar docs presents 2-6 collapsible panels, perfect for chronological timelines or hierarchical information.
 
 **Example - History of Santa Barbara, California:**
 

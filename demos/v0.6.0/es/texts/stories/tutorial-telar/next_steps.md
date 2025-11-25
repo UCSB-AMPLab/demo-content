@@ -1,10 +1,10 @@
 **¿Quieres crear tus propias historias?**
 
 **Documentación:**
-- [Guía de inicio](https://telar.org/docs/getting-started/) - Configura tu primer sitio en Telar
-- [Flujos de trabajo](https://telar.org/docs/workflows/) - Aprende el proceso de creación de contenido
-- [Referencia de sintaxis Markdown](https://telar.org/docs/reference/markdown-syntax/) - Guía completa de formato
-- [Guía de widgets](https://telar.org/docs/reference/widgets/) - Usa el carrusel, las tabs y el acordeón
+- [Guía de inicio](https://telar.org/guia/primeros-pasos/) - Configura tu primer sitio en Telar
+- [Flujos de trabajo](https://telar.org/guia/flujos-de-trabajo/) - Aprende el proceso de creación de contenido
+- [Referencia de sintaxis Markdown](https://telar.org/guia/referencia/sintaxis-markdown/) - Guía completa de formato
+- [Widgets](https://telar.org/guia/estructura-de-contenido/#widgets-en-los-paneles-de-la-historia) - Usa el carrusel, las tabs y el acordeón
 
 **Historias de ejemplo:**
 - Explora la [demo de Paisajes Coloniales](https://colonial-landscapes.com) - Un proyecto académico que inspiró Telar

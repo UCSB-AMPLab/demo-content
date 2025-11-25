@@ -4,7 +4,7 @@
 - [Getting Started Guide](https://telar.org/docs/getting-started/) - Set up your first Telar site
 - [Workflows](https://telar.org/docs/workflows/) - Learn the content creation process
 - [Markdown Syntax Reference](https://telar.org/docs/reference/markdown-syntax/) - Complete formatting guide
-- [Widget Guide](https://telar.org/docs/reference/widgets/) - Using carousel, tabs, and accordion
+- [Widgets](https://telar.org/docs/content-structure/#widgets-in-story-panels) - Carousel, tabs, and accordion syntax
 
 **Example stories:**
 - Explore the [Colonial Landscapes demo](https://colonial-landscapes.com) - A full scholarly project that inspired Telar

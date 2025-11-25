@@ -22,4 +22,4 @@ Use the **arrow buttons** that appear at the bottom of the screen. These buttons
 Swipe gestures also work on mobile devices.
 :::
 
-**Formatting text:** Panel content supports full [[markdown]] syntax - **bold**, *italics*, [links](https://telar.org), lists, blockquotes, and even footnotes for citations.
+**Formatting text:** Panel content supports full [[markdown]] syntax - **bold**, *italics*, [links](https://telar.org), lists, blockquotes, and even footnotes for citations (see the [Markdown syntax guide](https://telar.org/docs/reference/markdown-syntax/) in the Telar docs).

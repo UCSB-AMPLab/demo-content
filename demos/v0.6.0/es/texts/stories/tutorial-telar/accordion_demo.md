@@ -1,6 +1,6 @@
 ## Widget de acordeón
 
-El widget de acordeón muestra de 2 a 6 paneles desplegables, ideal para cronologías o información jerárquica.
+El [widget de acordeón](https://telar.org/guia/estructura-de-contenido/#widget-de-acordeon) en la guía de Telar muestra de 2 a 6 paneles desplegables, ideal para cronologías o información jerárquica.
 
 **Ejemplo - Historia de Santa Bárbara, California:**
 

@@ -1,4 +1,4 @@
-El sistema de glosario de Telar ofrece **enlaces automáticos tipo wiki** para los términos técnicos en tu historia.
+El sistema de glosario de Telar ofrece **enlaces automáticos tipo wiki** para los términos técnicos en tu historia (ver [autoenlaces del glosario](https://telar.org/guia/estructura-de-contenido/#autoenlaces-del-glosario) en la guía de Telar).
 
 **Cómo funciona:**
 1. Crea archivos de glosario en `components/texts/glossary/`

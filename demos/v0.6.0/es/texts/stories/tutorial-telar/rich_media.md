@@ -1,4 +1,4 @@
-Los paneles de Telar pueden incluir **contenido multimedia** junto con el texto:
+Los paneles de Telar pueden incluir **contenido multimedia** junto con el texto (ver la [guía de sintaxis de Markdown](https://telar.org/guia/referencia/sintaxis-markdown/) en la guía de Telar para detalles de incrustación):
 
 **Imágenes**: incrústalas con sintaxis de [[markdown]] y controla su tamaño con `{sm}`, `{md}`, `{lg}` o `{full}`:
 
@@ -7,8 +7,8 @@ Los paneles de Telar pueden incluir **contenido multimedia** junto con el texto:
 **Videos**: también puedes integrarlos para combinar imágenes [[iiif]] con explicaciones, testimonios u otros recursos audiovisuales.
 
 **Combina todo** para crear narrativas académicas convincentes:
-- [[iiif|Imágenes IIIF]] de repositorios globales
-- Materiales locales con [[iiif-tiles]] autogeneradas
+- [[iiif|Imágenes IIIF]] de repositorios globales (ver la [guía de integración IIIF](https://telar.org/guia/integracion-iiif/) en la guía de Telar)
+- Materiales locales con [[iiif-tiles]] autogeneradas (ver [Imágenes IIIF locales](https://telar.org/guia/integracion-iiif/#opcion-1-imagenes-locales) en la guía de Telar)
 - Paneo y zoom para guiar la atención
 - Sistema de dos capas en los paneles para revelar contenido de forma progresiva
 - Formato completo en [[markdown]] con notas al pie
