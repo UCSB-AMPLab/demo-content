@@ -3,7 +3,7 @@
     "bundle_format": "0.1",
     "telar_version": "0.6.0",
     "language": "es",
-    "generated": "2025-11-25T22:38:14.218337Z",
+    "generated": "2025-11-26T01:21:42.173876Z",
     "generator": "telar-demo-content/build-demos.py v0.3.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -22,7 +22,7 @@
       "order": 2,
       "project_id": "demo-paisajes",
       "title": "Una pintura de la sabana",
-      "subtitle": "Explora las transformaciones sociales y ambientales de la Sabana de Bogotá en el siglo XVII.",
+      "subtitle": "Explora las transformaciones sociales y ambientales de la Sabana de Bogotá en el siglo XVII (y mira lo que puede hacer Telar)",
       "byline": "basado en el Cap. 1 del proyecto [Paisajes Coloniales](https://paisajescoloniales.com)"
     }
   ],
