@@ -300,10 +300,9 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None):
                         if md_path.exists():
                             with open(md_path, 'r', encoding='utf-8') as md_file:
                                 raw_content = md_file.read().strip()
-                                # Strip YAML frontmatter
-                                md_content = strip_yaml_frontmatter(raw_content)
-                                # Convert markdown to HTML with glossary links
-                                content = convert_markdown_to_html(md_content, glossary_terms)
+                                # Strip YAML frontmatter - store RAW markdown
+                                # csv_to_json.py will process widgets, images, markdown, glossary links
+                                content = strip_yaml_frontmatter(raw_content)
                         else:
                             print(f"    Warning: Layer file not found: {md_path}")
 
@@ -364,12 +363,10 @@ def read_glossary_files(glossary_dir):
                     if title_match:
                         title = title_match.group(1).strip().strip('"\'')
 
-            # Convert markdown body to HTML
-            html_content = convert_markdown_to_html(body)
-
+            # Store raw markdown - csv_to_json.py will handle conversion
             glossary[term_id] = {
                 'term': title,
-                'content': html_content
+                'content': body
             }
 
         except Exception as e:
