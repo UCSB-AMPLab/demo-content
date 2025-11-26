@@ -3,7 +3,7 @@
     "bundle_format": "0.1",
     "telar_version": "0.6.0",
     "language": "en",
-    "generated": "2025-11-26T01:21:42.116145Z",
+    "generated": "2025-11-26T01:37:50.829335Z",
     "generator": "telar-demo-content/build-demos.py v0.3.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -22,7 +22,7 @@
       "order": 2,
       "project_id": "paisajes-demo",
       "title": "A Painting of the Savanna",
-      "subtitle": "Explore social and environmental transformations around 17th-century Bogotá (and see what Telar can do!)",
+      "subtitle": "Explore social and environmental change around 17th-century Bogotá (and see what Telar can do!)",
       "byline": "based on Ch. 1 of the [Colonial Landscapes](https://paisajescoloniales.com) project"
     }
   ],
@@ -302,7 +302,7 @@
           "y": 0.5,
           "zoom": 1.0,
           "question": "Want to keep exploring?",
-          "answer": "This demo covers just a small part of *Colonial Landscapes*, a larger project that explores the social and environmental transformations experienced by Indigenous populations and landscapes in present-day Colombia during the sixteenth and seventeenth centuries, developed by Santiago Muñoz, Adelaida Ávila, and María Alejandra Orduz Avella, and which inspired Telar. [Explore Colonial Landscapes →](https://colonial-landscapes.com)"
+          "answer": "This demo covers just a small part of *Colonial Landscapes*, a larger project that explores the social and environmental transformations experienced by Indigenous populations and landscapes in present-day Colombia during the 16th and 17th centuries, developed by Santiago Muñoz, Adelaida Ávila, and María Alejandra Orduz Avella, and which inspired Telar. <br>[Explore Colonial Landscapes →](https://colonial-landscapes.com)"
         }
       ]
     }
