@@ -3,7 +3,7 @@
     "bundle_format": "0.1",
     "telar_version": "0.6.0",
     "language": "es",
-    "generated": "2025-11-26T01:37:50.897817Z",
+    "generated": "2025-11-26T01:43:57.292966Z",
     "generator": "telar-demo-content/build-demos.py v0.3.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -302,7 +302,7 @@
           "y": 0.5,
           "zoom": 1.0,
           "question": "¿Quieres seguir explorando?",
-          "answer": "Esta demonstración cubre apenas una pequeña parte de los contenidos de *Paisajes Coloniales*, un proyecto más amplio que explora las transformaciones sociales y ambientales que vivieron las poblaciones indígenas y los paisajes de la actual Colombia durante los siglos XVI y XVII, desarrollado por Santiago Muñoz, Adelaida Ávila y María Alejandra Orduz Avella, y que inspiró Telar. [Explora Paisajes Coloniales →](https://paisajescoloniales.com)"
+          "answer": "Esta demonstración cubre apenas una pequeña parte de los contenidos de *Paisajes Coloniales*, un proyecto más amplio que explora las transformaciones sociales y ambientales que vivieron las poblaciones indígenas y los paisajes de la actual Colombia durante los siglos XVI y XVII, desarrollado por Santiago Muñoz, Adelaida Ávila y María Alejandra Orduz Avella, y que inspiró Telar. <br><br><a href=\"https://paisajescoloniales.com\" class=\"btn btn-primary\" target=\"_blank\">Explora Paisajes Coloniales →</a>"
         }
       ]
     }
