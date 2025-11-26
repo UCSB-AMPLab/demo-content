@@ -19,11 +19,11 @@ caption: Ubicación geográfica de la Sabana de Bogotá en la Colombia actual.
 
 image: https://content.telar.org/assets/images/paisajes-demo/demo-def-audiencia.png
 alt: Definición de AUDIENCIA del diccionario de 1611
-caption: Tesoro de la lengua castellana, o española. Sebastián de Covarrubias Orozco, 1611. Cortesía de John P. Robarts Research Library, Toronto.
+caption: Sebastián de Covarrubias Orozco, *Tesoro de la lengua castellana, o Española*, 1611. Cortesía de John P. Robarts Research Library, Toronto.
 
 ---
 
 image: https://content.telar.org/assets/images/paisajes-demo/demo-recopilacion-leyes-indias.jpg
 alt: Documento legal sobre la creación de Audiencias
-caption: Sobre la creación de audiencias. Recopilación de Leyes de los Reinos de las Indias.
+caption: Sobre la creación de audiencias. *Recopilación de Leyes de los Reinos de las Indias*.
 :::

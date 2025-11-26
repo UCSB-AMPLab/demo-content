@@ -21,11 +21,11 @@ caption: Geographic location of the Bogotá savanna in modern-day Colombia
 
 image: https://content.telar.org/assets/images/paisajes-demo/demo-def-audiencia.png
 alt: AUDIENCIA definition from 1611 dictionary
-caption: AUDIENCIA, the court of justice where motions are heard, it sometimes refers to chanceries. From Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco, 1611
+caption: AUDIENCIA, the court of justice where motions are heard, it sometimes refers to chanceries. From Sebastián de Covarrubias Orozco, *Tesoro de la lengua castellana, o Española*, 1611
 
 ---
 
 image: https://content.telar.org/assets/images/paisajes-demo/demo-recopilacion-leyes-indias.jpg
 alt: Legal document on creation of Audiencias
-caption: On the creation of Audiencias. Recopilación de Leyes de los Reinos de las Indias, 1681
+caption: On the creation of Audiencias. *Recopilación de Leyes de los Reinos de las Indias*, 1681
 :::
