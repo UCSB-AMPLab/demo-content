@@ -11,5 +11,6 @@ The IIIF framework consists of several complementary APIs, most notably the [Ima
 By 2025, IIIF has been adopted by over 500 institutions worldwide, including the [British Library](https://www.bl.uk/), the [Vatican Library](https://digi.vatlib.it/), [Yale University](https://collections.library.yale.edu/), the [Smithsonian](https://www.si.edu/), the [J. Paul Getty Museum](https://www.getty.edu/), and national libraries across Europe, Asia, and the Americas.
 
 **Learn more:**
+
 - [Official IIIF website](https://iiif.io)
 - [IIIF on Wikipedia](https://en.wikipedia.org/wiki/International_Image_Interoperability_Framework)

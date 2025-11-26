@@ -13,5 +13,6 @@ This is the same technology used by [Google Maps](https://en.wikipedia.org/wiki/
 When Telar generates IIIF tiles from your local images, it creates this pyramid structure automatically, producing thousands of individual tile images from a single source photograph or scan.
 
 **Learn more:**
+
 - [IIIF Image API specification](https://iiif.io/api/image/3.0/)
 - [Deep Zoom on Wikipedia](https://en.wikipedia.org/wiki/Deep_Zoom)

@@ -11,6 +11,7 @@ The original design goal was to make writing for the web as easy as writing an e
 Telar uses [Python-Markdown](https://python-markdown.github.io/) with several extensions enabled: footnotes for scholarly citations, tables for structured data, and more. This means you can write panel content in a simple text editor, using familiar plain-text conventions.
 
 **Learn more:**
+
 - [The original Markdown specification by John Gruber](https://daringfireball.net/projects/markdown/)
 - [CommonMark specification](https://commonmark.org/)
 - [Markdown on Wikipedia](https://en.wikipedia.org/wiki/Markdown)

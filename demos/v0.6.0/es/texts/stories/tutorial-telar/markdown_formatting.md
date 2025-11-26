@@ -7,6 +7,7 @@ Telar usa un **modelo de pregunta y respuesta** en cada paso. La pregunta y la r
 Usa la **rueda del mouse o el trackpad** para recorrer los pasos. Telar acumula el desplazamiento hasta que avanzas cerca del 50 % de la altura de la pantalla y luego realiza una transición suave al siguiente paso.
 
 También puedes usar **navegación por teclado**:
+
 - Flechas (arriba/abajo, izquierda/derecha)
 - PageUp/PageDown
 - Barra espaciadora (con Shift para ir hacia atrás)

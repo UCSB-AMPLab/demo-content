@@ -1,4 +1,5 @@
 Telar gives you precise control over what your reader sees at each step (see the [coordinate system](https://telar.org/docs/iiif-integration/#coordinate-system) in the Telar docs). Every story step defines:
+
 - **x coordinate** (0 to 1, left to right)
 - **y coordinate** (0 to 1, top to bottom)
 - **zoom level** (1.0 = full image, higher numbers zoom in)

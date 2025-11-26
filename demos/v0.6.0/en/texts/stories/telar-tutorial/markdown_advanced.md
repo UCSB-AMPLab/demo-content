@@ -8,6 +8,7 @@
 **Footnotes** for scholarly citations:[^1]
 
 **Lists** for organizing information:
+
 - Bulleted lists for items
 - Numbered lists for sequences
 - Nested lists for hierarchies

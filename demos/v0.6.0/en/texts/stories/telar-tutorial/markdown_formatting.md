@@ -7,6 +7,7 @@ Telar uses a **question-and-answer model** for each step. The question and answe
 Use your **mouse wheel or trackpad** to scroll through story steps. Telar accumulates scroll distance until you've scrolled about 50% of the viewport height, then smoothly transitions to the next step.
 
 You can also use **keyboard navigation**:
+
 - Arrow keys (up/down, left/right)
 - PageUp/PageDown
 - Space (with Shift for backward)

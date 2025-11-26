@@ -8,6 +8,7 @@
 **Notas al pie** para citas académicas:[^1]
 
 **Listas** para organizar información:
+
 - Viñetas para elementos
 - Listas numeradas para secuencias
 - Listas anidadas para jerarquías

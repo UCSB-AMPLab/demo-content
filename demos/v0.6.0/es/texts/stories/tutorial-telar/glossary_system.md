@@ -19,6 +19,7 @@ Escribes las entradas de glosario una sola vez y las reutilizas en todas tus his
 :::
 
 **Beneficios:**
+
 - Reduce repeticiones en el texto principal
 - Ofrece definiciones consistentes
 - Ayuda a las personas lectoras a entender términos nuevos

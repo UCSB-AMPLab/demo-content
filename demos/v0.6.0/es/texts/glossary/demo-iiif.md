@@ -11,5 +11,6 @@ El marco IIIF se compone de varias API complementarias, en especial la [Image AP
 Para 2025, más de 500 instituciones en todo el mundo habían adoptado IIIF, incluidas la [British Library](https://www.bl.uk/), la [Biblioteca Vaticana](https://digi.vatlib.it/), [Yale University](https://collections.library.yale.edu/), el [Smithsonian](https://www.si.edu/), el [J. Paul Getty Museum](https://www.getty.edu/) y bibliotecas nacionales en Europa, Asia y las Américas.
 
 **Más información:**
+
 - [Sitio oficial de IIIF](https://iiif.io)
 - [IIIF en Wikipedia](https://es.wikipedia.org/wiki/International_Image_Interoperability_Framework)

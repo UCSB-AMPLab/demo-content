@@ -13,5 +13,6 @@ Cuando proporcionas a Telar (o a cualquier visor IIIF) la URL de un manifiesto, 
 Como los manifiestos siguen un formato estandarizado, cualquier visor IIIF puede usarlos sin importar qué institución los creó; ese es el valor central de IIIF.
 
 **Más información:**
+
 - [Especificación de la IIIF Presentation API 3.0](https://iiif.io/api/presentation/3.0/)
 - [IIIF Cookbook: recetas y ejemplos de manifiestos](https://iiif.io/api/cookbook/)

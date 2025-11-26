@@ -19,6 +19,7 @@ You write glossary entries once and reuse them throughout your stories. This kee
 :::
 
 **Benefits:**
+
 - Reduces repetition in your main text
 - Provides consistent definitions
 - Helps readers learn unfamiliar concepts

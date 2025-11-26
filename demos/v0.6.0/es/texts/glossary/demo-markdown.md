@@ -11,6 +11,7 @@ El objetivo original era que escribir para la web fuera tan fácil como escribir
 Telar usa [Python-Markdown](https://python-markdown.github.io/) con varias extensiones activadas: notas al pie para citas académicas, tablas para datos estructurados y más. Esto significa que puedes escribir el contenido de los paneles en un editor de texto sencillo usando convenciones de texto plano conocidas.
 
 **Más información:**
+
 - [Especificación original de Markdown de John Gruber](https://daringfireball.net/projects/markdown/)
 - [Especificación de CommonMark](https://commonmark.org/)
 - [Markdown en Wikipedia](https://es.wikipedia.org/wiki/Markdown)

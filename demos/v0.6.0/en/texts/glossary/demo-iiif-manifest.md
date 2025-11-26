@@ -13,5 +13,6 @@ When you provide a manifest URL to Telar (or any IIIF viewer), the application f
 Because manifests follow a standardized format, any IIIF viewer can consume them, regardless of what institution created them—this is IIIF's core value proposition.
 
 **Learn more:**
+
 - [IIIF Presentation API 3.0 specification](https://iiif.io/api/presentation/3.0/)
 - [IIIF Cookbook - Manifest recipes and examples](https://iiif.io/api/cookbook/)

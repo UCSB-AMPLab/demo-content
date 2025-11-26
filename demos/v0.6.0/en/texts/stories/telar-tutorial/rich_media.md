@@ -4,9 +4,12 @@ Telar panels can include **rich media** alongside text (see the [Markdown syntax
 
 ![AMPL Logo](/components/images/ampl-logo.png){sm}
 
-**Videos** can also be embedded, allowing you to combine [[demo-iiif]] images with multimedia explanations, oral histories, or documentary footage.
+**Videos** can also be embedded, allowing you to combine [[demo-iiif]] images with multimedia explanations, oral histories, or documentary footage:
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1139902893?h=e450fba07a&badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Telar Demo"></iframe></div>
 
 **Combine everything** to create compelling scholarly narratives:
+
 - [[demo-iiif|IIIF images]] from global repositories (see the [IIIF integration guide](https://telar.org/docs/iiif-integration/) in the Telar docs)
 - Locally-hosted materials with auto-generated [[demo-iiif-tiles]] (see [Local IIIF images](https://telar.org/docs/iiif-integration/#option-1-local-images) in the Telar docs)
 - Pan and zoom navigation to guide attention

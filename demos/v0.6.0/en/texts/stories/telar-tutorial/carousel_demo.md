@@ -3,6 +3,7 @@ Telar includes three **interactive widgets** for presenting information in struc
 ## Carousel Widget
 
 The [carousel widget](https://telar.org/docs/content-structure/#carousel-widget) in the Telar docs displays a sequence of 2-6 images with captions. Use it for:
+
 - Showing related materials
 - Comparing different perspectives
 - Presenting a visual sequence
@@ -46,5 +47,6 @@ caption: UC Santa Barbara Library
 :::
 
 **Other widgets:**
+
 - **Tabs** - Switch between 2-4 different perspectives or viewpoints ([see tabs widget](https://telar.org/docs/content-structure/#tabs-widget) in the Telar docs)
 - **Accordion** - Present chronological or hierarchical information in collapsible panels ([see accordion widget](https://telar.org/docs/content-structure/#accordion-widget) in the Telar docs)

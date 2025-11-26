@@ -13,5 +13,6 @@ Es la misma tecnología que usa [Google Maps](https://en.wikipedia.org/wiki/Goog
 Cuando Telar genera teselas IIIF a partir de tus imágenes locales, crea esa pirámide de manera automática y produce miles de teselas individuales desde una sola fotografía o escaneo.
 
 **Más información:**
+
 - [Especificación de la IIIF Image API](https://iiif.io/api/image/3.0/)
 - [Deep Zoom en Wikipedia](https://en.wikipedia.org/wiki/Deep_Zoom)
