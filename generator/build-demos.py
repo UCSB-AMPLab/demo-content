@@ -151,15 +151,15 @@ def read_project_csv(csv_path):
             reader = csv.DictReader(f)
             for row in reader:
                 order = row.get('order', '').strip()
-                project_id = row.get('project_id', '').strip()
+                story_id = row.get('story_id', '').strip()
                 title = row.get('title', '').strip()
                 subtitle = row.get('subtitle', '').strip()
                 byline = row.get('byline', '').strip()
 
-                if order and title and project_id:  # Skip empty rows
+                if order and title and story_id:  # Skip empty rows
                     projects.append({
                         'order': int(order),
-                        'project_id': project_id,
+                        'story_id': story_id,
                         'title': title,
                         'subtitle': subtitle,
                         'byline': byline
@@ -450,25 +450,25 @@ def generate_bundle(version, lang, lang_dir, base_url):
         warnings.append(f"[{lang}] Missing texts/stories/ directory")
     else:
         for project in bundle["project"]:
-            project_id = project['project_id']
+            story_id = project['story_id']
 
             # Find story CSV
-            story_csv = lang_dir / f"{project_id}.csv"
+            story_csv = lang_dir / f"{story_id}.csv"
             if not story_csv.exists():
-                warnings.append(f"[{lang}] Missing {project_id}.csv")
+                warnings.append(f"[{lang}] Missing {story_id}.csv")
                 continue
 
             # Find texts directory for this story
-            story_texts_dir = texts_stories_dir / project_id
+            story_texts_dir = texts_stories_dir / story_id
             if not story_texts_dir.exists():
-                warnings.append(f"[{lang}] Missing texts/stories/{project_id}/ directory")
+                warnings.append(f"[{lang}] Missing texts/stories/{story_id}/ directory")
                 story_texts_dir = texts_stories_dir  # Fall back to parent
 
             # Read story steps with embedded layer content
             steps = read_story_csv(story_csv, story_texts_dir, glossary_terms)
             if steps:
-                bundle["stories"][project_id] = {"steps": steps}
-                print(f"  Story '{project_id}': {len(steps)} steps")
+                bundle["stories"][story_id] = {"steps": steps}
+                print(f"  Story '{story_id}': {len(steps)} steps")
 
     return bundle, warnings
 

@@ -1,3 +1,3 @@
-order,project_id,title,subtitle,byline
+order,story_id,title,subtitle,byline
 1,tutorial-telar,Introducción a Telar,Aprende los fundamentos: imágenes IIIF, navegación, glosario y widgets,por el equipo de Telar
 2,demo-paisajes,Una pintura de la sabana,Explora transformaciones sociales y ambientales en la Sabana de Bogotá del siglo XVII (y mira lo que puede hacer Telar),basado en el Cap. 1 del proyecto [Paisajes Coloniales](https://paisajescoloniales.com)

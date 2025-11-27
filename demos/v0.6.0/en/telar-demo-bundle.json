@@ -3,7 +3,7 @@
     "bundle_format": "0.1",
     "telar_version": "0.6.0",
     "language": "en",
-    "generated": "2025-11-26T03:57:55.625406Z",
+    "generated": "2025-11-27T21:14:29.946933Z",
     "generator": "telar-demo-content/build-demos.py v0.3.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -13,14 +13,14 @@
   "project": [
     {
       "order": 1,
-      "project_id": "telar-tutorial",
+      "story_id": "telar-tutorial",
       "title": "Introduction to Telar",
       "subtitle": "Learn Telar basics: IIIF images, navigation, glossary linking, and widgets",
       "byline": "by the Telar team"
     },
     {
       "order": 2,
-      "project_id": "paisajes-demo",
+      "story_id": "paisajes-demo",
       "title": "A Painting of the Savanna",
       "subtitle": "Explore social and environmental change around 17th-century Bogotá (and see what Telar can do!)",
       "byline": "based on Ch. 1 of [Colonial Landscapes](https://colonial-landscapes.com)"
@@ -257,7 +257,7 @@
           "layers": {
             "layer1": {
               "button": "Geographic Context",
-              "content": "The map features the Bogotá savanna, a high plateau on the eastern mountain range of the northern Andes in modern-day Colombia.\n\nIn the early sixteenth century, the savanna was occupied by the Indigenous Muisca people of the Chibcha linguistic family. A Spanish expedition led by Gonzalo Jiménez de Quesada arrived there in 1536. From that moment on, the city of Bogotá became the base of operations for the Spanish empire in the region and was designated as the seat of the *audiencia* of Santafé in 1549.\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-guaman-poma-bogota.jpg\nalt: Drawing of Santa Fe de Bogotá by Guamán Poma\ncaption: Drawing of Santa Fe de Bogotá. \"Capítulo primero de las ciudades y villas: ciudad de Nuevo Reino, Santa Fe de Bogotá, ciudad tiene gobernador.\" Guamán Poma, 1615\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-mapa-ubicacion.jpg\nalt: Location map showing Bogotá savanna in modern Colombia\ncaption: Geographic location of the Bogotá savanna in modern-day Colombia\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-def-audiencia.png\nalt: AUDIENCIA definition from 1611 dictionary\ncaption: AUDIENCIA, the court of justice where motions are heard, it sometimes refers to chanceries. From Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco, 1611\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-recopilacion-leyes-indias.jpg\nalt: Legal document on creation of Audiencias\ncaption: On the creation of Audiencias. Recopilación de Leyes de los Reinos de las Indias, 1681\n:::"
+              "content": "The map features the Bogotá savanna, a high plateau on the eastern mountain range of the northern Andes in modern-day Colombia.\n\nIn the early sixteenth century, the savanna was occupied by the Indigenous Muisca people of the Chibcha linguistic family. A Spanish expedition led by Gonzalo Jiménez de Quesada arrived there in 1536. From that moment on, the city of Bogotá became the base of operations for the Spanish empire in the region and was designated as the seat of the *audiencia* of Santafé in 1549.\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-guaman-poma-bogota.jpg\nalt: Drawing of Santa Fe de Bogotá by Guamán Poma\ncaption: Drawing of Santa Fe de Bogotá. \"Capítulo primero de las ciudades y villas: ciudad de Nuevo Reino, Santa Fe de Bogotá, ciudad tiene gobernador.\" Guamán Poma, 1615\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-mapa-ubicacion.jpg\nalt: Location map showing Bogotá savanna in modern Colombia\ncaption: Geographic location of the Bogotá savanna in modern-day Colombia\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-def-audiencia.png\nalt: AUDIENCIA definition from 1611 dictionary\ncaption: AUDIENCIA, the court of justice where motions are heard, it sometimes refers to chanceries. From Sebastián de Covarrubias Orozco, *Tesoro de la lengua castellana, o Española*, 1611\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-recopilacion-leyes-indias.jpg\nalt: Legal document on creation of Audiencias\ncaption: On the creation of Audiencias. *Recopilación de Leyes de los Reinos de las Indias*, 1681\n:::"
             }
           }
         },

@@ -3,7 +3,7 @@
     "bundle_format": "0.1",
     "telar_version": "0.6.0",
     "language": "es",
-    "generated": "2025-11-26T03:57:55.637644Z",
+    "generated": "2025-11-27T21:14:29.965144Z",
     "generator": "telar-demo-content/build-demos.py v0.3.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -13,14 +13,14 @@
   "project": [
     {
       "order": 1,
-      "project_id": "tutorial-telar",
+      "story_id": "tutorial-telar",
       "title": "Introducción a Telar",
       "subtitle": "Aprende los fundamentos: imágenes IIIF",
       "byline": "navegación"
     },
     {
       "order": 2,
-      "project_id": "demo-paisajes",
+      "story_id": "demo-paisajes",
       "title": "Una pintura de la sabana",
       "subtitle": "Explora transformaciones sociales y ambientales en la Sabana de Bogotá del siglo XVII (y mira lo que puede hacer Telar)",
       "byline": "basado en el Cap. 1 del proyecto [Paisajes Coloniales](https://paisajescoloniales.com)"
@@ -257,7 +257,7 @@
           "layers": {
             "layer1": {
               "button": "Contexto geográfico",
-              "content": "El mapa representa la Sabana de Bogotá, una altiplanicie en la cordillera oriental de los Andes donde hoy es Colombia. A comienzos del siglo XVI, la Sabana estaba ocupada por indígenas Muiscas, de la familia lingüística Chibcha. Una expedición española liderada por Gonzalo Jiménez de Quesada llegó a este lugar en 1536. Desde esos años la ciudad de Bogotá se convirtió en la base de operaciones del imperio español en la zona y en 1549 la nombrarían como sede de la Audiencia de Santafé.\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-guaman-poma-bogota.jpg\nalt: Dibujo de Santa Fe de Bogotá por Guamán Poma\ncaption: \"Capítulo primero de las ciudades y villas: ciudad de Nuevo Reino, Santa Fé de Bogotá, ciudad tiene gobernador\". Guamán Poma, 1615.\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-mapa-ubicacion.jpg\nalt: Mapa de ubicación de la Sabana de Bogotá\ncaption: Ubicación geográfica de la Sabana de Bogotá en la Colombia actual.\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-def-audiencia.png\nalt: Definición de AUDIENCIA del diccionario de 1611\ncaption: Tesoro de la lengua castellana, o española. Sebastián de Covarrubias Orozco, 1611. Cortesía de John P. Robarts Research Library, Toronto.\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-recopilacion-leyes-indias.jpg\nalt: Documento legal sobre la creación de Audiencias\ncaption: Sobre la creación de audiencias. Recopilación de Leyes de los Reinos de las Indias.\n:::"
+              "content": "El mapa representa la Sabana de Bogotá, una altiplanicie en la cordillera oriental de los Andes donde hoy es Colombia. A comienzos del siglo XVI, la Sabana estaba ocupada por indígenas Muiscas, de la familia lingüística Chibcha. Una expedición española liderada por Gonzalo Jiménez de Quesada llegó a este lugar en 1536. Desde esos años la ciudad de Bogotá se convirtió en la base de operaciones del imperio español en la zona y en 1549 la nombrarían como sede de la Audiencia de Santafé.\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-guaman-poma-bogota.jpg\nalt: Dibujo de Santa Fe de Bogotá por Guamán Poma\ncaption: \"Capítulo primero de las ciudades y villas: ciudad de Nuevo Reino, Santa Fé de Bogotá, ciudad tiene gobernador\". Guamán Poma, 1615.\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-mapa-ubicacion.jpg\nalt: Mapa de ubicación de la Sabana de Bogotá\ncaption: Ubicación geográfica de la Sabana de Bogotá en la Colombia actual.\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-def-audiencia.png\nalt: Definición de AUDIENCIA del diccionario de 1611\ncaption: Sebastián de Covarrubias Orozco, *Tesoro de la lengua castellana, o Española*, 1611. Cortesía de John P. Robarts Research Library, Toronto.\n\n---\n\nimage: https://content.telar.org/assets/images/paisajes-demo/demo-recopilacion-leyes-indias.jpg\nalt: Documento legal sobre la creación de Audiencias\ncaption: Sobre la creación de audiencias. *Recopilación de Leyes de los Reinos de las Indias*.\n:::"
             }
           }
         },
