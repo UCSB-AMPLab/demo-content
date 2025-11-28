@@ -1,3 +1,3 @@
 order,story_id,title,subtitle,byline
-1,telar-tutorial,Introduction to Telar,"Learn Telar basics: IIIF images, navigation, glossary linking, and widgets",by the Telar team
-2,paisajes-demo,A Painting of the Savanna,Explore social and environmental change around 17th-century Bogotá (and see what Telar can do!),based on Ch. 1 of [Colonial Landscapes](https://colonial-landscapes.com)
+1,telar-tutorial,Introduction to Telar,"Learn Telar basics: IIIF images, navigation, glossary linking, and widgets", "a showcase of what Telar can do, by the Telar team"
+2,paisajes-demo,A Painting of the Savanna,Explore social and environmental change around 17th-century Bogotá (and see what Telar can do!),"a showcase of what you can do with Telar, based on Ch. 1 of [Colonial Landscapes](https://colonial-landscapes.com)"

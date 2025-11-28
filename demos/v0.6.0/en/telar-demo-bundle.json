@@ -3,7 +3,7 @@
     "bundle_format": "0.1",
     "telar_version": "0.6.0",
     "language": "en",
-    "generated": "2025-11-27T21:14:29.946933Z",
+    "generated": "2025-11-28T06:13:44.343103Z",
     "generator": "telar-demo-content/build-demos.py v0.3.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -16,14 +16,14 @@
       "story_id": "telar-tutorial",
       "title": "Introduction to Telar",
       "subtitle": "Learn Telar basics: IIIF images, navigation, glossary linking, and widgets",
-      "byline": "by the Telar team"
+      "byline": "\"a showcase of what Telar can do"
     },
     {
       "order": 2,
       "story_id": "paisajes-demo",
       "title": "A Painting of the Savanna",
       "subtitle": "Explore social and environmental change around 17th-century Bogotá (and see what Telar can do!)",
-      "byline": "based on Ch. 1 of [Colonial Landscapes](https://colonial-landscapes.com)"
+      "byline": "a showcase of what you can do with Telar, based on Ch. 1 of [Colonial Landscapes](https://colonial-landscapes.com)"
     }
   ],
   "objects": {
