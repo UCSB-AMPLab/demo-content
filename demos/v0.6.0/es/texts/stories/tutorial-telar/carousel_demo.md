@@ -11,37 +11,37 @@ El [widget de carrusel](https://telar.org/guia/estructura-de-contenido/#widget-d
 **Ejemplo - Patrocinadores del proyecto:**
 
 :::carousel
-image: sponsors/ucsb-ampl-logo.png
+image: https://content.telar.org/assets/images/sponsors/ucsb-ampl-logo.png
 alt: Logo del UCSB Archives, Memory, and Preservation Lab
 caption: UCSB Archives, Memory, and Preservation Lab
 
 ---
 
-image: sponsors/ut-ampl-logo.png
+image: https://content.telar.org/assets/images/sponsors/ut-ampl-logo.png
 alt: Logo del UT Archives, Mapping, and Preservation Lab
 caption: UT Archives, Mapping, and Preservation Lab
 
 ---
 
-image: sponsors/neogranadina-white.png
+image: https://content.telar.org/assets/images/sponsors/neogranadina-white.png
 alt: Logo de Neogranadina
 caption: Neogranadina
 
 ---
 
-image: sponsors/ucsb-burdick.png
+image: https://content.telar.org/assets/images/sponsors/ucsb-burdick.png
 alt: Logo del Burdick Global Scholars Program
 caption: Burdick Global Scholars Program
 
 ---
 
-image: sponsors/ucsb-citral.png
+image: https://content.telar.org/assets/images/sponsors/ucsb-citral.png
 alt: Logo de CITRAL
 caption: Center for Innovative Teaching Research and Learning
 
 ---
 
-image: sponsors/ucsb-library.png
+image: https://content.telar.org/assets/images/sponsors/ucsb-library.png
 alt: Logo de la UC Santa Barbara Library
 caption: UC Santa Barbara Library
 :::
