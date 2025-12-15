@@ -2,7 +2,7 @@ Los paneles de Telar pueden incluir **contenido multimedia** junto con el texto 
 
 **Imágenes**: incrústalas con sintaxis de [[markdown]] y controla su tamaño con `{sm}`, `{md}`, `{lg}` o `{full}`:
 
-![Logo AMPL](/components/images/ampl-logo.png){sm}
+![Logo AMPL](https://content.telar.org/assets/images/sponsors/ucsb-ampl-logo.png){sm}
 
 **Videos**: también puedes integrarlos para combinar imágenes [[iiif]] con explicaciones, testimonios u otros recursos audiovisuales:
 

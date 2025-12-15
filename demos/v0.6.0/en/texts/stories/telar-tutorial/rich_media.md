@@ -2,7 +2,7 @@ Telar panels can include **rich media** alongside text (see the [Markdown syntax
 
 **Images** can be embedded directly using [[demo-markdown]] syntax. Control image sizing with `{sm}`, `{md}`, `{lg}`, or `{full}` tags:
 
-![AMPL Logo](/components/images/ampl-logo.png){sm}
+![AMPL Logo](https://content.telar.org/assets/images/sponsors/ucsb-ampl-logo.png){sm}
 
 **Videos** can also be embedded, allowing you to combine [[demo-iiif]] images with multimedia explanations, oral histories, or documentary footage:
 
