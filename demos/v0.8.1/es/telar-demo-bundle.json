@@ -1,0 +1,338 @@
+{
+  "_meta": {
+    "bundle_format": "0.1",
+    "telar_version": "0.8.1",
+    "language": "es",
+    "generated": "2026-02-27T05:57:48.399785Z",
+    "generator": "telar-demo-content/build-demos.py v0.6.0",
+    "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
+    "description": "Demo content bundle for Telar storytelling framework",
+    "license": "CC BY-NC 4.0"
+  },
+  "iiif_base_url": "https://content.telar.org/iiif/objects",
+  "project": [
+    {
+      "order": 1,
+      "story_id": "mujer-alegorica",
+      "title": "La mujer alegórica",
+      "subtitle": "Un mapa alegórico que desafía la autoridad imperial — una historia sencilla",
+      "byline": "Por Natalie Cobo"
+    },
+    {
+      "order": 2,
+      "story_id": "paisajes",
+      "title": "Paisajes coloniales",
+      "subtitle": "Una pintura legal de 1614 de la Sabana de Bogotá — una historia con contenidos complejos",
+      "byline": "Por Santiago Muñoz, Adelaida Ávila y María Alejandra Orduz Avella"
+    }
+  ],
+  "objects": {
+    "demo-atlas-allegory": {
+      "title": "Aspecto Symbólico del Mundo Hispánico",
+      "description": "Mapa alegórico del «Mundo Hispánico», grabado por Laureano Atlas y publicado como frontispicio de Vicente Memije, Theses Mathematicas de Cosmographia, Geographia y Hydrographia (Manila: 1761).",
+      "source_url": "https://figgy.princeton.edu/concern/scanned_resources/3497e01a-5086-4528-86ba-6f67ce402eec/manifest",
+      "creator": "Laureano Atlas",
+      "period": "siglo XVIII",
+      "credit": "Princeton University Library",
+      "year": "1761",
+      "object_type": "Grabado",
+      "subjects": "colonialismo, cartografía, alegoría",
+      "featured": "FALSE",
+      "source": "Princeton University Library"
+    },
+    "demo-leviathan": {
+      "title": "Frontispicio del Leviatán",
+      "description": "Frontispicio del Leviatán de Thomas Hobbes (1651), en el que el soberano aparece como un cuerpo gigante compuesto por ciudadanos individuales.",
+      "creator": "Abraham Bosse (según diseño de Thomas Hobbes)",
+      "period": "siglo XVII",
+      "credit": "British Library",
+      "year": "1651",
+      "object_type": "Grabado",
+      "subjects": "filosofía política, soberanía",
+      "featured": "TRUE",
+      "source": "British Library",
+      "source_url": "https://content.telar.org/iiif/objects/demo-leviathan/manifest.json",
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-leviathan/full/231,/0/default.jpg"
+    },
+    "demo-bogota-1614": {
+      "title": "Pintura de las tierras, ciénagas y anegadizos del pueblo de Bogotá",
+      "description": "Mapa-pintura de carácter jurídico presentado como prueba en un pleito de tierras entre el fiscal de la corona y Francisco Maldonado y Mendoza por predios en la sabana de Bogotá.",
+      "creator": "Juan de Aguilar Rendón (pintor) y Alonso Ruiz Gadálmez (fiador)",
+      "period": "siglo XVII",
+      "credit": "Archivo General de Indias, Sevilla",
+      "year": "1614",
+      "object_type": "Pintura",
+      "subjects": "colonialismo, cartografía, Nueva Granada",
+      "featured": "FALSE",
+      "source": "Archivo General de Indias",
+      "source_url": "https://content.telar.org/iiif/objects/demo-bogota-1614/manifest.json",
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-bogota-1614/full/462,/0/default.jpg"
+    },
+    "demo-terrafirma-map": {
+      "title": "Terra firma et novum regnum Granatense et Popayan",
+      "description": "Mapa histórico de Nueva Granada (actual Colombia) y la región de Popayán. Este mapa calcógrafico apareció únicamente en dos atlas Jansson/Hondius con el verso en blanco.",
+      "source_url": "https://hdl.huntington.org/iiif/info/p15150coll4/3342/manifest.json",
+      "creator": "Jan Jansson y Hendrik Hondius",
+      "period": "siglo XVII",
+      "credit": "The Huntington Library, Art Museum, and Botanical Gardens",
+      "year": "1630",
+      "object_type": "Mapa",
+      "subjects": "colonialismo, cartografía, Nueva Granada",
+      "featured": "TRUE",
+      "source": "Huntington Library"
+    },
+    "demo-piedrahita-title_page": {
+      "title": "Historia general de las conquistas del Nuevo Reino de Granada",
+      "description": "Portada con medallones de retratos de siete caciques indígenas, cuatro escenas de batalla y dos escudos de armas.",
+      "source_url": "https://jcb.lunaimaging.com/luna/servlet/iiif/m/JCB~1~1~278~100020/manifest",
+      "creator": "Lucas Fernández de Piedrahita (1624–1688); grabado por Joseph Mulder",
+      "period": "siglo XVII",
+      "credit": "John Carter Brown Library",
+      "year": "1688",
+      "object_type": "Libro",
+      "subjects": "colonialismo, pueblos indígenas, Nueva Granada",
+      "featured": "TRUE",
+      "source": "John Carter Brown Library"
+    },
+    "demo-ceramic-figure": {
+      "title": "Figura cerámica antropomorfa",
+      "description": "Figura cerámica del período muisca que representa la cultura material y las prácticas rituales indígenas previas a la colonización española.",
+      "creator": "Artista muisca desconocido",
+      "period": "Prehispánico",
+      "credit": "Museo del Oro, Bogotá",
+      "object_type": "Cerámica",
+      "subjects": "pueblos indígenas, cultura material, muisca",
+      "featured": "FALSE",
+      "source": "Museo del Oro",
+      "source_url": "https://content.telar.org/iiif/objects/demo-ceramic-figure/manifest.json",
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-ceramic-figure/full/285,/0/default.jpg"
+    }
+  },
+  "stories": {
+    "mujer-alegorica": {
+      "steps": [
+        {
+          "step": 1,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Qué es Telar?",
+          "answer": "Un framework para narrativas visuales. Este ejemplo explora un mapa alegórico que revela más de lo que parece mostrar a primera vista.\n\nPara descubrir cómo se armó, [abre la hoja de cálculo fuente](https://docs.google.com/spreadsheets/d/1akOcNP3hEIaN1A7tSJvXo_eQrPrl8EnyeaG0vmRpd5E/) y sigue el proceso."
+        },
+        {
+          "step": 2,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Qué es esta imagen?",
+          "answer": "Este grabado de 1761 parece celebrar el imperio español, pero como verás, en realidad lo cuestiona. La historiadora Natalie Cobo guía al público a través de detalles reveladores."
+        },
+        {
+          "step": 3,
+          "object": "demo-atlas-allegory",
+          "x": 0.477,
+          "y": 0.125,
+          "zoom": 8.9,
+          "question": "Observa la cabeza",
+          "answer": "España aparece como la cabeza de este proyecto imperial.",
+          "layers": {
+            "layer1": {
+              "button": "Sobre las coordenadas",
+              "content": "Este paso hace zoom a **x=0.477, y=0.125, zoom=8.9**. Los valores de x e y (0 a 1) ubican la vista dentro de la imagen, y el valor de zoom magnifica el detalle.\n\nCada elección de coordenadas sirve a la narrativa. Aquí, el zoom extremo enfatiza la posición simbólica de España como la “cabeza” del imperio. En los siguientes pasos, las coordenadas recorrerán el cuerpo para construir el argumento.\n\nEn tu propia historia, cambia x e y para desplazarte a otras partes de la imagen, y aumenta el zoom para ver más detalle. Empieza con 0.5, 0.5, 1.0 y ajusta usando la herramienta **Identificar coordenadas** en cualquier página de objeto."
+            }
+          }
+        },
+        {
+          "step": 4,
+          "object": "demo-atlas-allegory",
+          "x": 0.486,
+          "y": 0.277,
+          "zoom": 10.0,
+          "question": "Fíjate en el collar",
+          "answer": "La cadena está hecha de barcos: fueron las invasiones de ultramar las que ampliaron el mundo hispánico de la temprana modernidad."
+        },
+        {
+          "step": 5,
+          "object": "demo-atlas-allegory",
+          "x": 0.504,
+          "y": 0.415,
+          "zoom": 2.9,
+          "question": "Mira a América",
+          "answer": "La masa continental americana forma un manto indefinido que cubre a la figura alegórica."
+        },
+        {
+          "step": 6,
+          "object": "demo-atlas-allegory",
+          "x": 0.478,
+          "y": 0.883,
+          "zoom": 10.0,
+          "question": "Las Filipinas",
+          "answer": "En contraste con el manto fluido americano, las islas Filipinas dan forma concreta a los pies de la figura."
+        },
+        {
+          "step": 7,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Rutas comerciales",
+          "answer": "Esta figura alegórica no se define por masas de tierra sino por rutas marítimas. La conexión, no el territorio, mantiene unido este cuerpo.",
+          "layers": {
+            "layer1": {
+              "button": "La revelación",
+              "content": "Tras cinco pasos de acercamiento a detalles — cabeza, collar, Américas, Filipinas — este paso vuelve a la vista completa (x=0.5, y=0.5, zoom=1.0) para sintetizar. Al alejarse se revela el conjunto: este imperio se define por la conexión, no por la geografía.\n\nEsta es una técnica narrativa: acercarse para construir el argumento a través de detalles, luego alejarse para sintetizar y revelar la tesis. La vista completa funciona bien para orientar y concluir.\n\nEstás leyendo un panel de “Saber más” en este momento. Haz clic en **Presentación progresiva** a continuación para aprender cómo funcionan estos paneles anidados."
+            },
+            "layer2": {
+              "button": "Presentación progresiva",
+              "content": "Estás viendo un [[panel-es]] de capa 2 — el nivel más profundo de detalle en Telar.\n\nTelar ofrece tres niveles de profundidad para cada paso: la pregunta y respuesta (visible de inmediato), un panel de “Saber más” (se abre cuando haces clic en el botón) y un panel de “Profundizar más” como este (se abre desde el primer panel). La mayoría de los pasos solo necesitan la pregunta y la respuesta. Agrega paneles cuando tengas más que decir.\n\nEn tu hoja de cálculo, escribe el contenido del panel directamente en las columnas contenido_capa1 y contenido_capa2. También puedes vincular términos del glosario con corchetes dobles: [[iiif-es]] se convierte en un enlace a la definición del término."
+            }
+          }
+        },
+        {
+          "step": 8,
+          "object": "demo-atlas-allegory",
+          "x": 0.516,
+          "y": 0.974,
+          "zoom": 10.0,
+          "question": "El rey",
+          "answer": "Carlos III implementó reformas centralizadoras que buscaron convertir a los reinos coloniales en entidades subordinadas cuya función era proveer riqueza a la metrópoli."
+        },
+        {
+          "step": 9,
+          "object": "demo-leviathan",
+          "x": 0.486,
+          "y": 0.177,
+          "zoom": 3.6,
+          "question": "Leviatán",
+          "answer": "La tesis política de Hobbes muestra lo contrario: el gobernante como contenedor de toda la sociedad, con personas indistintas e intercambiables.",
+          "layers": {
+            "layer1": {
+              "button": "Uso de múltiples imágenes",
+              "content": "Este paso cambia de atlas-allegory a leviathan en la columna de objeto. Cada paso puede mostrar una imagen diferente — solo cambia el id_objeto para que coincida con cualquier imagen de tu pestaña de objetos.\n\nTelar admite dos tipos de imágenes. La alegória del Atlas proviene de la biblioteca digital de Princeton a través de [[iiif-es]] — su source_url apunta a un manifiesto alojado por la institución. El frontispicio del Leviatán es una imagen autoalojada — no necesita source_url, solo un archivo en tu repositorio que Telar convierte en mosaicos automáticamente durante la compilación.\n\nCobo usa el Leviatán para mostrar contraste: Hobbes presenta al gobernante como contenedor de toda la sociedad, mientras que nuestro mapa alegórico arrincona al gobernante en el margen inferior. La comparación refuerza su tesis sobre conexión frente a territorio."
+            }
+          }
+        },
+        {
+          "step": 10,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Un desafío para el rey",
+          "answer": "Nuestra figura alegórica no tiene forma más allá de la conexión, y el gobernante queda arrinconado en la parte inferior. Esta imagen fue producida en Manila por el grabador filipino Laureano Atlas como frontispicio de la tesis de Vicente de Memije. En contexto, funciona como un desafío polémico a las reformas centralizadoras de Carlos III. Esta narrativa muestra cómo la exploración visual puede construir argumentos académicos.",
+          "layers": {
+            "layer1": {
+              "button": "¿Qué sigue?",
+              "content": "Esta historia demuestra cómo Telar construye argumentos académicos a través de la exploración visual:\n\n- **Narrativa guiada por coordenadas**: El zoom y el desplazamiento dirigen la atención hacia detalles que sostienen tu tesis\n- **Presentación progresiva**: Pregunta y respuesta, luego paneles de “Saber más” y “Profundizar más” permiten elegir el nivel de detalle\n- **Múltiples tipos de imágenes**: Imágenes IIIF de colecciones institucionales e imágenes autoalojadas de tu propio repositorio\n- **Integración de glosario**: Define términos una vez y vincúlos en cualquier parte con `[[término]]`\n\nPara ver la hoja de cálculo detrás de esta historia — con todas las coordenadas, preguntas y contenido de paneles visibles en sus celdas — abre la [hoja de cálculo fuente](https://docs.google.com/spreadsheets/d/1akOcNP3hEIaN1A7tSJvXo_eQrPrl8EnyeaG0vmRpd5E/).\n\nEsta narrativa emplea el análisis académico desarrollado por **Natalie Cobo**, cuyo trabajo demuestra cómo la exploración visual puede cuestionar narrativas históricas y revelar contextos ocultos de producción."
+            }
+          }
+        }
+      ]
+    },
+    "paisajes": {
+      "steps": [
+        {
+          "step": 1,
+          "object": "demo-bogota-1614",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Para qué se dibujó este mapa?",
+          "answer": "La Pintura de las tierras pantanos y anegadizos del pueblo de Bogotá se usó en 1614 como evidencia en un juicio legal que el fiscal del Nuevo Reino de Granada había iniciado contra Francisco Maldonado y Mendoza, un reputado encomendero, por la propiedad de unas tierras de la Sabana de Bogotá.",
+          "layers": {
+            "layer1": {
+              "button": "El proceso legal",
+              "content": "paisajes/proceso_legal.md"
+            },
+            "layer2": {
+              "button": "El encomendero",
+              "content": "paisajes/biografia_encomendero.md"
+            }
+          }
+        },
+        {
+          "step": 2,
+          "object": "demo-bogota-1614",
+          "x": 0.25,
+          "y": 0.35,
+          "zoom": 2.5,
+          "question": "¿De dónde es el mapa?",
+          "answer": "El mapa representa la Sabana de Bogotá, una altiplanicie en la cordillera oriental de los Andes donde hoy es Colombia. A comienzos del siglo XVI, la Sabana estaba ocupada por indígenas Muiscas, de la familia lingüíistica Chibcha. Una expedición española liderada por Gonzalo Jiménez de Quesada llegó a este lugar en 1536. Desde esos años la ciudad de Bogotá se convirtió en la base de operaciones del imperio español en la zona y en 1549 la nombrarían como sede de la Audiencia de Santafé.",
+          "layers": {
+            "layer1": {
+              "button": "Contexto geográfico",
+              "content": "paisajes/sabana_bogota.md"
+            }
+          }
+        },
+        {
+          "step": 3,
+          "object": "demo-bogota-1614",
+          "x": 0.75,
+          "y": 0.3,
+          "zoom": 3.0,
+          "question": "¿Es un mapa o una pintura?",
+          "answer": "La Pintura de las tierras, pantanos y anegadizos del pueblo de Bogotá es un manuscrito que oscila entre mapa y pintura de paisaje y que pertenece a un género de mapas legales.",
+          "layers": {
+            "layer1": {
+              "button": "Una pintura legal",
+              "content": "paisajes/pintura_legal.md"
+            },
+            "layer2": {
+              "button": "Modos de cartografiar",
+              "content": "paisajes/modos_cartografiar.md"
+            }
+          }
+        },
+        {
+          "step": 4,
+          "object": "demo-bogota-1614",
+          "x": 0.6,
+          "y": 0.7,
+          "zoom": 2.2,
+          "question": "¿Quiénes eran los dueños de este terreno?",
+          "answer": "La hacienda representada en la pintura perteneció a Francisco de Maldonado y Mendoza. Sus descendientes obtuvieron títulos nobiliarios y la hacienda se convirtió en el centro del Marquesado de San Jorge.",
+          "layers": {
+            "layer1": {
+              "button": "El linaje",
+              "content": "paisajes/linaje_maldonado.md"
+            }
+          }
+        },
+        {
+          "step": 5,
+          "object": "demo-bogota-1614",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Quieres seguir explorando?",
+          "answer": "Esta demostración cubre apenas una pequeña parte de los contenidos de *Paisajes Coloniales*, un proyecto más amplio que explora las transformaciones sociales y ambientales que vivieron las poblaciones indígenas y los paisajes de la actual Colombia durante los siglos XVI y XVII, desarrollado por Santiago Muñoz, Adelaida Ávila y María Alejandra Orduz Avella, y que inspiró Telar. <br><br><a href=\"https://paisajescoloniales.com\" class=\"btn btn-primary\" target=\"_blank\">Explora Paisajes Coloniales →</a>"
+        }
+      ]
+    }
+  },
+  "glossary": {
+    "historia": {
+      "term": "Historia",
+      "content": "Una secuencia de pasos que forman una narrativa visual. Cada historia aparece como una entrada independiente en la pestaña project (o en tu CSV) y puede recorrerse de manera individual.\n\nEn Telar, las historias combinan texto e imágenes para construir argumentos, explorar temas o guiar al público a través de material visual. La historia de demostración que estás viendo es un ejemplo de una historia que enseña mientras narra."
+    },
+    "panel-es": {
+      "term": "Panel",
+      "content": "Contenido expandible que aparece sobre el visor al hacer clic en “Saber más” u otros botones similares. Los paneles ofrecen contexto adicional sin abandonar el paso actual.\n\nTelar admite dos capas de paneles:\n- **Capa 1**: Se abre desde el paso principal\n- **Capa 2**: Se abre desde dentro de la capa 1\n\nEsta presentación progresiva permite elegir el nivel de profundidad de exploración."
+    },
+    "paso": {
+      "term": "Paso",
+      "content": "Una pantalla dentro de una historia de Telar que combina el texto narrativo a la izquierda con la vista de la imagen a la derecha. Cada paso puede enfocarse en una parte distinta de una imagen usando coordenadas (x, y, zoom).\n\nLos pasos siguen el patrón Pregunta/Respuesta/Invitación: una pregunta atractiva, una respuesta breve y paneles opcionales por capas para profundizar."
+    },
+    "visor": {
+      "term": "Visor",
+      "content": "El panel interactivo de imágenes a la derecha de la pantalla. Admite zoom y paneo en alta resolución, lo que permite explorar detalles de la imagen.\n\nEl visor funciona con imágenes IIIF (alojadas por museos y bibliotecas) y con imágenes autoalojadas (de tu propia colección). Se puede hacer zoom y paneo libremente, pero tus coordenadas guían la vista inicial en cada paso."
+    },
+    "iiif-es": {
+      "term": "IIIF",
+      "content": "IIIF (International Image Interoperability Framework) es un estándar abierto que permite a las instituciones compartir imágenes de alta resolución en línea. Museos, bibliotecas y archivos publican manifiestos IIIF — URLs estructuradas que describen una imagen y sus metadatos.\n\nEn Telar, pega la URL de un manifiesto en la columna source_url de tu pestaña de objetos y Telar se encarga del resto: zoom, desplazamiento y zoom profundo funcionan automáticamente. Esta historia usa tanto una imagen propia (atlas-allegory) como un manifiesto IIIF externo de Princeton (leviathan)."
+    }
+  }
+}

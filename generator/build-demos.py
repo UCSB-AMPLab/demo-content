@@ -9,7 +9,7 @@ Usage:
     python build-demos.py --version 0.6.0 --bundle-only  # Just demo bundle
     python build-demos.py --iiif-only                  # Just IIIF tiles (no version needed)
 
-Version: v0.3.0
+Version: v0.6.0
 """
 
 import argparse
@@ -31,7 +31,7 @@ except ImportError:
     print("  Install with: pip install markdown")
 
 # Version
-GENERATOR_VERSION = "0.3.0"
+GENERATOR_VERSION = "0.6.0"
 BUNDLE_FORMAT_VERSION = "0.1"
 
 # Paths
@@ -42,6 +42,91 @@ IIIF_DIR = REPO_ROOT / "iiif"
 
 # Default base URL for demos site
 DEFAULT_BASE_URL = "https://content.telar.org"
+
+# Bilingual column name mapping (Spanish -> English) — mirrors telar/csv_utils.py
+# Allows demo source CSVs to use either English or Spanish column headers,
+# consistent with the main Telar pipeline (v0.6.0+).
+COLUMN_NAME_MAPPING = {
+    # Story step columns (Spanish -> English)
+    'paso': 'step',
+    'objeto': 'object',
+    'pregunta': 'question',
+    'respuesta': 'answer',
+    'boton_capa1': 'layer1_button',
+    'contenido_capa1': 'layer1_content',
+    'archivo_capa1': 'layer1_content',    # backward compatibility
+    'boton_capa2': 'layer2_button',
+    'contenido_capa2': 'layer2_content',
+    'archivo_capa2': 'layer2_content',    # backward compatibility
+    # x, y, zoom are the same in both languages
+
+    # English column backward compatibility (layer1_file -> layer1_content)
+    'layer1_file': 'layer1_content',
+    'layer2_file': 'layer2_content',
+
+    # Objects columns (Spanish -> English)
+    'id_objeto': 'object_id',
+    'titulo': 'title',
+    'título': 'title',
+    'descripcion': 'description',
+    'descripción': 'description',
+    'url_fuente': 'source_url',
+    'creador': 'creator',
+    'periodo': 'period',
+    'período': 'period',
+    'medio': 'medium',
+    'dimensiones': 'dimensions',
+    'ubicacion': 'source',
+    'ubicación': 'source',
+    'credito': 'credit',
+    'crédito': 'credit',
+    'miniatura': 'thumbnail',
+    'año': 'year',
+    'ano': 'year',
+    'tipo_objeto': 'object_type',
+    'temas': 'subjects',
+    'materias': 'subjects',
+    'materia': 'subjects',
+    'destacado': 'featured',
+    'fuente': 'source',
+    # Backward compatibility: location -> source (v0.8.0 schema change)
+    'location': 'source',
+
+    # Project columns (Spanish -> English)
+    'orden': 'order',
+    'id_historia': 'story_id',
+    'subtitulo': 'subtitle',
+    'subtítulo': 'subtitle',
+    'firma': 'byline',
+    'private': 'protected',
+    'privada': 'protected',
+    'protegida': 'protected',
+
+    # Glossary columns (Spanish -> English)
+    'id_termino': 'term_id',
+    'id_término': 'term_id',
+    'definicion': 'definition',
+    'definición': 'definition',
+    'terminos_relacionados': 'related_terms',
+    'términos_relacionados': 'related_terms',
+}
+
+
+def normalize_row(row):
+    """
+    Normalize a csv.DictReader row dict to English column names.
+
+    Applies COLUMN_NAME_MAPPING to handle both Spanish and English column
+    headers, and backward-compatibility aliases (e.g. layer1_file ->
+    layer1_content). Keys not in the mapping are passed through unchanged.
+    """
+    normalized = {}
+    for key, value in row.items():
+        if key is None:
+            continue
+        mapped = COLUMN_NAME_MAPPING.get(key.lower().strip())
+        normalized[mapped if mapped else key] = value
+    return normalized
 
 
 # =============================================================================
@@ -144,19 +229,26 @@ def convert_markdown_to_html(content, glossary_terms=None):
 
 
 def read_project_csv(csv_path):
-    """Read demo-project.csv and return list of project entries"""
+    """Read demo-project.csv (or proyecto.csv) and return list of project entries."""
     projects = []
     try:
         with open(csv_path, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             for row in reader:
+                row = normalize_row(row)
                 order = row.get('order', '').strip()
                 story_id = row.get('story_id', '').strip()
                 title = row.get('title', '').strip()
                 subtitle = row.get('subtitle', '').strip()
                 byline = row.get('byline', '').strip()
 
-                if order and title and story_id:  # Skip empty rows
+                # Skip empty rows and comment/helper rows
+                if not order or not title or not story_id:
+                    continue
+                if order.startswith('#'):
+                    continue
+
+                try:
                     projects.append({
                         'order': int(order),
                         'story_id': story_id,
@@ -164,6 +256,9 @@ def read_project_csv(csv_path):
                         'subtitle': subtitle,
                         'byline': byline
                     })
+                except ValueError:
+                    continue  # Skip non-numeric order values
+
     except FileNotFoundError:
         return None
     except Exception as e:
@@ -198,6 +293,11 @@ def read_objects_csv(csv_path, base_url):
     """
     Read demo-objects.csv and return dict of objects keyed by object_id.
 
+    Supports both v0.6.0 schema (medium, dimensions, location) and v0.8.0+
+    schema (year, object_type, subjects, featured, source). The 'location'
+    field from v0.6.0 CSVs is mapped to 'source' in the bundle so that all
+    bundles use a consistent field name.
+
     Auto-populates source_url for self-hosted IIIF objects.
     """
     objects = {}
@@ -207,18 +307,30 @@ def read_objects_csv(csv_path, base_url):
         with open(csv_path, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             for row in reader:
+                row = normalize_row(row)
                 object_id = row.get('object_id', '').strip()
-                if not object_id:
+                # Skip empty rows and comment/helper rows
+                if not object_id or object_id.startswith('#'):
                     continue
 
                 obj = {}
-                # Add non-empty fields
+                # Fields shared across all schema versions
                 for field in ['title', 'description', 'source_url', 'creator',
-                              'period', 'medium', 'dimensions', 'location',
-                              'credit', 'thumbnail']:
+                              'period', 'credit', 'thumbnail']:
                     value = row.get(field, '').strip()
                     if value:
                         obj[field] = value
+
+                # v0.8.0+ fields
+                for field in ['year', 'object_type', 'subjects', 'featured']:
+                    value = row.get(field, '').strip()
+                    if value:
+                        obj[field] = value
+
+                # 'source' (v0.8.0) — normalize_row handles location/ubicacion aliases
+                source_value = row.get('source', '').strip()
+                if source_value:
+                    obj['source'] = source_value
 
                 # Auto-populate source_url and thumbnail for self-hosted objects
                 if object_id in self_hosted:
@@ -254,6 +366,11 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None):
     """
     Read a story CSV and return list of steps with embedded layer content.
 
+    Layer content supports two formats (consistent with Telar main CSV format):
+    - layer{i}_file: path to a .md file relative to texts_dir (original format)
+    - layer{i}_content: inline markdown content directly in the cell (v0.5.0+)
+    layer{i}_file takes precedence if both columns are present.
+
     Args:
         csv_path: Path to the story CSV file
         texts_dir: Path to the texts/stories/{project_id}/ directory
@@ -267,12 +384,19 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None):
         with open(csv_path, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             for row in reader:
+                row = normalize_row(row)
                 step_num = row.get('step', '').strip()
-                if not step_num:
+                # Skip empty rows and comment/helper rows
+                if not step_num or step_num.startswith('#'):
                     continue
 
+                try:
+                    step_int = int(step_num)
+                except ValueError:
+                    continue  # Skip non-numeric step values (alias header rows, etc.)
+
                 step = {
-                    'step': int(step_num),
+                    'step': step_int,
                     'object': row.get('object', '').strip(),
                     'x': float(row.get('x', '0.5').strip() or '0.5'),
                     'y': float(row.get('y', '0.5').strip() or '0.5'),
@@ -288,23 +412,33 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None):
                     step['answer'] = answer
 
                 # Process layers (layer1, layer2)
+                # Supports two formats (consistent with Telar main CSV format):
+                #   layer{i}_content: inline markdown content directly in the cell
+                #   layer{i}_file: path to a .md file relative to texts_dir (legacy)
+                # normalize_row maps layer{i}_file -> layer{i}_content, so both
+                # formats are unified before we get here.
                 layers = {}
                 for i in [1, 2]:
                     button = row.get(f'layer{i}_button', '').strip()
                     file_name = row.get(f'layer{i}_file', '').strip()
+                    inline_content = row.get(f'layer{i}_content', '').strip()
 
-                    if button and file_name:
-                        # Read the markdown file
-                        md_path = texts_dir / file_name
-                        content = ""
-                        if md_path.exists():
-                            with open(md_path, 'r', encoding='utf-8') as md_file:
-                                raw_content = md_file.read().strip()
-                                # Strip YAML frontmatter - store RAW markdown
-                                # csv_to_json.py will process widgets, images, markdown, glossary links
-                                content = strip_yaml_frontmatter(raw_content)
+                    if button and (file_name or inline_content):
+                        if file_name:
+                            # Read the markdown file
+                            md_path = texts_dir / file_name
+                            content = ""
+                            if md_path.exists():
+                                with open(md_path, 'r', encoding='utf-8') as md_file:
+                                    raw_content = md_file.read().strip()
+                                    # Strip YAML frontmatter - store RAW markdown
+                                    # csv_to_json.py will process widgets, images, markdown, glossary links
+                                    content = strip_yaml_frontmatter(raw_content)
+                            else:
+                                print(f"    Warning: Layer file not found: {md_path}")
                         else:
-                            print(f"    Warning: Layer file not found: {md_path}")
+                            # Inline content directly in CSV cell
+                            content = inline_content
 
                         layers[f'layer{i}'] = {
                             'button': button,
@@ -375,6 +509,44 @@ def read_glossary_files(glossary_dir):
     return glossary
 
 
+def read_glossary_csv(csv_path):
+    """
+    Read glossary.csv and return dict keyed by term_id.
+
+    Expects columns: term_id, title, definition. Helper rows (those whose
+    term_id starts with '#' or is empty) are skipped. The definition is
+    stored as raw markdown — the same format used by read_glossary_files().
+    """
+    glossary = {}
+
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                row = normalize_row(row)
+                term_id = row.get('term_id', '').strip()
+                # Skip comment/helper rows
+                if not term_id or term_id.startswith('#'):
+                    continue
+
+                title = row.get('title', '').strip()
+                definition = row.get('definition', '').strip()
+
+                if term_id and title:
+                    glossary[term_id] = {
+                        'term': title,
+                        'content': definition
+                    }
+
+    except FileNotFoundError:
+        return {}
+    except Exception as e:
+        print(f"  Warning: Error reading {csv_path}: {e}")
+        return {}
+
+    return glossary
+
+
 def generate_bundle(version, lang, lang_dir, base_url):
     """
     Generate a complete telar-demo-bundle.json for a single language.
@@ -431,18 +603,31 @@ def generate_bundle(version, lang, lang_dir, base_url):
         warnings.append(f"[{lang}] Missing demo-objects.csv")
 
     # Read glossary FIRST (needed for processing story content)
+    # v0.8.0+: glossary.csv (EN) or glosario.csv (ES) in the language directory
+    # v0.6.0: texts/glossary/*.md files (legacy)
+    glossary_csv = lang_dir / "glossary.csv"
+    if not glossary_csv.exists():
+        glossary_csv = lang_dir / "glosario.csv"  # bilingual fallback (v0.6.0+)
     glossary_dir = lang_dir / "texts" / "glossary"
     glossary = {}
     glossary_terms = {}  # term_id -> title mapping for link processing
-    if glossary_dir.exists():
+
+    if glossary_csv.exists():
+        glossary = read_glossary_csv(glossary_csv)
+        if glossary:
+            bundle["glossary"] = glossary
+            glossary_terms = {term_id: data['term'] for term_id, data in glossary.items()}
+            print(f"  Found {len(glossary)} glossary entries (from glossary.csv)")
+        else:
+            warnings.append(f"[{lang}] glossary.csv exists but produced no entries")
+    elif glossary_dir.exists():
         glossary = read_glossary_files(glossary_dir)
         if glossary:
             bundle["glossary"] = glossary
-            # Build term_id -> title mapping
             glossary_terms = {term_id: data['term'] for term_id, data in glossary.items()}
-            print(f"  Found {len(glossary)} glossary entries")
+            print(f"  Found {len(glossary)} glossary entries (from texts/glossary/)")
     else:
-        warnings.append(f"[{lang}] Missing texts/glossary/ directory")
+        warnings.append(f"[{lang}] No glossary found (checked glossary.csv and texts/glossary/)")
 
     # Read stories (with glossary terms for link processing)
     texts_stories_dir = lang_dir / "texts" / "stories"
@@ -458,10 +643,9 @@ def generate_bundle(version, lang, lang_dir, base_url):
                 warnings.append(f"[{lang}] Missing {story_id}.csv")
                 continue
 
-            # Find texts directory for this story
+            # Find texts directory for this story (optional — inline stories have none)
             story_texts_dir = texts_stories_dir / story_id
             if not story_texts_dir.exists():
-                warnings.append(f"[{lang}] Missing texts/stories/{story_id}/ directory")
                 story_texts_dir = texts_stories_dir  # Fall back to parent
 
             # Read story steps with embedded layer content

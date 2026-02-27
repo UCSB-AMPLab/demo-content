@@ -1,0 +1,121 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://content.telar.org/iiif/objects/demo-leviathan/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Leviathan Frontispiece"
+    ],
+    "es": [
+      "Frontispicio del Leviatán"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Creator"
+        ],
+        "es": [
+          "Creador"
+        ]
+      },
+      "value": {
+        "en": [
+          "Abraham Bosse (after design by Thomas Hobbes)"
+        ],
+        "es": [
+          "Abraham Bosse (según diseño de Thomas Hobbes)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Date"
+        ],
+        "es": [
+          "Fecha"
+        ]
+      },
+      "value": {
+        "en": [
+          "1651"
+        ],
+        "es": [
+          "1651"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Attribution"
+        ],
+        "es": [
+          "Atribución"
+        ]
+      },
+      "value": {
+        "en": [
+          "British Library"
+        ],
+        "es": [
+          "British Library"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://content.telar.org/iiif/objects/demo-leviathan/canvas",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Leviathan Frontispiece"
+        ],
+        "es": [
+          "Frontispicio del Leviatán"
+        ]
+      },
+      "height": 2500,
+      "width": 1844,
+      "items": [
+        {
+          "id": "https://content.telar.org/iiif/objects/demo-leviathan/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://content.telar.org/iiif/objects/demo-leviathan/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://content.telar.org/iiif/objects/demo-leviathan/demo-leviathan.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 2500,
+                "width": 1844,
+                "service": [
+                  {
+                    "id": "https://content.telar.org/iiif/objects/demo-leviathan",
+                    "type": "ImageService3",
+                    "profile": "level0"
+                  }
+                ]
+              },
+              "target": "https://content.telar.org/iiif/objects/demo-leviathan/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [
+      "Frontispiece from Thomas Hobbes' Leviathan (1651), showing the sovereign as a giant body composed of individual citizens."
+    ],
+    "es": [
+      "Frontispicio del Leviatán de Thomas Hobbes (1651), en el que el soberano aparece como un cuerpo gigante compuesto por ciudadanos individuales."
+    ]
+  }
+}
