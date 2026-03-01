@@ -1,0 +1,21 @@
+id_término,titulo,definición
+# Escríbelo en minúsculas y sin espacios.,# Incluye un título: este campo es obligatorio.,"Contenido del panel: escribe texto aquí, pega markdown, o indica un archivo .md en /components/texts/glossary/ (la extensión .md es obligatoria)"
+historia,Historia,"Una secuencia de pasos que forman una narrativa visual. Cada historia aparece como una entrada independiente en la pestaña project (o en tu CSV) y puede recorrerse de manera individual.
+
+En Telar, las historias combinan texto e imágenes para construir argumentos, explorar temas o guiar al público a través de material visual. La historia de demostración que estás viendo es un ejemplo de una historia que enseña mientras narra."
+panel-es,Panel,"Contenido expandible que aparece sobre el visor al hacer clic en “Saber más” u otros botones similares. Los paneles ofrecen contexto adicional sin abandonar el paso actual.
+
+Telar admite dos capas de paneles:
+- **Capa 1**: Se abre desde el paso principal
+- **Capa 2**: Se abre desde dentro de la capa 1
+
+Esta presentación progresiva permite elegir el nivel de profundidad de exploración."
+paso,Paso,"Una pantalla dentro de una historia de Telar que combina el texto narrativo a la izquierda con la vista de la imagen a la derecha. Cada paso puede enfocarse en una parte distinta de una imagen usando coordenadas (x, y, zoom).
+
+Los pasos siguen el patrón Pregunta/Respuesta/Invitación: una pregunta atractiva, una respuesta breve y paneles opcionales por capas para profundizar."
+visor,Visor,"El panel interactivo de imágenes a la derecha de la pantalla. Admite zoom y paneo en alta resolución, lo que permite explorar detalles de la imagen.
+
+El visor funciona con imágenes IIIF (alojadas por museos y bibliotecas) y con imágenes autoalojadas (de tu propia colección). Se puede hacer zoom y paneo libremente, pero tus coordenadas guían la vista inicial en cada paso."
+iiif-es,IIIF,"IIIF (International Image Interoperability Framework) es un estándar abierto que permite a las instituciones compartir imágenes de alta resolución en línea. Museos, bibliotecas y archivos publican manifiestos IIIF — URLs estructuradas que describen una imagen y sus metadatos.
+
+En Telar, pega la URL de un manifiesto en la columna source_url de tu pestaña de objetos y Telar se encarga del resto: zoom, desplazamiento y zoom profundo funcionan automáticamente. Esta historia usa tanto una imagen propia (atlas-allegory) como un manifiesto IIIF externo de Princeton (leviathan)."

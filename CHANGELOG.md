@@ -1,18 +1,37 @@
 # Changelog
 
-All notable changes to the telar-demos repository.
+All notable changes to the telar-demo-content repository.
 
 ## [Unreleased]
 
-### Added
-- Initial repository structure
-- Minimal Jekyll site for content.telar.org
-- Generator script (build-demos.py) for creating demo content and IIIF tiles
-- Developer documentation in dev-docs/
-- Demo structure for v0.6.0 (en/es)
-- Self-hosted panel images in assets/images/paisajes-demo/
-- Self-hosted IIIF tiles with multilingual manifests (EN/ES)
-- IIIF manifest validation against Presentation API 3.0 schema
+### Demo Content (v0.8.1)
+- allegorical-woman / mujer-alegorica: New story with 39 steps
+- colonial-landscapes / paisajes: Updated bilingual demo with markdown panels
+- Leviathan IIIF: Self-hosted tiles for allegorical woman painting
+- Extended demo-objects catalog (51 EN / 100 ES objects)
+- Extended glossary terms (21 entries)
+
+### Demo Content (v0.6.0)
+- paisajes-demo (EN) / demo-paisajes (ES): Colonial maps and land ownership in 17th-century Bogotá
+- telar-tutorial: Bilingual tutorial story with rich media examples
+- Step 5 CTA linking to full Colonial Landscapes project
+- Self-hosted IIIF for demo-bogota-1614 painting
+- Demo-prefixed glossary terms for namespace isolation
+- Auto-generated thumbnails for self-hosted IIIF objects
+
+### Changed
+- Switched from multiple files to single JSON bundle format (telar-demo-bundle.json)
+- Moved from demos.telar.org to content.telar.org subdomain
+- Store raw markdown in bundles instead of HTML
+- Aligned demo content with story_id feature
+
+### Fixed
+- Carousel image paths to use full URLs
+- AMPL logo image path in rich_media tutorial
+- IIIF URLs: content.telar.org instead of demos.telar.org
+- Demo project CSV formatting
+- Markdown bullet list spacing
+- Caption formatting with italics
 
 ### Generator Features
 - Demo manifest generation (--manifest-only)
@@ -20,15 +39,10 @@ All notable changes to the telar-demos repository.
 - Multilingual IIIF manifests from all-demo-objects.csv
 - Schema validation with --skip-validation option
 
-### Demo Content (v0.6.0)
-- paisajes-demo (EN) / demo-paisajes (ES): Colonial maps and land ownership in 17th-century Bogotá
-- Step 5 CTA linking to full Colonial Landscapes project
-- Self-hosted IIIF for demo-bogota-1614 painting
-
 ---
 
 ## Version Format
 
-This repository uses its own versioning (v1.0.0, v1.1.0, etc.) separate from Telar versions.
+This repository uses its own versioning separate from Telar versions.
 
-Demo content is organized by Telar version (v0.6.0, v0.7.0, etc.).
+Demo content is organized by Telar version (v0.6.0, v0.8.1, etc.).

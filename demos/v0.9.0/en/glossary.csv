@@ -1,0 +1,21 @@
+term_id,title,definition
+# Make it lower-case and avoid spaces.,# Please provide a title — this is required.,"Panel content: write text here, paste markdown, or the name of an .md file in /components/texts/glossary/ (the .md extension is required)"
+panel,Panel,"Expandable content that appears over the viewer when you click “Learn more” or similar buttons. Panels provide additional context without leaving the current step.
+
+Telar supports two layers of panels:
+- **Layer 1**: Opens from the main step
+- **Layer 2**: Opens from within layer 1
+
+This progressive disclosure allows readers to choose their depth of engagement."
+step,Step,"A single screen in a Telar story, combining narrative text on the left with an image view on the right. Each step can focus on a different part of an image using coordinates (x, y, zoom).
+
+Steps follow the Question/Answer/Invitation pattern: a compelling question, a brief answer, and optional layer panels for deeper exploration."
+story,Story,"A sequence of steps that form a visual narrative. Each story appears as a separate entry in the project sheet and can be navigated independently.
+
+In Telar, stories combine text and images to build arguments, explore themes, or guide readers through visual material. The demo story you are viewing is an example of a story that teaches while it tells."
+viewer,Viewer,"The interactive image panel on the right side of the screen. It supports high-resolution zoom and pan, allowing readers to explore image details.
+
+The viewer works with both IIIF images (hosted by museums and libraries) and self-hosted images (from your own collection). Readers can zoom and pan freely, but your coordinates guide their initial view at each step."
+IIIF,IIIF,"IIIF (International Image Interoperability Framework) is an open standard that lets institutions share high-resolution images online. Museums, libraries, and archives publish IIIF manifests — structured URLs that describe an image and its metadata.
+
+In Telar, paste a manifest URL into the source_url column of your objects tab and Telar handles the rest: zoom, pan, and deep-zoom all work automatically. This story uses both a self-hosted image (atlas-allegory) and an external IIIF manifest from Princeton (leviathan)."

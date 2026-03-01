@@ -1,0 +1,39 @@
+paso,objeto,x,y,zoom,pregunta,respuesta,boton_capa1,contenido_capa1,boton_capa2,contenido_capa2
+#,id_objeto de la pestaña objetos / objects,Posición horizontal 0-1 (0.5 = centro),Posición vertical 0-1 (0.5 = centro),1.0 = imagen completa,Encabezado para este paso,Texto breve de 1-2 oraciones,"Texto opcional del botón (predeterminado: ""Saber más"")","Contenido del panel: escribe texto aquí, pega markdown, o indica ruta a archivo .md (ej. tu-historia/archivo.md)","Texto opcional del segundo botón (predeterminado: ""Profundizar más"")","Segundo panel: escribe texto aquí, pega markdown, o indica ruta a archivo .md"
+1,demo-atlas-allegory,0.5,0.5,1,¿Qué es Telar?,"Un framework para narrativas visuales. Este ejemplo explora un mapa alegórico que revela más de lo que parece mostrar a primera vista.
+
+Para descubrir cómo se armó, [abre la hoja de cálculo fuente](https://docs.google.com/spreadsheets/d/1akOcNP3hEIaN1A7tSJvXo_eQrPrl8EnyeaG0vmRpd5E/) y sigue el proceso.",,,,
+2,demo-atlas-allegory,0.5,0.5,1,¿Qué es esta imagen?,"Este grabado de 1761 parece celebrar el imperio español, pero como verás, en realidad lo cuestiona. La historiadora Natalie Cobo guía al público a través de detalles reveladores.",,,,
+3,demo-atlas-allegory,0.477,0.125,8.9,Observa la cabeza,España aparece como la cabeza de este proyecto imperial.,Sobre las coordenadas,"Este paso hace zoom a **x=0.477, y=0.125, zoom=8.9**. Los valores de x e y (0 a 1) ubican la vista dentro de la imagen, y el valor de zoom magnifica el detalle.
+
+Cada elección de coordenadas sirve a la narrativa. Aquí, el zoom extremo enfatiza la posición simbólica de España como la “cabeza” del imperio. En los siguientes pasos, las coordenadas recorrerán el cuerpo para construir el argumento.
+
+En tu propia historia, cambia x e y para desplazarte a otras partes de la imagen, y aumenta el zoom para ver más detalle. Empieza con 0.5, 0.5, 1.0 y ajusta usando la herramienta **Identificar coordenadas** en cualquier página de objeto.",,
+4,demo-atlas-allegory,0.486,0.277,10,Fíjate en el collar,La cadena está hecha de barcos: fueron las invasiones de ultramar las que ampliaron el mundo hispánico de la temprana modernidad.,,,,
+5,demo-atlas-allegory,0.504,0.415,2.9,Mira a América,La masa continental americana forma un manto indefinido que cubre a la figura alegórica.,,,,
+6,demo-atlas-allegory,0.478,0.883,10,Las Filipinas,"En contraste con el manto fluido americano, las islas Filipinas dan forma concreta a los pies de la figura.",,,,
+7,demo-atlas-allegory,0.5,0.5,1,Rutas comerciales,"Esta figura alegórica no se define por masas de tierra sino por rutas marítimas. La conexión, no el territorio, mantiene unido este cuerpo.",La revelación,"Tras cinco pasos de acercamiento a detalles — cabeza, collar, Américas, Filipinas — este paso vuelve a la vista completa (x=0.5, y=0.5, zoom=1.0) para sintetizar. Al alejarse se revela el conjunto: este imperio se define por la conexión, no por la geografía.
+
+Esta es una técnica narrativa: acercarse para construir el argumento a través de detalles, luego alejarse para sintetizar y revelar la tesis. La vista completa funciona bien para orientar y concluir.
+
+Estás leyendo un panel de “Saber más” en este momento. Haz clic en **Presentación progresiva** a continuación para aprender cómo funcionan estos paneles anidados.",Presentación progresiva,"Estás viendo un [[panel-es]] de capa 2 — el nivel más profundo de detalle en Telar.
+
+Telar ofrece tres niveles de profundidad para cada paso: la pregunta y respuesta (visible de inmediato), un panel de “Saber más” (se abre cuando haces clic en el botón) y un panel de “Profundizar más” como este (se abre desde el primer panel). La mayoría de los pasos solo necesitan la pregunta y la respuesta. Agrega paneles cuando tengas más que decir.
+
+En tu hoja de cálculo, escribe el contenido del panel directamente en las columnas contenido_capa1 y contenido_capa2. También puedes vincular términos del glosario con corchetes dobles: [[iiif-es]] se convierte en un enlace a la definición del término."
+8,demo-atlas-allegory,0.516,0.974,10,El rey,Carlos III implementó reformas centralizadoras que buscaron convertir a los reinos coloniales en entidades subordinadas cuya función era proveer riqueza a la metrópoli.,,,,
+9,demo-leviathan,0.486,0.177,3.6,Leviatán,"La tesis política de Hobbes muestra lo contrario: el gobernante como contenedor de toda la sociedad, con personas indistintas e intercambiables.",Uso de múltiples imágenes,"Este paso cambia de atlas-allegory a leviathan en la columna de objeto. Cada paso puede mostrar una imagen diferente — solo cambia el id_objeto para que coincida con cualquier imagen de tu pestaña de objetos.
+
+Telar admite dos tipos de imágenes. La alegória del Atlas proviene de la biblioteca digital de Princeton a través de [[iiif-es]] — su source_url apunta a un manifiesto alojado por la institución. El frontispicio del Leviatán es una imagen autoalojada — no necesita source_url, solo un archivo en tu repositorio que Telar convierte en mosaicos automáticamente durante la compilación.
+
+Cobo usa el Leviatán para mostrar contraste: Hobbes presenta al gobernante como contenedor de toda la sociedad, mientras que nuestro mapa alegórico arrincona al gobernante en el margen inferior. La comparación refuerza su tesis sobre conexión frente a territorio.",,
+10,demo-atlas-allegory,0.5,0.5,1,Un desafío para el rey,"Nuestra figura alegórica no tiene forma más allá de la conexión, y el gobernante queda arrinconado en la parte inferior. Esta imagen fue producida en Manila por el grabador filipino Laureano Atlas como frontispicio de la tesis de Vicente de Memije. En contexto, funciona como un desafío polémico a las reformas centralizadoras de Carlos III. Esta narrativa muestra cómo la exploración visual puede construir argumentos académicos.",¿Qué sigue?,"Esta historia demuestra cómo Telar construye argumentos académicos a través de la exploración visual:
+
+- **Narrativa guiada por coordenadas**: El zoom y el desplazamiento dirigen la atención hacia detalles que sostienen tu tesis
+- **Presentación progresiva**: Pregunta y respuesta, luego paneles de “Saber más” y “Profundizar más” permiten elegir el nivel de detalle
+- **Múltiples tipos de imágenes**: Imágenes IIIF de colecciones institucionales e imágenes autoalojadas de tu propio repositorio
+- **Integración de glosario**: Define términos una vez y vincúlos en cualquier parte con `[[término]]`
+
+Para ver la hoja de cálculo detrás de esta historia — con todas las coordenadas, preguntas y contenido de paneles visibles en sus celdas — abre la [hoja de cálculo fuente](https://docs.google.com/spreadsheets/d/1akOcNP3hEIaN1A7tSJvXo_eQrPrl8EnyeaG0vmRpd5E/).
+
+Esta narrativa emplea el análisis académico desarrollado por **Natalie Cobo**, cuyo trabajo demuestra cómo la exploración visual puede cuestionar narrativas históricas y revelar contextos ocultos de producción.",,
