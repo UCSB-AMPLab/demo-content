@@ -9,7 +9,7 @@ Usage:
     python build-demos.py --version 0.6.0 --bundle-only  # Just demo bundle
     python build-demos.py --iiif-only                  # Just IIIF tiles (no version needed)
 
-Version: v0.6.0
+Version: v0.7.0
 """
 
 import argparse
@@ -33,7 +33,7 @@ except ImportError:
     print("  Install with: pip install markdown")
 
 # Version
-GENERATOR_VERSION = "0.6.0"
+GENERATOR_VERSION = "0.7.0"
 BUNDLE_FORMAT_VERSION = "0.1"
 
 # Paths
@@ -350,7 +350,7 @@ def read_objects_csv(csv_path, base_url):
                                 if sizes:
                                     # Use largest available size (first in array)
                                     largest = sizes[0]
-                                    obj['thumbnail'] = f"{base_url}/iiif/objects/{object_id}/full/{largest['width']},/0/default.jpg"
+                                    obj['thumbnail'] = f"{base_url}/iiif/objects/{object_id}/full/{largest['width']},{largest['height']}/0/default.jpg"
                             except Exception as e:
                                 print(f"  Warning: Could not read info.json for {object_id}: {e}")
 

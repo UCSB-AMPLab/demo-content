@@ -3,7 +3,7 @@
     "bundle_format": "0.1",
     "telar_version": "0.9.0",
     "language": "es",
-    "generated": "2026-03-01T05:53:49.124705Z",
+    "generated": "2026-03-01T06:40:10.094220Z",
     "generator": "telar-demo-content/build-demos.py v0.6.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -52,7 +52,7 @@
       "featured": "TRUE",
       "source": "British Library",
       "source_url": "https://content.telar.org/iiif/objects/demo-leviathan/manifest.json",
-      "thumbnail": "https://content.telar.org/iiif/objects/demo-leviathan/full/231,/0/default.jpg"
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-leviathan/full/231,313/0/default.jpg"
     },
     "demo-bogota-1614": {
       "title": "Pintura de las tierras, ciénagas y anegadizos del pueblo de Bogotá",
@@ -66,7 +66,7 @@
       "featured": "FALSE",
       "source": "Archivo General de Indias",
       "source_url": "https://content.telar.org/iiif/objects/demo-bogota-1614/manifest.json",
-      "thumbnail": "https://content.telar.org/iiif/objects/demo-bogota-1614/full/462,/0/default.jpg"
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-bogota-1614/full/462,375/0/default.jpg"
     },
     "demo-terrafirma-map": {
       "title": "Terra firma et novum regnum Granatense et Popayan",
@@ -105,7 +105,7 @@
       "featured": "FALSE",
       "source": "Museo del Oro",
       "source_url": "https://content.telar.org/iiif/objects/demo-ceramic-figure/manifest.json",
-      "thumbnail": "https://content.telar.org/iiif/objects/demo-ceramic-figure/full/285,/0/default.jpg"
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-ceramic-figure/full/285,403/0/default.jpg"
     }
   },
   "stories": {

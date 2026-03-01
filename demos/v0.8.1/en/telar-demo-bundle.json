@@ -3,7 +3,7 @@
     "bundle_format": "0.1",
     "telar_version": "0.8.1",
     "language": "en",
-    "generated": "2026-02-27T05:57:48.396592Z",
+    "generated": "2026-03-01T06:40:38.351816Z",
     "generator": "telar-demo-content/build-demos.py v0.6.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -52,7 +52,7 @@
       "featured": "TRUE",
       "source": "British Library",
       "source_url": "https://content.telar.org/iiif/objects/demo-leviathan/manifest.json",
-      "thumbnail": "https://content.telar.org/iiif/objects/demo-leviathan/full/231,/0/default.jpg"
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-leviathan/full/231,313/0/default.jpg"
     },
     "demo-bogota-1614": {
       "title": "Painting of the lands, marshes and swamps of the town of Bogotá",
@@ -66,7 +66,7 @@
       "featured": "FALSE",
       "source": "Archivo General de Indias",
       "source_url": "https://content.telar.org/iiif/objects/demo-bogota-1614/manifest.json",
-      "thumbnail": "https://content.telar.org/iiif/objects/demo-bogota-1614/full/462,/0/default.jpg"
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-bogota-1614/full/462,375/0/default.jpg"
     },
     "demo-terrafirma-map": {
       "title": "Terra firma et novum regnum Granatense et Popayan",
@@ -105,7 +105,7 @@
       "featured": "FALSE",
       "source": "Museo del Oro",
       "source_url": "https://content.telar.org/iiif/objects/demo-ceramic-figure/manifest.json",
-      "thumbnail": "https://content.telar.org/iiif/objects/demo-ceramic-figure/full/285,/0/default.jpg"
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-ceramic-figure/full/285,403/0/default.jpg"
     }
   },
   "stories": {
