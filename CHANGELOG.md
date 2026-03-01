@@ -5,7 +5,7 @@ All notable changes to the telar-demo-content repository.
 ## [Unreleased]
 
 ### Demo Content (v0.8.1)
-- allegorical-woman / mujer-alegorica: New story with 39 steps
+- allegorical-woman / mujer-alegorica: New story with 10 steps
 - colonial-landscapes / paisajes: Updated bilingual demo with markdown panels
 - Leviathan IIIF: Self-hosted tiles for allegorical woman painting
 - Extended demo-objects catalog (51 EN / 100 ES objects)
