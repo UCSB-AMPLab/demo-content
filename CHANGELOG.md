@@ -26,6 +26,7 @@ All notable changes to the telar-demo-content repository.
 - Aligned demo content with story_id feature
 
 ### Fixed
+- Story panel markdown loading: `.md` file references in layer content were rendered as literal file paths instead of loading the actual markdown files (column normalisation conflict in `build-demos.py`)
 - Carousel image paths to use full URLs
 - AMPL logo image path in rich_media tutorial
 - IIIF URLs: content.telar.org instead of demos.telar.org

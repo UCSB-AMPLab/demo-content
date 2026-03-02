@@ -368,18 +368,18 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None):
     """
     Read a story CSV and return list of steps with embedded layer content.
 
-    Layer content supports two formats (consistent with Telar main CSV format):
-    - layer{i}_file: path to a .md file relative to texts_dir (original format)
-    - layer{i}_content: inline markdown content directly in the cell (v0.5.0+)
-    layer{i}_file takes precedence if both columns are present.
+    Layer content (layer{i}_content) is either a .md file reference
+    (e.g. paisajes/proceso_legal.md) or inline markdown text, matching
+    the convention in Telar's stories.py processor.
 
     Args:
         csv_path: Path to the story CSV file
-        texts_dir: Path to the texts/stories/{project_id}/ directory
+        texts_dir: Path to the texts/stories/ directory; .md values
+                   include the story subdirectory (e.g. paisajes/file.md)
         glossary_terms: Optional dictionary of term_id -> title for glossary link processing
 
     Returns:
-        List of step dicts with layers containing HTML content (converted from markdown)
+        List of step dicts with layers containing raw markdown content
     """
     steps = []
     try:
@@ -415,20 +415,19 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None):
 
                 # Process layers (layer1, layer2)
                 # Supports two formats (consistent with Telar main CSV format):
-                #   layer{i}_content: inline markdown content directly in the cell
-                #   layer{i}_file: path to a .md file relative to texts_dir (legacy)
+                #   layer{i}_content with a .md path: file reference relative to texts_dir
+                #   layer{i}_content with other text: inline markdown content
                 # normalize_row maps layer{i}_file -> layer{i}_content, so both
-                # formats are unified before we get here.
+                # column names are unified before we get here.
                 layers = {}
                 for i in [1, 2]:
                     button = row.get(f'layer{i}_button', '').strip()
-                    file_name = row.get(f'layer{i}_file', '').strip()
-                    inline_content = row.get(f'layer{i}_content', '').strip()
+                    cell_value = row.get(f'layer{i}_content', '').strip()
 
-                    if button and (file_name or inline_content):
-                        if file_name:
-                            # Read the markdown file
-                            md_path = texts_dir / file_name
+                    if button and cell_value:
+                        if cell_value.endswith('.md'):
+                            # File reference — read the markdown file
+                            md_path = texts_dir / cell_value
                             content = ""
                             if md_path.exists():
                                 with open(md_path, 'r', encoding='utf-8') as md_file:
@@ -440,7 +439,7 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None):
                                 print(f"    Warning: Layer file not found: {md_path}")
                         else:
                             # Inline content directly in CSV cell
-                            content = inline_content
+                            content = cell_value
 
                         layers[f'layer{i}'] = {
                             'button': button,
@@ -645,13 +644,11 @@ def generate_bundle(version, lang, lang_dir, base_url):
                 warnings.append(f"[{lang}] Missing {story_id}.csv")
                 continue
 
-            # Find texts directory for this story (optional — inline stories have none)
-            story_texts_dir = texts_stories_dir / story_id
-            if not story_texts_dir.exists():
-                story_texts_dir = texts_stories_dir  # Fall back to parent
-
             # Read story steps with embedded layer content
-            steps = read_story_csv(story_csv, story_texts_dir, glossary_terms)
+            # texts_stories_dir is the texts/stories/ directory;
+            # .md cell values include the story subdirectory
+            # (e.g. paisajes/proceso_legal.md), matching stories.py
+            steps = read_story_csv(story_csv, texts_stories_dir, glossary_terms)
             if steps:
                 bundle["stories"][story_id] = {"steps": steps}
                 print(f"  Story '{story_id}': {len(steps)} steps")
