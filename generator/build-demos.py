@@ -9,7 +9,7 @@ Usage:
     python build-demos.py --version 0.6.0 --bundle-only  # Just demo bundle
     python build-demos.py --iiif-only                  # Just IIIF tiles (no version needed)
 
-Version: v0.7.0
+Version: v0.9.0
 """
 
 import argparse
@@ -33,8 +33,8 @@ except ImportError:
     print("  Install with: pip install markdown")
 
 # Version
-GENERATOR_VERSION = "0.7.0"
-BUNDLE_FORMAT_VERSION = "0.1"
+GENERATOR_VERSION = "0.9.0"
+BUNDLE_FORMAT_VERSION = "0.2"
 
 # Paths
 SCRIPT_DIR = Path(__file__).parent
@@ -955,9 +955,10 @@ def _generate_tiles_libvips(processed_path, tiles_dir, object_id, base_url):
     if vips_props.exists():
         vips_props.unlink()
 
-    # Post-process: patch info.json and generate full/max image
+    # Post-process: patch info.json, generate full/max image, create compat dirs
     _patch_info_json(tiles_dir, object_id, base_url)
     _generate_full_max(processed_path, tiles_dir)
+    _create_compat_size_dirs(tiles_dir)
 
 
 def _patch_info_json(tiles_dir, object_id, base_url):
@@ -1008,6 +1009,26 @@ def _generate_full_max(processed_path, tiles_dir):
     if img.mode not in ('RGB', 'L'):
         img = img.convert('RGB')
     img.save(dest, 'JPEG', quality=95)
+
+
+def _create_compat_size_dirs(tiles_dir):
+    """Create w, aliases for w,h directories (IIIF 2.x compatibility).
+
+    libvips generates IIIF 3.0 size directories as w,h (e.g. 462,375).
+    Pre-v0.9.0 Telar sites construct thumbnail URLs using IIIF 2.x w, format
+    (e.g. 462,). This creates copies so both URL formats resolve.
+    """
+    full_dir = tiles_dir / 'full'
+    if not full_dir.exists():
+        return
+    for entry in full_dir.iterdir():
+        if not entry.is_dir():
+            continue
+        match = re.match(r'^(\d+),(\d+)$', entry.name)
+        if match:
+            compat_dir = full_dir / f"{match.group(1)},"
+            if not compat_dir.exists():
+                shutil.copytree(entry, compat_dir)
 
 
 def _generate_tiles_iiif(processed_path, tiles_dir, object_id, base_url):
