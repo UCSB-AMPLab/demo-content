@@ -333,6 +333,14 @@
     "IIIF": {
       "term": "IIIF",
       "content": "IIIF (International Image Interoperability Framework) is an open standard that lets institutions share high-resolution images online. Museums, libraries, and archives publish IIIF manifests — structured URLs that describe an image and its metadata.\n\nIn Telar, paste a manifest URL into the source_url column of your objects tab and Telar handles the rest: zoom, pan, and deep-zoom all work automatically. This story uses both a self-hosted image (atlas-allegory) and an external IIIF manifest from Princeton (leviathan)."
+    },
+    "demo-livestock": {
+      "term": "Livestock",
+      "content": "Cattle farming is part of a long process of coexistence between humans and animals known as \"domestication.\" Although domestication has traditionally been seen as a process in which humans dominated and tamed animals, recent research shows that this process was not fully controlled by humans and that many animals approached and coexisted with human societies of their own accord. In Africa and Eurasia, cattle farming has been practiced for at least 6,000 years, and in Spain, a livestock culture took shape throughout Antiquity and the Middle Ages as part of a network of trade and connection with other parts of Europe, the Middle East, and Asia. This form of livestock farming—centered on raising cows, sheep, goats, and pigs—depended on the use of horses and dogs to control freely-roaming livestock."
+    },
+    "demo-jorge-tadeo-lozano": {
+      "term": "Jorge Tadeo Lozano",
+      "content": "Jorge Tadeo Lozano was born in Bogotá in 1771. He studied in Europe and became interested in natural history. This allowed him to join the Royal Botanical Expedition in New Granada in 1803 as the person in charge of the zoological project. Given his high social and economic status, Lozano owned numerous estates in different climates, which made collecting animals for his zoological work easier. He went on to write *The Fauna of Cundinamarca* and participated in the publication of *Correo curioso, erudito, económico y mercantil de la ciudad de Santa Fe de Bogotá*, one of the first enlightened journals of the Republic. His work was part of the Spanish Crown's wider search for ways to promote colonial economies through scientific expeditions during the Enlightenment, specifically aiming to identify new products and commodities for export.\n\nAs part of his administrative duties within the Spanish empire, Lozano was named lieutenant protector of the Indigenous peoples of Bosa, Fusagasugá, and Usaquén in 1807. With the consolidation of the first government of the Republic, Lozano served as the first president of the United Provinces of New Granada, only to be deposed in 1811 in a coup d'état led by Antonio Nariño. After the Reconquista, Pablo Morillo's forces shot Lozano on July 6th, 1816 for his participation in republican politics in what is now the *Plaza de Los Mártires*."
     }
   }
 }
