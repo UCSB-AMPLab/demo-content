@@ -364,7 +364,57 @@ def read_objects_csv(csv_path, base_url):
     return objects
 
 
-def read_story_csv(csv_path, texts_dir, glossary_terms=None):
+def annotate_carousel_dimensions(content, base_url):
+    """Write each carousel image's width and height into its item.
+
+    Telar sizes a carousel from its images' aspect ratios. An item that does
+    not declare them makes the site's build download the image to measure
+    it -- on every build, from this server, with a timeout -- and silently
+    size the carousel as default when it cannot. Every image a demo
+    carousel names is a file in this repository, so the dimensions are
+    known here and are written into the item. An item that already
+    declares both is left alone.
+    """
+    from PIL import Image
+
+    def local_path(image):
+        prefix = f"{base_url}/assets/images/"
+        if image.startswith(prefix):
+            return REPO_ROOT / "assets" / "images" / image[len(prefix):]
+        if not image.startswith(("http://", "https://", "/")):
+            return REPO_ROOT / "assets" / "images" / image
+        return None
+
+    def annotate_item(item):
+        lines = item.split("\n")
+        keys = {line.split(":", 1)[0].strip() for line in lines if ":" in line}
+        if "width" in keys and "height" in keys:
+            return item
+        images = [line.split(":", 1)[1].strip() for line in lines
+                  if line.split(":", 1)[0].strip() == "image"]
+        if not images:
+            return item
+        path = local_path(images[0])
+        if path is None or not path.exists():
+            print(f"    Warning: Carousel image not in this repository, "
+                  f"left unmeasured: {images[0]}")
+            return item
+        with Image.open(path) as img:
+            width, height = img.size
+        body = item.rstrip()
+        return f"{body}\nwidth: {width}\nheight: {height}{item[len(body):]}"
+
+    def annotate_block(match):
+        body = match.group(1)
+        items = body.split("---")
+        return ":::carousel" + "---".join(
+            annotate_item(item) if item.strip() else item for item in items
+        ) + ":::"
+
+    return re.sub(r":::carousel(.*?):::", annotate_block, content, flags=re.DOTALL)
+
+
+def read_story_csv(csv_path, texts_dir, glossary_terms=None, base_url=DEFAULT_BASE_URL):
     """
     Read a story CSV and return list of steps with embedded layer content.
 
@@ -443,7 +493,7 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None):
 
                         layers[f'layer{i}'] = {
                             'button': button,
-                            'content': content
+                            'content': annotate_carousel_dimensions(content, base_url)
                         }
 
                 if layers:
@@ -648,7 +698,7 @@ def generate_bundle(version, lang, lang_dir, base_url):
             # texts_stories_dir is the texts/stories/ directory;
             # .md cell values include the story subdirectory
             # (e.g. paisajes/proceso_legal.md), matching stories.py
-            steps = read_story_csv(story_csv, texts_stories_dir, glossary_terms)
+            steps = read_story_csv(story_csv, texts_stories_dir, glossary_terms, base_url)
             if steps:
                 bundle["stories"][story_id] = {"steps": steps}
                 print(f"  Story '{story_id}': {len(steps)} steps")

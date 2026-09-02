@@ -26,6 +26,8 @@ All notable changes to the telar-demo-content repository.
 - Aligned demo content with story_id feature
 
 ### Fixed
+- Carousel items in generated bundles declare `width` and `height`, read from the image files in this repository, so a site build no longer downloads each carousel image from content.telar.org to size the carousel. Regenerated for v0.9.0; the v0.8.1 and v0.6.0 bundles are unchanged
+- The `demo-livestock` and `demo-jorge-tadeo-lozano` glossary entries are in the v0.8.1 and v0.9.0 English glossary sources; they had been added to the published bundles only, and regenerating dropped them
 - Story panel markdown loading: `.md` file references in layer content were rendered as literal file paths instead of loading the actual markdown files (column normalisation conflict in `build-demos.py`)
 - Carousel image paths to use full URLs
 - AMPL logo image path in rich_media tutorial
