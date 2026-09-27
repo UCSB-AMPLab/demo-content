@@ -56,7 +56,7 @@ Among the Kogi people of the Sierra Nevada of Santa Marta, for example, the [[de
 
 Among the Kogi of the Sierra Nevada of Santa Marta, a loom—in addition to being a tool for weaving—is a map that represents the human body and the geography of the Sierra.
 
-The body of a man with his arms crossed forms the shape of the loom. In turn, the four corners of the loom represent the four cities of the lowlands (Santa Marta, Rioacha, Fundación, and Valledupar), while the crosses that shape the interior represent the mountain peaks.
+The body of a man with his arms crossed forms the shape of the loom. In turn, the four corners of the loom represent the four cities of the lowlands (Santa Marta, Riohacha, Fundación, and Valledupar), while the crosses that shape the interior represent the mountain peaks.
 
 ![Framework of a Kogi loom](https://content.telar.org/assets/images/paisajes-demo/demo-telar-kogui.jpg)
 *Framework of a Kogi loom. The Loom of Life: A Kogi Principle of Integration. G. Reichel-Dolmatoff, 1978.*

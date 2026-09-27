@@ -49,13 +49,13 @@ caption: Map of the Crown Prince Islands, Disko Bay, Greenland [Mapa de las Isla
 
 ## El telar kogui
 
-Entre los kogi, por ejemplo, el [[demo-telar-kogui|telar]] es un mapa que representa la geografía de la Sierra Nevada de Santa Marta.
+Entre los kogui, por ejemplo, el [[demo-telar-kogui|telar]] es un mapa que representa la geografía de la Sierra Nevada de Santa Marta.
 
-Entre los kogi de la Sierra Nevada de Santa Marta, el telar, además de ser un instrumento para hilar sus prendas, es un mapa que representa el cuerpo humano y la geografía de la Sierra.
+Entre los kogui de la Sierra Nevada de Santa Marta, el telar, además de ser un instrumento para hilar sus prendas, es un mapa que representa el cuerpo humano y la geografía de la Sierra.
 
 El torso de un hombre con sus brazos cruzados forma la figura del telar. A su vez, las cuatro esquinas del telar representan las cuatro ciudades de las tierras bajas (Santa Marta, Riohacha, Fundación y Valledupar), mientras las cruces que se forman en su interior representan los picos nevados.
 
-![Marco de un telar Kogi](https://content.telar.org/assets/images/paisajes-demo/demo-telar-kogui.jpg)
-*Marco de un telar Kogi. En: The Loom of Life: A Kogi Principle of Integration. G. Reichel-Dolmatoff, 1978.*
+![Marco de un telar kogui](https://content.telar.org/assets/images/paisajes-demo/demo-telar-kogui.jpg)
+*Marco de un telar kogui. En: The Loom of Life: A Kogi Principle of Integration. G. Reichel-Dolmatoff, 1978.*
 
-La forma del telar crea entonces un marco que sirve a los kogi para conceptualizar y representar la geografía, y este marco también se puede expresar en sus cuerpos.
+La forma del telar crea entonces un marco que sirve a los kogui para conceptualizar y representar la geografía, y este marco también se puede expresar en sus cuerpos.
