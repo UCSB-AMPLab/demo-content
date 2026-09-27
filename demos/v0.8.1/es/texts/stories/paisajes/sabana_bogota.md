@@ -2,7 +2,7 @@
 title: Contexto geográfico
 ---
 
-El mapa representa la Sabana de Bogotá, una altiplanicie en la cordillera oriental de los Andes donde hoy es Colombia. A comienzos del siglo XVI, la Sabana estaba ocupada por indígenas Muiscas, de la familia lingüística Chibcha. Una expedición española liderada por Gonzalo Jiménez de Quesada llegó a este lugar en 1536. Desde esos años la ciudad de Bogotá se convirtió en la base de operaciones del imperio español en la zona y en 1549 la nombrarían como sede de la Audiencia de Santafé.
+El mapa representa la Sabana de Bogotá, una altiplanicie en la cordillera oriental de los Andes donde hoy es Colombia. A comienzos del siglo XVI, la Sabana estaba ocupada por indígenas muiscas, de la familia lingüística chibcha. Una expedición española liderada por Gonzalo Jiménez de Quesada llegó a este lugar en 1536. Desde esos años la ciudad de Bogotá se convirtió en la base de operaciones del imperio español en la zona y en 1549 la nombrarían como sede de la Audiencia de Santafé.
 
 :::carousel
 image: https://content.telar.org/assets/images/paisajes-demo/demo-guaman-poma-bogota.jpg

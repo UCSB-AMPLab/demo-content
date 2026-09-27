@@ -16,7 +16,7 @@ The trial ratified Maldonado y Mendoza's rights to his estate. In his will, Mald
 *Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco 1611. Courtesy of John P. Robarts Research Library, Toronto.*
 
 ![Antonio Maldonado de Mendoza portrait](https://content.telar.org/assets/images/paisajes-demo/demo-retrato-antonio-maldonado.jpg)
-*Antonio Maldonado de Mendoza. Anonymous, 18th Century. Courtesy of the Museo Colonial, Bogotá.*
+*Antonio Maldonado de Mendoza. Anonymous, eighteenth century. Courtesy of the Museo Colonial, Bogotá.*
 
 ## The Lineage
 
@@ -35,5 +35,5 @@ The lineage maintained its power for two centuries, producing viceroys and bisho
 
 Jorge Tadeo Lozano was born in Bogotá in 1771. He studied in Europe and became interested in natural history. This allowed him to join the Royal Botanical Expedition in New Granada in 1803 as the person in charge of the zoological project. Given his high social and economic status, Lozano owned numerous estates in different climates, which made collecting animals for his zoological work easier. He went on to write *The Fauna of Cundinamarca* and participated in the publication of *Correo curioso, erudito, económico y mercantil de la ciudad de Santa Fe de Bogotá*, one of the first enlightened journals of the Republic. His work was part of the Spanish Crown's wider search for ways to promote colonial economies through scientific expeditions during the Enlightenment, specifically aiming to identify new products and commodities for export.
 
-As part of his administrative duties within the Spanish empire, Lozano was named lieutenant protector of the Indigenous peoples of Bosa, Fusagasugá, and Usaquén in 1807. With the consolidation of the first government of the Republic, Lozano served as the first president of the United Provinces of New Granada, only to be deposed in 1811 in a coup d'état led by Antonio Nariño. After the Reconquista, Pablo Morillo's forces shot Lozano on July 6th, 1816 for his participation in republican politics in what is now the *Plaza de Los Mártires*.
+As part of his administrative duties within the Spanish empire, Lozano was named lieutenant protector of the Indigenous peoples of Bosa, Fusagasugá, and Usaquén in 1807. With the consolidation of the first government of the Republic, Lozano served as the first president of the United Provinces of New Granada, only to be deposed in 1811 in a coup d'état led by Antonio Nariño. After the Reconquista, Pablo Morillo's forces shot Lozano on July 6, 1816 for his participation in republican politics in what is now the *Plaza de Los Mártires*.
 :::

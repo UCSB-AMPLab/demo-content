@@ -11,4 +11,4 @@ That year, Maldonado y Mendoza began purchasing estates in the Bogotá savanna a
 
 ## The Lawsuit
 
-The *Painting of the lands, marshes, and swamps of the town of Bogotá* was presented as evidence during a 1614 legal proceeding brought by the crown prosecutor of the New Kingdom of Granada against Francisco Maldonado y Mendoza over the ownership of lands in the Bogotá savanna.
+The *Painting of the lands, marshes, and swamps of the town of Bogotá* was presented as evidence in 1614 during a legal proceeding brought by the crown prosecutor of the New Kingdom of Granada against Francisco Maldonado y Mendoza over the ownership of lands in the Bogotá savanna.

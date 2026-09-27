@@ -1,25 +1,35 @@
 term_id,title,definition
 # Make it lower-case and avoid spaces.,# Please provide a title — this is required.,"Panel content: write text here, paste markdown, or the name of an .md file in /components/texts/glossary/ (the .md extension is required)"
-panel,Panel,"Expandable content that appears over the viewer when you click “Learn more” or similar buttons. Panels provide additional context without leaving the current step.
+demo-panel,Panel,"Expandable content that appears over the viewer when you click “Learn more” or similar buttons. Panels provide additional context without leaving the current step.
 
 Telar supports two layers of panels:
 - **Layer 1**: Opens from the main step
 - **Layer 2**: Opens from within layer 1
 
 This progressive disclosure allows readers to choose their depth of engagement."
-step,Step,"A single screen in a Telar story, combining narrative text on the left with an image view on the right. Each step can focus on a different part of an image using coordinates (x, y, zoom).
+demo-step,Step,"A single screen in a Telar story, combining narrative text on the left with an image view on the right. Each step can focus on a different part of an image using coordinates (x, y, zoom).
 
 Steps follow the Question/Answer/Invitation pattern: a compelling question, a brief answer, and optional layer panels for deeper exploration."
-story,Story,"A sequence of steps that form a visual narrative. Each story appears as a separate entry in the project sheet and can be navigated independently.
+demo-story,Story,"A sequence of steps that form a visual narrative. Each story appears as a separate entry in the project sheet and can be navigated independently.
 
 In Telar, stories combine text and images to build arguments, explore themes, or guide readers through visual material. The demo story you are viewing is an example of a story that teaches while it tells."
-viewer,Viewer,"The interactive image panel on the right side of the screen. It supports high-resolution zoom and pan, allowing readers to explore image details.
+demo-viewer,Viewer,"The interactive image panel on the right side of the screen. It supports high-resolution zoom and pan, allowing readers to explore image details.
 
 The viewer works with both IIIF images (hosted by museums and libraries) and self-hosted images (from your own collection). Readers can zoom and pan freely, but your coordinates guide their initial view at each step."
-IIIF,IIIF,"IIIF (International Image Interoperability Framework) is an open standard that lets institutions share high-resolution images online. Museums, libraries, and archives publish IIIF manifests — structured URLs that describe an image and its metadata.
+demo-iiif,IIIF,"IIIF (International Image Interoperability Framework) is an open standard that lets institutions share high-resolution images online. Museums, libraries, and archives publish IIIF manifests — structured URLs that describe an image and its metadata.
 
-In Telar, paste a manifest URL into the source_url column of your objects tab and Telar handles the rest: zoom, pan, and deep-zoom all work automatically. This story uses both a self-hosted image (atlas-allegory) and an external IIIF manifest from Princeton (leviathan)."
+In Telar, paste a manifest URL into the source_url column of your objects tab and Telar handles the rest: zoom, pan, and deep-zoom all work automatically. This story uses both a self-hosted image (demo-leviathan) and an external IIIF manifest from Princeton (demo-atlas-allegory)."
 demo-livestock,Livestock,"Cattle farming is part of a long process of coexistence between humans and animals known as ""domestication."" Although domestication has traditionally been seen as a process in which humans dominated and tamed animals, recent research shows that this process was not fully controlled by humans and that many animals approached and coexisted with human societies of their own accord. In Africa and Eurasia, cattle farming has been practiced for at least 6,000 years, and in Spain, a livestock culture took shape throughout Antiquity and the Middle Ages as part of a network of trade and connection with other parts of Europe, the Middle East, and Asia. This form of livestock farming—centered on raising cows, sheep, goats, and pigs—depended on the use of horses and dogs to control freely-roaming livestock."
 demo-jorge-tadeo-lozano,Jorge Tadeo Lozano,"Jorge Tadeo Lozano was born in Bogotá in 1771. He studied in Europe and became interested in natural history. This allowed him to join the Royal Botanical Expedition in New Granada in 1803 as the person in charge of the zoological project. Given his high social and economic status, Lozano owned numerous estates in different climates, which made collecting animals for his zoological work easier. He went on to write *The Fauna of Cundinamarca* and participated in the publication of *Correo curioso, erudito, económico y mercantil de la ciudad de Santa Fe de Bogotá*, one of the first enlightened journals of the Republic. His work was part of the Spanish Crown's wider search for ways to promote colonial economies through scientific expeditions during the Enlightenment, specifically aiming to identify new products and commodities for export.
 
-As part of his administrative duties within the Spanish empire, Lozano was named lieutenant protector of the Indigenous peoples of Bosa, Fusagasugá, and Usaquén in 1807. With the consolidation of the first government of the Republic, Lozano served as the first president of the United Provinces of New Granada, only to be deposed in 1811 in a coup d'état led by Antonio Nariño. After the Reconquista, Pablo Morillo's forces shot Lozano on July 6th, 1816 for his participation in republican politics in what is now the *Plaza de Los Mártires*."
+As part of his administrative duties within the Spanish empire, Lozano was named lieutenant protector of the Indigenous peoples of Bosa, Fusagasugá, and Usaquén in 1807. With the consolidation of the first government of the Republic, Lozano served as the first president of the United Provinces of New Granada, only to be deposed in 1811 in a coup d'état led by Antonio Nariño. After the Reconquista, Pablo Morillo's forces shot Lozano on July 6, 1816 for his participation in republican politics in what is now the *Plaza de Los Mártires*."
+demo-kogi-loom,The Kogi loom,"Among the Kogi of the Sierra Nevada of Santa Marta, a loom—in addition to being a tool for weaving—is a map that represents the human body and the geography of the Sierra.
+
+The body of a man with his arms crossed forms the shape of the loom. In turn, the four corners of the loom represent the four cities of the lowlands (Santa Marta, Rioacha, Fundación, and Valledupar), while the crosses that shape the interior represent the mountain peaks.
+
+![Framework of a Kogi loom](https://content.telar.org/assets/images/paisajes-demo/demo-telar-kogui.jpg)
+*Framework of a Kogi loom. The Loom of Life: A Kogi Principle of Integration. G. Reichel-Dolmatoff, 1978.*
+
+The form of the loom creates a frame with which the Kogi conceptualize and represent geography and which can also be expressed on their bodies.
+
+Reichel-Dolmatoff, G. (1978). The Loom of Life: A Kogi Principle of Integration. *Journal of Latin American Lore*, Volume 4 (Number 1)."
