@@ -1,4 +1,4 @@
-[[Markdown]] permite dar formato enriquecido con una sintaxis sencilla y legible:
+[[demo-markdown]] permite dar formato enriquecido con una sintaxis sencilla y legible:
 
 **Funciones avanzadas:**
 

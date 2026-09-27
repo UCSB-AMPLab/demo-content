@@ -3,7 +3,7 @@
     "bundle_format": "0.1",
     "telar_version": "0.6.0",
     "language": "en",
-    "generated": "2025-12-15T16:59:00.870587Z",
+    "generated": "2026-09-26T22:13:07.947017Z",
     "generator": "telar-demo-content/build-demos.py v0.3.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -120,7 +120,7 @@
             },
             "layer2": {
               "button": "Advanced Features",
-              "content": "[[Markdown]] enables rich text formatting with simple, readable syntax:\n\n**Advanced features include:**\n\n*Block quotations* for highlighting passages:\n> This gold figure, dating from 600-1600 CE, demonstrates the Muisca's sophisticated metalworking techniques.\n\n**Footnotes** for scholarly citations:[^1]\n\n**Lists** for organizing information:\n\n- Bulleted lists for items\n- Numbered lists for sequences\n- Nested lists for hierarchies\n\n**Links** to external resources and documentation\n\n**Images and videos** can be embedded directly in panels (more on this in Step 10)\n\nFor complete details on all available formatting options, see the [Markdown Syntax Guide](https://telar.org/docs/reference/markdown-syntax/) in the Telar docs.\n\n[^1]: The Museo del Oro in Bogotá holds extensive collections of these artifacts."
+              "content": "[[demo-markdown|Markdown]] enables rich text formatting with simple, readable syntax:\n\n**Advanced features include:**\n\n*Block quotations* for highlighting passages:\n> This gold figure, dating from 600-1600 CE, demonstrates the Muisca's sophisticated metalworking techniques.\n\n**Footnotes** for scholarly citations:[^1]\n\n**Lists** for organizing information:\n\n- Bulleted lists for items\n- Numbered lists for sequences\n- Nested lists for hierarchies\n\n**Links** to external resources and documentation\n\n**Images and videos** can be embedded directly in panels (more on this in Step 10)\n\nFor complete details on all available formatting options, see the [Markdown Syntax Guide](https://telar.org/docs/reference/markdown-syntax/) in the Telar docs.\n\n[^1]: The Museo del Oro in Bogotá holds extensive collections of these artifacts."
             }
           }
         },
@@ -264,9 +264,9 @@
         {
           "step": 3,
           "object": "demo-bogota-1614",
-          "x": 0.75,
-          "y": 0.3,
-          "zoom": 3.0,
+          "x": 0.2806,
+          "y": 0.3007,
+          "zoom": 1.43,
           "question": "Is it a map or a painting?",
           "answer": "This unique 'legal painting' functions as both map and landscape art. It is rare for being signed by its creator Juan de Aguilar Rendón and uses color, variable scaling, and possibly Indigenous pigments to represent the disputed territory.",
           "layers": {
@@ -283,9 +283,9 @@
         {
           "step": 4,
           "object": "demo-bogota-1614",
-          "x": 0.6,
-          "y": 0.7,
-          "zoom": 2.2,
+          "x": 0.6972,
+          "y": 0.688,
+          "zoom": 1.349,
           "question": "Who were the owners of this land?",
           "answer": "The estate depicted on the painting belonged to Francisco de Maldonado y Mendoza. His descendants obtained titles of nobility and the estate became the center of the Marquisate of San Jorge, producing viceroys and bishops for two centuries.",
           "layers": {

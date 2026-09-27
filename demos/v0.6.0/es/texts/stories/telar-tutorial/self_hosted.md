@@ -2,7 +2,7 @@ No tienes que depender solo de colecciones institucionales: **Telar también fun
 
 **Cómo funciona:** consulta [Imágenes IIIF locales](https://telar.org/guia/integracion-iiif/#opcion-1-imagenes-locales) en la guía de Telar
 1. Coloca imágenes en alta resolución en `components/images/`
-2. Telar genera [[iiif-tiles]] de manera automática durante el *build*
+2. Telar genera [[demo-iiif-tiles]] de manera automática durante el *build*
 3. Tus imágenes quedan con las mismas opciones de zoom y paneo que los materiales de grandes instituciones
 
 **El resultado:** esta figura de cerámica usa teselas IIIF generadas localmente, mientras que el mapa anterior proviene de la Huntington Library. Funcionan igual de bien y la persona lectora no nota la diferencia.

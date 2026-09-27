@@ -1,4 +1,4 @@
-[[Markdown]] enables rich text formatting with simple, readable syntax:
+[[demo-markdown|Markdown]] enables rich text formatting with simple, readable syntax:
 
 **Advanced features include:**
 

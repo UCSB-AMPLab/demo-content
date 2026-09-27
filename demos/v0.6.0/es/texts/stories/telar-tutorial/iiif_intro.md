@@ -1,4 +1,4 @@
-Telar se basa en [[iiif|IIIF]] (International Image Interoperability Framework), un estándar abierto que facilita publicar, ver y anotar imágenes en alta resolución en la web (ver la [guía de integración IIIF](https://telar.org/guia/integracion-iiif/) en la guía de Telar).
+Telar se basa en [[demo-iiif|IIIF]] (International Image Interoperability Framework), un estándar abierto que facilita publicar, ver y anotar imágenes en alta resolución en la web (ver la [guía de integración IIIF](https://telar.org/guia/integracion-iiif/) en la guía de Telar).
 
 **Por qué importa IIIF:**
 
@@ -7,7 +7,7 @@ Telar se basa en [[iiif|IIIF]] (International Image Interoperability Framework),
 - Sin necesidad de descargar ni almacenar archivos de imagen pesados
 - Las imágenes permanecen en los servidores de la institución con su debida atribución
 
-**Este mapa** proviene de la [[iiif-manifest|colección IIIF]] de la Huntington Library y se carga sin problemas en Telar.
+**Este mapa** proviene de la [[demo-iiif-manifest|colección IIIF]] de la Huntington Library y se carga sin problemas en Telar.
 
 **Busca recursos IIIF:** ver [Recursos IIIF externos](https://telar.org/guia/integracion-iiif/#opcion-2-recursos-iiif-externos) en la guía de Telar
 

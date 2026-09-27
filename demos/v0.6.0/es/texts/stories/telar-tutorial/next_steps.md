@@ -19,9 +19,9 @@
 
 **Lo que aprendiste:**
 
-- Trabajar con imágenes [[iiif]] de instituciones
-- Autogenerar [[iiif-tiles]] a partir de tus propias imágenes
-- Usar [[markdown]] para formatear texto enriquecido
+- Trabajar con imágenes [[demo-iiif]] de instituciones
+- Autogenerar [[demo-iiif-tiles]] a partir de tus propias imágenes
+- Usar [[demo-markdown]] para formatear texto enriquecido
 - Controlar paneo y zoom para guiar a quien lee
 - Crear entradas de glosario con autoenlace
 - Añadir widgets interactivos a los paneles

@@ -2,11 +2,11 @@ El sistema de glosario de Telar ofrece **enlaces automáticos tipo wiki** para l
 
 **Cómo funciona:**
 1. Crea archivos de glosario en `components/texts/glossary/`
-2. Enlaza términos en tu texto con doble corchete: `[[iiif]]` o `[[iiif-tiles|teselas IIIF]]`
+2. Enlaza términos en tu texto con doble corchete: `[[demo-iiif]]` o `[[demo-iiif-tiles|teselas IIIF]]`
 3. Telar convierte estos marcadores en enlaces clicables
 4. Al hacer clic, se abre un panel deslizable con la definición completa
 
-**Pruébalo ahora:** A lo largo de este tutorial viste términos enlazados como [[iiif]], [[iiif-tiles]], [[iiif-manifest|manifiestos IIIF]] y [[markdown]]. Haz clic en cualquiera para ver la definición completa.
+**Pruébalo ahora:** A lo largo de este tutorial viste términos enlazados como [[demo-iiif]], [[demo-iiif-tiles]], [[demo-iiif-manifest|manifiestos IIIF]] y [[demo-markdown]]. Haz clic en cualquiera para ver la definición completa.
 
 **Varias perspectivas con tabs:**
 

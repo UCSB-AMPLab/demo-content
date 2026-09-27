@@ -23,4 +23,4 @@ Usa los **botones de flecha** que aparecen en la parte inferior de la pantalla. 
 Los gestos de deslizamiento también funcionan en móviles.
 :::
 
-**Formateo de texto:** El contenido de los paneles admite toda la sintaxis de [[markdown]]: **negritas**, *cursivas*, [enlaces](https://telar.org), listas, citas en bloque e incluso notas al pie para referencias (ver la [guía de sintaxis de Markdown](https://telar.org/guia/referencia/sintaxis-markdown/) en la guía de Telar).
+**Formateo de texto:** El contenido de los paneles admite toda la sintaxis de [[demo-markdown]]: **negritas**, *cursivas*, [enlaces](https://telar.org), listas, citas en bloque e incluso notas al pie para referencias (ver la [guía de sintaxis de Markdown](https://telar.org/guia/referencia/sintaxis-markdown/) en la guía de Telar).
