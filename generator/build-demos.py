@@ -9,7 +9,7 @@ Usage:
     python build-demos.py --version 0.6.0 --bundle-only  # Just demo bundle
     python build-demos.py --iiif-only                  # Just IIIF tiles (no version needed)
 
-Version: v0.9.0
+Version: v1.8.0
 """
 
 import argparse
@@ -33,7 +33,7 @@ except ImportError:
     print("  Install with: pip install markdown")
 
 # Version
-GENERATOR_VERSION = "0.9.0"
+GENERATOR_VERSION = "1.8.0"
 BUNDLE_FORMAT_VERSION = "0.2"
 
 # Paths
@@ -111,7 +111,19 @@ COLUMN_NAME_MAPPING = {
     'definición': 'definition',
     'terminos_relacionados': 'related_terms',
     'términos_relacionados': 'related_terms',
+    'tipo': 'kind',
+
+    # Columns read since Telar 1.x (Spanish -> English)
+    'texto_alt': 'alt_text',
+    'pagina': 'page',
+    'página': 'page',
+    'medio_genero': 'medium',
+    'medium_genre': 'medium',
+    'mostrar_secciones': 'show_sections',
 }
+
+# Cell values a site's sheet accepts as "yes"
+TRUE_VALUES = {'yes', 'sí', 'si', 'true', 'x', '1'}
 
 
 def normalize_row(row):
@@ -134,6 +146,25 @@ def normalize_row(row):
 # =============================================================================
 # DEMO BUNDLE GENERATION
 # =============================================================================
+
+def frontmatter_title(content):
+    """
+    Return the `title` a markdown file's YAML front matter sets, or ''.
+
+    A panel's title is shown at the top of its panel; without one the
+    site falls back to the button text.
+    """
+    content = content.strip()
+    if not content.startswith('---'):
+        return ''
+    for line in content.split('\n')[1:]:
+        if line.strip() == '---':
+            return ''
+        match = re.match(r'^title:\s*(.+)$', line)
+        if match:
+            return match.group(1).strip().strip('"\'')
+    return ''
+
 
 def strip_yaml_frontmatter(content):
     """
@@ -251,15 +282,18 @@ def read_project_csv(csv_path):
                     continue
 
                 try:
-                    projects.append({
+                    project = {
                         'order': int(order),
                         'story_id': story_id,
                         'title': title,
                         'subtitle': subtitle,
                         'byline': byline
-                    })
+                    }
                 except ValueError:
                     continue  # Skip non-numeric order values
+                if row.get('show_sections', '').strip().lower() in TRUE_VALUES:
+                    project['show_sections'] = True
+                projects.append(project)
 
     except FileNotFoundError:
         return None
@@ -323,8 +357,9 @@ def read_objects_csv(csv_path, base_url):
                     if value:
                         obj[field] = value
 
-                # v0.8.0+ fields
-                for field in ['year', 'object_type', 'subjects', 'featured']:
+                # v0.8.0+ fields, and the 1.x ones the site merge carries
+                for field in ['year', 'object_type', 'subjects', 'featured',
+                              'medium', 'alt_text']:
                     value = row.get(field, '').strip()
                     if value:
                         obj[field] = value
@@ -462,6 +497,10 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None, base_url=DEFAULT_BA
                     step['question'] = question
                 if answer:
                     step['answer'] = answer
+                for field in ['alt_text', 'page']:
+                    value = row.get(field, '').strip()
+                    if value:
+                        step[field] = value
 
                 # Process layers (layer1, layer2)
                 # Supports two formats (consistent with Telar main CSV format):
@@ -474,7 +513,8 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None, base_url=DEFAULT_BA
                     button = row.get(f'layer{i}_button', '').strip()
                     cell_value = row.get(f'layer{i}_content', '').strip()
 
-                    if button and cell_value:
+                    if cell_value:
+                        title = ''
                         if cell_value.endswith('.md'):
                             # File reference — read the markdown file
                             md_path = texts_dir / cell_value
@@ -485,16 +525,20 @@ def read_story_csv(csv_path, texts_dir, glossary_terms=None, base_url=DEFAULT_BA
                                     # Strip YAML frontmatter - store RAW markdown
                                     # csv_to_json.py will process widgets, images, markdown, glossary links
                                     content = strip_yaml_frontmatter(raw_content)
+                                    title = frontmatter_title(raw_content)
                             else:
                                 print(f"    Warning: Layer file not found: {md_path}")
                         else:
                             # Inline content directly in CSV cell
                             content = cell_value
 
+                        # A blank button gets the site's default label.
                         layers[f'layer{i}'] = {
                             'button': button,
                             'content': annotate_carousel_dimensions(content, base_url)
                         }
+                        if title:
+                            layers[f'layer{i}']['title'] = title
 
                 if layers:
                     step['layers'] = layers
@@ -584,10 +628,15 @@ def read_glossary_csv(csv_path):
                 definition = row.get('definition', '').strip()
 
                 if term_id and title:
-                    glossary[term_id] = {
+                    entry = {
                         'term': title,
                         'content': definition
                     }
+                    for field in ['kind', 'related_terms']:
+                        value = row.get(field, '').strip()
+                        if value:
+                            entry[field] = value
+                    glossary[term_id] = entry
 
     except FileNotFoundError:
         return {}
