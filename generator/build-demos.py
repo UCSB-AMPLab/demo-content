@@ -123,7 +123,7 @@ COLUMN_NAME_MAPPING = {
 }
 
 # Cell values a site's sheet accepts as "yes"
-TRUE_VALUES = {'yes', 'sí', 'si', 'true', 'x', '1'}
+TRUE_VALUES = {'yes', 'true', 'sí', 'si'}
 
 
 def normalize_row(row):
