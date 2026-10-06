@@ -3,7 +3,7 @@
     "bundle_format": "0.2",
     "telar_version": "1.8.0",
     "language": "es",
-    "generated": "2026-10-06T20:53:15.619139Z",
+    "generated": "2026-10-06T20:53:50.589879Z",
     "generator": "telar-demo-content/build-demos.py v1.8.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -674,7 +674,7 @@
       "kind": "fuente"
     },
     "demo-lorenzo-requero": {
-      "term": "Petición de Lorenzo Requero",
+      "term": "Petición de Lorenzo de Requero",
       "content": "> “Lorenzo de Requero digo que yo nací en esta corte y a causa de ser mi madre natural de Ubatoque de la encomienda del capitán Antonio de Céspedes y parienta de los caciques me casé en el dicho repartimiento con Catalina Çimca india del dicho pueblo donde tenemos cuatro hijos y para sustentarlos tenemos en los resguardos que vuestra merced señaló más tierras en que sembramos y cultivamos que son tierras habidas y adquiridas por naturaleza que es en el sitio que llaman quosvita por abajo y arriba del y porque así criando ganados y haciendo en mi vecindad lo que debo me temo que seré inquietado por el encomendero u por el cacique o corregidor por decir que soy mestizo estando como yo estoy fuera del pueblo y en la tierra dicha donde voy plantando árboles frutíferos para con que sustentarme y pues yo vivo sin perjuicio y la dicha tierra es de mi mujer y de mis parientes y está dentro en el resguardo.\n\n> Suplico a vuestra merced me mande dar mandamiento para que yo no sea inquietado ni molestado en razón de querer me echar de la dicha tierra pues es de mi mujer y de mis tíos y parientes y tengo en ella mi vivienda y estada y voy criando ganados y para ello firma\n\n> Lorenzo Requero”",
       "kind": "fuente"
     },

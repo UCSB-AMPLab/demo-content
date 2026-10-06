@@ -3,7 +3,7 @@
     "bundle_format": "0.2",
     "telar_version": "1.8.0",
     "language": "en",
-    "generated": "2026-10-06T20:53:15.576571Z",
+    "generated": "2026-10-06T20:53:50.564128Z",
     "generator": "telar-demo-content/build-demos.py v1.8.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -678,7 +678,7 @@
       "kind": "source"
     },
     "demo-lorenzo-requero": {
-      "term": "Petition of Lorenzo Requero",
+      "term": "Petition of Lorenzo de Requero",
       "content": "> “I, Lorenzo de Requero, was born in this court and due to my mother being a native of Ubatoque in the encomienda of Captain Antonio de Céspedes and relative of the caciques, in this jurisdiction I married Catalina Cimca, native of this village in which we have four children, and for their sustenance we have the *resguardos* Your Mercy mentioned, as well as lands in which we sow and grow food. These are lands we came to and acquired by natural right, and they are in the place called Quosvita, under and above it, and because I raise livestock and do what I have to do in my neighborhood, I fear the *encomendero*, or the cacique, or the *corregidor* will bother me, claiming that I am a mestizo and outside the boundary of the village where I am planting fruit trees to feed myself, and because I live doing no harm and the land belongs to my wife and my relatives and it is inside the *resguardo*.\n\n> “I beg Your Mercy to give me assurance so that I am not bothered or disturbed because they want to expel me from the land as it belongs to my wife and my uncles and relatives, and in it I have my house and my home and I raise cattle and for this I sign,\n\n> Lorenzo Requero.”",
       "kind": "source"
     },
