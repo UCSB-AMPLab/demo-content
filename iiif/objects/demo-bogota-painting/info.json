@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/image/3/context.json",
+  "id": "https://content.telar.org/iiif/objects/demo-bogota-painting",
+  "type": "ImageService3",
+  "profile": "level0",
+  "protocol": "http://iiif.io/api/image",
+  "tiles": [
+    {
+      "scaleFactors": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "width": 512
+    }
+  ],
+  "width": 2586,
+  "height": 2102,
+  "sizes": [
+    {
+      "width": 96,
+      "height": 78
+    },
+    {
+      "width": 96,
+      "height": 78
+    },
+    {
+      "width": 324,
+      "height": 263
+    },
+    {
+      "width": 647,
+      "height": 526
+    },
+    {
+      "width": 1293,
+      "height": 1051
+    },
+    {
+      "width": 2586,
+      "height": 2102
+    }
+  ],
+  "extraFormats": [
+    "jpg"
+  ],
+  "extraQualities": [
+    "default"
+  ]
+}

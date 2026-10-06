@@ -1,0 +1,53 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://content.telar.org/iiif/objects/demo-obj25/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Extracto de la solicitud de Don Francisco, cacique de Ubaque, a la Audiencia de Santa Fe para transformar las costumbres de sucesi\u00f3n de los cacicazgos muiscas"
+    ]
+  },
+  "metadata": [],
+  "summary": null,
+  "items": [
+    {
+      "id": "https://content.telar.org/iiif/objects/demo-obj25/canvas",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Extracto de la solicitud de Don Francisco, cacique de Ubaque, a la Audiencia de Santa Fe para transformar las costumbres de sucesi\u00f3n de los cacicazgos muiscas"
+        ]
+      },
+      "height": 6600,
+      "width": 5100,
+      "items": [
+        {
+          "id": "https://content.telar.org/iiif/objects/demo-obj25/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://content.telar.org/iiif/objects/demo-obj25/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://content.telar.org/iiif/objects/demo-obj25/demo-obj25.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 6600,
+                "width": 5100,
+                "service": [
+                  {
+                    "id": "https://content.telar.org/iiif/objects/demo-obj25",
+                    "type": "ImageService3",
+                    "profile": "level0"
+                  }
+                ]
+              },
+              "target": "https://content.telar.org/iiif/objects/demo-obj25/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

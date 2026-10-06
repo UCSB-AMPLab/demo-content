@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/image/3/context.json",
+  "id": "https://content.telar.org/iiif/objects/demo-obj47/page-1",
+  "type": "ImageService3",
+  "profile": "level0",
+  "protocol": "http://iiif.io/api/image",
+  "tiles": [
+    {
+      "scaleFactors": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "width": 512
+    }
+  ],
+  "width": 1956,
+  "height": 2582,
+  "sizes": [
+    {
+      "width": 96,
+      "height": 127
+    },
+    {
+      "width": 96,
+      "height": 127
+    },
+    {
+      "width": 245,
+      "height": 323
+    },
+    {
+      "width": 489,
+      "height": 646
+    },
+    {
+      "width": 978,
+      "height": 1291
+    },
+    {
+      "width": 1956,
+      "height": 2582
+    }
+  ],
+  "extraFormats": [
+    "jpg"
+  ],
+  "extraQualities": [
+    "default"
+  ]
+}

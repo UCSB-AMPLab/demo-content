@@ -1,0 +1,683 @@
+{
+  "_meta": {
+    "bundle_format": "0.2",
+    "telar_version": "1.8.0",
+    "language": "en",
+    "generated": "2026-10-06T02:35:27.430188Z",
+    "generator": "telar-demo-content/build-demos.py v1.8.0",
+    "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
+    "description": "Demo content bundle for Telar storytelling framework",
+    "license": "CC BY-NC 4.0"
+  },
+  "iiif_base_url": "https://content.telar.org/iiif/objects",
+  "project": [
+    {
+      "order": 1,
+      "story_id": "allegorical-woman",
+      "title": "The Allegorical Woman",
+      "subtitle": "An allegorical map that challenges imperial authority — a simple story",
+      "byline": "By Natalie Cobo"
+    },
+    {
+      "order": 2,
+      "story_id": "colonial-landscapes",
+      "title": "Colonial Landscapes",
+      "subtitle": "A 1614 legal painting of the Bogotá savanna — a story with complex content",
+      "byline": "By Santiago Muñoz, Adelaida Ávila, and María Alejandra Orduz Avella",
+      "show_sections": true
+    }
+  ],
+  "objects": {
+    "demo-bogota-painting": {
+      "title": "Pintura de las tierras, pantanos y anegadizos del pueblo de Bogotá hecha por mandato de la Real Audiencia de esta ciudad de Santa Fe del Nuevo Reyno de Granada en la causa que en ella trata el señor fiscal con don Francisco Maldonado de Mendoza",
+      "source_url": "https://content.telar.org/iiif/objects/demo-bogota-painting/manifest.json",
+      "creator": "Juan de Aguilar Rendón",
+      "credit": "Courtesy of Archivo General de Indias, Seville.",
+      "year": "1614",
+      "medium": "Mapas y planos",
+      "alt_text": "Pintura de las tierras, pantanos y anegadizos del pueblo de Bogotá hecha por mandato de la Real Audiencia de esta ciudad de Santa Fe del Nuevo Reyno de Granada en la causa que en ella trata el señor fiscal con don Francisco Maldonado de Mendoza",
+      "source": "Sevilla, España. Archivo General de Indias, signatura: MP-PANAMA,336."
+    },
+    "demo-obj3": {
+      "title": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro II, título XV, ley primera - Que lo descubierto de las Indias se divida en doce Audiencias",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj3/manifest.json",
+      "creator": "Anónimo",
+      "credit": "Courtesy of Biblioteca Nacional de España, Madrid.",
+      "year": "1681",
+      "medium": "Documentos legales",
+      "alt_text": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro II, título XV, ley primera - Que lo descubierto de las Indias se divida en doce Audiencias",
+      "source": "Madrid, España. Biblioteca Nacional de España, signatura: R/38739-387423/25836 V. 1"
+    },
+    "demo-obj5": {
+      "title": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro VI, título VII, ley primera - Que estando la tierra pacífica, el gobernador reparta los indios de ella",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj5/manifest.json",
+      "creator": "Anónimo",
+      "credit": "Courtesy of Biblioteca Nacional de España, Madrid.",
+      "year": "1681",
+      "medium": "Documentos legales",
+      "alt_text": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro VI, título VII, ley primera - Que estando la tierra pacífica, el gobernador reparta los indios de ella",
+      "source": "Madrid, España. Biblioteca Nacional de España, signatura: R/38739-387423/25836 V. 1"
+    },
+    "demo-obj25": {
+      "title": "Extracto de la solicitud de Don Francisco, cacique de Ubaque, a la Audiencia de Santa Fe para transformar las costumbres de sucesión de los cacicazgos muiscas",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj25/manifest.json",
+      "credit": "Courtesy of Archivo General de Indias, Seville.",
+      "year": "1583",
+      "medium": "Documentos legales",
+      "alt_text": "Extracto de la solicitud de Don Francisco, cacique de Ubaque, a la Audiencia de Santa Fe para transformar las costumbres de sucesión de los cacicazgos muiscas",
+      "source": "Sevilla, España. Archivo General de Indias, Audiencia de Santa Fe 125 n.10"
+    },
+    "demo-obj27": {
+      "title": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro VI, título III - Que los indios sean reducidos a poblaciones; que en cada reducción haya iglesia con puerta, y llave",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj27/manifest.json",
+      "creator": "Anónimo",
+      "credit": "Courtesy of Biblioteca Nacional de España, Madrid.",
+      "year": "1681",
+      "medium": "Documentos legales",
+      "alt_text": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro VI, título III - Que los indios sean reducidos a poblaciones; que en cada reducción haya iglesia con puerta, y llave",
+      "source": "Madrid, España. Biblioteca Nacional de España, signatura: R/38739-387423/25836 V. 1"
+    },
+    "demo-obj35": {
+      "title": "Visita judicial a Choachí",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj35/manifest.json",
+      "credit": "Courtesy of the Archivo General de la Nación, Bogotá.",
+      "year": "1563",
+      "medium": "Documentos legales",
+      "alt_text": "Visita judicial a Choachí",
+      "source": "Bogotá, Colombia. Archivo General de la Nación, Visitas Cundinamarca, t. 12, ff. 1047-1050"
+    },
+    "demo-obj44": {
+      "title": "Instrucciones para el Administrador de Indios e Indias Mulatos y Mulatas de Santa Fe",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj44/manifest.json",
+      "credit": "Courtesy of Archivo General de Indias, Seville.",
+      "year": "1594",
+      "medium": "Documentos legales",
+      "alt_text": "Instrucciones para el Administrador de Indios e Indias Mulatos y Mulatas de Santa Fe",
+      "source": "Sevilla, España. Archivo General de Indias, Audiencia de Santa Fe. Legajo 93, n. 16, ff. 500r - 501r."
+    },
+    "demo-obj47": {
+      "title": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro IV, título XVII, ley décima - Que en la tierra, que los indios labraren no se metan ganados",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj47/manifest.json",
+      "creator": "Anónimo",
+      "credit": "Courtesy of Biblioteca Nacional de España, Madrid.",
+      "year": "1681",
+      "medium": "Documentos legales",
+      "alt_text": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro IV, título XVII, ley décima - Que en la tierra, que los indios labraren no se metan ganados",
+      "source": "Madrid, España. Biblioteca Nacional de España, signatura: R/38739-387423/25836 V. 1"
+    },
+    "demo-obj48": {
+      "title": "Quejas de indígenas por daños de ganado en sus cultivos",
+      "description": "[Transcription](https://drive.google.com/file/d/1ANm7_3w19G1pUVewh-n79W0g7COVrye8/view?usp=sharing)",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj48/manifest.json",
+      "credit": "Courtesy of the Archivo General de la Nación, Bogotá.",
+      "year": "1672",
+      "medium": "Documentos legales",
+      "alt_text": "Quejas de indígenas por daños de ganado en sus cultivos",
+      "source": "Bogotá, Colombia. Archivo General de la Nación, Resguardos-Boyacá, 7, D.10, ff. 672-704. 1672."
+    },
+    "demo-obj51": {
+      "title": "Demanda contra corregidores",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj51/manifest.json",
+      "credit": "Courtesy of the Archivo General de la Nación, Bogotá.",
+      "year": "1594",
+      "medium": "Documentos legales",
+      "alt_text": "Demanda contra corregidores",
+      "source": "Bogotá, Colombia. Archivo General de la Nación, Visitas Cundinamarca, t. 8, f. 381r-v."
+    },
+    "demo-atlas-allegory": {
+      "title": "Aspecto Symbólico del Mundo Hispánico",
+      "description": "Allegorical map of the “Hispanic World”, engraved by Laureano Atlas and published as the frontispiece to Vicente Memije, Theses Mathematicas de Cosmographia, Geographia y Hydrographia (Manila: 1761)",
+      "source_url": "https://figgy.princeton.edu/concern/scanned_resources/3497e01a-5086-4528-86ba-6f67ce402eec/manifest",
+      "creator": "Laureano Atlas",
+      "period": "18th century",
+      "credit": "Princeton University Library",
+      "year": "1761",
+      "subjects": "colonialism, cartography, allegory",
+      "featured": "FALSE",
+      "source": "Princeton University Library"
+    },
+    "demo-leviathan": {
+      "title": "Leviathan Frontispiece",
+      "description": "Frontispiece from Thomas Hobbes’ Leviathan (1651), showing the sovereign as a giant body composed of individual citizens",
+      "creator": "Abraham Bosse (after design by Thomas Hobbes)",
+      "period": "17th century",
+      "credit": "British Library",
+      "year": "1651",
+      "subjects": "political philosophy, sovereignty",
+      "featured": "TRUE",
+      "source": "British Library",
+      "source_url": "https://content.telar.org/iiif/objects/demo-leviathan/manifest.json",
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-leviathan/full/231,313/0/default.jpg"
+    }
+  },
+  "stories": {
+    "allegorical-woman": {
+      "steps": [
+        {
+          "step": 1,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "What is Telar?",
+          "answer": "A framework for visual storytelling. This example explores an allegorical map that reveals more than it first appears to show. \n\nTo see how it's built, [peek behind the scenes to see the source](https://docs.google.com/spreadsheets/d/1iHNXqlAx8GsKc5dB42zZO-OmiCXP1jc4gbflms3xaMw/) and follow along."
+        },
+        {
+          "step": 2,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "What is this image?",
+          "answer": "This 1761 engraving appears to celebrate the Spanish empire — but as we’ll see, it actually challenges it. Historian Natalie Cobo guides readers through telling details."
+        },
+        {
+          "step": 3,
+          "object": "demo-atlas-allegory",
+          "x": 0.477,
+          "y": 0.125,
+          "zoom": 8.9,
+          "question": "Notice the head",
+          "answer": "Spain is depicted as the head of this imperial project.",
+          "layers": {
+            "layer1": {
+              "button": "About Coordinates",
+              "content": "This step zooms to **x=0.477, y=0.125, zoom=8.9**. The x and y values (0 to 1) position the view within the image, and the zoom value magnifies the detail.\n\nEach coordinate choice serves the narrative. Here, extreme zoom emphasizes Spain’s symbolic position as the “head” of empire. In the next steps, coordinates will pan across the body to build the argument.\n\nIn your own story, change x and y to pan to different parts of the image, and increase zoom to see more detail. Start with 0.5, 0.5, 1.0 and refine using the **Identify coordinates** tool on any object page."
+            }
+          }
+        },
+        {
+          "step": 4,
+          "object": "demo-atlas-allegory",
+          "x": 0.486,
+          "y": 0.277,
+          "zoom": 10.0,
+          "question": "Consider the necklace",
+          "answer": "The chain is made of ships — it was overseas invasions that expanded the early modern Spanish world."
+        },
+        {
+          "step": 5,
+          "object": "demo-atlas-allegory",
+          "x": 0.504,
+          "y": 0.415,
+          "zoom": 2.9,
+          "question": "Look at the Americas",
+          "answer": "The American landmass forms an ill-defined cloak covering the allegorical woman."
+        },
+        {
+          "step": 6,
+          "object": "demo-atlas-allegory",
+          "x": 0.478,
+          "y": 0.883,
+          "zoom": 10.0,
+          "question": "The Philippines",
+          "answer": "In stark contrast to the flowing American cloak, the Philippine Islands give concrete form to the woman’s feet."
+        },
+        {
+          "step": 7,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Trade routes",
+          "answer": "This allegorical woman is not defined by landmasses but by shipping lanes. Connection, not territory, holds this body together.",
+          "layers": {
+            "layer1": {
+              "button": "The Reveal",
+              "content": "After four steps of zooming into details — head, necklace, Americas, Philippines — this step returns to the full view (x=0.5, y=0.5, zoom=1.0) for synthesis. Pulling back reveals the whole: this empire is defined by connection, not geography.\n\nThis is a narrative technique: zoom in to build your argument through details, then zoom out to synthesize and reveal your thesis. Full view works well for orientation and conclusion.\n\nYou are reading a “Learn more” panel right now. Click **Progressive Disclosure** below to learn how these nested panels work."
+            },
+            "layer2": {
+              "button": "Progressive Disclosure",
+              "content": "You are now viewing a layer 2 [[demo-panel|panel]] — the deepest level of detail in Telar.\n\nTelar offers three levels of depth for each step: the question and answer (visible immediately), a “Learn more” panel (opens when the reader clicks the button), and a “Go deeper” panel like this one (opens from within the first panel). Most steps need only the question and answer. Add panels when you have more to say.\n\nIn your spreadsheet, write panel content directly in the layer1_content and layer2_content columns. You can also link glossary terms using double-bracket syntax: <code>&#91;&#91;demo-iiif&#93;&#93;</code> becomes a clickable link to the term’s definition, like this: [[demo-iiif]]."
+            }
+          }
+        },
+        {
+          "step": 8,
+          "object": "demo-atlas-allegory",
+          "x": 0.516,
+          "y": 0.974,
+          "zoom": 10.0,
+          "question": "The King",
+          "answer": "Charles III introduced the centralizing Bourbon reforms, which sought to make the colonial realms subordinate political entities whose function was to provide the metropolis with wealth."
+        },
+        {
+          "step": 9,
+          "object": "demo-leviathan",
+          "x": 0.486,
+          "y": 0.177,
+          "zoom": 3.6,
+          "question": "Leviathan",
+          "answer": "Hobbes’s political thesis shows the opposite: the ruler as container of all society, with people who are indistinct and fungible.",
+          "layers": {
+            "layer1": {
+              "button": "Using Multiple Images",
+              "content": "This step switches from demo-atlas-allegory to demo-leviathan in the object column. Each step can show a different image — just change the object_id to match any image listed in your objects tab.\n\nTelar supports two types of images. The Atlas allegory comes from Princeton’s digital library via [[demo-iiif]] — its source_url points to a manifest hosted by the institution. The Leviathan frontispiece is a self-hosted image — no source_url needed, just a file in your repository that Telar tiles automatically at build time.\n\nCobo uses the Leviathan to show contrast: Hobbes depicts the ruler as container of all society, while our allegorical map squeezes the ruler into the bottom margin. The comparison strengthens her thesis about connection versus territory."
+            }
+          }
+        },
+        {
+          "step": 10,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "A challenge to the king",
+          "answer": "Our allegorical woman has no form beyond connection, and the ruler is squeezed into the bottom. This image was produced in Manila by Filipino engraver Laureano Atlas, accompanying Vicente de Memije’s thesis. In context, it stands as a polemical challenge to Charles III’s reforms. This narrative demonstrates how visual storytelling can build scholarly arguments.",
+          "layers": {
+            "layer1": {
+              "button": "What’s Next?",
+              "content": "This story demonstrates how Telar builds scholarly arguments through visual exploration:\n\n- **Coordinate-driven storytelling**: Zoom and pan guide attention to details that build your thesis\n- **Progressive disclosure**: Question and answer, then “Learn more” and “Go deeper” panels let readers choose their depth\n- **Multiple image types**: IIIF images from institutional collections and self-hosted images from your own repository\n- **Glossary integration**: Define terms once, link them anywhere with <code>&#91;&#91;term-id&#93;&#93;</code>\n\nTo see the spreadsheet behind this story — with all the coordinates, questions, and panel content visible in their cells — open the [source Google Sheet](https://docs.google.com/spreadsheets/d/1iHNXqlAx8GsKc5dB42zZO-OmiCXP1jc4gbflms3xaMw/).\n\nThis narrative uses the scholarly analysis developed by **Natalie Cobo**, whose work demonstrates how visual exploration can challenge historical narratives and reveal hidden contexts of production."
+            }
+          }
+        }
+      ]
+    },
+    "colonial-landscapes": {
+      "steps": [
+        {
+          "step": 1,
+          "object": "",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "A Painting of the Savanna",
+          "answer": "This document, which can be read both as a map and a painting, was part of a legal proceeding that consolidated one of the most important haciendas and family lineages of the New Kingdom of Granada."
+        },
+        {
+          "step": 2,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Why was this map drawn?",
+          "answer": "The *Painting of the lands, marshes, and swamps of the town of Bogotá* was presented as evidence during a 1614 legal proceeding brought by the crown prosecutor of the New Kingdom of Granada against Francisco Maldonado y Mendoza, a renowned *encomendero*, over the ownership of lands in the Bogotá savanna.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Francisco Maldonado y Mendoza was born in Spain in 1551 and moved to Santa Fe de Bogotá in 1583. In 1586 he married Jerónima de Orrego, the daughter and sole heiress of the conquistador Alonso de Olalla.\n\n![Francisco Maldonado y Mendoza. Anonymous, eighteenth century](https://content.telar.org/assets/images/paisajes/1.1.jpg){md}\nFrancisco Maldonado y Mendoza. Anonymous, eighteenth century. Courtesy of the Museo Colonial, Bogotá.\n\nThat year, Maldonado y Mendoza began purchasing estates in the Bogotá savanna and receiving lands awarded by the Spanish Crown. By the mid-1590s, Maldonado y Mendoza was not only the *encomendero* of the Indigenous community of Bogotá, but also owned one of the most prosperous cattle ranches in the New Kingdom of Granada.\n\n:::glossary\nentry: demo-on-the-distribution-of-encomiendas\n:::\n\nThe crown prosecutor of the New Kingdom of Granada sued Maldonado y Mendoza in 1603, accusing him of having defrauded the monarchy by buying vast, fertile lands at a very low price. During the litigation, both parties presented opposing visions of the territory. While Maldonado y Mendoza described it as an unproductive marsh, the prosecutor considered it to be fertile savanna. During the case, this map was meant to serve as proof to determine which party was correct. For this purpose, imperial officers were ordered to explore the territory, see it with their own eyes, and draw it on paper so that it could be presented in court to help reach a decision. As they sketched their observations on paper, the savanna became an object of study for the court in accordance with the monarchy’s legal framework.",
+              "title": "The encomendero of Bogotá"
+            }
+          }
+        },
+        {
+          "step": 3,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "What does the map show?",
+          "answer": "The map features the Bogotá savanna, a high plateau on the eastern mountain range of the northern Andes in modern-day Colombia. In the early sixteenth century, the savanna was occupied by the Indigenous Muisca people of the Chibcha linguistic family. A Spanish expedition led by Gonzalo Jiménez de Quesada arrived there in 1536. From that moment on, the city of Bogotá became the base of operations for the Spanish empire in the region and was designated as the seat of the *audiencia* of Santafé in 1549.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": ":::carousel\nimage: https://content.telar.org/assets/images/paisajes/1.2.2.jpg\nalt: Drawing of Santa Fe de Bogotá. “Capítulo primero de las ciudades y villas: ciudad de Nuevo Reino, Santa Fe de Bogotá, ciudad tiene gobernador.” Guamán Poma, 1615\ncaption: Drawing of Santa Fe de Bogotá. “Capítulo primero de las ciudades y villas: ciudad de Nuevo Reino, Santa Fe de Bogotá, ciudad tiene gobernador.” Guamán Poma, 1615\nwidth: 1000\nheight: 1406\n---\nimage: https://content.telar.org/assets/images/paisajes/location-map.jpg\nalt: Map of the New Kingdom of Granada between the Caribbean Sea and the South Sea. It shows Cartagena de Indias, Santa Marta, Popayán, Santafé de Bogotá, and the Magdalena River, dashed lines marking the limits between jurisdictions, and in gray the areas more than 500 meters above sea level. A small map of South America frames the region and traces the Andes.\ncaption: Based on Map 1, \"Nuevo Reino de Granada,\" in Santiago Muñoz Arbeláez, *Costumbres en disputa: los muiscas y el Imperio español en Ubaque, siglo XVI* (Bogotá: Universidad de los Andes, 2015), p. 3.\nwidth: 896\nheight: 1000\n---\nimage: https://content.telar.org/assets/images/paisajes/def-audiencia.png\nalt: AUDIENCIA, the court of justice where motions are heard, it sometimes refers to chanceries. To give a hearing, to hear an informant, a welcome hearing, the serene, worthy of princes and supreme justices. Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco 1611\ncaption: AUDIENCIA, the court of justice where motions are heard, it sometimes refers to chanceries. To give a hearing, to hear an informant, a welcome hearing, the serene, worthy of princes and supreme justices.<br>Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco 1611. Courtesy of John P. Robarts Research Library, Toronto.\nwidth: 1045\nheight: 466\n---\nimage: https://content.telar.org/assets/images/paisajes/1.2.1-.jpg\nalt: On the creation of Audiencias. Recopilación de Leyes de los Reinos de las Indias\ncaption: On the creation of *Audiencias*. Recopilación de Leyes de los Reinos de las Indias. [See full document](../../objects/demo-obj3/)\nwidth: 1060\nheight: 1500\n:::"
+            }
+          }
+        },
+        {
+          "step": 4,
+          "object": "demo-bogota-painting",
+          "x": 0.2836,
+          "y": 0.3035,
+          "zoom": 1.678,
+          "question": "Is it a map or a painting?",
+          "answer": "The *Painting of the lands, marshes, and swamps of the town of Bogotá* is a manuscript that works both as a map and as a landscape painting and belongs to the genre of legal maps.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "While most legal maps were outlines or simple plans, this map is special not only for its use of color and elaborate designs, but because it is signed by its author, Juan de Aguilar Rendón, who identified himself as painter, and Alonso Ruiz Gadálmez, the receptor.\n\nThe full title is *Painting of the lands, marshes, and swamps of the town of Bogotá, made by order of the Royal Audiencia of this city of Santafé of the New Kingdom of Granada, for proceedings between the crown prosecutor and don Francisco Maldonado de Mendoza. By us, Alonso Ruiz Gadálmez, receptor, and Juan de Aguilar Rendón, painter, in the month of April of the year 1614*.\n\nThe acknowledgement of authorship is a rare occurrence both in legal maps and in colonial paintings in the New Kingdom of Granada. At the time, the concept of authorship itself had a very different meaning from the one we use today. The signature, the use of the term “painting,” and the use of color are indications that the author was also creating a piece that could be appreciated for its aesthetic qualities.\n\nMoreover, the signatures of the painter and receptor ensured the validity of the land survey and legitimized its use in court as a truthful representation of the territory.\n\nAlthough we do not know the origin of the paints used on the map, the production of inks and colors was a complex process involving vegetable and animal pigments that were then transformed into paint using methods rich with cultural significance. We have evidence that the Muisca and other Indigenous groups used a wide palette of blue, red, and brown pigments which they applied to designs on textiles, rocks, and other surfaces. For this reason, it is possible that some of the colors used in the *Painting* were produced using Indigenous methods.\n\nAnother important aspect of the *Painting’s* visualization of the landscape is its scale. Unlike contemporary maps, which guarantee precision by maintaining a single scale throughout the image, the Painting uses a multiple, flexible, and variable scale. The center of the map—which represents the territory disputed by Maldonado y Mendoza and the crown prosecutor—uses a more homogeneous scale, whereas the borders are variable, allowing the observer to see relatively remote landmarks like the city of Santafé and the towns of Fontibón and Madrid as points of reference.\n\n## Primary Source\n\n### What is a map?\n\nDifferent societies depict the world in different ways. There are visual, oral, and mental maps. In some societies, a name, a hat, or clothes can also serve as a map.\n\n![“MAP, is what we call the board, canvas, or paper in which all or particular lands are depicted, it may come from mappa, which means canvas or fabric, particularly the ones praetors in the circus would send as a signal for the games to begin, which was whitened or treated with clay, or starched as we say, and because the canvas on which the land, the sea, and its places were depicted was prepared in this way, it was called map, or mappa mundi, and for this reason we also call these depictions canvases, as they are drawn on canvas.” Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco 1611](https://content.telar.org/assets/images/paisajes/def-mapa.jpg){lg}\n“MAP, is what we call the board, canvas, or paper in which all or particular lands are depicted, it may come from *mappa*, which means canvas or fabric, particularly the ones praetors in the circus would send as a signal for the games to begin, which was whitened or treated with clay, or starched as we say, and because the canvas on which the land, the sea, and its places were depicted was prepared in this way, it was called map, or mappa mundi, and for this reason we also call these depictions canvases, as they are drawn on canvas.”<br>Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco 1611. Courtesy of John P. Robarts Research Library, Toronto.\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes/1.3.1.jpg\nalt: La carta universale della terra ferma & isole delle Indie occide[n]tali [Map of all the lands and islands of the West Indies]. Place and date of publication: Venice, 1534\ncaption: La carta universale della terra ferma & isole delle Indie occide[n]tali [Map of all the lands and islands of the West Indies]. Place and date of publication: Venice, 1534. Courtesy of the John Carter Brown Library, Providence.\nwidth: 1233\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/1.3.2.jpg\nalt: Psalter, with additional hymns and prayers and a medieval world map (“The Map Psalter”). Place and date of publication: London, 1262-1300\ncaption: Psalter, with additional hymns and prayers and a medieval world map (“The Map Psalter”). Place and date of publication: London, 1262-1300. Courtesy of the British Library, London.\nwidth: 1036\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/1.3.3.jpg\nalt: The Map of the World. Place and date of creation: Abu Habba (Sippar), approximately 6th century BCE\ncaption: The Map of the World. Place and date of creation: Abu Habba (Sippar), approximately 6th century BCE. Courtesy of the British Museum, London.\nwidth: 1643\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/1.3.4.jpg\nalt: Painting, in black, on sealskin: a large number of small figures, including men in sledges drawn by reindeer, in canoes, harpooning whales, etc. Place and date of discovery: Bering Strait, Russia/Siberia, 1860 or 1870. Taken from the Pitt Rivers Museum, Oxford\ncaption: Painting, in black, on sealskin: a large number of small figures, including men in sledges drawn by reindeer, in canoes, harpooning whales, etc. Place and date of discovery: Bering Strait, Russia/Siberia, 1860 or 1870. Taken from the Pitt Rivers Museum, Oxford.\nwidth: 1679\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/1.3.5.jpg\nalt: The Codex Quetzalecatzin. Place and date of creation: Mexico, 1593\ncaption: The Codex Quetzalecatzin. Place and date of creation: Mexico, 1593. Courtesy of the Library of Congress, Washington, D. C.\nwidth: 1217\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/1.3.6.jpg\nalt: Map of the Crown Prince Islands, Disko Bay, Greenland. Place and date of creation: Disko Bay, 1926. Taken from the Library of Congress, Washington, D. C\ncaption: Map of the Crown Prince Islands, Disko Bay, Greenland. Place and date of creation: Disko Bay, 1926. Taken from the Library of Congress, Washington, D. C.\nwidth: 2028\nheight: 1500\n:::\n\nAmong the Kogi people of the Sierra Nevada of Santa Marta, for example, the [[demo-the-kogi-loom|loom]] is made as a map that depicts the geography of their home region.",
+              "title": "A legal painting"
+            }
+          }
+        },
+        {
+          "step": 5,
+          "object": "demo-bogota-painting",
+          "x": 0.6984,
+          "y": 0.6893,
+          "zoom": 1.583,
+          "question": "Who were the owners of this land?",
+          "answer": "The estate (hacienda) depicted on the painting belonged to Francisco de Maldonado y Mendoza. His descendants obtained titles of nobility and the estate became the center of the Marquisate of San Jorge.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "The trial ratified Maldonado y Mendoza’s rights to his estate. In his will, Maldonado y Mendoza transformed his estate into a *mayorazgo*—an entailed estate. This meant that following his death it would not be divided between his heirs but would pass on to his eldest child, Antonio Maldonado de Mendoza.\n\n![“MAYORAZGO, the first-born son of a noble house, which the eldest son inherits, from the Latin primogenitus, and the Greek protogonos. We also call a mayorazgo the estate or land destined and allotted to the eldest son. It is beyond our purpose to say more on this subject, as major authors, classical and modern, have written whole volumes on it, which may be consulted.” Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco 1611](https://content.telar.org/assets/images/paisajes/def-mayorazgo.png){md}\n“MAYORAZGO, the first-born son of a noble house, which the eldest son inherits, from the Latin primogenitus, and the Greek protogonos. We also call a mayorazgo the estate or land destined and allotted to the eldest son. It is beyond our purpose to say more on this subject, as major authors, classical and modern, have written whole volumes on it, which may be consulted.” Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco 1611. Courtesy of John P. Robarts Research Library, Toronto.\n\n![Antonio Maldonado de Mendoza. Anonymous, 18th Century](https://content.telar.org/assets/images/paisajes/1.5.jpg){md}\nAntonio Maldonado de Mendoza. Anonymous, 18th Century. Courtesy of the Museo Colonial, Bogotá.\n\nThis was the beginning of a powerful lineage that grew around the estate.\n\nThis property was known as the “Meadow of Bogotá,” the *mayorazgo* of Bogotá, or the Steer Yard, because the estate temporarily held cattle driven up from the lowlands for consumption in the city of Santafé de Bogotá. Maldonado y Mendoza’s heirs continued to marry into some of the most distinguished families in the New Kingdom of Granada, and eventually received titles of nobility and established the Marquisate of San Jorge.\n\nThe lineage maintained its power for two centuries, producing viceroys and bishops. As a matter of fact, [[demo-jorge-tadeo-lozano|Jorge Tadeo Lozano,]] who became the first president of the republic in 1811, was a descendant of the Maldonados.\n\n![Maldonado Family Tree. Libro Segundo de las Genealogías del Nuevo Reino de Granada. Juan Flórez de Ocáriz, 1674](https://content.telar.org/assets/images/paisajes/1.5.1.jpg){sm}\n![Maldonado Family Tree. Libro Segundo de las Genealogías del Nuevo Reino de Granada. Juan Flórez de Ocáriz, 1674](https://content.telar.org/assets/images/paisajes/1.5.2.jpg){sm}\nMaldonado Family Tree. Libro Segundo de las Genealogías del Nuevo Reino de Granada. Juan Flórez de Ocáriz, 1674. Courtesy of John Carter Brown Library, Providence.",
+              "title": "The mayorazgo and the lineage of the Maldonados"
+            }
+          }
+        },
+        {
+          "step": 6,
+          "object": "",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Villages for the \"indios\"",
+          "answer": "The Spanish created laws to force Indigenous peoples to abandon their former settlements and live in grid-like villages (also called reducciones) organized around a main square and a church. The objective of the measure was to coerce Indigenous peoples into giving up their customs."
+        },
+        {
+          "step": 7,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Why were the Muisca called “indios”?",
+          "answer": "Europeans coined the term *“indios”* to group the different societies of the New World into a single category. This practice originated during Christopher Columbus’s first travels. The label imposed many negative stereotypes on Indigenous populations.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "In 1492, Columbus left Spain in search of Asia and always believed that he had reached the East, or India, where John de Mandeville had claimed there were whole societies composed of marvelous creatures, such as men with dog snouts. Europeans projected many of these ideas onto the inhabitants of the New World, calling them *“indios.”*\n\nThis arbitrary category became the basis for the classification of the inhabitants of the New World. In the sixteenth century, Spanish scholars and theologians debated intensely about whether the *“indios”* were rational beings, like Europeans, or inferior beings whose nature made their enslavement necessary. In this way, the great social complexity and ethnic diversity of the societies of the Americas were reduced to the term “indio,” a negative and violent term that infantilized them and defined them as beings that needed to be trained to adopt European habits and ways of life.\n\n## Primary Source\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes/2.1.1.jpg\nalt: “Cynocephalus.” Von Canibalien dem folck von Canaria, 1527\ncaption: “Cynocephalus.” Von Canibalien dem folck von Canaria, 1527. Courtesy of John Carter Brown Library.\nwidth: 1920\nheight: 1418\n---\nimage: https://content.telar.org/assets/images/paisajes/2.1.2.jpg\nalt: “Indios.” Americaner in Peru, 1612\ncaption: “Indios.” Americaner in Peru, 1612. Courtesy of John Carter Brown Library.\nwidth: 1000\nheight: 1399\n---\nimage: https://content.telar.org/assets/images/paisajes/2.1.3.jpg\nalt: La Figure E. F. Formes des cannoes ou batteaux des Caripous & autres Indiens. Comment les Caribes boucanent & mangent la chair de leurs enemies, 1665\ncaption: La Figure E. F. Formes des cannoes ou batteaux des Caripous & autres Indiens. Comment les Caribes boucanent & mangent la chair de leurs enemies, 1665. Courtesy of John Carter Brown Library.\nwidth: 1000\nheight: 1728\n:::",
+              "title": "Indios or Muiscas?"
+            }
+          }
+        },
+        {
+          "step": 8,
+          "object": "demo-bogota-painting",
+          "x": 0.3654,
+          "y": 0.1903,
+          "zoom": 2.719,
+          "question": "Why can we see villages on the map?",
+          "answer": "The towns that today populate the savanna were not always there, but were the result of a project set in motion by the Spanish empire aimed at making “indios” live Catholic lives (what they referred to as “life in good order”).",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": ":::glossary\nentry: demo-on-the-reduction-of-indios\n:::\n\nThis process, which the Spanish called “reducir,” (“to reduce or order”) forced Indigenous people to abandon their homes and move to new settlements organized around a main square in a grid-like arrangement, following Catholic organization. Central Imperial hierarchies and forms of social control were visible in the main square of reducciones, where the church, jail, cacique’s residence, and native nobles’ homes were situated, while commoners’ houses extended outward from the center of the grid. Imagined as an ideal and divine space, the orthogonal grid was applied to several Iberian cities in the medieval period, but it was in the Americas that it thrived, replicating itself consistently after the installment of some of the first colonial cities in the Caribbean, including Santo Domingo (1502), Santiago de Cuba (1515), Havana (1522), and Cartagena (1533). The same grid organization was applied to massive resettlement projects of Indigenous peoples in Peru, Mexico, and many other areas. In this way, the grid became the main form of urban design for the Indies even before the creation of the first urban code, Philip II’s *Ordenanzas de Poblaciones* of 1573.\n\n:::glossary\nentry: demo-on-the-need-for-a-church-with-a-door-and-key-in-every-reduccion\n:::\n\nWe can see a variety of villages on the map, such as Fontibón, today part of the city of Bogotá, or Serrezuela, now called Madrid.\n\nMany of the names of municipalities in use today used to be elaborate Muisca political categories. Terms like Ubaque, Guatavita, Bogotá, and Duitama simultaneously designated a political leader, a territory, and a community. After Indigenous peoples were forced into reducciones, the colonial villages would keep the name of the Indigenous [[demo-cacicazgo|cacicazgo]] and its political structure, but its inhabitants would be forced to live under a different spatial and cultural order.\n\n:::glossary\nentry: demo-don-francisco\n:::\n\nAfter the reducciones, crosses and Catholic symbols dominated the landscape and churches became the most common landmark in colonial villages.\n\n## Primary Source\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes/2.2.3.jpg\nalt: Village of Soacha, 1627\ncaption: Village of Soacha, 1627. Courtesy of the Archivo General de la Nación, Bogotá.\nwidth: 1500\nheight: 1907\n---\nimage: https://content.telar.org/assets/images/paisajes/2.2.4.jpg\nalt: Village of Sopó, 1758\ncaption: Village of Sopó, 1758. Courtesy of the Archivo General de la Nación, Bogotá.\nwidth: 1239\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.2.5.jpg\nalt: Bogotá and la Serrezuela, 1771\ncaption: Bogotá and la Serrezuela, 1771. Courtesy of the Archivo General de la Nación, Bogotá.\nwidth: 1976\nheight: 1500\n:::",
+              "title": "Reducciones (Reductions)"
+            }
+          }
+        },
+        {
+          "step": 9,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Since when have there been villages on the savanna?",
+          "answer": "The first instructions for the building of villages were decreed by colonial officer Tomás López Medel in 1559 and they caused many serious problems within Indigenous societies. Reducciones not only created conditions favorable to epidemics due to overcrowding, but also generated conflicts between Indigenous authorities and communities.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": ":::carousel\nimage: https://content.telar.org/assets/images/paisajes/2.3.1.jpg\nalt: The city of Trinidad, province of Musos in the New Kingdom of Granada, 1582\ncaption: The city of Trinidad, province of Musos in the New Kingdom of Granada, 1582. Courtesy of Real Academia de Historia, Madrid.\nwidth: 1912\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.3.2.jpg\nalt: Map of the city of La Palma, 1581\ncaption: Map of the city of La Palma, 1581. Courtesy of Archivo General de Indias, Seville.\nwidth: 1576\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.3.3.jpg\nalt: Map of the city of Reyes del Valle de Upar, 1578\ncaption: Map of the city of Reyes del Valle de Upar, 1578. Courtesy of Real Academia de Historia, Madrid.\nwidth: 1010\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.3.4.jpg\nalt: On Fosativa and the village of Choachí\ncaption: On Fosativa and the village of Choachí. [See full document](../../objects/demo-obj35/)\nwidth: 1000\nheight: 800\n:::"
+            }
+          }
+        },
+        {
+          "step": 10,
+          "object": "demo-bogota-painting",
+          "x": 0.5334,
+          "y": 0.1977,
+          "zoom": 3.167,
+          "question": "How did the Muisca live before the Spanish arrived?",
+          "answer": "On the map we can see where the “old palisade of the cacique” used to be. In the sixteenth century, the Muisca of the Savanna had ceremonial centers that were known as “palisades.” These played an important role in their political organization.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "This territory has a long human history. About 12,400 years ago, in the late Pleistocene period, human populations dedicated to hunting, fishing, and gathering fruit ascended the valley of the Magdalena River until they reached the high plateau of the eastern range of the Andes and found refuge in its rocky shelter. Between 5,000 and 7,000 years ago, they left their settlements and moved to open air lands.\n\n:::glossary\nentry: demo-on-indigenous-palisades\n:::\n\nDuring the following millennia, these groups perfected the use of ceramics and developed denser farming communities. By the year 1,000 AD they had organized themselves in chiefdoms and two centuries later those chiefdoms left evidence of more centralized political authority, giving rise to the Muisca period. When the Spanish arrived, the Muisca people were organized into agricultural societies with many levels of political hierarchy.\n\nThe Muisca’s built environment was key to their society. Their concept of the house, composed of terms like *gue, ca, ie, uta,* and for the settlement, with words like *gues, bacana or gueganecana,* were tied to broader notions of place, time, and the body and were central in expressing identity, kin affiliation, and political organization. For instance, the term *guecha*, formed by “house” (gue) and “man” (cha), was used to refer to the uncle, the mother’s brother, who was the leader of the household. The word to designate a stranger, *gueyba*, was also composed of “house” (gue) and “blood” (yba). In other words, the house as a place and as a concept helped the Muisca identify who belonged in their social world and who was an outsider.\n\nOne of the Indigenous spaces that most intrigued the Spaniards was the chief’s *cercado* (enclosure or palisade). These ceremonial spaces were often decorated with paintings on cotton fabric of different colors and styles, had wide avenues and plazas used for dances and performances, and were surrounded by walls constructed out of wooden logs. They were built during large, majestic gatherings that united the whole community and involved feasting, singing, and many types of colorful masks and costumes. The meaningful objects displayed in these ceremonies included feathers, shells, deer hides, and even the heads of jaguars and pumas. The palisades were associated with chiefly authority and Muisca goldsmiths left testaments to these places in their artwork.\n\n## Primary Source\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes/2.4.1.jpg\nalt: Votive figure in gold filigree. Eastern Range – Muisca. Date: 600-1600\ncaption: Votive figure in gold filigree. Eastern Range – Muisca. Date: 600-1600. Courtesy of the Museo del Oro (Bogotá).\nwidth: 2082\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.4.2.jpg\nalt: Votive figure in gold filigree. Eastern Range – Muisca. Date: 600-1600\ncaption: Votive figure in gold filigree. Eastern Range – Muisca. Date: 600-1600. Courtesy of the Museo del Oro (Bogotá).\nwidth: 1989\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.4.3.jpg\nalt: Votive figure in gold filigree. Eastern Range – Muisca. Date: 600-1600\ncaption: Votive figure in gold filigree. Eastern Range – Muisca. Date: 600-1600. Courtesy of the Museo del Oro (Bogotá).\nwidth: 1341\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.4.4.jpg\nalt: Votive figure shaped as an enclosure in gold filigree. Eastern Range – Muisca. Date: 600-1600\ncaption: Votive figure shaped as an enclosure in gold filigree. Eastern Range – Muisca. Date: 600-1600. Courtesy of the Museo del Oro (Bogotá).\nwidth: 1519\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.4.5.jpg\nalt: Votive figure shaped as an enclosure with anthropomorphic figures in gold filigree. Eastern Range – Muisca. Date: 600-1600\ncaption: Votive figure shaped as an enclosure with anthropomorphic figures in gold filigree. Eastern Range – Muisca. Date: 600-1600. Courtesy of the Museo del Oro (Bogotá).\nwidth: 966\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.4.6.jpg\nalt: Golden object in the form of a palisade. Cundinamarca, Colombia\ncaption: Golden object in the form of a palisade. Cundinamarca, Colombia. Courtesy of the Ethnological Museum of the Berlin State Museums.\nwidth: 1519\nheight: 1500\n:::\n\nAnother significant symbolic space was the *quca*, the building where the Muiscas’ political and spiritual leaders were trained. The trainees would be secluded for years in the quca keeping a strict diet and weaving textiles. Their textiles would remain inside the quca after their release, adding to its cultural significance. This building was often within the cercado itself. The word quca is closely associated with *quyca*, which referred to land, region, myth and cosmology, disease, history, and narration. Qucas were key to history telling, knowledge production and transmission, and the prestige of the Muisca leaders.\n\nColonial officers deemed all these spaces and objects diabolical since they perpetuated Indigenous cultural practices and often rivaled the teachings of friars. They sought to erase them as they forced the Muisca to reside in the gridded villages. In a dismaying account from 1600, Jesuit Alonso de Medrano described how friars had forced the spiritual leaders of the Indigenous settlement of Fontibón to tread on their sacred objects, spit on them, curse them, and then burn them.",
+              "title": "The palisades"
+            }
+          }
+        },
+        {
+          "step": 11,
+          "object": "demo-bogota-painting",
+          "x": 0.8094,
+          "y": 0.7797,
+          "zoom": 3.162,
+          "question": "Were Spaniards allowed to live in Indigenous villages?",
+          "answer": "The creation of towns was part of a set of measures aimed at creating two separate “republics” with different legal responsibilities: one of *indios* living in towns and another of Spaniards living in cities. This is why the “town of Bogotá” and the city of “Santa Fe” appear as different places on the map: the town of Bogotá where Funza sits today, and the city in the place of contemporary Santafé de Bogotá.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Although in theory the two republics were meant to remain spatially separated, this division was not applied as rigorously in practice. Colonial villages for “indios” continued to be places with vibrant economic activity to which *vecinos*, who did not identify as *indios*, also gravitated.\n\nIn fact, during the sixteenth and seventeenth centuries, many villages for “indios” had larger populations than cities like Santafé de Bogotá and Tunja. Likewise, Santafé de Bogotá had a large number of Indigenous people employed as merchants who sold goods and provisions on the main road and were often registered as owners of building lots (*solares*).\n\n![“SOLAR, is the land of ancient homes, from which noblemen descend. Solar is any other land on which a house is built: from suelo, or floor, comes solar, which is to set a floor.” Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco, 1611](https://content.telar.org/assets/images/paisajes/def-solar.jpg){md}\n“SOLAR, is the land of ancient homes, from which noblemen descend. *Solar* is any other land on which a house is built: from *suelo*, or floor, comes *solar*, which is to set a floor.”<br>Tesoro de la lengua castellana, o Española. Sebastián de Covarrubias Orozco, 1611. Courtesy of John P. Robarts Research Library, Toronto.\n\nThe Indigenous presence in the city was such that in 1594, the president of the Audiencia de Santafé, Antonio González, saw the need to create a new administrative position for a Spaniard who would be charged with supervising and controlling the activities of the Indigenous population.\n\n:::glossary\nentry: demo-on-indigenous-peoples-living-in-the-city\n:::\n\nThe distinction between the town of Bogotá and the city of Santafé was maintained until the nineteenth century, when the republican government eliminated some Spanish names in an effort to create national symbols, thus erasing Santafé and leaving only Bogotá as the name of the city, while the old Indigenous village took the name of Funza.",
+              "title": "Two republics"
+            }
+          }
+        },
+        {
+          "step": 12,
+          "object": "",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "From Terraces to Grasslands",
+          "answer": "Although we find animals like cows and horses on the map, these were not native to the New World, but were introduced with the conquest. The map shows the transformation of the Indigenous agricultural landscape into grasslands for cattle raising."
+        },
+        {
+          "step": 13,
+          "object": "demo-bogota-painting",
+          "x": 0.3283,
+          "y": 0.5247,
+          "zoom": 1.59,
+          "question": "Were there pigs, cows, chickens, and donkeys in the Bogotá savanna before the Spanish arrived?",
+          "answer": "Although the landscape in the map is dominated by animals such as cows, sheep, pigs and horses, none of these animals were native to Andean landscapes.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "We tend to think of the European expansion as a human process in which the Spanish, Portuguese, French, and English crossed the Atlantic Ocean and established colonies in the Americas. Nevertheless, the process also involved the movement of plants, animals, and pathogens between the Old World and the New. Maize, chocolate, potatoes, and tomatoes traveled from the New World to the Old World, while cows, pigs, smallpox, wheat, and sugar were transported from the Old World to the New World.\n\nThis biological movement had a profound impact on Indigenous life. Smallpox, for example, set off a demographic collapse of Indigenous population in proportions that are still hard for us to imagine. Historians estimate that Colombia did not manage to regain its pre-Columbian population until the early twentieth century.",
+              "title": "Biological exchange"
+            }
+          }
+        },
+        {
+          "step": 14,
+          "object": "demo-bogota-painting",
+          "x": 0.7461,
+          "y": 0.5062,
+          "zoom": 3.158,
+          "question": "How did the Muisca grow food in the Bogotá savanna?",
+          "answer": "In the savanna’s water-rich ecosystem, the Indigenous Muisca people designed a system of cultivation terraces made up of raised beds and elevated platforms. The terraces, in turn, were traversed by ditches that drained the excess water and served as fishing canals.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "This style of cultivation generated a diet rich in agricultural products and fish, as well as guinea pigs and deer, although Indigenous authorities controlled access to the latter.\n\n:::glossary\nentry: demo-on-the-indigenous-diet\n:::\n\nMaintaining these raised beds required a great deal of work and produced both a natural and a human agricultural landscape.\n\n![Diagram of the raised-bed cultivation system](https://content.telar.org/assets/images/paisajes/3.2.4.jpg){lg}\nDiagram of the raised-bed cultivation system.\n\nIn the painting it is evident that the arrival of animals from the Old World had transformed the environment of the Andes. In fact, the painting shows us a landscape of cattle grazing lands, which already implies a transformation with respect to native landscapes. Nevertheless, we can still see the traces of the raised-bed system in aerial photographs from the 1950s, which show a different way of inhabiting this environment.\n\n![Flight C-778, Photo 869. Place and date of creation: Bogotá, 1956. Taken from the Instituto Geográfico Agustín Codazzi, Bogotá](https://content.telar.org/assets/images/paisajes/3.2.2.jpg){md}\nFlight C-778, Photo 869. Place and date of creation: Bogotá, 1956. Taken from the Instituto Geográfico Agustín Codazzi, Bogotá.\n\n![Flight C-773, Photo 014. Place and date of creation: Bogotá, 1956. Taken from the Instituto Geográfico Agustín Codazzi, Bogotá](https://content.telar.org/assets/images/paisajes/3.2.3.jpg){md}\nFlight C-773, Photo 014. Place and date of creation: Bogotá, 1956. Taken from the Instituto Geográfico Agustín Codazzi, Bogotá.",
+              "title": "The architecture of water"
+            }
+          }
+        },
+        {
+          "step": 15,
+          "object": "demo-bogota-painting",
+          "x": 0.809,
+          "y": 0.6137,
+          "zoom": 2.706,
+          "question": "Did the introduction of livestock affect Indigenous agriculture?",
+          "answer": "The introduction of cattle raising following the Spanish invasion changed the landscape of the savanna forever. The raised-bed and canal systems were not practical from the perspective of ranching. For this purpose, it was more useful to level the terraced fields and convert the landscape to [[demo-pastures|pastures]].",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "These grasslands, however, were not well suited to the hydrological dynamics of the eastern range of the Andes and tended to flood. For this reason, some Spaniards described these lands as “useless” and “swampy,” as indicated in the map’s title. Nevertheless, by the early seventeenth century the Bogotá savanna was populated by a large number of sheep, chickens, cows, pigs, and horses.\n\n:::glossary\nentry: demo-on-cattle-in-indigenous-lands\n:::\n\nFrom the point of view of Indigenous peoples, these  [[demo-livestock|livestock herds]] were intruders that not only damaged the raised-bed system but often trampled their crops and forced them to build fences to keep them away.\n\n:::glossary\nentry: demo-complaints-regarding-damages-to-crops-caused-by-cattle\n:::\n\nYet the arrival of new plants and animals did not only have negative consequences. By the early seventeenth century, Indigenous peoples had begun to incorporate eggs and chicken into their diet and began making their textiles from sheep’s wool. The newcomers were now bound up in the landscapes of the Andes and the Indigenous and Spanish economies.",
+              "title": "Cattle and native crops"
+            }
+          }
+        },
+        {
+          "step": 16,
+          "object": "",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "A Divided Landscape",
+          "answer": "This painting was used as a legal document in order to prove a Spaniard’s ownership of a large estate in the Bogotá savanna. As Spanish legal procedures endorsed a Spaniard’s property ownership, Indigenous peoples were being dispossessed. Indigenous people were given a resguardo or reservation (a much smaller communal property which they were not allowed to sell) and were forced to work on estates. In this sense, this is a map of land dispossession and of the transformation of the Indigenous agricultural landscapes."
+        },
+        {
+          "step": 17,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "What were resguardos?",
+          "answer": "*Resguardos* were communal lands that Indigenous people could farm. They came about as part of the legal reform of 1593, known as the land compositions (composiciones de tierras). Until then, most lands had remained in the hands of Indigenous people.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "This reform introduced a new legal framework that divided agricultural property into two categories: estates for Spaniards and *resguardos* for Indigenous people. Tomás López’s 1559 reforms had created villages in which Indigenous people would live in a Catholic way, and now the *resguardos* dictated which lands they were allowed to farm.\n\nResguardos gave Indigenous people “possession” over bounded pieces of land, but excluded the right to sell it. Meanwhile, estates were treated as private property that could be bought and sold at the owner’s will.\n\n![Town of Guasca, made by Fray Manuel Félix de Velasco, 1758](https://content.telar.org/assets/images/paisajes/4.1.1.jpg){md}\nTown of Guasca, made by Fray Manuel Félix de Velasco, 1758. Courtesy of Archivo General de la Nación, Bogotá.\n\n![Town of Suta, 1803](https://content.telar.org/assets/images/paisajes/4.1.2.jpg){md}\nTown of Suta, 1803. Courtesy of Archivo General de la Nación, Bogotá.",
+              "title": "The reform of 1593"
+            }
+          }
+        },
+        {
+          "step": 18,
+          "object": "demo-bogota-painting",
+          "x": 0.3921,
+          "y": 0.7217,
+          "zoom": 2.732,
+          "question": "Could Indigenous people work wherever they wanted?",
+          "answer": "In 1593—the same year as the reform—the then Audiencia president Antonio González created an administrative mechanism for a Spaniard to distribute Indigenous labor. This new official was authorized to tell Indigenous people where to work and to regulate how they managed their affairs.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "The legal reform of 1593 also provided guidelines for managing Indigenous labor. For this purpose, audiencia president Antonio González created a new position under the title of *“corregidor de naturales”* (administrator of Indigenous people). The alleged purpose of this position was to protect Indigenous people from being mistreated by their *encomenderos*.\n\nPresident González envisioned the *corregidor* as a powerful, intimidating figure. He ordered that when an Indigenous person confessed a crime to a priest, “the priest would secretly inform the *corregidor*, who in turn would punish the indio according to the fault, negligence, or crime, without exposing the priest as the source of the punishment, and in this way we will achieve what is most desired, that is, that indigenous people love the priest and fear the *corregidor*.”\n\nContrary to its stated intention, the new position did not give Indigenous people more autonomy. In fact, it gave the *corregidor* the power to force Indigenous people to work on estates and in mines. This work was meant to be paid, but Indigenous people did not have complete autonomy over how they spent what they earned.\n\n:::glossary\nentry: demo-lawsuit-against-corregidores\n:::\n\nOn the contrary, the law specified that Indigenous people had to put their money in a “chest with three keys”—a special type of coffer that could only be opened if three keys were used simultaneously. One of these keys was kept by the cacique, another by the *corregidor*, and the third by the *“doctrinero”* (a priest assigned to an Indigenous parish). In this way, the *corregidor* and priest could ensure that Indigenous people paid their taxes and tithes before they incurred other expenses.\n\nThe *corregidores de naturales* became key players throughout the Spanish empire in the sixteenth century. It was a coveted position that drew interest from many individuals with global backgrounds, who had, for instance, fought for the king in Flanders or the Mediterranean and now sought a comfortable reward from the crown—a reward at the expense of Indigenous communities. *Corregidores* in other parts of the empire even enforced types of imperial demands that have not been documented in the New Kingdom of Granada, such as the forced sale of goods at prices they set themselves—a very unpopular practice called the *repartimiento de mercancías*.\n\n![“What is gained… shall be placed in a chest with three keys, one key should be kept by the corregidor, another by the doctrinero, and the other by the cacique.” Anonymous, chest with three keys, 18th Century. Wood with iron fittings (Wood and metal)](https://content.telar.org/assets/images/paisajes/4.2.1.jpg){lg}\n“What is gained… shall be placed in a **chest with three keys**, one key should be kept by the *corregidor*, another by the *doctrinero*, and the other by the cacique.”<br>Anonymous, chest with three keys, 18th Century. Wood with iron fittings (Wood and metal). Courtesy of the Colonial Museum of Bogotá.",
+              "title": "The corregidor de naturales"
+            }
+          }
+        },
+        {
+          "step": 19,
+          "object": "demo-bogota-painting",
+          "x": 0.6962,
+          "y": 0.6515,
+          "zoom": 2.716,
+          "question": "Why is this a divided landscape?",
+          "answer": "Resguardos were created at a time when the imperial administration defined Spaniards and Indigenous peoples as having different economic capacities: Spaniards had extensive commercial lands while Indigenous people had restricted economies supervised by the imperial administration. Indigenous people lost access to about 95% of the lands that had been available to them for farming before the conquest.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "In this sense, this is a profoundly violent map. It is a map of land dispossession and of the transformation of the Indigenous agricultural landscapes into grazing pastures for Spanish estate owners—estates on which Indigenous people were forced to work. A few details on the map reveal the marks left by this process, such as the place that indicates the location of the former cacicazgo, or the small area allotted to the community’s *resguardo*, in contrast with the large estates owned by Spaniards."
+            }
+          }
+        },
+        {
+          "step": 20,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "What happened to the villages and resguardos?",
+          "answer": "Villages and *resguardos* have had a long and unstable trajectory since the sixteenth century, going through waves of confrontation and resurgence. Most municipalities on the high plateau were former Indigenous villages. In the case of *resguardos*, after many attempts to dismantle them during the eighteenth and nineteenth centuries, the Political Constitution of 1991 made it possible for them to become ethnic territories once again and since then *resguardos* have offered Indigenous peoples new possibilities of ethnic autonomy.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Indigenous villages were the axis of social life in the high plateau during the seventeenth century, providing services to everyone living outside cities. In fact, 94% of settlements in the New Kingdom of Granada were villages, while only 6% were cities or *villas* [towns for Spaniards]. The population that did not identify as Indigenous—people from all walks of life grouped under the term vecinos—grew progressively from the sixteenth to the eighteenth centuries, as the Indigenous population diminished due to factors such as epidemics and the rigors of labor. Imperial authorities took different measures to deal with this demographic change. At first, they implemented the policy of *agregaciones* (aggregations), which consisted of uniting two or more Indigenous villages into a single settlement.\n\n:::glossary\nentry: demo-lorenzo-requero\n:::\n\nBy the late eighteenth century, the people who identified themselves as *vecinos* and not as “indios” had become the majority, and Muisca was no longer the main language of communication. As a result, imperial official Francisco Moreno y Escandón tried to dismantle the prevailing land regulation by transforming “Indian villages” into “parishes for the Spanish” and reducing the area of *resguardos* in order to allocate more lands to *vecinos*. Indigenous communities did not passively accept this process and it was in fact one of the main reasons why Indigenous people in the plateau took part in the Revolt of the Comuneros.\n\n:::glossary\nentry: demo-francisco-moreno-y-escandon\n:::\n\nThe independence movements of the nineteenth century sought to form a republic where there had been an empire, and this implied remaking political institutions. The new republic was based on the theoretical principle that all its inhabitants were “citizens”—free individuals with political rights—and, for this reason, all corporative and community entities were seen as inefficient and backward and had to be dismantled. “Indios” would no longer exist as a legal category, nor would they be subject to special regulations, including the Crown regulations that had imposed higher taxes and labor demands on them and assigned them to *resguardos*. To this end, the republican state repeatedly issued laws and decrees to end *resguardos*.\n\n:::glossary\nentry: demo-laws-for-the-dissolution-of-resguardos\n:::\n\nIndigenous people responded to these laws in many different ways. In some cases, they made the laws work in their favor, and in other cases they opposed the dismantling of *resguardos*. We have evidence that these communal lands survived well into the 1940s, as did some social movements dedicated to ethnic revitalization and land restitution, such as the movement led by Manuel Quintín Lame to establish an Indian Council of the Indies (Consejo Indio de las Indias) to advocate for Indigenous interests.\n\nThe tendency toward the dissolution of *resguardos* was reverted by the Political Constitution of 1991, which recognized Colombia as a multiethnic, multicultural nation and welcomed the existence of ethnic territories. From then on, processes of ethnic resurgence as well as demands for *resguardo* lands have flourished. On the eastern range, *resguardos* have been recognized in Cota, Suba, and Guatavita, among many others.\n\n:::glossary\nentry: demo-political-constitution-of-colombia-1991\n:::\n\nIn an unexpected turn of events that unfolded over centuries, an institution designed by the Spanish empire to expropriate Indigenous lands became one of the few contemporary paths for Indigenous people to access land and a way of maintaining ethnic autonomy.",
+              "title": "Indigenous villages and reservations in the long term"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "glossary": {
+    "demo-panel": {
+      "term": "Panel",
+      "content": "Expandable content that appears over the viewer when you click “Learn more” or similar buttons. Panels provide additional context without leaving the current step.\n\nTelar supports two layers of panels:\n- **Layer 1**: Opens from the main step\n- **Layer 2**: Opens from within layer 1\n\nThis progressive disclosure allows readers to choose their depth of engagement."
+    },
+    "demo-step": {
+      "term": "Step",
+      "content": "A single screen in a Telar story, combining narrative text with a view of an object. Each step can focus on a different part of the object using coordinates (x, y, zoom).\n\nSteps follow the Question/Answer/Invitation pattern: a compelling question, a brief answer, and optional layer panels for deeper exploration."
+    },
+    "demo-story": {
+      "term": "Story",
+      "content": "A sequence of steps that form a visual narrative. Each story appears as a separate entry in the project sheet and can be navigated independently.\n\nIn Telar, stories combine text and objects to build arguments, explore themes, or guide readers through visual material. The demo story you are viewing is an example of a story that teaches while it tells."
+    },
+    "demo-viewer": {
+      "term": "Viewer",
+      "content": "The interactive area of a Telar story where objects are shown. It supports high-resolution zoom and pan, allowing readers to explore each object's details.\n\nThe viewer works with both IIIF objects (hosted by museums and libraries) and self-hosted objects (from your own collection). Readers can zoom and pan freely, but your coordinates guide their initial view at each step."
+    },
+    "demo-iiif": {
+      "term": "IIIF",
+      "content": "IIIF (International Image Interoperability Framework) is an open standard that lets institutions share high-resolution images online. Museums, libraries, and archives publish IIIF manifests — structured URLs that describe an image and its metadata.\n\nIn Telar, paste a manifest URL into the source_url column of your objects tab and Telar handles the rest: zoom, pan, and deep-zoom all work automatically. This story uses both a self-hosted image (demo-leviathan) and an external IIIF manifest from Princeton (demo-atlas-allegory)."
+    },
+    "demo-the-kogi-loom": {
+      "term": "The Kogi loom",
+      "content": "Among the Kogi of the Sierra Nevada of Santa Marta, a loom—in addition to being a tool for weaving—is a map that represents the human body and the geography of the Sierra.\n\nThe body of a man with his arms crossed forms the shape of the loom. In turn, the four corners of the loom represent the four cities of the lowlands (Santa Marta, Riohacha, Fundación, and Valledupar), while the crosses that shape the interior represent the mountain peaks.\n\n![Framework of a Kogi loom [Marco de un telar Kogi]The Loom of Life: A Kogi Principle of Integration. G. Reichel-Dolmatoff, 1978](https://content.telar.org/assets/images/paisajes/1.3.3.1.jpg){md}\nFramework of a Kogi loom [*Marco de un telar Kogi*] The Loom of Life: A Kogi Principle of Integration. G. Reichel-Dolmatoff, 1978.\n\nThe form of the loom creates a frame with which the Kogi conceptualize and represent geography and which can also be expressed on their bodies.\n\nReichel-Dolmatoff, G. (1978). The Loom of Life: A Kogi Principle of Integration. *Journal of Latin American Lore*, Volume 4 (Number 1)."
+    },
+    "demo-jorge-tadeo-lozano": {
+      "term": "Jorge Tadeo Lozano",
+      "content": "Jorge Tadeo Lozano was born in Bogotá in 1771. He studied in Europe and became interested in natural history. This allowed him to join the Royal Botanical Expedition in New Granada in 1803 as the person in charge of the zoological project. Given his high social and economic status, Lozano owned numerous estates in different climates, which made collecting animals for his zoological work easier. He went on to write *The Fauna of Cundinamarca* and participated in the publication of *Correo curioso, erudito, económico y mercantil de la ciudad de Santa Fe de Bogotá*, one of the first enlightened journals of the Republic. His work was part of the Spanish Crown’s wider search for ways to promote colonial economies through scientific expeditions during the Enlightenment, specifically aiming to identify new products and commodities for export.\n\nAs part of his administrative duties within the Spanish empire, Lozano was named lieutenant protector of the Indigenous peoples of Bosa, Fusagasugá, and Usaquén in 1807. With the consolidation of the first government of the Republic, Lozano served as the first president of Cundinamarca and of the United Provinces of New Granada, only to be deposed in 1811 in a coup d’état led by Antonio Nariño. After the Reconquista, Pablo Morillo’s forces shot Lozano on July 6th, 1816 for his participation in republican politics in what is now the *Plaza de Los Mártires*.",
+      "kind": "entity"
+    },
+    "demo-on-the-reduction-of-indios": {
+      "term": "On the reduction of “indios”",
+      "content": "**Law One. *Indios* shall be reduced to villages.**\n\n![Law One. Indios shall be reduced to villages](https://content.telar.org/assets/images/paisajes/2.2.1.jpg){md}\n\n> With great care and attention, we have always tried to find appropriate means for ensuring that the  *indios* are instructed in the Holy Catholic Faith and Evangelical Law, and forget the errors of their former rites and ceremonies, and live in law and order, and to ensure that this was executed with precision, the members of our Council of the Indies met several times (…), and seeking to do right by God and by us, they resolved that the  *indios* should be reduced to settlements and avoid living separately and divided by ridges and mountains, depriving themselves of all spiritual benefits.\n\nLibro VI, Título III. De las Reducciones y pueblos de *indios* (On Reductions and Indian Villages). Julián de Paredes, 1681. Courtesy of Biblioteca Nacional de España, Madrid. [See full document](../../objects/demo-obj27/)",
+      "kind": "source"
+    },
+    "demo-on-the-need-for-a-church-with-a-door-and-key-in-every-reduccion": {
+      "term": "“On the need for a church with a door and key in every reducción”",
+      "content": "![Law iiij: On the need for a church with a door and key in every reducción.](https://content.telar.org/assets/images/paisajes/2.2.2.jpg){sm}\n\n**Law iiij: On the need for a church with a door and key in every *reducción*.**\n\n> “A church must be built in every *reducción*, even if the number of  *indios* is small, in which Mass can be said with decency, and it must have a door and key, even if it is subject to a parish and far away from it.”\n\nRecopilación de Leyes de los Reinos de las Indias. Mandadas imprimir y publicar por la magestad católica del Rey don Carlos II. Libro VI, título III. Julián de Paredes, 1681. Courtesy of Biblioteca Nacional de España, Madrid. [See full document](../../objects/demo-obj27/)",
+      "kind": "source"
+    },
+    "demo-cacicazgo": {
+      "term": "Cacicazgo",
+      "content": "The Spanish began to use the terms “cacique” and “cacicazgo” in the islands of the Caribbean after they noticed that Indigenous peoples used these Arawak words to refer to their authorities. From then on, the Spanish used these as generic terms to refer to Indigenous authorities throughout the empire. The Muisca used the term *psihipqua* to designate some of these authorities. The *caciques* that led Muisca communities after the conquest had to change their forms of government in a colonial context in which Indigenous peoples were put under increasing pressure by imperial structures of governance. By the late sixteenth century, the historical record indicates that many *caciques* dressed as Spaniards, used the title “don” and a European name (like don Francisco de Ubaque), and financed murals, masses, and Catholic celebrations."
+    },
+    "demo-don-francisco": {
+      "term": "Don Francisco",
+      "content": "> By the late sixteenth century, the cacique of Ubaque called himself don Francisco. Don Francisco saw himself as a Christian man. He dressed in a blue suit and a cape, a hat with feathers, and wore a sword at his waist. As he himself declared, his weapon and horse were always ready to confront an uprising of *indios*. In his home, the decorations, tables, and bed indicated that he ate and slept like any Spanish gentleman. He enjoyed reading and writing, attending mass, and living according to the values of the Catholic faith.\n\n> In order to acquire his European outfits, don Francisco often found himself indebted to the merchants of Santafé, and even tried to sell the best farming lands of his community to his *encomendero* in order to cover his debts. In 1583, don Francisco appeared before the Royal Audiencia of Santafé with a petition to change the succession practices of Muisca cacicazgos. Don Francisco wanted King Philip II to decree that nephews could no longer inherit cacicazgos (as was the norm following the criteria of the matrilineal kinship groups prevalent in Muisca communities), but that sons should instead inherit (as was the case in Catholic societies). In his petition, don Francisco complained of his subjects’ idolatrous customs and stated that these needed to be altered; this stance lost him the support of his community.\n\n> “I am married… according to the order of the Holy Mother Church, to Doña Beatríz, my wife, and our marriage gave us a legitimate child and we live like the Spanish do, politically and in their clothing, preserving what Christians preserve both in the spiritual and the earthly, by way of example to all other *indios* in this land.” — Don Francisco\n\n> Don Francisco “is a clever speaker of our Spanish language, of very good manner and reason, so much so that in this whole Kingdom… this witness does not know another cacique like this one… He is friends with the Spanish and when they visit his village and quarters he hosts them and prays, setting a table in the manner of the Spanish and providing them with a refined meal, as if he truly was Spanish.” — Miguel de Espejo\n\n> “The shrines and statuettes of the false gods his ancestors kept and worshipped, the said don Francisco has destroyed, broken, burned, and ruined.”\n\n> “He has tried to imitate the good manners of the Spanish with such effort, that his very subjects the “indios” have been displeased by it saying that he does not practice the rites and ceremonies of the caciques of their ancestors.”\n\nArchivo General de Indias, Seville, Audiencia de Santafé 125, n. 10. [See full document](../../objects/demo-obj25/)",
+      "kind": "source"
+    },
+    "demo-on-indigenous-palisades": {
+      "term": "On indigenous palisades",
+      "content": "> “The forms of their houses and buildings, although they are made of wood and covered with a long hay that is found there, are of the strangest making and manner ever seen, especially those of the caciques and nobles, because they are like fortresses with many fences around them, in the way the Labyrinth of Troy is usually depicted here, [and] the houses have great courtyards with great sculptures and also paintings everywhere in it.”\n\nAnonymous. “Epítome de la conquista del Nuevo Reino de Granada.”",
+      "kind": "source"
+    },
+    "demo-on-indigenous-peoples-living-in-the-city": {
+      "term": "On Indigenous peoples living in the city",
+      "content": "> “Having understood the disorders and excesses seen in this city of Santafé de Bogotá due to male and female *indios*, mestizos, and mulattoes that are without a master to serve and, for this reason, are found idle and like vagabonds, which often results in grave damages and problems… I name him administrator of the said *indios* and mulatos.”\n\nCourtesy of Archivo General de Indias (Sevilla), Audiencia de Santa Fe, L.93, n. 16 ff. 500r-501r. [See full document](../../objects/demo-obj44/)",
+      "kind": "source"
+    },
+    "demo-on-the-distribution-of-encomiendas": {
+      "term": "On the distribution of encomiendas",
+      "content": "**One. When the land is at peace, the Governor shall distribute the “indios” therein.**\n\n![One. When the land is at peace, the Governor shall distribute the “indios” therein](https://content.telar.org/assets/images/paisajes/1.1.2.jpg){md}\n\n> “Distribute the  *indios* among the settlers, so that each will take care of those allotted to him, and defend them, and protect them, providing a minister to instruct them in Christian doctrine and administer the Sacraments, keeping our Patronage, and teaching [them] to live in good order.”\n\nRecopilación de Leyes de los Reinos de las Indias. Mandadas imprimir y publicar por la magestad católica del Rey don Carlos II. Libro VI, título VII. Julián de Paredes, 1681. Courtesy of Biblioteca Nacional de España, Madrid. [See full document](../../objects/demo-obj5/)",
+      "kind": "source"
+    },
+    "demo-pastures": {
+      "term": "Pastures",
+      "content": "The grasslands represented in the *Painting* are probably not the same ones that cover the savanna today. In the eighteenth century, herders began importing African grass varieties that produced better grazing lands for cattle, though it is possible that these types of grasses had begun to spread in the New World previously since they were used for bedding on ships used in the slave trade."
+    },
+    "demo-livestock": {
+      "term": "Livestock",
+      "content": "Cattle farming is part of a long process of coexistence between humans and animals known as “domestication.” Although domestication has traditionally been seen as a process in which humans dominated and tamed animals, recent research shows that this process was not fully controlled by humans and that many animals approached and coexisted with human societies of their own accord. In Africa and Eurasia, cattle farming has been practiced for at least 6,000 years, and in Spain, a livestock culture took shape throughout Antiquity and the Middle Ages as part of a network of trade and connection with other parts of Europe, the Middle East, and Asia. This form of livestock farming—centered on raising cows, sheep, goats, and pigs—depended on the use of horses and dogs to control freely-roaming livestock.\n\nIndigenous societies in the New World had domesticated many animals, including dogs, turkeys, and ducks, which they used for food and in rituals, traded, and gave as tribute. In the Peruvian and Bolivian Andes, camelids, such as llamas and alpacas, were also raised and used as pack animals and for their wool. These were the only animals to be raised in large herds. When cows, pigs, and sheep were introduced into the New World after the Spanish invasion, they flourished quickly and adapted easily to an environment lacking in natural predators. Along with these came other unwanted species such as the Norway rat. Animal populations grew to such an extent that historian Elinor Melville has referred to the reproduction of ovine herds in Mesoamerica as “the plague of sheep.”"
+    },
+    "demo-on-the-indigenous-diet": {
+      "term": "On the Indigenous diet",
+      "content": "> “The foods of these peoples are the same as those in other places of the Indies plus some additional ones, as their main sustenance is maize and yucca, and apart from this they have two or three varieties of truffles they call *yomas* and one more similar to a turnip, which they call *cubias*. They put them in stews and they are of great sustenance. There is infinite salt because it is made there in the lands of Bogotá from caves containing salt from which they make great bricks of salt in huge quantities. These are then distributed to many places, especially through the Sierras of Opón and on to the Rio Grande, as was said. The meats the *indios* eat in this land are deer of which there are endless quantities, so abundant they can keep them here like we keep cattle. Likewise, they eat a species of animal similar to rabbits of which there is also a great number and which they call fucos and they are also found in Santa Marta and the seacoast where they are called *curies*.”\n\nAnonymous, “Epítome de la conquista del Nuevo Reino de Granada”, p. 112, 1536.",
+      "kind": "source"
+    },
+    "demo-on-cattle-in-indigenous-lands": {
+      "term": "On cattle in Indigenous lands",
+      "content": "**Law X. The land farmed by *indios* shall be free of cattle.**\n\n![Law X. The land farmed by indios shall be free of cattle](https://content.telar.org/assets/images/paisajes/3.3.1.jpg){md}\n\n> “Our justice shall not allow cattle to enter lands farmed by *indios*, and it shall have any that enter them removed, imposing and enforcing grave penalties on those who defy it.”\n\nRecopilación de Leyes de los Reinos de las Indias. Mandadas imprimir y publicar por la magestad católica del Rey don Carlos II. Libro IV, título XVII. Julián de Paredes, 1681. Courtesy of Biblioteca Nacional de España, Madrid. [See full document](../../objects/demo-obj47/)",
+      "kind": "source"
+    },
+    "demo-complaints-regarding-damages-to-crops-caused-by-cattle": {
+      "term": "Complaints regarding damages to crops caused by cattle",
+      "content": "> “We come before you to state the troubles and destructions we have suffered in our town in the form of damage to our crops. There is a neighbor named Agustín Vela with over two hundred mules and horses, bovine livestock, and donkeys in our *resguardo*. Before we can harvest our pittance, which is wheat, maize, barley, and truffles, he brings in his tame and wild mules and destroys [our crops, he] has many lands starting on the Boyacá Bridge, where he has many grazing lands and can keep to his estate without maliciously fattening his mules with our grain by letting them into our crops every year with contempt for the poor because he is so rich and powerful, and ruining and diminishing us. And after we harvest and pile up our crops, he destroys them with his mules and livestock, and because we are poor and do not speak [Spanish], he is oppressing us. When we go to tell him, he says: “who measured the damages, who saw them?” and then he releases his dogs on us.”\n\nArchivo General de la Nación, Resguardos-Boyacá, 7, D.10, ff. 672-704. 1672. [See full document](../../objects/demo-obj48/)",
+      "kind": "source"
+    },
+    "demo-lawsuit-against-corregidores": {
+      "term": "Lawsuit against Corregidores",
+      "content": "> In 1594, an Indigenous authority from Pausaga expressed his non-conformity with the new demands regarding labor: “[indios no longer pay taxes] so they can pay the salary and the food of the *corregidor* (…), who provides them with no justice, and they would be better off saving what they pay the *corregidor* for the *demora* because they are too strained, and for paying the *quinto* [20% tax on metals and precious objects] to Our Lord the King, and they also have to comply with their general labor commitments which cause them great pains and many drown while crossing the rivers and others die while crossing the cold moors (*páramos*) and in Santafé they fall ill and many die due to the excessive work they are subjected to, and for trying to comply with these tasks, the *demoras*, and other fees they are forced to pay.”\n\nArchivo General de la Nación/B, Colonia, *Visitas Cundinamarca*, t.8, f.381r-v. [See full document](../../objects/demo-obj51/)",
+      "kind": "source"
+    },
+    "demo-lorenzo-requero": {
+      "term": "Lorenzo Requero",
+      "content": "> “I, Lorenzo de Requero, was born in this court and due to my mother being a native of Ubatoque in the encomienda of Captain Antonio de Céspedes and relative of the caciques, in this jurisdiction I married Catalina Cimca, native of this village in which we have four children, and for their sustenance we have the *resguardos* Your Mercy mentioned, as well as lands in which we sow and grow food. These are lands we came to and acquired by natural right, and they are in the place called Quosvita, under and above it, and because I raise livestock and do what I have to do in my neighborhood, I fear the *encomendero*, or the cacique, or the *corregidor* will bother me, claiming that I am a mestizo and outside the boundary of the village where I am planting fruit trees to feed myself, and because I live doing no harm and the land belongs to my wife and my relatives and it is inside the *resguardo*.\n\n> “I beg Your Mercy to give me assurance so that I am not bothered or disturbed because they want to expel me from the land as it belongs to my wife and my uncles and relatives, and in it I have my house and my home and I raise cattle and for this I sign,\n\n> Lorenzo Requero.”",
+      "kind": "source"
+    },
+    "demo-francisco-moreno-y-escandon": {
+      "term": "Francisco Moreno y Escandón",
+      "content": "> “Another matter that alters the idea of enumeration is the doubt I expressed to Your Excellency in a letter dated 22nd August in the town of Paipa, on whether the sons of a non-native father or mother are in fact free from paying tribute, considering that pure *indios* are very rare, and it can be easily noted, with no further proof, that the species has degenerated; and so it is paramount that it be so, because there are hardly any villages for “indios” in which most people are not Spanish *vecinos* or people of color inhabiting the lands of *resguardos* or their surroundings. If they are to be free, there will be no villages or sources of tribute, or in any case earnings will be very narrow. In this regard, I think that Your Majesty is better off, and the government would benefit, if *indios* were to become Spanish and in this way erase all memory of their tribute and the natural aversion that commands them. […]\n\n> “From these principles Your Excellency will gather the critical state of the population of the district and of the whole real audiencia: after the conquest, there were many villages for “indios” and few Spanish settlements, and despite the laws that prohibited it, they started intermixing with them and their children and descendants were mixed with white, mestizo, black, and mulatto, and their different propagations have formed the largest group of which the population is composed today. In this way, villages for “indios” were transformed into parishes of Spanish people, that is, of *vecinos*, who are not pure *indios*, and separating them completely is so difficult that it is only ever applied to the ones causing express harm.”\n\n> — Francisco Antonio Moreno y Escandón, 1778.",
+      "kind": "source"
+    },
+    "demo-laws-for-the-dissolution-of-resguardos": {
+      "term": "Laws for the Dissolution of Resguardos",
+      "content": "**Decree of September 24th, 1810**\n\n> Second Article. “In accordance with the referred levelling and awarding of citizenship to *indios* with the full restitution of the rights they will start to exercise, they will be awarded ownership over lands from their *resguardos*, distributed in each village according to their fair value and in different degrees in proportion to their families so they may enjoy them and benefit from all their natural and industrial production, with the sole condition that, for the moment, they may not sell, donate, or rid themselves in any other way of the portion of land they received for a period of twenty years during which they will grow attached to the land and skilled in its administration so that it will not be easy to trick or reduce them by abusing their natural simplicity, and dispossess them of their property. They may also dispose of their lands for the benefit of their children according to the laws of the kingdom, and may pay dowry for their daughters when they marry maintaining just and right proportions, without harming their other descendants.”",
+      "kind": "source"
+    },
+    "demo-political-constitution-of-colombia-1991": {
+      "term": "Political Constitution of Colombia, 1991",
+      "content": "> Article 21. “Legal nature. Native *resguardos* are the collective property of indigenous communities and they are constituted in their favor. Following articles 63 and 329 of the Political Constitution, they are unalienable, imprescriptible, and cannot be seized.\n\n> “Resguardos are a legal and sociopolitical institution of special characteristics, formed by one or more indigenous communities with collective property titles that enjoy the guarantees of private property, inasmuch as they possess their territory. The body that controls the administration of the territory and of the life of its inhabitants is an autonomous organization protected by indigenous privilege and a normative system of its own.”",
+      "kind": "source"
+    }
+  }
+}

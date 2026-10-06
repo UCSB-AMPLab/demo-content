@@ -4,6 +4,16 @@ All notable changes to the telar-demo-content repository.
 
 ## [Unreleased]
 
+### Demo Content (v1.8.0)
+- New bundle for sites on Telar 1.8.0 and later; sites on 0.9.0 to 1.7.x keep the v0.9.0 bundle
+- colonial-landscapes / paisajes: replaced by the four chapters of *Colonial Landscapes* as a single story, with a title card for each chapter, taken from the Telar reconstructions of the original site in English and Spanish
+- The original site's 14 primary sources and 5 terms as glossary entries, with the sources marked as sources
+- The painting and nine source documents hosted here as IIIF, the multi-page documents with page navigation
+- allegorical-woman / mujer-alegorica unchanged
+
+### Changed
+- The generator carries glossary kinds, alt text, page numbers, medium, show_sections and panel titles, and keeps a panel whose button text is blank
+
 ### Demo Content (v0.8.1)
 - allegorical-woman / mujer-alegorica: New story with 10 steps
 - colonial-landscapes / paisajes: Updated bilingual demo with markdown panels

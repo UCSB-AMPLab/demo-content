@@ -1,0 +1,51 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://content.telar.org/iiif/objects/demo-obj44/page-1/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Instrucciones para el Administrador de Indios e Indias Mulatos y Mulatas de Santa Fe \u2014 Page 1"
+    ]
+  },
+  "items": [
+    {
+      "id": "https://content.telar.org/iiif/objects/demo-obj44/page-1/canvas",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Instrucciones para el Administrador de Indios e Indias Mulatos y Mulatas de Santa Fe \u2014 Page 1"
+        ]
+      },
+      "height": 4400,
+      "width": 3400,
+      "items": [
+        {
+          "id": "https://content.telar.org/iiif/objects/demo-obj44/page-1/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://content.telar.org/iiif/objects/demo-obj44/page-1/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://content.telar.org/iiif/objects/demo-obj44/page-1/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 4400,
+                "width": 3400,
+                "service": [
+                  {
+                    "id": "https://content.telar.org/iiif/objects/demo-obj44/page-1",
+                    "type": "ImageService3",
+                    "profile": "level0"
+                  }
+                ]
+              },
+              "target": "https://content.telar.org/iiif/objects/demo-obj44/page-1/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

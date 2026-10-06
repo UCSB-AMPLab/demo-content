@@ -1,0 +1,57 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://content.telar.org/iiif/objects/demo-obj48/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Quejas de ind\u00edgenas por da\u00f1os de ganado en sus cultivos"
+    ]
+  },
+  "metadata": [],
+  "summary": {
+    "en": [
+      "[Transcripci\u00f3n](https://drive.google.com/file/d/1ANm7_3w19G1pUVewh-n79W0g7COVrye8/view?usp=sharing)"
+    ]
+  },
+  "items": [
+    {
+      "id": "https://content.telar.org/iiif/objects/demo-obj48/canvas",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Quejas de ind\u00edgenas por da\u00f1os de ganado en sus cultivos"
+        ]
+      },
+      "height": 1626,
+      "width": 1140,
+      "items": [
+        {
+          "id": "https://content.telar.org/iiif/objects/demo-obj48/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://content.telar.org/iiif/objects/demo-obj48/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://content.telar.org/iiif/objects/demo-obj48/demo-obj48.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1626,
+                "width": 1140,
+                "service": [
+                  {
+                    "id": "https://content.telar.org/iiif/objects/demo-obj48",
+                    "type": "ImageService3",
+                    "profile": "level0"
+                  }
+                ]
+              },
+              "target": "https://content.telar.org/iiif/objects/demo-obj48/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

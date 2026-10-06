@@ -1,0 +1,679 @@
+{
+  "_meta": {
+    "bundle_format": "0.2",
+    "telar_version": "1.8.0",
+    "language": "es",
+    "generated": "2026-10-06T02:35:27.457253Z",
+    "generator": "telar-demo-content/build-demos.py v1.8.0",
+    "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
+    "description": "Demo content bundle for Telar storytelling framework",
+    "license": "CC BY-NC 4.0"
+  },
+  "iiif_base_url": "https://content.telar.org/iiif/objects",
+  "project": [
+    {
+      "order": 1,
+      "story_id": "mujer-alegorica",
+      "title": "La mujer alegórica",
+      "subtitle": "Un mapa alegórico que desafía la autoridad imperial — una historia sencilla",
+      "byline": "Por Natalie Cobo"
+    },
+    {
+      "order": 2,
+      "story_id": "paisajes",
+      "title": "Paisajes coloniales",
+      "subtitle": "Una pintura legal de 1614 de la Sabana de Bogotá — una historia con contenidos complejos",
+      "byline": "Por Santiago Muñoz, Adelaida Ávila y María Alejandra Orduz Avella",
+      "show_sections": true
+    }
+  ],
+  "objects": {
+    "demo-bogota-painting": {
+      "title": "Pintura de las tierras, pantanos y anegadizos del pueblo de Bogotá hecha por mandato de la Real Audiencia de esta ciudad de Santa Fe del Nuevo Reyno de Granada en la causa que en ella trata el señor fiscal con don Francisco Maldonado de Mendoza",
+      "source_url": "https://content.telar.org/iiif/objects/demo-bogota-painting/manifest.json",
+      "creator": "Juan de Aguilar Rendón",
+      "credit": "Cortesía del Archivo General de Indias, Sevilla.",
+      "year": "1614",
+      "medium": "Mapas y planos",
+      "alt_text": "Pintura de las tierras, pantanos y anegadizos del pueblo de Bogotá hecha por mandato de la Real Audiencia de esta ciudad de Santa Fe del Nuevo Reyno de Granada en la causa que en ella trata el señor fiscal con don Francisco Maldonado de Mendoza",
+      "source": "Sevilla, España. Archivo General de Indias, signatura: MP-PANAMA,336."
+    },
+    "demo-obj3": {
+      "title": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro II, título XV, ley primera - Que lo descubierto de las Indias se divida en doce Audiencias",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj3/manifest.json",
+      "creator": "Anónimo",
+      "credit": "Cortesía de la Biblioteca Nacional de España, Madrid.",
+      "year": "1681",
+      "medium": "Documentos legales",
+      "alt_text": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro II, título XV, ley primera - Que lo descubierto de las Indias se divida en doce Audiencias",
+      "source": "Madrid, España. Biblioteca Nacional de España, signatura: R/38739-387423/25836 V. 1"
+    },
+    "demo-obj5": {
+      "title": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro VI, título VII, ley primera - Que estando la tierra pacífica, el gobernador reparta los indios de ella",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj5/manifest.json",
+      "creator": "Anónimo",
+      "credit": "Cortesía de la Biblioteca Nacional de España, Madrid.",
+      "year": "1681",
+      "medium": "Documentos legales",
+      "alt_text": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro VI, título VII, ley primera - Que estando la tierra pacífica, el gobernador reparta los indios de ella",
+      "source": "Madrid, España. Biblioteca Nacional de España, signatura: R/38739-387423/25836 V. 1"
+    },
+    "demo-obj25": {
+      "title": "Extracto de la solicitud de Don Francisco, cacique de Ubaque, a la Audiencia de Santa Fe para transformar las costumbres de sucesión de los cacicazgos muiscas",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj25/manifest.json",
+      "credit": "Cortesía del Archivo General de Indias, Sevilla.",
+      "year": "1583",
+      "medium": "Documentos legales",
+      "alt_text": "Extracto de la solicitud de Don Francisco, cacique de Ubaque, a la Audiencia de Santa Fe para transformar las costumbres de sucesión de los cacicazgos muiscas",
+      "source": "Sevilla, España. Archivo General de Indias, Audiencia de Santa Fe 125 n.10"
+    },
+    "demo-obj27": {
+      "title": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro VI, título III - Que los indios sean reducidos a poblaciones; que en cada reducción haya iglesia con puerta, y llave",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj27/manifest.json",
+      "creator": "Anónimo",
+      "credit": "Cortesía de la Biblioteca Nacional de España, Madrid.",
+      "year": "1681",
+      "medium": "Documentos legales",
+      "alt_text": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro VI, título III - Que los indios sean reducidos a poblaciones; que en cada reducción haya iglesia con puerta, y llave",
+      "source": "Madrid, España. Biblioteca Nacional de España, signatura: R/38739-387423/25836 V. 1"
+    },
+    "demo-obj35": {
+      "title": "Visita judicial a Choachí",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj35/manifest.json",
+      "credit": "Cortesía del Archivo General de la Nación, Bogotá.",
+      "year": "1563",
+      "medium": "Documentos legales",
+      "alt_text": "Visita judicial a Choachí",
+      "source": "Bogotá, Colombia. Archivo General de la Nación, Visitas Cundinamarca, t. 12, ff. 1047-1050"
+    },
+    "demo-obj44": {
+      "title": "Instrucciones para el Administrador de Indios e Indias Mulatos y Mulatas de Santa Fe",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj44/manifest.json",
+      "credit": "Cortesía del Archivo General de Indias, Sevilla.",
+      "year": "1594",
+      "medium": "Documentos legales",
+      "alt_text": "Instrucciones para el Administrador de Indios e Indias Mulatos y Mulatas de Santa Fe",
+      "source": "Sevilla, España. Archivo General de Indias, Audiencia de Santa Fe. Legajo 93, n. 16, ff. 500r - 501r."
+    },
+    "demo-obj47": {
+      "title": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro IV, título XVII, ley décima - Que en la tierra, que los indios labraren no se metan ganados",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj47/manifest.json",
+      "creator": "Anónimo",
+      "credit": "Cortesía de la Biblioteca Nacional de España, Madrid.",
+      "year": "1681",
+      "medium": "Documentos legales",
+      "alt_text": "Recopilación de Leyes de los Reinos de las Indias. Mandadas imprimir, y publicar por la magestad católica del Rey don Carlos II. Libro IV, título XVII, ley décima - Que en la tierra, que los indios labraren no se metan ganados",
+      "source": "Madrid, España. Biblioteca Nacional de España, signatura: R/38739-387423/25836 V. 1"
+    },
+    "demo-obj48": {
+      "title": "Quejas de indígenas por daños de ganado en sus cultivos",
+      "description": "[Transcripción](https://drive.google.com/file/d/1ANm7_3w19G1pUVewh-n79W0g7COVrye8/view?usp=sharing)",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj48/manifest.json",
+      "credit": "Cortesía del Archivo General de la Nación, Bogotá.",
+      "year": "1672",
+      "medium": "Documentos legales",
+      "alt_text": "Quejas de indígenas por daños de ganado en sus cultivos",
+      "source": "Bogotá, Colombia. Archivo General de la Nación, Resguardos-Boyacá, 7, D.10, ff. 672-704. 1672."
+    },
+    "demo-obj51": {
+      "title": "Demanda contra corregidores",
+      "source_url": "https://content.telar.org/iiif/objects/demo-obj51/manifest.json",
+      "credit": "Cortesía del Archivo General de la Nación, Bogotá.",
+      "year": "1594",
+      "medium": "Documentos legales",
+      "alt_text": "Demanda contra corregidores",
+      "source": "Bogotá, Colombia. Archivo General de la Nación, Visitas Cundinamarca, t. 8, f. 381r-v."
+    },
+    "demo-atlas-allegory": {
+      "title": "Aspecto Symbólico del Mundo Hispánico",
+      "description": "Mapa alegórico del «Mundo Hispánico», grabado por Laureano Atlas y publicado como frontispicio de Vicente Memije, Theses Mathematicas de Cosmographia, Geographia y Hydrographia (Manila: 1761).",
+      "source_url": "https://figgy.princeton.edu/concern/scanned_resources/3497e01a-5086-4528-86ba-6f67ce402eec/manifest",
+      "creator": "Laureano Atlas",
+      "period": "siglo XVIII",
+      "credit": "Princeton University Library",
+      "year": "1761",
+      "subjects": "colonialismo, cartografía, alegoría",
+      "featured": "FALSE",
+      "medium": "Grabado",
+      "source": "Princeton University Library"
+    },
+    "demo-leviathan": {
+      "title": "Frontispicio del Leviatán",
+      "description": "Frontispicio del Leviatán de Thomas Hobbes (1651), en el que el soberano aparece como un cuerpo gigante compuesto por ciudadanos individuales.",
+      "creator": "Abraham Bosse (según diseño de Thomas Hobbes)",
+      "period": "siglo XVII",
+      "credit": "British Library",
+      "year": "1651",
+      "subjects": "filosofía política, soberanía",
+      "featured": "TRUE",
+      "medium": "Grabado",
+      "source": "British Library",
+      "source_url": "https://content.telar.org/iiif/objects/demo-leviathan/manifest.json",
+      "thumbnail": "https://content.telar.org/iiif/objects/demo-leviathan/full/231,313/0/default.jpg"
+    }
+  },
+  "stories": {
+    "mujer-alegorica": {
+      "steps": [
+        {
+          "step": 1,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Qué es Telar?",
+          "answer": "Un framework para narrativas visuales. Este ejemplo explora un mapa alegórico que revela más de lo que parece mostrar a primera vista.\n\nPara descubrir cómo se armó, [abre la hoja de cálculo fuente](https://docs.google.com/spreadsheets/d/1akOcNP3hEIaN1A7tSJvXo_eQrPrl8EnyeaG0vmRpd5E/) y sigue el proceso."
+        },
+        {
+          "step": 2,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Qué es esta imagen?",
+          "answer": "Este grabado de 1761 parece celebrar el imperio español, pero como verás, en realidad lo cuestiona. La historiadora Natalie Cobo guía al público a través de detalles reveladores."
+        },
+        {
+          "step": 3,
+          "object": "demo-atlas-allegory",
+          "x": 0.477,
+          "y": 0.125,
+          "zoom": 8.9,
+          "question": "Observa la cabeza",
+          "answer": "España aparece como la cabeza de este proyecto imperial.",
+          "layers": {
+            "layer1": {
+              "button": "Sobre las coordenadas",
+              "content": "Este paso hace zoom a **x=0.477, y=0.125, zoom=8.9**. Los valores de x e y (0 a 1) ubican la vista dentro de la imagen, y el valor de zoom magnifica el detalle.\n\nCada elección de coordenadas sirve a la narrativa. Aquí, el zoom extremo enfatiza la posición simbólica de España como la “cabeza” del imperio. En los siguientes pasos, las coordenadas recorrerán el cuerpo para construir el argumento.\n\nEn tu propia historia, cambia x e y para desplazarte a otras partes de la imagen, y aumenta el zoom para ver más detalle. Empieza con 0.5, 0.5, 1.0 y ajusta usando la herramienta **Identificar coordenadas** en cualquier página de objeto."
+            }
+          }
+        },
+        {
+          "step": 4,
+          "object": "demo-atlas-allegory",
+          "x": 0.486,
+          "y": 0.277,
+          "zoom": 10.0,
+          "question": "Fíjate en el collar",
+          "answer": "La cadena está hecha de barcos: fueron las invasiones de ultramar las que ampliaron el mundo hispánico de la temprana modernidad."
+        },
+        {
+          "step": 5,
+          "object": "demo-atlas-allegory",
+          "x": 0.504,
+          "y": 0.415,
+          "zoom": 2.9,
+          "question": "Mira a América",
+          "answer": "La masa continental americana forma un manto indefinido que cubre a la figura alegórica."
+        },
+        {
+          "step": 6,
+          "object": "demo-atlas-allegory",
+          "x": 0.478,
+          "y": 0.883,
+          "zoom": 10.0,
+          "question": "Las Filipinas",
+          "answer": "En contraste con el manto fluido americano, las islas Filipinas dan forma concreta a los pies de la figura."
+        },
+        {
+          "step": 7,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Rutas comerciales",
+          "answer": "Esta figura alegórica no se define por masas de tierra sino por rutas marítimas. La conexión, no el territorio, mantiene unido este cuerpo.",
+          "layers": {
+            "layer1": {
+              "button": "La revelación",
+              "content": "Tras cuatro pasos de acercamiento a detalles — cabeza, collar, América, Filipinas — este paso vuelve a la vista completa (x=0.5, y=0.5, zoom=1.0) para sintetizar. Al alejarse se revela el conjunto: este imperio se define por la conexión, no por la geografía.\n\nEsta es una técnica narrativa: acercarse para construir el argumento a través de detalles, luego alejarse para sintetizar y revelar la tesis. La vista completa funciona bien para orientar y concluir.\n\nEstás leyendo un panel de “Saber más” en este momento. Haz clic en **Presentación progresiva** a continuación para aprender cómo funcionan estos paneles anidados."
+            },
+            "layer2": {
+              "button": "Presentación progresiva",
+              "content": "Estás viendo un [[demo-panel-es|panel]] de capa 2 — el nivel más profundo de detalle en Telar.\n\nTelar ofrece tres niveles de profundidad para cada paso: la pregunta y respuesta (visible de inmediato), un panel de “Saber más” (se abre cuando haces clic en el botón) y un panel de “Profundizar” como este (se abre desde el primer panel). La mayoría de los pasos solo necesitan la pregunta y la respuesta. Agrega paneles cuando tengas más que decir.\n\nEn tu hoja de cálculo, escribe el contenido del panel directamente en las columnas contenido_capa1 y contenido_capa2. También puedes vincular términos del glosario con corchetes dobles: <code>&#91;&#91;demo-iiif-es&#93;&#93;</code> se convierte en un enlace a la definición del término, así: [[demo-iiif-es]]."
+            }
+          }
+        },
+        {
+          "step": 8,
+          "object": "demo-atlas-allegory",
+          "x": 0.516,
+          "y": 0.974,
+          "zoom": 10.0,
+          "question": "El rey",
+          "answer": "Carlos III implementó reformas centralizadoras que buscaron convertir a los reinos coloniales en entidades subordinadas cuya función era proveer riqueza a la metrópoli."
+        },
+        {
+          "step": 9,
+          "object": "demo-leviathan",
+          "x": 0.486,
+          "y": 0.177,
+          "zoom": 3.6,
+          "question": "Leviatán",
+          "answer": "La tesis política de Hobbes muestra lo contrario: el gobernante como contenedor de toda la sociedad, con personas indistintas e intercambiables.",
+          "layers": {
+            "layer1": {
+              "button": "Uso de múltiples imágenes",
+              "content": "Este paso cambia de demo-atlas-allegory a demo-leviathan en la columna de objeto. Cada paso puede mostrar una imagen diferente — solo cambia el id_objeto para que coincida con cualquier imagen de tu pestaña de objetos.\n\nTelar admite dos tipos de imágenes. La alegoría del Atlas proviene de la biblioteca digital de Princeton a través de [[demo-iiif-es]] — su url_fuente apunta a un manifiesto alojado por la institución. El frontispicio del Leviatán es una imagen autoalojada — no necesita url_fuente, solo un archivo en tu repositorio que Telar convierte en mosaicos automáticamente durante la compilación.\n\nCobo usa el Leviatán para mostrar contraste: Hobbes presenta al gobernante como contenedor de toda la sociedad, mientras que nuestro mapa alegórico arrincona al gobernante en el margen inferior. La comparación refuerza su tesis sobre conexión frente a territorio."
+            }
+          }
+        },
+        {
+          "step": 10,
+          "object": "demo-atlas-allegory",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Un desafío para el rey",
+          "answer": "Nuestra figura alegórica no tiene forma más allá de la conexión, y el gobernante queda arrinconado en la parte inferior. Esta imagen fue producida en Manila por el grabador filipino Laureano Atlas como frontispicio de la tesis de Vicente de Memije. En contexto, funciona como un desafío polémico a las reformas centralizadoras de Carlos III. Esta narrativa muestra cómo la exploración visual puede construir argumentos académicos.",
+          "layers": {
+            "layer1": {
+              "button": "¿Qué sigue?",
+              "content": "Esta historia demuestra cómo Telar construye argumentos académicos a través de la exploración visual:\n\n- **Narrativa guiada por coordenadas**: El zoom y el desplazamiento dirigen la atención hacia detalles que sostienen tu tesis\n- **Presentación progresiva**: Pregunta y respuesta, luego paneles de “Saber más” y “Profundizar” permiten elegir el nivel de detalle\n- **Múltiples tipos de imágenes**: Imágenes IIIF de colecciones institucionales e imágenes autoalojadas de tu propio repositorio\n- **Integración de glosario**: Define términos una vez y vincúlalos en cualquier parte con <code>&#91;&#91;término&#93;&#93;</code>\n\nPara ver la hoja de cálculo detrás de esta historia — con todas las coordenadas, preguntas y contenido de paneles visibles en sus celdas — abre la [hoja de cálculo fuente](https://docs.google.com/spreadsheets/d/1akOcNP3hEIaN1A7tSJvXo_eQrPrl8EnyeaG0vmRpd5E/).\n\nEsta narrativa emplea el análisis académico desarrollado por **Natalie Cobo**, cuyo trabajo demuestra cómo la exploración visual puede cuestionar narrativas históricas y revelar contextos ocultos de producción."
+            }
+          }
+        }
+      ]
+    },
+    "paisajes": {
+      "steps": [
+        {
+          "step": 1,
+          "object": "",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Una pintura de la Sabana",
+          "answer": "Este documento, que oscila entre mapa y pintura, formó parte de un proceso legal en el que se consolidaron una de las haciendas y uno de los linajes más importantes del Nuevo Reino de Granada."
+        },
+        {
+          "step": 2,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Para qué se dibujó este mapa?",
+          "answer": "*La Pintura de las tierras pantanos y anegadizos del pueblo de Bogotá* se usó en 1614 como evidencia en un juicio legal que el fiscal del Nuevo Reino de Granada había iniciado contra Francisco Maldonado y Mendoza, un reputado encomendero, por la propiedad de unas tierras de la Sabana de Bogotá.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Maldonado y Mendoza había nacido en España en 1551 y llegó a Santafé de Bogotá en 1583. En 1586 se casó con Jerónima de Orrego, la hija y única heredera del conquistador Alonso de Olalla.\n\n![Francisco Maldonado de Mendoza. Anónimo, siglo XVIII](https://content.telar.org/assets/images/paisajes/1.1.jpg){md}\nFrancisco Maldonado de Mendoza. Anónimo, siglo XVIII. Cortesía del Museo Colonial, Bogotá\n\nDesde ese año, Maldonado y Mendoza comenzó a comprar estancias en la Sabana de Bogotá y a recibir tierras que le otorgó la Corona española. A mediados de la década de 1590, Maldonado y Mendoza no solo era encomendero de la comunidad indígena de Bogotá sino que contaba con una de las haciendas ganaderas más ricas del Nuevo Reino de Granada.\n\n:::glossary\nentry: demo-sobre-el-repartimiento-de-encomiendas\n:::\n\nEl fiscal del Nuevo Reino de Granada demandó en 1603 a Maldonado y Mendoza acusándolo de haber estafado a la monarquía por comprar unos terrenos muy extensos y fértiles a un precio muy bajo. En el litigio, ambas partes presentaron visiones encontradas del territorio. Mientras que Maldonado describía el territorio como un pantano improductivo, el fiscal consideraba que era una fértil sabana. En el litigio, el mapa debía operar como una prueba que permitiera establecer cuál de las dos partes tenía razón. Para ello, se solicitó que unos funcionarios imperiales recorrieran el territorio, lo vieran por sí mismos y lo dibujaran en un papel que se pudiera llevar a la corte para tomar una decisión. Esbozar sus observaciones en un papel volvía la sabana un objeto de estudio en la corte de acuerdo con los lineamientos de la monarquía.",
+              "title": "El encomendero de Bogotá"
+            }
+          }
+        },
+        {
+          "step": 3,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿De dónde es el mapa?",
+          "answer": "El mapa representa la Sabana de Bogotá, una altiplanicie en la cordillera oriental de los Andes donde hoy es Colombia. A comienzos del siglo XVI, la Sabana estaba ocupada por indígenas muiscas, de la familia lingüística chibcha. Una expedición española liderada por Gonzalo Jiménez de Quesada llegó a este lugar en 1536. Desde esos años la ciudad de Bogotá se convirtió en la base de operaciones del imperio español en la zona y en 1549 la nombrarían como sede de la Audiencia de Santafé.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": ":::carousel\nimage: https://content.telar.org/assets/images/paisajes/1.2.2.jpg\nalt: Capítulo primero de las ciudades y villas: ciudad de Nuevo Reino, Santa Fé de Bogotá, ciudad tiene gobernador. Guamán Poma, 1615\ncaption: \"Capítulo primero de las ciudades y villas: ciudad de Nuevo Reino, Santa Fé de Bogotá, ciudad tiene gobernador\". Guamán Poma, 1615\nwidth: 1000\nheight: 1406\n---\nimage: https://content.telar.org/assets/images/paisajes/mapa-ubicacion.jpg\nalt: Mapa del Nuevo Reino de Granada entre el mar Caribe y el mar del Sur. Muestra Cartagena, Santa Marta, Popayán, Santafé de Bogotá y el río Magdalena, y en gris las tierras de más de 500 metros sobre el nivel del mar. Un recuadro alrededor de Santafé de Bogotá marca el área representada en la Pintura de las tierras de Bogotá. Un mapa pequeño de Suramérica enmarca la región y traza la cordillera de los Andes.\ncaption: Basado en el mapa 1, “Nuevo Reino de Granada”, en Santiago Muñoz Arbeláez, *Costumbres en disputa: los muiscas y el Imperio español en Ubaque, siglo XVI* (Bogotá: Universidad de los Andes, 2015), p. 3.\nwidth: 896\nheight: 1000\n---\nimage: https://content.telar.org/assets/images/paisajes/def-audiencia.png\nalt: Tesoro de la lengua castellana, o española. Sebastián de Covarrubias Orozco, 1611\ncaption: Tesoro de la lengua castellana, o española.  Sebastián de Covarrubias Orozco, 1611. Cortesía de John P. Robarts Research Library, Toronto.\nwidth: 1045\nheight: 466\n---\nimage: https://content.telar.org/assets/images/paisajes/1.2.1-.jpg\nalt: Sobre la creación de audiencias. Recopilación de Leyes de los Reinos de las Indias\ncaption: Sobre la creación de audiencias. Recopilación de Leyes de los Reinos de las Indias. [Ver documento completo](../../objects/demo-obj3/)\nwidth: 1060\nheight: 1500\n:::"
+            }
+          }
+        },
+        {
+          "step": 4,
+          "object": "demo-bogota-painting",
+          "x": 0.2836,
+          "y": 0.3035,
+          "zoom": 1.678,
+          "question": "¿Es un mapa o una pintura?",
+          "answer": "*La Pintura de las tierras, pantanos y anegadizos del pueblo de Bogotá* es un manuscrito que oscila entre mapa y pintura de paisaje y que pertenece a un género de mapas legales.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Mientras que la mayoría de mapas legales eran croquis o planos simples, este mapa no solo se distingue por su uso de los colores y elaborados diseños sino que está firmado por su autor, Juan de Aguilar Rendón, quien se identifica como pintor, y por Alonso Ruiz Gadálmez, el receptor.\n\nEl título completo es *Pintura de las tierras, pantanos y anegadizos del pueblo de Bogotá, hecha por mandado de la Real Audiencia de esta ciudad de Santafé del Nuevo Reino de Granada en la causa que en ella trata el señor fiscal con don Francisco Maldonado de Mendoza. Por nos, Alonso Ruiz Gadálmez, receptor, y Juan de Aguilar Rendón, pintor, en el mes de abril de 1614 años.*\n\nEl reconocimiento de autoría es muy poco frecuente tanto en los mapas legales como en la pintura colonial neogranadina, pues en este periodo el concepto de autoría era muy distinto del que manejamos hoy. La firma, el uso del término ‘pintura’ y el manejo de los colores son indicios de que el autor estaba creando también una obra para ser apreciada por sus cualidades estéticas.\n\nAsimismo, las firmas del pintor y del receptor servían como garantes del proceso del levantamiento del terreno y le daban validez a la pintura para que se utilizara como una representación verídica del territorio en la corte.\n\nAunque no conocemos el origen de los colores utilizados en el mapa, la producción de los colores era un proceso complejo en que se tomaban elementos vegetales y animales y se transformaban en tintas a través de procesos ricos en significados culturales. Tenemos evidencias de que los muiscas y otros grupos nativos utilizaban una rica paleta de tintas azules, rojas y marrones que aplicaban a sus diseños en textiles, rocas y otras superficies. Por ello, es posible que algunas de las tintas utilizadas en la *Pintura* fueran indígenas.\n\nUn último aspecto visual importante para entender la *Pintura* es la escala. A diferencia de los mapas contemporáneos, cuya precisión consiste en mantener una escala única en toda la imagen, la *Pintura* utiliza una escala múltiple, flexible y variable. El centro del mapa—que representa el territorio en disputa entre Maldonado y el fiscal—cuenta con una escala más precisa mientras que los bordes son más variables, ubicando al observador con respecto a referentes más lejanos como la ciudad de Santafé y los pueblos de Fontibón o Madrid.\n\n## Fuente primaria\n\n### ¿Qué es un mapa?\n\nDiferentes sociedades representan el mundo de maneras distintas. Hay mapas visuales, mapas orales, mapas mentales. En algunas sociedades, un nombre, un sombrero o un traje, puede ser un mapa.\n\n![Tesoro de la lengua castellana, o española. Sebastián de Covarrubias Orozco, 1611](https://content.telar.org/assets/images/paisajes/def-mapa.jpg){lg}\nTesoro de la lengua castellana, o española. Sebastián de Covarrubias Orozco, 1611. Cortesía de John P. Robarts Research Library, Toronto.\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes/1.3.1.jpg\nalt: La carta uniuersale della terra ferma & Isole delle Indie occide[n]tali [La carta universal del continente y las islas de las Indias Occidentales]. Lugar y fecha de publicación: Venecia, 1534\ncaption: La carta uniuersale della terra ferma & Isole delle Indie occide[n]tali [*La carta universal del continente y las islas de las Indias Occidentales*]. Lugar y fecha de publicación: Venecia, 1534. Cortesía de: John Carter Brown Library, Providence.\nwidth: 1233\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/1.3.2.jpg\nalt: Psalter, with additional hymns and prayers and a medieval world map ('The Map Psalter') [Salterio, con himnos y oraciones adicionales y un mapa medieval del mundo]. Lugar y fecha de publicación: Londres, 1262–1300\ncaption: Psalter, with additional hymns and prayers and a medieval world map ('The Map Psalter') [*Salterio, con himnos y oraciones adicionales y un mapa medieval del mundo*]. Lugar y fecha de publicación: Londres, 1262–1300. Cortesía de: British Library, Londres.\nwidth: 1036\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/1.3.3.jpg\nalt: The Map of the World [El mapa del mundo]. Lugar y fecha de creación: Abu Habba (Sippar), siglo VI a.C. aproximadamente\ncaption: The Map of the World [*El mapa del mundo*]. Lugar y fecha de creación: Abu Habba (Sippar), siglo VI a.C. aproximadamente. Cortesía de: The British Museum, Londres.\nwidth: 1643\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/1.3.4.jpg\nalt: Painting, in black, on sealskin; a large number of small figures, including men in sledges drawn by reindeer, in canoes, harpooning whales, etc. [Pintura, en negro, sobre piel de foca; una gran cantidad de pequeñas figuras, incluidos hombres en trineos tirados por renos, en canoas, arpones, etc.]. Lugar y fecha de recolección: Rusia / Siberia Estrecho de Bering (costa asiática), 1860 o 1870. Recuperado de: Pitt Rivers Museum, Oxford\ncaption: Painting, in black, on sealskin; a large number of small figures, including men in sledges drawn by reindeer, in canoes, harpooning whales, etc. [*Pintura, en negro, sobre piel de foca; una gran cantidad de pequeñas figuras, incluidos hombres en trineos tirados por renos, en canoas, arpones, etc.*]. Lugar y fecha de recolección: Rusia / Siberia Estrecho de Bering (costa asiática), 1860 o 1870. Recuperado de: Pitt Rivers Museum, Oxford.\nwidth: 1679\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/1.3.5.jpg\nalt: The Codex Quetzalecatzin [El códex Quetzalecatzin]. Lugar y fecha de creación: México, 1593\ncaption: The Codex Quetzalecatzin [*El códex Quetzalecatzin*]. Lugar y fecha de creación: México, 1593. Cortesía de: Library of Congress, Washington D.C.\nwidth: 1217\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/1.3.6.jpg\nalt: Map of the Crown Prince Islands, Disko Bay, Greenland [Mapa de las Islas del Príncipe Heredero, Bahía de Disko, Groenlandia]. Lugar y fecha de creación: Bahía de Disko, 1926. Recuperado de: Library of Congress, Washington D.C\ncaption: Map of the Crown Prince Islands, Disko Bay, Greenland [*Mapa de las Islas del Príncipe Heredero, Bahía de Disko, Groenlandia*]. Lugar y fecha de creación: Bahía de Disko, 1926. Recuperado de: Library of Congress, Washington D.C.\nwidth: 2028\nheight: 1500\n:::\n\nEntre los kogui, por ejemplo, el [[demo-telar-kogui|telar]] es un mapa que representa la geografía de la Sierra Nevada de Santa Marta.",
+              "title": "Una pintura legal"
+            }
+          }
+        },
+        {
+          "step": 5,
+          "object": "demo-bogota-painting",
+          "x": 0.6984,
+          "y": 0.6893,
+          "zoom": 1.583,
+          "question": "¿Quiénes eran los dueños de este terreno?",
+          "answer": "La hacienda representada en la pintura perteneció a Francisco de Maldonado y Mendoza. Sus descendientes obtuvieron títulos nobiliarios y la hacienda se convirtió en el centro del Marqués de San Jorge.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "El juicio ratificó el derecho de Maldonado y Mendoza sobre su hacienda. En su testamento, Maldonado transformó su hacienda en un mayorazgo. Esto significaba que tras su muerte no se dividiría entre sus herederos sino que lo conservaría su primogénito, Antonio Maldonado de Mendoza.\n\n![Tesoro de la lengua castellana, o española. Sebastián de Covarrubias Orozco, 1611](https://content.telar.org/assets/images/paisajes/def-mayorazgo.png){md}\nTesoro de la lengua castellana, o española.  Sebastián de Covarrubias Orozco, 1611. Cortesía de: John P. Robarts Research Library, Toronto.\n\n![Retrato de Antonio Maldonado de Mendoza. Anónimo, siglo XVIII](https://content.telar.org/assets/images/paisajes/1.5.jpg){md}\nRetrato de Antonio Maldonado de Mendoza. Anónimo, siglo XVIII. Cortesía del Museo Colonial, Bogotá.\n\nEste es el comienzo de un poderoso linaje que se fortaleció alrededor de la hacienda.\n\nEsta propiedad se ha conocido como la “Dehesa de Bogotá”, el mayorazgo de Bogotá, o el Novillero y se caracterizaba por alojar temporalmente el ganado que venía de tierras bajas para su consumo en la ciudad de Santafé de Bogotá. Los herederos de Maldonado y Mendoza continuaron uniéndose con algunas de las familias más prestantes del Nuevo Reino de Granada, y finalmente recibieron títulos nobiliarios y se erigieron en el Marquesado de San Jorge.\n\nEste linaje mantuvo su poder durante dos siglos, incluyendo virreyes y obispos. De hecho, [[demo-jorge-tadeo-lozano|Jorge Tadeo Lozano,]] el primer presidente de la república en 1811, fue uno de sus descendientes.\n\n![Libro Segundo de las Genealogías del Nuevo Reyno de Granada. Juan Flórez de Ocáriz, 1674](https://content.telar.org/assets/images/paisajes/1.5.1.jpg){sm}\n![Libro Segundo de las Genealogías del Nuevo Reyno de Granada. Juan Flórez de Ocáriz, 1674](https://content.telar.org/assets/images/paisajes/1.5.2.jpg){sm}\nLibro Segundo de las Genealogías del Nuevo Reyno de Granada. Juan Flórez de Ocáriz, 1674. Cortesía de: John Carter Brown Library, Providence.",
+              "title": "El mayorazgo y el linaje de los Maldonado"
+            }
+          }
+        },
+        {
+          "step": 6,
+          "object": "",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Pueblos para los indios",
+          "answer": "Los españoles crearon leyes para obligar a los indígenas a abandonar sus antiguas residencias para que vivieran en pueblos organizados en torno a una plaza con una iglesia. Con esta medida buscaban que los indios olvidaran sus costumbres."
+        },
+        {
+          "step": 7,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Por qué se llamó “indios” a los muiscas?",
+          "answer": "Los europeos acuñaron el término de “indios” para aglutinar a las diversas sociedades del Nuevo Mundo en una misma categoría. Esta práctica se originó desde los primeros viajes de Cristóbal Colón. Con esta etiqueta proyectaban muchos estereotipos despectivos sobre las poblaciones nativas.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "En 1492, Colón había salido de España en busca de Asia y siempre creyó haber llegado al Oriente o la India, una tierra en donde Juan de Mandeville había descrito la existencia de sociedades enteras compuestas de criaturas maravillosas, como hombres con cara de perros. Los europeos proyectaron muchas de estas ideas sobre los habitantes del Nuevo Mundo, llamándolos “indios”.\n\n## Fuente primaria\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes/2.1.1.jpg\nalt: Von Canibalien dem folck von Canaria, 1527\ncaption: Von Canibalien dem folck von Canaria, 1527. Cortesía de John Carter Brown Library.\nwidth: 1920\nheight: 1418\n---\nimage: https://content.telar.org/assets/images/paisajes/2.1.2.jpg\nalt: Americaner in Peru, 1612\ncaption: Americaner in Peru, 1612. Cortesía de John Carter Brown Library.\nwidth: 1000\nheight: 1399\n---\nimage: https://content.telar.org/assets/images/paisajes/2.1.3.jpg\nalt: La Figure E. F. Formes des cannoes ou batteaux des Caripous & autres Indiens. Comment les Caribes boucanent & mangent la chair de leurs enemies, 1665\ncaption: La Figure E. F. Formes des cannoes ou batteaux des Caripous & autres Indiens. Comment les Caribes boucanent & mangent la chair de leurs enemies, 1665. Cortesía de John Carter Brown Library.\nwidth: 1000\nheight: 1728\n:::\n\nEsta categoría arbitraria daría la base para clasificar a los seres del Nuevo Mundo. Durante el siglo XVI, académicos y teólogos españoles debatieron intensamente si los “indios” eran seres racionales, como los europeos, o si eran seres inferiores que por su misma naturaleza debían ser esclavizados. De esta manera, la gran complejidad social y diversidad étnica de las sociedades americanas quedaría reducida al término de “indio”, un vocablo despectivo y violento que los infantilizaba y los definía como seres que debían ser transformados para adoptar las costumbres y formas de vida de los europeos.",
+              "title": "¿Indios o muiscas?"
+            }
+          }
+        },
+        {
+          "step": 8,
+          "object": "demo-bogota-painting",
+          "x": 0.3654,
+          "y": 0.1903,
+          "zoom": 2.719,
+          "question": "¿Por qué se ven pueblos en el mapa?",
+          "answer": "Los pueblos que hoy caracterizan la sabana no estuvieron ahí siempre, sino que fueron un proyecto puesto en marcha por el imperio español que buscaba que los indios vivieran vidas católicas (lo que llamaban una “vida en policía”).",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": ":::glossary\nentry: demo-sobre-la-reduccion-de-los-indios\n:::\n\nEste proceso, que los españoles denominaban \"reducir\", implicaba forzar a los indígenas a que abandonaran sus espacios vitales para ubicarse en otros asentamientos que estuvieran organizados en torno a una plaza central y fueran trazados en forma de cuadrícula, siguiendo un orden católico.\n\n:::glossary\nentry: demo-sobre-que-en-cada-reduccion-haya-iglesia-con-puerta-y-llave\n:::\n\nPor esta razón, se observa en el mapa una variedad de pueblos, como el de Fontibón, hoy parte de la ciudad de Bogotá, o el de Serrezuela, hoy llamado Madrid.\n\nMuchos de los nombres de pueblos que se usan hoy en día eran antes conceptos políticos importantes para los muiscas. Términos como Ubaque, Guatavita, Bogotá y Duitama designaban a la vez a un líder político, un territorio y una comunidad. Los nuevos pueblos conservarían el nombre del [[demo-cacicazgo|cacicazgo]] indígena y su estructura política, pero los obligarían a residir bajo otro orden espacial y cultural.\n\n:::glossary\nentry: demo-don-francisco\n:::\n\nA partir de este momento el paisaje estaría dominado por cruces y símbolos católicos y la convención más frecuente para los pueblos de indios en los mapas era la iglesia.\n\n## Fuente primaria\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes/2.2.3.jpg\nalt: Pueblo de Soacha, 1627\ncaption: Pueblo de Soacha, 1627. Cortesía del Archivo General de la Nación, Bogotá.\nwidth: 1500\nheight: 1907\n---\nimage: https://content.telar.org/assets/images/paisajes/2.2.4.jpg\nalt: Pueblo de Sopó, 1758\ncaption: Pueblo de Sopó, 1758. Cortesía del Archivo General de la Nación, Bogotá.\nwidth: 1239\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.2.5.jpg\nalt: Bogotá y la Serrezuela, 1771\ncaption: Bogotá y la Serrezuela, 1771. Cortesía del Archivo General de la Nación, Bogotá.\nwidth: 1976\nheight: 1500\n:::",
+              "title": "Las reducciones"
+            }
+          }
+        },
+        {
+          "step": 9,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Desde cuándo existen pueblos en la sabana?",
+          "answer": "Las primeras instrucciones para construir pueblos las decretó el visitador Tomás López en 1559 y generó grandes desajustes en las sociedades indígenas. Las reducciones no solo crearon las condiciones propicias para la transmisión de epidemias, debido a nuevas condiciones de hacinamiento, sino que también generaron conflictos entre las autoridades indígenas y las comunidades.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": ":::carousel\nimage: https://content.telar.org/assets/images/paisajes/2.3.1.jpg\nalt: La ciudad de Trinidad provincia de los Musos en el Nuevo Reino de Granada, 1582\ncaption: La ciudad de Trinidad provincia de los Musos en el Nuevo Reino de Granada, 1582. Cortesía de la Real Academia de la Historia, Madrid.\nwidth: 1912\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.3.2.jpg\nalt: Plano de la ciudad de La Palma, 1581\ncaption: Plano de la ciudad de La Palma, 1581. Cortesía del Archivo General de Indias, Sevilla.\nwidth: 1576\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.3.3.jpg\nalt: Plano de la ciudad de los Reyes del Valle de Upar, 1578\ncaption: Plano de la ciudad de los Reyes del Valle de Upar, 1578. Cortesía de la Real Academia de la Historia, Madrid.\nwidth: 1010\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.3.4.jpg\nalt: Sobre Fosativa y el pueblo de Choachí\ncaption: Sobre Fosativa y el pueblo de Choachí. [Ver documento completo](../../objects/demo-obj35/)\nwidth: 1000\nheight: 800\n:::"
+            }
+          }
+        },
+        {
+          "step": 10,
+          "object": "demo-bogota-painting",
+          "x": 0.5334,
+          "y": 0.1977,
+          "zoom": 3.167,
+          "question": "¿Cómo vivían los muiscas antes de la llegada de los españoles?",
+          "answer": "En el mapa se identifica el lugar donde se encontraba el “cercado viejo del cacique”. Los muiscas de la Sabana tenían centros ceremoniales que se conocieron en el siglo XVI como “cercados”. Estos jugaban un papel importante en su organización política.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Ese territorio tenía una larga historia humana. Hace unos 12.400 años, a finales del pleistoceno, grupos humanos dedicados a la caza, pesca y la recolección de frutos ascendieron del valle del río Magdalena al frío altiplano de la cordillera oriental de los Andes y se resguardaron en sus abrigos rocosos. Entre 5.000 y 7.000 años atrás cambiaron su lugar de habitación para ubicarse en lugares a cielo abierto.\n\n:::glossary\nentry: demo-sobre-los-cercados-indigenas\n:::\n\nEn los milenios siguientes perfeccionaron su uso de la cerámica y desarrollaron comunidades agrícolas más densas. A la llegada de los españoles, estaban organizados en sociedades agrícolas con varios niveles de jerarquía política y sus líderes residían en unos lugares ceremoniosos cercados por troncos de madera que decoraban con pinturas en tela de algodón de diversos colores y estilos.\n\n## Fuente primaria\n\n:::carousel\nimage: https://content.telar.org/assets/images/paisajes/2.4.1.jpg\nalt: Figura votiva en orfebrería. Cordillera Oriental - muisca. Fecha: 600/1600\ncaption: Figura votiva en orfebrería. Cordillera Oriental - muisca. Fecha: 600/1600. Cortesía del Museo del Oro (Bogotá).\nwidth: 2082\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.4.2.jpg\nalt: Figura votiva en orfebrería. Cordillera Oriental - muisca. Fecha: 600/1600\ncaption: Figura votiva en orfebrería. Cordillera Oriental - muisca. Fecha: 600/1600. Cortesía del Museo del Oro (Bogotá).\nwidth: 1989\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.4.3.jpg\nalt: Figura votiva en forma de cercado con hombre bicéfalo. Cordillera Oriental - periodo muisca. Fecha: 600/1600\ncaption: Figura votiva en forma de cercado con hombre bicéfalo. Cordillera Oriental - periodo muisca. Fecha: 600/1600. Cortesía del Museo del Oro (Bogotá).\nwidth: 1341\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.4.4.jpg\nalt: Figura votiva en forma de cercado en orfebrería. Cordillera Oriental - muisca. Fecha: 600/1600\ncaption: Figura votiva en forma de cercado en orfebrería. Cordillera Oriental - muisca. Fecha: 600/1600. Cortesía del Museo del Oro (Bogotá).\nwidth: 1519\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.4.5.jpg\nalt: Figura votiva en forma de cercado con figuras antropomorfas. Fecha: 600/1600\ncaption: Figura votiva en forma de cercado con figuras antropomorfas. Fecha: 600/1600. Cortesía del Museo del Oro (Bogotá).\nwidth: 966\nheight: 1500\n---\nimage: https://content.telar.org/assets/images/paisajes/2.4.6.jpg\nalt: Objeto de oro en forma de cercado. Cundinamarca, Colombia\ncaption: Objeto de oro en forma de cercado. Cundinamarca, Colombia. Cortesía del Museo Etnológico de los Museos Estatales de Berlín. Número de identificación: V A 13636.\nwidth: 1519\nheight: 1500\n:::",
+              "title": "Los cercados"
+            }
+          }
+        },
+        {
+          "step": 11,
+          "object": "demo-bogota-painting",
+          "x": 0.8094,
+          "y": 0.7797,
+          "zoom": 3.162,
+          "question": "¿Por qué salen en el mapa un sitio que se llama Bogotá y otro que se llama Santa Fe?",
+          "answer": "La creación de pueblos era parte de unas medidas que buscaban crear dos repúblicas separadas espacialmente y con responsabilidades legales distintas: una de indios que vivieran en pueblos y una de españoles que residieran en ciudades. Es por esto que en el mapa el “pueblo de Bogotá” y la ciudad de “Santa Fe” aparecen como lugares distintos—el pueblo de Bogotá en lo que hoy sería Funza, y la ciudad en el lugar de Santafé de Bogotá.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Aunque en teoría las dos repúblicas debían permanecer completamente separadas, esta división no se erigió de manera tan rigurosa en la práctica. Los pueblos de indios siguieron siendo lugares con una vibrante actividad económica alrededor de los cuales gravitaban muchos vecinos que no se identificaban como indios.\n\nDe hecho, durante los siglos XVI y XVII muchos pueblos de indios contaban con una población mayor a la de ciudades como Santafé de Bogotá y Tunja. Asimismo, Santafé de Bogotá tenía una presencia notable de indígenas que se ocupaban como mercaderes, vendían víveres y bienes en la calle real y a menudo figuraban como propietarios de solares.\n\n![Tesoro de la lengua castellana, o española. Sebastián de Covarrubias Orozco, 1611](https://content.telar.org/assets/images/paisajes/def-solar.jpg){md}\nTesoro de la lengua castellana, o española.  Sebastián de Covarrubias Orozco, 1611. Cortesía de John P. Robarts Research Library, Toronto.\n\nTal era la presencia indígena en la ciudad que en 1594 el presidente de la Audiencia de Santafé, Antonio González, se vio en la necesidad de crear un nuevo cargo administrativo para un español que supervisara y controlara las actividades de este grupo.\n\n:::glossary\nentry: demo-sobre-los-indigenas-en-la-ciudad\n:::\n\nLa distinción entre el pueblo de Bogotá y la ciudad de Santa Fe se mantuvo hasta el siglo XIX, cuando el gobierno republicano eliminó algunos nombres hispanos en su esfuerzo por crear símbolos patrios, eliminando el “Santa Fe” y dejando solo Bogotá como nombre de la ciudad y el pueblo tomando el nombre de Funza.",
+              "title": "Dos repúblicas"
+            }
+          }
+        },
+        {
+          "step": 12,
+          "object": "",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "De terrazas a pastizales",
+          "answer": "Aunque en el mapa figuran animales como vacas y caballos, estos no eran nativos del Nuevo Mundo sino que fueron introducidos con la conquista. El mapa evidencia la transformación de un paisaje agrícola indígena en pastizales para ganadería."
+        },
+        {
+          "step": 13,
+          "object": "demo-bogota-painting",
+          "x": 0.3283,
+          "y": 0.5247,
+          "zoom": 1.59,
+          "question": "¿Había cerdos, vacas, gallinas y burros en la sabana de Bogotá antes de que llegaran los españoles?",
+          "answer": "Aunque el paisaje del mapa lo dominan animales como las vacas, ovejas, cerdos y caballos, ninguno de estos animales era nativo de los paisajes andinos.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Usualmente concebimos la expansión europea como un proceso humano, en que españoles, portugueses, franceses e ingleses atravesaron el océano Atlántico para establecer colonias en América. Pero este proceso también implicó el movimiento de plantas, animales y patógenos entre el Viejo y el Nuevo Mundo. Así, el maíz, el chocolate, la papa y el tomate viajaron del Nuevo al Viejo Mundo mientras que la vaca, el cerdo, la viruela, el trigo y el azúcar se desplazaron del Viejo al Nuevo.\n\nEste movimiento biológico impactó fuertemente la vida indígena. Las viruelas, por ejemplo, detonaron un colapso demográfico indígena de unas proporciones que aún hoy nos cuesta dimensionar. Se estima que solo hasta comienzos del siglo XX la población de Colombia logró recuperar la magnitud de ocupación precolombina.",
+              "title": "El intercambio biológico"
+            }
+          }
+        },
+        {
+          "step": 14,
+          "object": "demo-bogota-painting",
+          "x": 0.7461,
+          "y": 0.5062,
+          "zoom": 3.158,
+          "question": "¿Cómo cultivaban los muiscas en la Sabana de Bogotá?",
+          "answer": "La organización que hacían los indígenas muiscas de ese ecosistema rico en fuentes hídricas se basaba en un sistema de camellones que creaba plataformas elevadas que servían como terrazas de cultivo, que a su vez estaban atravesadas por diques que drenaban el agua excedente y servían como canales de pesca.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Esto generaba una dieta rica en productos agrícolas y pescado, alternadas con carne de curíes y venado, aunque el consumo de esta última era controlado por las autoridades nativas.\n\n:::glossary\nentry: demo-sobre-la-alimentacion-indigena\n:::\n\nMantener estos camellones requería una gran inversión de trabajo, y producía un paisaje agrícola que era tanto natural como humano.\n\n![Diagrama del funcionamiento de un camellón](https://content.telar.org/assets/images/paisajes/3.2.4.jpg){lg}\nDiagrama del funcionamiento de un camellón.\n\nEn la pintura, es evidente que la llegada de animales del Viejo Mundo ha transformado los ambientes de los Andes. De hecho, la pintura nos muestra un paisaje de sabanas ganaderas, lo cual ya implicaba una transformación con respecto a los paisajes nativos. A pesar de esto, en fotografías aéreas de los años 1950 todavía se observan las huellas del sistema de camellones y evidencian otra forma de habitar este medio ambiente.\n\n![Vuelo C-778, Foto 869. Lugar y fecha de creación: Bogotá, 1956. Recuperada de: Instituto Geográfico Agustín Codazzi, Bogotá](https://content.telar.org/assets/images/paisajes/3.2.2.jpg){md}\nVuelo C-778, Foto 869. Lugar y fecha de creación: Bogotá, 1956. Recuperada de: Instituto Geográfico Agustín Codazzi, Bogotá.\n\n![Vuelo C-773, Foto 014. Lugar y fecha de creación: Bogotá, 1956. Recuperada de: Instituto Geográfico Agustín Codazzi, Bogotá](https://content.telar.org/assets/images/paisajes/3.2.3.jpg){md}\nVuelo C-773, Foto 014. Lugar y fecha de creación: Bogotá, 1956. Recuperada de: Instituto Geográfico Agustín Codazzi, Bogotá.",
+              "title": "Una arquitectura del agua"
+            }
+          }
+        },
+        {
+          "step": 15,
+          "object": "demo-bogota-painting",
+          "x": 0.809,
+          "y": 0.6137,
+          "zoom": 2.706,
+          "question": "¿La llegada de ganado afectó la agricultura indígena?",
+          "answer": "La introducción del ganado tras la invasión española cambió para siempre el paisaje de la Sabana. El sistema de camellones y canales no era práctico desde una óptica ganadera. Para ese objetivo, era más útil tener sabanas cubiertas de [[demo-pastos|pastos]].",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Pero los pastizales no se adecuaban tan fácilmente a las dinámicas hídricas de la cordillera oriental de los Andes y eran fácilmente inundables. Es por esto que algunos españoles describían este espacio como un territorio “inútil” y “pantanoso”, como lo indica el título del mapa. No obstante, a comienzos del siglo XVII la Sabana de Bogotá ya estaba poblada por una gran cantidad de ovejas, gallinas, vacas, cerdos y caballos.\n\n:::glossary\nentry: demo-sobre-el-ganado-en-las-tierras-indigenas\n:::\n\nDesde la óptica indígena, era el [[demo-ganaderia|ganado]] el intruso que no solo dañaba el sistema de camellones sino que a menudo acababa con sus cultivos y los obligaba a construir cercas para mantenerlos alejados.\n\n:::glossary\nentry: demo-quejas-de-indigenas-por-danos-de-ganado-en-sus-cultivos\n:::\n\nPero no todas las consecuencias de la llegada de las nuevas plantas y animales fueron negativas. Para comienzos del siglo XVII, los indígenas ya habían incorporado los huevos y el pollo a su dieta y tejían sus textiles con lana de oveja. Los paisajes de los Andes y las economías de indígenas y españoles ahora estaban conectadas con estos nuevos pobladores.",
+              "title": "El ganado y los cultivos indígenas"
+            }
+          }
+        },
+        {
+          "step": 16,
+          "object": "",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Un paisaje dividido",
+          "answer": "Esta pintura se usó como documento legal para reconocer la propiedad de un español sobre una extensa hacienda en la sabana de Bogotá. A los indígenas se les otorgó un resguardo (una propiedad comunal mucho más pequeña que no podían comercializar) y se les forzó a trabajar en las haciendas. En este sentido, es un mapa del despojo de la tierra y de la transformación de los paisajes agrícolas indígenas."
+        },
+        {
+          "step": 17,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Qué eran los resguardos?",
+          "answer": "Los resguardos eran tierras comunales que podían cultivar los indígenas. Estos surgieron de una reforma legal de 1593, conocida como las composiciones de tierras. Hasta ese momento gran parte de las tierras habían permanecido en manos indígenas.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "La reforma introdujo una nueva figura legal que dividía la propiedad agraria en dos categorías: haciendas para vecinos españoles y resguardos para indígenas. Si con las reformas de Tomás López en 1559 se habían creado los pueblos donde debían vivir los indígenas bajo un orden católico, ahora los resguardos designaban unas tierras en que debían hacer sus cultivos.\n\n![Pueblo de Guasca elaborado por Fray Manuel Félix de Velasco, 1758](https://content.telar.org/assets/images/paisajes/4.1.1.jpg){md}\nPueblo de Guasca elaborado por Fray Manuel Félix de Velasco, 1758. Cortesía del Archivo General de la Nación, Bogotá.\n\n![Pueblo de Suta, 1803](https://content.telar.org/assets/images/paisajes/4.1.2.jpg){md}\nPueblo de Suta, 1803. Cortesía del Archivo General de la Nación, Bogotá.\n\nLos resguardos otorgaban “posesión” de la tierra a los indígenas, sin que la pudieran comerciar. Las haciendas se trataban como propiedad privada que se podía vender o comprar de acuerdo con la voluntad del dueño.",
+              "title": "La reforma de 1593"
+            }
+          }
+        },
+        {
+          "step": 18,
+          "object": "demo-bogota-painting",
+          "x": 0.3921,
+          "y": 0.7217,
+          "zoom": 2.732,
+          "question": "¿Podían los indígenas trabajar donde querían?",
+          "answer": "Ese mismo año se creó un cargo para un funcionario español que distribuía el trabajo indígena y que les decía dónde debían trabajar y que también regulaba cómo debían administrar sus cuentas.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "La reforma legal de 1593 también daba lineamientos sobre cómo se debía administrar el trabajo indígena. Para ello se implementó un nuevo cargo denominado el “corregidor de naturales”. Con este cargo en teoría se buscaba proteger a los indígenas de los maltratos de sus encomenderos.\n\nEs por esto que Antonio González, quien lideró la reforma, ordenó que cuando un indígena le confesara un delito a un sacerdote, “el sacerdote avise en secreto al corregidor, el cual conforme a la culpa, negligencia o delito al tal indio le castigue sin que se entienda que los sacerdotes han sido causa del tal castigo, porque de aquí vendrá a conseguirse lo que se desea que es que tengan amor a los sacerdotes y miedo al corregidor.”\n\nIrónicamente, la nueva administración no daba mayor autonomía a los indígenas. De hecho, daba autoridad al corregidor para enviar a los indígenas a hacer trabajos forzados a las haciendas y a las minas. Este trabajo debía ser remunerado, pero los indígenas no iban a ser completamente autónomos en la utilización de los excedentes.\n\n:::glossary\nentry: demo-demanda-contra-corregidores\n:::\n\nPor el contrario, se especificaba que los indígenas debían introducir su dinero en un “arca de tres llaves”, un cofre especial que solo se podía abrir si se contaba simultáneamente con todas las llaves. Una de estas llaves la tendría el cacique, otra el corregidor, y una tercera el cura doctrinero. De esta manera, se podía asegurar que los indígenas pagaran sus tributos y diezmos antes de incurrir en otros gastos.\n\n![“Lo que se les resultare… se ha de poner en un arca de las tres llaves y la una ha de tener el corregidor y la otra el doctrinero y la otra el cacique”. Anónimo Arca triclave, S. XVIII. Madera con apliques en hierro (Madera y metal / Madera)](https://content.telar.org/assets/images/paisajes/4.2.1.jpg){lg}\n“Lo que se les resultare… se ha de poner en un arca de las tres llaves y la una ha de tener el corregidor y la otra el doctrinero y la otra el cacique”. Anónimo Arca triclave, S. XVIII. Madera con apliques en hierro (Madera y metal / Madera). Cortesía del Museo Colonial, Bogotá.",
+              "title": "El corregidor de naturales"
+            }
+          }
+        },
+        {
+          "step": 19,
+          "object": "demo-bogota-painting",
+          "x": 0.6962,
+          "y": 0.6515,
+          "zoom": 2.716,
+          "question": "¿Por qué es este un paisaje dividido?",
+          "answer": "En este sentido, este es un mapa profundamente violento. Se calcula que, con la creación de resguardos, los indígenas perdieron el acceso al 95% de las tierras que tenían disponibles para su trabajo antes de la conquista. Es un mapa del despojo de la tierra y de la transformación de los paisajes agrícolas indígenas en sabanas ganaderas de hacendados españoles, en donde los indígenas debían trabajar de manera forzosa. Podemos ver las cicatrices de ese proceso en algunos detalles del mapa, como en la marca el lugar donde quedaba el antiguo cacicazgo o en el pequeño lugar donde se encuentra el resguardo de la comunidad en contraste con las haciendas de españoles."
+        },
+        {
+          "step": 20,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Qué pasó con los pueblos y los resguardos?",
+          "answer": "Los pueblos y los resguardos han tenido una larga y agitada trayectoria desde el siglo XVI, atravesando oleadas de confrontación y resurgimiento. La mayoría de municipios del altiplano surgieron de los pueblos de indios. Después de varios intentos por desmontar los resguardos en los siglos XVIII y XIX, la Constitución Política de 1991 los reconoció como territorios étnicos y desde entonces han ofrecido nuevas posibilidades de autonomía étnica.",
+          "layers": {
+            "layer1": {
+              "button": "",
+              "content": "Los pueblos de indios fueron el eje de la vida social en el altiplano durante el siglo XVII, prestando servicios a todos aquellos que vivían fuera de las ciudades. De hecho, el 94% de los asentamientos eran pueblos, solo cerca del 6% eran ciudades o villas. La población que no se identificaba como indígena —personas de todas las trayectorias que se agrupaban bajo el término “vecinos”— aumentó progresivamente desde el siglo XVI hasta el XVIII, a medida que caía la población indígena (debido a factores como las epidemias y las exigencias laborales). Las autoridades imperiales tomaron diferentes tipos de medidas para responder a este cambio demográfico. En un primer momento implementaron lo que llamaban las “agregaciones”, que consistía en juntar dos o más pueblos de indios para que quedaran en un mismo asentamiento.\n\n:::glossary\nentry: demo-lorenzo-requero\n:::\n\nPara finales del siglo XVIII, las personas que se identificaban como “vecinos” y no como “indios” se consolidaron como una mayoría y la lengua muisca dejó de ser el principal medio de comunicación. En respuesta, el virrey Moreno y Escandón intentó desmontar el ordenamiento territorial prevalente, transformando los “pueblos de indios” en “parroquias para españoles” y recortando los resguardos para asignar más tierras a los vecinos. Las comunidades indígenas no aceptaron este proceso de manera pasiva y, de hecho, este proceso fue una de las principales razones para que los indígenas del altiplano participaran en la rebelión de los Comuneros.\n\n:::glossary\nentry: demo-francisco-moreno-y-escandon\n:::\n\nLos procesos independentistas del siglo XIX buscaron implantar una república en donde antes había un imperio global, y esto implicaba transformar las instituciones. La naciente república partía de la base teórica de que todos sus integrantes debían ser “ciudadanos” —individuos libres con derechos políticos— y, por ello, se debían desmontar las entidades corporativas y comunitarias, que se veían como ineficientes y retrógradas. Los “indios” ya no existirían como persona legal, ni serían sujetos a un régimen especial —aquel que bajo la corona española les ponía unas cargas tributarias y laborales mayores y que les asignaba resguardos—. En esa medida, el estado republicano en reiteradas ocasiones pasó leyes y decretos para acabar con los resguardos.\n\n:::glossary\nentry: demo-leyes-para-la-disolucion-de-resguardos\n:::\n\nLas respuestas de los indígenas a estas leyes fueron muy diversas. En algunos casos las utilizaron a su favor y en otros se opusieron a la disolución de los resguardos. Tenemos evidencia de la supervivencia de estas tierras comunales hasta en la década de 1940 y también de unos movimientos sociales activos para la revitalización étnica y restitución de tierras, como el liderado por Manuel Quintín Lame desde el Consejo Indio de las Indias.\n\nLa tendencia a la disolución de los resguardos se revirtió con la Constitución Política de 1991, que reconoció a Colombia como una nación pluriétnica y multicultural y abrigó la existencia de territorios étnicos. Desde ese momento han florecido los procesos de resurgimiento étnico y de solicitud de tierras de resguardo. En la cordillera oriental se han reconocido territorios de resguardo en Cota, Suba, Guatavita, entre muchos otros.\n\n:::glossary\nentry: demo-constitucion-politica-de-colombia-1991\n:::\n\nEn un giro histórico que tuvo lugar a lo largo de siglos, aquella institución implementada por el imperio español para expropiar a los indígenas se convirtió en una de las únicas formas de acceso a la tierra y una de las ventanas para conservar su autonomía étnica.",
+              "title": "Pueblos y resguardos indígenas en la larga duración"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "glossary": {
+    "demo-historia": {
+      "term": "Historia",
+      "content": "Una secuencia de pasos que forman una narrativa visual. Cada historia aparece como una entrada independiente en la pestaña project (o en tu CSV) y puede recorrerse de manera individual.\n\nEn Telar, las historias combinan texto y objetos para construir argumentos, explorar temas o guiar al público a través de material visual. La historia de demostración que estás viendo es un ejemplo de una historia que enseña mientras narra."
+    },
+    "demo-panel-es": {
+      "term": "Panel",
+      "content": "Contenido expandible que aparece sobre el visor al hacer clic en “Saber más” u otros botones similares. Los paneles ofrecen contexto adicional sin abandonar el paso actual.\n\nTelar admite dos capas de paneles:\n- **Capa 1**: Se abre desde el paso principal\n- **Capa 2**: Se abre desde dentro de la capa 1\n\nEsta presentación progresiva permite elegir el nivel de profundidad de exploración."
+    },
+    "demo-paso": {
+      "term": "Paso",
+      "content": "Una pantalla de una historia de Telar en la que el texto narrativo aparece acompañado de un objeto. Cada paso puede enfocarse en una parte distinta del objeto usando coordenadas (x, y, zoom).\n\nLos pasos siguen el patrón Pregunta/Respuesta/Invitación: una pregunta atractiva, una respuesta breve y paneles opcionales por capas para profundizar."
+    },
+    "demo-visor": {
+      "term": "Visor",
+      "content": "En una historia de Telar, la zona interactiva donde se muestran los objetos. Admite zoom y paneo en alta resolución, lo que permite explorar los detalles de cada objeto.\n\nEl visor funciona con objetos IIIF (alojados por museos y bibliotecas) y con objetos autoalojados (de tu propia colección). Se puede hacer zoom y paneo libremente, pero tus coordenadas guían la vista inicial en cada paso."
+    },
+    "demo-iiif-es": {
+      "term": "IIIF",
+      "content": "IIIF (International Image Interoperability Framework) es un estándar abierto que permite a las instituciones compartir imágenes de alta resolución en línea. Museos, bibliotecas y archivos publican manifiestos IIIF — URLs estructuradas que describen una imagen y sus metadatos.\n\nEn Telar, pega la URL de un manifiesto en la columna url_fuente de tu pestaña de objetos y Telar se encarga del resto: zoom, desplazamiento y zoom profundo funcionan automáticamente. Esta historia usa tanto una imagen propia (demo-leviathan) como un manifiesto IIIF externo de Princeton (demo-atlas-allegory)."
+    },
+    "demo-telar-kogui": {
+      "term": "El telar kogui",
+      "content": "Entre los kogui de la Sierra Nevada de Santa Marta, el telar, además de ser un instrumento para tejer sus prendas, es un mapa que representa el cuerpo humano y la geografía de la Sierra.\n\nEl torso de un hombre con sus brazos cruzados forma la figura del telar. A su vez, las cuatro esquinas del telar representan las cuatro ciudades de las tierras bajas (Santa Marta, Riohacha, Fundación y Valledupar), mientras las cruces que se forman en su interior representan los picos nevados.\n\n![Framework of a Kogi loom [Marco de un telar kogui] En: The Loom of Life: A Kogi Principle of Integration. G. Reichel-Dolmatoff, 1978](https://content.telar.org/assets/images/paisajes/1.3.3.1.jpg){md}\nFramework of a Kogi loom [*Marco de un telar kogui*] En: The Loom of Life: A Kogi Principle of Integration. G. Reichel-Dolmatoff, 1978.\n\nLa forma del telar crea entonces un marco que sirve a los kogui para conceptualizar y representar la geografía, y este marco también se puede expresar en sus cuerpos."
+    },
+    "demo-jorge-tadeo-lozano": {
+      "term": "Jorge Tadeo Lozano",
+      "content": "Jorge Tadeo Lozano nació en Bogotá en 1771, estudió en Europa y se interesó por la historia natural. Esto le permitió unirse a la Real Expedición Botánica en la Nueva Granada en 1803 como encargado del proyecto zoológico. Dada su posición social y económica, Lozano contaba con numerosas haciendas en diferentes climas, lo que le facilitó la recolección de animales para iniciar su trabajo. Como resultado escribió La Fauna Cundinamarquesa. También participó en la publicación de “Correo curioso, erudito, económico y mercantil de la ciudad de Santa Fe de Bogotá”. Su trabajo formó parte de un contexto en el cual la Corona española buscaba impulsar la economía de las colonias a través de expediciones científicas, que tuvo lugar en el marco de las dinámicas globales de la Ilustración.\n\nComo parte de su trabajo administrativo en el imperio español, Lozano fue nombrado teniente protector de indios de Bosa, Fusagasugá y Usaquén en 1807. Con la consolidación del primer gobierno republicano, Lozano fue el primer presidente de Cundinamarca y de las Provincias Unidas de la Nueva Granada, hasta que en 1811 lo depuso un golpe de Estado encabezado por Antonio Nariño. Tras la reconquista, las fuerzas de Pablo Morillo fusilaron a Lozano el 6 de julio de 1816 en la actual Plaza de los Mártires por su participación en la política republicana.",
+      "kind": "entidad"
+    },
+    "demo-sobre-la-reduccion-de-los-indios": {
+      "term": "Sobre la reducción de los indios",
+      "content": "**Ley primera. Que los indios sean reducidos a poblaciones.**\n\n![Ley primera. Que los indios sean reducidos a poblaciones](https://content.telar.org/assets/images/paisajes/2.2.1.jpg){md}\n\n> Con mucho cuidado, y particular atención se ha procurado siempre interponer los medios más convenientes, para que los indios sean instruidos en la Santa Fé Católica, y Ley Evangélica, y olvidando los errores de sus antiguos ritos, y ceremonias vivan en concierto y policía, y para que esto se ejecutase con mejor acierto se juntaron diversas veces los de nuestro Consejo de Indias, (...) los cuales con deseo de acertar en servicio de Dios, y nuestro, resolvieron, que los indios fuesen reducidos a Pueblos, y no viviesen divididos, y separados por las Sierras, y Montes, privándose de todo beneficio espiritual\n\nRecopilación de Leyes de los Reinos de las Indias. Mandadas imprimir y publicar por la magestad católica del Rey don Carlos II. Libro VI, título III. Julián de Paredes, 1681. Cortesía de la Biblioteca Nacional de España, Madrid. [Ver documento completo](../../objects/demo-obj27/)",
+      "kind": "fuente"
+    },
+    "demo-sobre-que-en-cada-reduccion-haya-iglesia-con-puerta-y-llave": {
+      "term": "Sobre que en cada Reducción haya Iglesia con puerta y llave",
+      "content": "![Ley iiij: Que en cada Reducción haya Iglesia con puerta, y llave.](https://content.telar.org/assets/images/paisajes/2.2.2.jpg){sm}\n\n**Ley iiij: Que en cada Reducción haya Iglesia con puerta, y llave.**\n\n> “ En todas las Reducciones aunque los indios sean pocos, se ha de hacer Iglesia, donde se pueda decir Misa con decencia, y tenga puerta con llave, sin embargo de que sea sujeta a Parroquia y esté apartada de ella. “\n\nRecopilación de Leyes de los Reinos de las Indias. Mandadas imprimir y publicar por la magestad católica del Rey don Carlos II. Libro VI, título III. Julián de Paredes, 1681. Cortesía de la Biblioteca Nacional de España, Madrid.  [Ver documento completo](../../objects/demo-obj27/)",
+      "kind": "fuente"
+    },
+    "demo-cacicazgo": {
+      "term": "Cacicazgo",
+      "content": "Los términos “cacique” y “cacicazgo” los empezaron a utilizar los españoles en el Caribe, al notar que este era el vocablo usado en arawak para referirse a sus autoridades étnicas. De ese momento en adelante, los españoles lo utilizaron como un término genérico para referirse a las autoridades indígenas a lo largo del imperio.\n\nEl término muisca para denominar a algunas de estas autoridades era psihipqua. Los caciques que lideraron las comunidades muiscas tras la conquista tuvieron que transformar su forma de gobernar en un contexto colonial en que se ponían cada vez más presiones a los indígenas.\n\nPara fines del siglo XVI encontramos muchos caciques que se visten como españoles, utilizan el título de “don” y un nombre europeo (como don Francisco de Ubaque) y que financiaron pinturas murales, misas y celebraciones católicas."
+    },
+    "demo-don-francisco": {
+      "term": "Don Francisco",
+      "content": "> A finales del siglo XVI el cacique de Ubaque se llamaba don Francisco. Don Francisco se concebía a sí mismo como un hombre cristiano. Como vestido portaba un traje azul con capa, un sombrero con plumas y una espada que colgaba de su cintura. De acuerdo con sus declaraciones, su arma y su caballo estaban preparados para enfrentar en cualquier momento un alzamiento de los indios. En su casa, los arreglos, las mesas y cama indicaban que comía y dormía como cualquier caballero español. Le gustaba leer y escribir, asistir a misa y aplicar los valores tocantes a la fe católica.\n\n> Para comprar sus prendas europeas, don Francisco apareció frecuentemente como deudor de los mercaderes de Santafé y trató de vender a su encomendero las tierras en donde se hacían las mejores labranzas de su comunidad para cubrir sus deudas. En 1583 don Francisco se presentó ante la Real Audiencia de Santafé con una solicitud para transformar las costumbres de sucesión de los cacicazgos muiscas. Don Francisco quería que el rey Felipe II resolviera que no eran los sobrinos quienes debían heredar los cacicazgos (como sucedía de acuerdo con los criterios de parentesco matrilineales de las comunidades muiscas), sino que los debían heredar los hijos (como sucedía en las sociedades católicas). En su solicitud don Francisco se quejaba de las costumbres idólatras de sus súbditos e indicaba que se tenían que transformar, actitud que lo llevó a perder el apoyo de la comunidad.\n\n> \"Yo soy casado ... según orden de la Santa Madre Iglesia con doña Beatriz, mi mujer, y de nuestro matrimonio tenemos un hijo legítimo y vivimos como los españoles, políticamente y en su traje, guardando espiritual y temporalmente todo aquello que guardan los cristianos, en ejemplo de todos los demás indios de esta tierra\" -- Don Francisco.\n\n> Don Francisco \"es hombre ladino de nuestra lengua española, de muy buen trato y razón, y tal que en todo este Reino no ... conoce este testigo otro cacique que sea como es. ... Es muy amigo de españoles y cuando van por su pueblo y repartimiento los hospeda y reza, poniéndoles mesa al uso de españoles y dándoles de comer muy pulidamente como si verdaderamente fuera español.\" -- Miguel de Espejo\n\n> \"Los santuarios y figuras de los falsos dioses que sus antepasados tuvieron y adoraron, el dicho don Francisco los ha destruido, quebrado, quemado y asolado.\"\n\n> \"En tanto grado se ha señalado a imitar en las buenas costumbres de la gente española que los propios indios sus sujetos han disgustado de ello por decir que no ande a sus ritos y ceremonias como los caciques sus antepasados.\"\n\nArchivo General de Indias, Sevilla, Audiencia de Santa Fe 125, n. 10. [Ver documento completo](../../objects/demo-obj25/)",
+      "kind": "fuente"
+    },
+    "demo-sobre-los-cercados-indigenas": {
+      "term": "Sobre los cercados indígenas",
+      "content": "> “Las maneras de sus casas y edificios aunque son de madera y cubiertas de un feno largo que allá hay son de la más extraña hechura y labor que se ha visto, especialmente las de los caciques y hombres principales, porque son a manera de alcázares con muchas cercas alrededor, de la manera que acá suelen pintar el Laberinto de Troya, [y] tienen grandes patios las casas de muy grandes moldaduras de bulto y también pinturas por toda ella”.\n\nAnónimo, “Epítome de la conquista del Nuevo Reino de Granada”.",
+      "kind": "fuente"
+    },
+    "demo-sobre-los-indigenas-en-la-ciudad": {
+      "term": "Sobre los indígenas en la ciudad",
+      "content": "> “Habiendo entendido los desordenes y excesos que ha visto en esta ciudad de Santafé de Bogotá sobre que los indios e indias, ladinos, mulatos y mulatas que en ella viven no estén con amos a quien sirvan y por esta razón andan ociosos y vagabundos, de que resulta de ordinario en grandes daños e inconvenientes … nombraba y nombro s[eñ]or administrador de los d[ic]hos indios y mulatos.”\n\nArchivo General de Indias (Sevilla), Audiencia de Santa Fe, Legajo 93, n. 16, ff. 500r-501r. [Ver documento completo](../../objects/demo-obj44/)",
+      "kind": "fuente"
+    },
+    "demo-sobre-el-repartimiento-de-encomiendas": {
+      "term": "Sobre el repartimiento de encomiendas",
+      "content": "**Ley primera. Que estando la tierra pacífica, el Gobernador reparta los Indios de ella.**\n\n![Ley primera. Que estando la tierra pacífica, el Gobernador reparta los Indios de ella](https://content.telar.org/assets/images/paisajes/1.1.2.jpg){md}\n\n> “Reparta los Indios entre los pobladores, para que cada uno se encargue de los que fueren de su repartimiento, y los defienda, y ampare, proveyendo Ministro, que les enseñe la Doctrina Cristiana, y administre los Sacramentos, guardando nuestro Patronazgo y enseñe a vivir en policía”\n\nRecopilación de Leyes de los Reinos de las Indias. Mandadas imprimir y publicar por la magestad católica del Rey don Carlos II. Libro VI, título VII. Julián de Paredes, 1681. Cortesía de la Biblioteca Nacional de España, Madrid. [Ver documento completo](../../objects/demo-obj5/)",
+      "kind": "fuente"
+    },
+    "demo-pastos": {
+      "term": "Pastos",
+      "content": "Los pastos representados en la Pintura no son, probablemente, los mismos que cubren la Sabana de Bogotá hoy. Desde el siglo XVIII los ganaderos impulsaron la importación de pastos africanos que producían mejores rendimientos para la ganadería. Sin embargo, es posible que estos pastos empezaran a esparcirse en el Nuevo Mundo desde antes, pues se usaban para construir las camas en los barcos utilizados para el tráfico de esclavos."
+    },
+    "demo-ganaderia": {
+      "term": "Ganadería",
+      "content": "La ganadería ha sido parte de un largo proceso de convivencia entre humanos y animales que conocemos como \"domesticación\". Aunque tradicionalmente se veía la domesticación como un proceso en que los humanos dominaban y subordinaban a otros animales, investigación reciente ha mostrado que este no es un proceso controlado enteramente por humanos y que muchos animales se fueron acercando y conviviendo con sociedades humanas por su propia iniciativa. En África y Eurasia la ganadería se practica desde hace por lo menos 6.000 años y en España se consolidó a lo largo del mundo antiguo y la Edad Media una cultura ganadera que hacía parte de una red de intercambios y conexiones con otras partes de Europa, el Medio Oriente y Asia. Esta ganadería, centrada en la cría de vacas, ovejas, cabras y cerdos, se apoyaba en la utilización de caballos y perros para el control del ganado que se mantenía disperso.\n\nLas sociedades nativas del Nuevo Mundo contaban con varios animales domesticados, como los perros, el pavo y el pato, que se utilizaban como alimentación, participaban en rituales y eran intercambiados y pagados como tributo. En los Andes peruanos y bolivianos se practicaba la ganadería a partir de camélidos, como las llamas y las alpacas que se utilizaban como animales de carga y como fuente de lana. Estos fueron los únicos animales que se criaron en grandes manadas. Al ser introducidos al Nuevo Mundo, animales como las vacas, cerdos y ovejas florecieron y se adaptaron fácilmente a un entorno en que no contaban con muchos depredadores naturales y, junto con ellos, se propagaron otras especies menos deseadas, como la rata noruega. La población de estos diversos tipos de animales creció tanto que la historiadora Elinor Melville se refirió a la reproducción de ganado ovino en Mesoamérica como “La plaga de las ovejas”."
+    },
+    "demo-sobre-la-alimentacion-indigena": {
+      "term": "Sobre la alimentación indígena",
+      "content": "> “Las comidas de esta gente son las de otras partes de Indias y algunas más porque su principal mantenimiento es el maíz y yuca, sin esto tienen otras dos o tres maneras de turmas de tierra que llaman yomas y otras a manera de nabos que llaman cubías que echan en sus guisados y les es de gran mantenimiento. Sal hay infinita porque se hace allí en la misma tierra de Bogotá de unos pozos que hay salados en aquella tierra a donde se hacen grandes panes de sal y en grande cantidad la cual va por contratación por muchas partes especialmente por las Sierras de Oppon a dar al Río Grande como ya está dicho. Las carnes que comen los indios en esta tierra son venados que hay infinidad, en tanta abundancia que los basta [para] mantener como acá los ganados. Así mismo, comen unos animales a manera de conejos de que también hay una gran cantidad que llaman ellos fucos y en Santa Marta y en la costa de mar también los hay y los llaman curies”.\n\nAnónimo, “Epítome de la conquista del Nuevo Reino de Granada”, p. 112, 1536.",
+      "kind": "fuente"
+    },
+    "demo-sobre-el-ganado-en-las-tierras-indigenas": {
+      "term": "Sobre el ganado en las tierras indígenas",
+      "content": "**Ley X. Que en la tierra que los indios labren no se metan ganados.**\n\n![Ley X. Que en la tierra que los indios labren no se metan ganados](https://content.telar.org/assets/images/paisajes/3.3.1.jpg){md}\n\n> Nuestras justicias no consientan, que en la tierra de labor de los indios se metan ganados, y hagan sacar de ellas lo que hubiere, imponiendo, y ejecutando graves penas contra los que contravinieren.\n\nRecopilación de Leyes de los Reinos de las Indias. Mandadas imprimir y publicar por la magestad católica del Rey don Carlos II. Libro IV, título XVII. Julián de Paredes, 1681. Cortesía de la Biblioteca Nacional de España, Madrid. [Ver documento completo](../../objects/demo-obj47/)",
+      "kind": "fuente"
+    },
+    "demo-quejas-de-indigenas-por-danos-de-ganado-en-sus-cultivos": {
+      "term": "Quejas de indígenas por daños de ganado en sus cultivos",
+      "content": "> \"Aquí venimos ante vuestra merced a dar declaración [de] los trabajos y aniquilaciones que pasamos con nuestro pueblo que es en forma de daños de nuestra cementera. Está un vecino que es Agustín Vela con más de doscientas mulas y caballos, ganado vacuno y burros entre nuestro resguardo. Antes de recoger nuestra pobreza que es trigo y maíz y cebada y turmas hace entrar mulas mansas y zorreras [y] nos destruye [nuestras cosechas] teniendo muchas tierras que es desde la Puente de Boyacá a donde tiene muchos potreros a donde puede tener su hacienda sino maliciosamente y por engordar sus mulas con nuestro grano hace bajar todos los años en nuestra cementera haciendo menosprecio de los pobres porque está tan rico y poderoso nos tiene destruido y talado. Y después tener recogido y hecho montones [nuestros cultivos] los desbarata [con] sus mulas y ganado y como somos pobres y no saber hablar [español] nos tiene muy apurados. Cuando vamos avisar, dice “¿quién tasó los daños, quién los vio?” y sobre esto nos perrea [quiere decir: nos echa sus perros]\".\n\nArchivo General de la Nación, Resguardos-Boyacá, 7, D.10, ff. 672-704. 1672. [Ver documento completo](../../objects/demo-obj48/)",
+      "kind": "fuente"
+    },
+    "demo-demanda-contra-corregidores": {
+      "term": "Demanda contra corregidores",
+      "content": "> En 1594, una autoridad indígena de Pausaga expresó la inconformidad que sentían ante las nuevas exigencias laborales: “[los índios ya no tributan] por acudir a pagar el salario y comida al corregidor (...) que no les administra justicia y fuera mejor lo que pagan al corregidor guardarlo para su demora por estar muy cargados y para pagar el quinto del rey nuestro señor y también acuden al alquiler general que les da muy excesivo trabajo donde ahogan muchos por los ríos que pasan y otros se mueren en la frialdad del páramo que pasan y en Santa Fe enferman y mueren muchos por el excesivo trabajo que padecen y por acudir a estos trabajos y demoras y salarios que pagan”.\n\nAGN/B, Colonia, Visitas Cundinamarca, t. 8, f. 381r-v. [Ver documento completo](../../objects/demo-obj51/)",
+      "kind": "fuente"
+    },
+    "demo-lorenzo-requero": {
+      "term": "Lorenzo Requero",
+      "content": "> “Lorenzo de Requero digo que yo nací en esta corte y a causa de ser mi madre natural de Ubatoque de la encomienda del capitán Antonio de Céspedes y parienta de los caciques me casé en el dicho repartimiento con Catalina Çimca india del dicho pueblo donde tenemos cuatro hijos y para sustentarlos tenemos en los resguardos que vuestra merced señaló más tierras en que sembramos y cultivamos que son tierras habidas y adquiridas por naturaleza que es en el sitio que llaman quosvita por abajo y arriba del y porque así criando ganados y haciendo en mi vecindad lo que debo me temo que seré inquietado por el encomendero u por el cacique o corregidor por decir que soy mestizo estando como yo estoy fuera del pueblo y en la tierra dicha donde voy plantando árboles frutíferos para con que sustentarme y pues yo vivo sin perjuicio y la dicha tierra es de mi mujer y de mis parientes y está dentro en el resguardo.\n\n> Suplico a vuestra merced me mande dar mandamiento para que yo no sea inquietado ni molestado en razón de querer me echar de la dicha tierra pues es de mi mujer y de mis tíos y parientes y tengo en ella mi vivienda y estada y voy criando ganados y para ello firma\n\n> Lorenzo Requero”",
+      "kind": "fuente"
+    },
+    "demo-francisco-moreno-y-escandon": {
+      "term": "Francisco Moreno y Escandón",
+      "content": "> “Altera asimismo el concepto de la numeración la duda que consulté a vuestra excelencia en carta fecha en el pueblo de Paipa a 22 de agosto sobre si los hijos cuyo padre o madre no son indios puros etán libres de tributo, pues son muy raros los indios puros, manifestándose a la vista sin necesidad de otra prueba haber degenerado la especie; y es preciso que así suceda porque casi no hay pueblo de indios donde no sea mayor el número de vecinos españoles o de gentes de color que se abrigan en las tierras de los resguardos y sus inmediaciones y si se declara la libertad apenas quedará pueblo ni ramo de tributos o a lo menos será muy corto su ingreso. En este punto he reflexionado antes de ahora que nada perdería su Majestad antes bien adelantaría mucho el gobierno si los indios se españolizasen y con su casta se borrase la memoria de su tributo y natural aversión que los domina. [...]\n\n> De estos verdaderos principios inferirá vuestra excelencia el crítico estado de la población del distrito visitado y de todo el de esta Real Audiencia: después de la conquista fueron muchos los pueblos de indios y pocas las poblaciones de españoles éstos, a pesar de la prohibición de las leyes que se fueron mezclando con aquellos y de los hijos y descendientes mezclados con blacos, mestizos, negros, mulatos y sus diferentes propagaciones se ha formado el mayor número que actualmente se compone la población de que ha resultado convertirse los pueblos de indios en parroquias de españoles, esto es de vecinos, que no son indios puros, y ser muy difícil la absoluta separación que continuamente no se practica si no con los que les causan perjuicio manifiesto.” Francisco Antonio Moreno y Escandón, 1778.",
+      "kind": "fuente"
+    },
+    "demo-leyes-para-la-disolucion-de-resguardos": {
+      "term": "Leyes para la disolución de resguardos",
+      "content": "**Decreto de 24 de septiembre de 1810**\n\n> Artículo segundo. “Consiguiente a la referida igualación y ciudadanato concedido a los indios con restitución plena de sus derechos en cuyo goce van a entrar, se les repartirán en propiedad las tierras de sus resguardos distribuyéndoseles en cada pueblo según su justo valor y en suertes separadas con proporción a sus familias para que las disfruten aprovechándose de todas su producciones naturales e industriales, con la sola condición de que por ahora no puedan enajenar, donar o desprenderse por otra vía de la porción de tierra que les tocare en la distribución hasta que pasados veinte años hayan tomado apego al dominio y versándose en la administración de modo que no sea fácil engañarlos ni reducirlos valiéndose de su natural sencillez para despojarlos de su pertenencia territorial, sin que por esto se les prohiba que puedan disponer de sus tierras en beneficio de sus mismos hijos con arreglo a las leyes del reino, que puedan dotar a las hijas cuando tomaren estado, guardando la justa y debida proporción, sin perjudicar a su demás descendencia”.",
+      "kind": "fuente"
+    },
+    "demo-constitucion-politica-de-colombia-1991": {
+      "term": "Constitución Política de Colombia, 1991",
+      "content": "> Artículo 21. Naturaleza jurídica. Los resguardos indígenas son propiedad colectiva de las comunidades indígenas en favor de las cuales se constituyen y conforme a los artículos 63 y 329 de la Constitución Política, tienen el carácter de inalienables, imprescriptibles e inembargables.\n\n> Los resguardos son una institución legal y sociopolítica de carácter especial, conformada por una o más comunidades indígenas, que con un título de propiedad colectiva que goza de las garantías de la propiedad privada, poseen su territorio y se rigen para el manejo de éste y su vida interna por una organización autónoma amparada por el fuero indígena y su sistema normativo propio.",
+      "kind": "fuente"
+    }
+  }
+}

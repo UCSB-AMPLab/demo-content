@@ -1,0 +1,66 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://content.telar.org/iiif/objects/demo-bogota-painting/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Pintura de las tierras, pantanos y anegadizos del pueblo de Bogot\u00e1 hecha por mandato de la Real Audiencia de esta ciudad de Santa Fe del Nuevo Reyno de Granada en la causa que en ella trata el se\u00f1or fiscal con don Francisco Maldonado de Mendoza"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Creator"
+        ]
+      },
+      "value": {
+        "en": [
+          "Juan de Aguilar Rend\u00f3n"
+        ]
+      }
+    }
+  ],
+  "summary": null,
+  "items": [
+    {
+      "id": "https://content.telar.org/iiif/objects/demo-bogota-painting/canvas",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Pintura de las tierras, pantanos y anegadizos del pueblo de Bogot\u00e1 hecha por mandato de la Real Audiencia de esta ciudad de Santa Fe del Nuevo Reyno de Granada en la causa que en ella trata el se\u00f1or fiscal con don Francisco Maldonado de Mendoza"
+        ]
+      },
+      "height": 2102,
+      "width": 2586,
+      "items": [
+        {
+          "id": "https://content.telar.org/iiif/objects/demo-bogota-painting/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://content.telar.org/iiif/objects/demo-bogota-painting/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://content.telar.org/iiif/objects/demo-bogota-painting/demo-bogota-painting.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 2102,
+                "width": 2586,
+                "service": [
+                  {
+                    "id": "https://content.telar.org/iiif/objects/demo-bogota-painting",
+                    "type": "ImageService3",
+                    "profile": "level0"
+                  }
+                ]
+              },
+              "target": "https://content.telar.org/iiif/objects/demo-bogota-painting/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
