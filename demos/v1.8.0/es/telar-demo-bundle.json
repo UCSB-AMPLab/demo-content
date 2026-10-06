@@ -3,7 +3,7 @@
     "bundle_format": "0.2",
     "telar_version": "1.8.0",
     "language": "es",
-    "generated": "2026-10-06T02:46:54.415772Z",
+    "generated": "2026-10-06T19:13:37.273604Z",
     "generator": "telar-demo-content/build-demos.py v1.8.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
