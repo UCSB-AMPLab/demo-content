@@ -3,7 +3,7 @@
     "bundle_format": "0.2",
     "telar_version": "1.8.0",
     "language": "en",
-    "generated": "2026-10-06T02:35:27.430188Z",
+    "generated": "2026-10-06T02:46:54.389890Z",
     "generator": "telar-demo-content/build-demos.py v1.8.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -277,6 +277,15 @@
       "steps": [
         {
           "step": 1,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Where does this story come from?",
+          "answer": "This demo covers just a small part of *Colonial Landscapes*, a larger project that explores the social and environmental transformations experienced by Indigenous populations and landscapes in present-day Colombia during the 16th and 17th centuries, developed by Santiago Muñoz, Adelaida Ávila, and María Alejandra Orduz Avella, and which inspired Telar. <br><br><a href=\"https://colonial-landscapes.com\" class=\"btn btn-primary\" target=\"_blank\">Explore Colonial Landscapes →</a>"
+        },
+        {
+          "step": 2,
           "object": "",
           "x": 0.5,
           "y": 0.5,
@@ -285,7 +294,7 @@
           "answer": "This document, which can be read both as a map and a painting, was part of a legal proceeding that consolidated one of the most important haciendas and family lineages of the New Kingdom of Granada."
         },
         {
-          "step": 2,
+          "step": 3,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -301,7 +310,7 @@
           }
         },
         {
-          "step": 3,
+          "step": 4,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -316,7 +325,7 @@
           }
         },
         {
-          "step": 4,
+          "step": 5,
           "object": "demo-bogota-painting",
           "x": 0.2836,
           "y": 0.3035,
@@ -332,7 +341,7 @@
           }
         },
         {
-          "step": 5,
+          "step": 6,
           "object": "demo-bogota-painting",
           "x": 0.6984,
           "y": 0.6893,
@@ -348,7 +357,7 @@
           }
         },
         {
-          "step": 6,
+          "step": 7,
           "object": "",
           "x": 0.5,
           "y": 0.5,
@@ -357,7 +366,7 @@
           "answer": "The Spanish created laws to force Indigenous peoples to abandon their former settlements and live in grid-like villages (also called reducciones) organized around a main square and a church. The objective of the measure was to coerce Indigenous peoples into giving up their customs."
         },
         {
-          "step": 7,
+          "step": 8,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -373,7 +382,7 @@
           }
         },
         {
-          "step": 8,
+          "step": 9,
           "object": "demo-bogota-painting",
           "x": 0.3654,
           "y": 0.1903,
@@ -389,7 +398,7 @@
           }
         },
         {
-          "step": 9,
+          "step": 10,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -404,7 +413,7 @@
           }
         },
         {
-          "step": 10,
+          "step": 11,
           "object": "demo-bogota-painting",
           "x": 0.5334,
           "y": 0.1977,
@@ -420,7 +429,7 @@
           }
         },
         {
-          "step": 11,
+          "step": 12,
           "object": "demo-bogota-painting",
           "x": 0.8094,
           "y": 0.7797,
@@ -436,7 +445,7 @@
           }
         },
         {
-          "step": 12,
+          "step": 13,
           "object": "",
           "x": 0.5,
           "y": 0.5,
@@ -445,7 +454,7 @@
           "answer": "Although we find animals like cows and horses on the map, these were not native to the New World, but were introduced with the conquest. The map shows the transformation of the Indigenous agricultural landscape into grasslands for cattle raising."
         },
         {
-          "step": 13,
+          "step": 14,
           "object": "demo-bogota-painting",
           "x": 0.3283,
           "y": 0.5247,
@@ -461,7 +470,7 @@
           }
         },
         {
-          "step": 14,
+          "step": 15,
           "object": "demo-bogota-painting",
           "x": 0.7461,
           "y": 0.5062,
@@ -477,7 +486,7 @@
           }
         },
         {
-          "step": 15,
+          "step": 16,
           "object": "demo-bogota-painting",
           "x": 0.809,
           "y": 0.6137,
@@ -493,7 +502,7 @@
           }
         },
         {
-          "step": 16,
+          "step": 17,
           "object": "",
           "x": 0.5,
           "y": 0.5,
@@ -502,7 +511,7 @@
           "answer": "This painting was used as a legal document in order to prove a Spaniard’s ownership of a large estate in the Bogotá savanna. As Spanish legal procedures endorsed a Spaniard’s property ownership, Indigenous peoples were being dispossessed. Indigenous people were given a resguardo or reservation (a much smaller communal property which they were not allowed to sell) and were forced to work on estates. In this sense, this is a map of land dispossession and of the transformation of the Indigenous agricultural landscapes."
         },
         {
-          "step": 17,
+          "step": 18,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -518,7 +527,7 @@
           }
         },
         {
-          "step": 18,
+          "step": 19,
           "object": "demo-bogota-painting",
           "x": 0.3921,
           "y": 0.7217,
@@ -534,7 +543,7 @@
           }
         },
         {
-          "step": 19,
+          "step": 20,
           "object": "demo-bogota-painting",
           "x": 0.6962,
           "y": 0.6515,
@@ -549,7 +558,7 @@
           }
         },
         {
-          "step": 20,
+          "step": 21,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -563,6 +572,15 @@
               "title": "Indigenous villages and reservations in the long term"
             }
           }
+        },
+        {
+          "step": 22,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "Want to keep exploring?",
+          "answer": "This demo covers just a small part of *Colonial Landscapes*, a larger project that explores the social and environmental transformations experienced by Indigenous populations and landscapes in present-day Colombia during the 16th and 17th centuries, developed by Santiago Muñoz, Adelaida Ávila, and María Alejandra Orduz Avella, and which inspired Telar. <br><br><a href=\"https://colonial-landscapes.com\" class=\"btn btn-primary\" target=\"_blank\">Explore Colonial Landscapes →</a>"
         }
       ]
     }
@@ -574,7 +592,7 @@
     },
     "demo-step": {
       "term": "Step",
-      "content": "A single screen in a Telar story, combining narrative text with a view of an object. Each step can focus on a different part of the object using coordinates (x, y, zoom).\n\nSteps follow the Question/Answer/Invitation pattern: a compelling question, a brief answer, and optional layer panels for deeper exploration."
+      "content": "One stop in a Telar story. The object fills the screen behind a text card. As the reader moves through the story, the view goes to the part of the object the step is about, and the card passes over it. For images, that part is set with `x`, `y`, and `zoom`; for video and audio, with a start and an end time.\n\nEach step's card shows a question and a short answer, and the step can offer up to two panels with more detail."
     },
     "demo-story": {
       "term": "Story",
@@ -582,7 +600,7 @@
     },
     "demo-viewer": {
       "term": "Viewer",
-      "content": "The interactive area of a Telar story where objects are shown. It supports high-resolution zoom and pan, allowing readers to explore each object's details.\n\nThe viewer works with both IIIF objects (hosted by museums and libraries) and self-hosted objects (from your own collection). Readers can zoom and pan freely, but your coordinates guide their initial view at each step."
+      "content": "The part of a Telar story that shows the object. It fills the whole screen, behind the text cards. For images it supports deep zoom and panning, so readers can look closely at every detail.\n\nThe viewer works with IIIF objects (hosted by museums and libraries) and self-hosted objects (from your own collection). Readers can zoom and pan freely; your coordinates set where the view goes at each step."
     },
     "demo-iiif": {
       "term": "IIIF",

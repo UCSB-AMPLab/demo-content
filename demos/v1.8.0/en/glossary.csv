@@ -7,15 +7,15 @@ Telar supports two layers of panels:
 - **Layer 2**: Opens from within layer 1
 
 This progressive disclosure allows readers to choose their depth of engagement.",
-demo-step,Step,"A single screen in a Telar story, combining narrative text with a view of an object. Each step can focus on a different part of the object using coordinates (x, y, zoom).
+demo-step,Step,"One stop in a Telar story. The object fills the screen behind a text card. As the reader moves through the story, the view goes to the part of the object the step is about, and the card passes over it. For images, that part is set with `x`, `y`, and `zoom`; for video and audio, with a start and an end time.
 
-Steps follow the Question/Answer/Invitation pattern: a compelling question, a brief answer, and optional layer panels for deeper exploration.",
+Each step's card shows a question and a short answer, and the step can offer up to two panels with more detail.",
 demo-story,Story,"A sequence of steps that form a visual narrative. Each story appears as a separate entry in the project sheet and can be navigated independently.
 
 In Telar, stories combine text and objects to build arguments, explore themes, or guide readers through visual material. The demo story you are viewing is an example of a story that teaches while it tells.",
-demo-viewer,Viewer,"The interactive area of a Telar story where objects are shown. It supports high-resolution zoom and pan, allowing readers to explore each object's details.
+demo-viewer,Viewer,"The part of a Telar story that shows the object. It fills the whole screen, behind the text cards. For images it supports deep zoom and panning, so readers can look closely at every detail.
 
-The viewer works with both IIIF objects (hosted by museums and libraries) and self-hosted objects (from your own collection). Readers can zoom and pan freely, but your coordinates guide their initial view at each step.",
+The viewer works with IIIF objects (hosted by museums and libraries) and self-hosted objects (from your own collection). Readers can zoom and pan freely; your coordinates set where the view goes at each step.",
 demo-iiif,IIIF,"IIIF (International Image Interoperability Framework) is an open standard that lets institutions share high-resolution images online. Museums, libraries, and archives publish IIIF manifests — structured URLs that describe an image and its metadata.
 
 In Telar, paste a manifest URL into the source_url column of your objects tab and Telar handles the rest: zoom, pan, and deep-zoom all work automatically. This story uses both a self-hosted image (demo-leviathan) and an external IIIF manifest from Princeton (demo-atlas-allegory).",

@@ -3,7 +3,7 @@
     "bundle_format": "0.2",
     "telar_version": "1.8.0",
     "language": "es",
-    "generated": "2026-10-06T02:35:27.457253Z",
+    "generated": "2026-10-06T02:46:54.415772Z",
     "generator": "telar-demo-content/build-demos.py v1.8.0",
     "source": "https://github.com/UCSB-AMPLab/telar-demo-content",
     "description": "Demo content bundle for Telar storytelling framework",
@@ -279,6 +279,15 @@
       "steps": [
         {
           "step": 1,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿De dónde viene esta historia?",
+          "answer": "Esta demostración cubre apenas una pequeña parte de los contenidos de *Paisajes Coloniales*, un proyecto más amplio que explora las transformaciones sociales y ambientales que vivieron las poblaciones indígenas y los paisajes de la actual Colombia durante los siglos XVI y XVII, desarrollado por Santiago Muñoz, Adelaida Ávila y María Alejandra Orduz Avella, y que inspiró Telar. <br><br><a href=\"https://paisajescoloniales.com\" class=\"btn btn-primary\" target=\"_blank\">Explora Paisajes Coloniales →</a>"
+        },
+        {
+          "step": 2,
           "object": "",
           "x": 0.5,
           "y": 0.5,
@@ -287,7 +296,7 @@
           "answer": "Este documento, que oscila entre mapa y pintura, formó parte de un proceso legal en el que se consolidaron una de las haciendas y uno de los linajes más importantes del Nuevo Reino de Granada."
         },
         {
-          "step": 2,
+          "step": 3,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -303,7 +312,7 @@
           }
         },
         {
-          "step": 3,
+          "step": 4,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -318,7 +327,7 @@
           }
         },
         {
-          "step": 4,
+          "step": 5,
           "object": "demo-bogota-painting",
           "x": 0.2836,
           "y": 0.3035,
@@ -334,7 +343,7 @@
           }
         },
         {
-          "step": 5,
+          "step": 6,
           "object": "demo-bogota-painting",
           "x": 0.6984,
           "y": 0.6893,
@@ -350,7 +359,7 @@
           }
         },
         {
-          "step": 6,
+          "step": 7,
           "object": "",
           "x": 0.5,
           "y": 0.5,
@@ -359,7 +368,7 @@
           "answer": "Los españoles crearon leyes para obligar a los indígenas a abandonar sus antiguas residencias para que vivieran en pueblos organizados en torno a una plaza con una iglesia. Con esta medida buscaban que los indios olvidaran sus costumbres."
         },
         {
-          "step": 7,
+          "step": 8,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -375,7 +384,7 @@
           }
         },
         {
-          "step": 8,
+          "step": 9,
           "object": "demo-bogota-painting",
           "x": 0.3654,
           "y": 0.1903,
@@ -391,7 +400,7 @@
           }
         },
         {
-          "step": 9,
+          "step": 10,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -406,7 +415,7 @@
           }
         },
         {
-          "step": 10,
+          "step": 11,
           "object": "demo-bogota-painting",
           "x": 0.5334,
           "y": 0.1977,
@@ -422,7 +431,7 @@
           }
         },
         {
-          "step": 11,
+          "step": 12,
           "object": "demo-bogota-painting",
           "x": 0.8094,
           "y": 0.7797,
@@ -438,7 +447,7 @@
           }
         },
         {
-          "step": 12,
+          "step": 13,
           "object": "",
           "x": 0.5,
           "y": 0.5,
@@ -447,7 +456,7 @@
           "answer": "Aunque en el mapa figuran animales como vacas y caballos, estos no eran nativos del Nuevo Mundo sino que fueron introducidos con la conquista. El mapa evidencia la transformación de un paisaje agrícola indígena en pastizales para ganadería."
         },
         {
-          "step": 13,
+          "step": 14,
           "object": "demo-bogota-painting",
           "x": 0.3283,
           "y": 0.5247,
@@ -463,7 +472,7 @@
           }
         },
         {
-          "step": 14,
+          "step": 15,
           "object": "demo-bogota-painting",
           "x": 0.7461,
           "y": 0.5062,
@@ -479,7 +488,7 @@
           }
         },
         {
-          "step": 15,
+          "step": 16,
           "object": "demo-bogota-painting",
           "x": 0.809,
           "y": 0.6137,
@@ -495,7 +504,7 @@
           }
         },
         {
-          "step": 16,
+          "step": 17,
           "object": "",
           "x": 0.5,
           "y": 0.5,
@@ -504,7 +513,7 @@
           "answer": "Esta pintura se usó como documento legal para reconocer la propiedad de un español sobre una extensa hacienda en la sabana de Bogotá. A los indígenas se les otorgó un resguardo (una propiedad comunal mucho más pequeña que no podían comercializar) y se les forzó a trabajar en las haciendas. En este sentido, es un mapa del despojo de la tierra y de la transformación de los paisajes agrícolas indígenas."
         },
         {
-          "step": 17,
+          "step": 18,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -520,7 +529,7 @@
           }
         },
         {
-          "step": 18,
+          "step": 19,
           "object": "demo-bogota-painting",
           "x": 0.3921,
           "y": 0.7217,
@@ -536,7 +545,7 @@
           }
         },
         {
-          "step": 19,
+          "step": 20,
           "object": "demo-bogota-painting",
           "x": 0.6962,
           "y": 0.6515,
@@ -545,7 +554,7 @@
           "answer": "En este sentido, este es un mapa profundamente violento. Se calcula que, con la creación de resguardos, los indígenas perdieron el acceso al 95% de las tierras que tenían disponibles para su trabajo antes de la conquista. Es un mapa del despojo de la tierra y de la transformación de los paisajes agrícolas indígenas en sabanas ganaderas de hacendados españoles, en donde los indígenas debían trabajar de manera forzosa. Podemos ver las cicatrices de ese proceso en algunos detalles del mapa, como en la marca el lugar donde quedaba el antiguo cacicazgo o en el pequeño lugar donde se encuentra el resguardo de la comunidad en contraste con las haciendas de españoles."
         },
         {
-          "step": 20,
+          "step": 21,
           "object": "demo-bogota-painting",
           "x": 0.5,
           "y": 0.5,
@@ -559,6 +568,15 @@
               "title": "Pueblos y resguardos indígenas en la larga duración"
             }
           }
+        },
+        {
+          "step": 22,
+          "object": "demo-bogota-painting",
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.0,
+          "question": "¿Quieres seguir explorando?",
+          "answer": "Esta demostración cubre apenas una pequeña parte de los contenidos de *Paisajes Coloniales*, un proyecto más amplio que explora las transformaciones sociales y ambientales que vivieron las poblaciones indígenas y los paisajes de la actual Colombia durante los siglos XVI y XVII, desarrollado por Santiago Muñoz, Adelaida Ávila y María Alejandra Orduz Avella, y que inspiró Telar. <br><br><a href=\"https://paisajescoloniales.com\" class=\"btn btn-primary\" target=\"_blank\">Explora Paisajes Coloniales →</a>"
         }
       ]
     }
@@ -574,15 +592,15 @@
     },
     "demo-paso": {
       "term": "Paso",
-      "content": "Una pantalla de una historia de Telar en la que el texto narrativo aparece acompañado de un objeto. Cada paso puede enfocarse en una parte distinta del objeto usando coordenadas (x, y, zoom).\n\nLos pasos siguen el patrón Pregunta/Respuesta/Invitación: una pregunta atractiva, una respuesta breve y paneles opcionales por capas para profundizar."
+      "content": "Cada parada de una historia de Telar. El objeto ocupa toda la pantalla, detrás de una tarjeta de texto. A medida que se avanza en la historia, la vista se mueve hacia la parte del objeto de la que trata el paso y la tarjeta pasa por encima. En las imágenes, esa parte se indica con `x`, `y` y `zoom`; en los objetos de video y audio, con un tiempo de inicio y uno de fin.\n\nLa tarjeta de cada paso muestra una pregunta y una respuesta breve, y el paso puede ofrecer hasta dos paneles con más detalle."
     },
     "demo-visor": {
       "term": "Visor",
-      "content": "En una historia de Telar, la zona interactiva donde se muestran los objetos. Admite zoom y paneo en alta resolución, lo que permite explorar los detalles de cada objeto.\n\nEl visor funciona con objetos IIIF (alojados por museos y bibliotecas) y con objetos autoalojados (de tu propia colección). Se puede hacer zoom y paneo libremente, pero tus coordenadas guían la vista inicial en cada paso."
+      "content": "La parte de una historia de Telar que muestra el objeto. Ocupa toda la pantalla, detrás de las tarjetas de texto. En las imágenes admite zoom profundo y paneo, así que se puede mirar de cerca cada detalle.\n\nEl visor funciona con objetos IIIF (alojados por museos y bibliotecas) y con objetos autoalojados (de tu propia colección). El público puede hacer zoom y paneo con libertad; tus coordenadas definen adónde va la vista en cada paso."
     },
     "demo-iiif-es": {
       "term": "IIIF",
-      "content": "IIIF (International Image Interoperability Framework) es un estándar abierto que permite a las instituciones compartir imágenes de alta resolución en línea. Museos, bibliotecas y archivos publican manifiestos IIIF — URLs estructuradas que describen una imagen y sus metadatos.\n\nEn Telar, pega la URL de un manifiesto en la columna url_fuente de tu pestaña de objetos y Telar se encarga del resto: zoom, desplazamiento y zoom profundo funcionan automáticamente. Esta historia usa tanto una imagen propia (demo-leviathan) como un manifiesto IIIF externo de Princeton (demo-atlas-allegory)."
+      "content": "IIIF (International Image Interoperability Framework) es un estándar abierto que permite a las instituciones compartir imágenes de alta resolución en línea. Museos, bibliotecas y archivos publican manifiestos IIIF — URLs estructuradas que describen una imagen y sus metadatos.\n\nEn Telar, pega la URL de un manifiesto en la columna url_fuente de tu pestaña de objetos y Telar se encarga del resto: zoom, paneo y zoom profundo funcionan automáticamente. Esta historia usa tanto una imagen propia (demo-leviathan) como un manifiesto IIIF externo de Princeton (demo-atlas-allegory)."
     },
     "demo-telar-kogui": {
       "term": "El telar kogui",
